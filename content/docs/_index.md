@@ -1,5 +1,5 @@
 ---
 taxonomyCloud: []
-title: FREE Quick-To-Consume Tutorials
+title: FREE Tutorials - Security and Hacking
 weight: 20
 ---

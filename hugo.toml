@@ -1,4 +1,4 @@
-baseURL = 'https://akhil.sh/tutorials'
+baseURL = 'https://armur.ai/tutorials'
 languageCode = 'en-us'
 title = 'Tutorials'
 contentDir = "content"
@@ -62,7 +62,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with git submod
         prismTheme      = "solarized-light"                           # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
 
         # gitinfo
-        repoURL         = "https://github.com/AkhilSharma90/Akhil-Tutorials-Website"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
+        repoURL         = "https://github.com/AkhilSharma90/Armur-Tutorials"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
         repoBranch      = "release"
         editPage        = true                                # enable 'Edit this page' feature - default false
         lastMod         = true                                # enable 'Last modified' date on pages - default false
@@ -101,4 +101,4 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with git submod
 
 [services]
 [services.googleAnalytics]
-    id = "G-KJEES5CG7L"
+    id = ""

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XSS Attack on Tutorials</title>
+    <link>https://armur.ai/tutorials/docs/xss/</link>
+    <description>Recent content in XSS Attack on Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://armur.ai/tutorials/docs/xss/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

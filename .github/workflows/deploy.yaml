@@ -23,7 +23,7 @@ jobs:
         echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST '
-          cd /home/vm11082001/Armur-Blogs-Hugo &&
+          cd /home/vm11082001/Armur-Tutorials &&
           git stash &&
           git pull &&
           hugo &&

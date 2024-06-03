@@ -2,14 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://akhil.sh/tutorials/docs/</loc>
+    <loc>https://armur.ai/tutorials/docs/</loc>
+    <lastmod>2024-06-03T13:10:17+05:30</lastmod>
   </url><url>
-    <loc>https://akhil.sh/tutorials/categories/</loc>
+    <loc>https://armur.ai/tutorials/categories/</loc>
   </url><url>
-    <loc>https://akhil.sh/tutorials/tags/</loc>
+    <loc>https://armur.ai/tutorials/docs/cloudsec/</loc>
   </url><url>
-    <loc>https://akhil.sh/tutorials/</loc>
+    <loc>https://armur.ai/tutorials/docs/codesec/</loc>
   </url><url>
-    <loc>https://akhil.sh/tutorials/docs/zig/</loc>
+    <loc>https://armur.ai/tutorials/docs/llmsec/</loc>
+  </url><url>
+    <loc>https://armur.ai/tutorials/tags/</loc>
+  </url><url>
+    <loc>https://armur.ai/tutorials/</loc>
+    <lastmod>2024-06-03T13:10:17+05:30</lastmod>
+  </url><url>
+    <loc>https://armur.ai/tutorials/docs/web3sec/</loc>
+  </url><url>
+    <loc>https://armur.ai/tutorials/docs/xss/</loc>
   </url>
 </urlset>

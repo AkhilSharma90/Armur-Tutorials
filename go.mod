@@ -1,4 +1,4 @@
-module github.com/AkhilSharma90/Akhil-Tutorials-Website
+module github.com/AkhilSharma90/Armur-Tutorials
 
 go 1.22.2
 
