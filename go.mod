@@ -1,6 +1,6 @@
 module github.com/AkhilSharma90/Armur-Tutorials
 
-go 1.22.2
+go 1.23
 
 require (
 	github.com/colinwilson/lotusdocs v0.1.0 // indirect
