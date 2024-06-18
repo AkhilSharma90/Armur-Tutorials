@@ -12,9 +12,10 @@
 
     
 
-<html lang="en-us"><head>
+<html lang="en-us"><head><script src="/tutorials/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tutorials/livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
     <title>XSS Attack | Tutorials</title>
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="XSS Attack blogs.">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
@@ -23,18 +24,18 @@
     <meta name="website" content="https://lotusdocs.dev" />
     <meta name="Version" content="v0.1.0" />
     
-    <link rel="icon" href="https://armur.ai/tutorials/favicons/favicon.ico" sizes="any">
-<link rel="apple-touch-icon" sizes="180x180" href="https://armur.ai/tutorials/favicons/apple-touch-icon.png">
+    <link rel="icon" href="http://localhost:1313/tutorials/favicons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/tutorials/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="512x512"  href="favicons/android-chrome-512x512">
 <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://armur.ai/tutorials/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://armur.ai/tutorials/favicons/favicon-16x16.png">
-<link rel="manifest" crossorigin="use-credentials" href="https://armur.ai/tutorials/favicons/site.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tutorials/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tutorials/favicons/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/tutorials/favicons/site.webmanifest">
 <meta property="og:title" content="XSS Attack" />
 <meta property="og:description" content="XSS Attack blogs." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://armur.ai/tutorials/docs/xss/" /><meta property="og:image" content="https://armur.ai/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11225202827882314625.png"/><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://armur.ai/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11225202827882314625.png"/>
+<meta property="og:url" content="http://localhost:1313/tutorials/docs/xss/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11225202827882314625.png"/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11225202827882314625.png"/>
 <meta name="twitter:title" content="XSS Attack"/>
 <meta name="twitter:description" content="XSS Attack blogs."/>
 
@@ -43,9 +44,8 @@
     
     
             
-                
-                <script type="text/javascript" src="https://armur.ai/tutorials/docs/js/flexsearch.bundle.min.70b92c4c5202c26b45d7aa43e130e8440032cac751b9b9206ddba2052699286ac95beb01bb7f975514cc694a019a03c8.js" integrity="sha384-cLksTFICwmtF16pD4TDoRAAyysdRubkgbduiBSaZKGrJW&#43;sBu3&#43;XVRTMaUoBmgPI" crossorigin="anonymous"></script>
-                
+                <script type="text/javascript" src="http://localhost:1313/tutorials/docs/js/flexsearch.bundle.js"></script>
+            
         
     
     
@@ -66,8 +66,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Inter:300,400,600,700|Fira+Code:500,700&display=block" rel="stylesheet">
 
-    <link rel="stylesheet" href="/tutorials/docs/scss/style.min.4d692a7d85a3695e0fc65c66995b6a37f6ebe234c9870b0b29804fe861a839615b6a63cb9c042e936ed6ee710fb79080.css" integrity="sha384-TWkqfYWjaV4PxlxmmVtqN/br4jTJhwsLKYBP6GGoOWFbamPLnAQuk27W7nEPt5CA"crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="/tutorials/docs/scss/style.css" crossorigin="anonymous">
     
     
     </head><body>
@@ -89,18 +88,7 @@
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="https://armur.ai/tutorials/docs/cloudsec/">
-                                <i class="material-icons me-2">code</i>
-                                
-                                Cloud security
-                            </a>
-                        </li>
-                    
-                
-                    
-                        
-                        <li class="">
-                            <a class="sidebar-root-link" href="https://armur.ai/tutorials/docs/codesec/">
+                            <a class="sidebar-root-link" href="http://localhost:1313/tutorials/docs/codesec/">
                                 <i class="material-icons me-2">code</i>
                                 
                                 Code Security
@@ -111,7 +99,18 @@
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="https://armur.ai/tutorials/docs/llmsec/">
+                            <a class="sidebar-root-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/">
+                                <i class="material-icons me-2">code</i>
+                                
+                                Linux Basics for Hackers
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/tutorials/docs/llmsec/">
                                 <i class="material-icons me-2">code</i>
                                 
                                 LLM security
@@ -122,7 +121,7 @@
                     
                         
                         <li class="">
-                            <a class="sidebar-root-link" href="https://armur.ai/tutorials/docs/web3sec/">
+                            <a class="sidebar-root-link" href="http://localhost:1313/tutorials/docs/web3sec/">
                                 <i class="material-icons me-2">code</i>
                                 
                                 Web3 security
@@ -133,7 +132,7 @@
                     
                         
                         <li class="current">
-                            <a class="sidebar-root-link" href="https://armur.ai/tutorials/docs/xss/">
+                            <a class="sidebar-root-link" href="http://localhost:1313/tutorials/docs/xss/">
                                 <i class="material-icons me-2">code</i>
                                 
                                 XSS Attack
@@ -171,7 +170,7 @@
             <button id="close-sidebar" class="btn btn-icon btn-soft">
                 <span class="material-icons size-20 menu-icon align-middle">menu</span>
             </button>
-            <a href="https://akhil.sh" class="btn btn-primary ms-3" role="button">Back to Website</a>
+            <a href="https://armur.ai" class="btn btn-primary ms-3" role="button">Back to Website</a>
             
             
                 
@@ -354,12 +353,10 @@
 
 
 
-    
-
-    <script src="/tutorials/docs/js/bootstrap.d479bcf750dc64ea5dadc35d782fdc55066b54b6f80655bd81380639aa6289e5accdc55d58d8b2878a01876f06b22641.js" integrity="sha384-1Hm891DcZOpdrcNdeC/cVQZrVLb4BlW9gTgGOapiieWszcVdWNiyh4oBh28GsiZB"defer></script>
+    <script src="/tutorials/docs/js/bootstrap.js" defer></script>
 
 
-    <script type="text/javascript" src="https://armur.ai/tutorials/docs/js/bundle.min.dcb63361ffaf659e6e87e82dddf126b224da07a360cbe8d8afe1c4c10d43af2509a625c9feb10be98f18899832dd8f69.js" integrity="sha384-3LYzYf&#43;vZZ5uh&#43;gt3fEmsiTaB6Ngy&#43;jYr&#43;HEwQ1DryUJpiXJ/rEL6Y8YiZgy3Y9p" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="http://localhost:1313/tutorials/docs/js/bundle.js" defer></script>
     
 
     
@@ -526,18 +523,18 @@
     index.add(
             {
                 id:  1 ,
-                href: "\/tutorials\/docs\/cloudsec\/",
-                title: "Cloud security",
-                description: "Cloud security blogs.",
+                href: "\/tutorials\/docs\/codesec\/",
+                title: "Code Security",
+                description: "Code Security blogs.",
                 content: ""
             }
         );
     index.add(
             {
                 id:  2 ,
-                href: "\/tutorials\/docs\/codesec\/",
-                title: "Code Security",
-                description: "Code Security blogs.",
+                href: "\/tutorials\/docs\/linux-basics-for-hackers\/",
+                title: "Linux Basics for Hackers",
+                description: "Cloud security blogs.",
                 content: ""
             }
         );

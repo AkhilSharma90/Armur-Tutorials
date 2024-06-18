@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+<html lang="en-us"><head><script src="/tutorials/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tutorials/livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <title>Networking in Linux | Tutorials</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the basics of Linux for Hacking.">
+    <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
+    <meta name="author" content="Colin Wilson - Lotus Labs" />
+    <meta name="email" content="support@aigis.uk" />
+    <meta name="website" content="https://lotusdocs.dev" />
+    <meta name="Version" content="v0.1.0" />
+    
+    <link rel="icon" href="http://localhost:1313/tutorials/favicons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/tutorials/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512"  href="favicons/android-chrome-512x512">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tutorials/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tutorials/favicons/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/tutorials/favicons/site.webmanifest">
+<meta property="og:title" content="Networking in Linux" />
+<meta property="og:description" content="Welcome to the basics of Linux for Hacking." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_18349397291610363406.png"/><meta property="article:section" content="docs" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_18349397291610363406.png"/>
+<meta name="twitter:title" content="Networking in Linux"/>
+<meta name="twitter:description" content="Welcome to the basics of Linux for Hacking."/>
+
+    
+    <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
+    
+    
+            
+                <script type="text/javascript" src="http://localhost:1313/tutorials/docs/js/flexsearch.bundle.js"></script>
+            
+        
+    
+    
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,600,700|Fira+Code:500,700&display=block" rel="stylesheet">
+
+    <link rel="stylesheet" href="/tutorials/docs/scss/style.css" crossorigin="anonymous">
+    
+    
+    </head><body>
+    <div class="content">
+        <div class="page-wrapper toggled">
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-brand">
+        <a href='/tutorials/' aria-label="HomePage" alt="HomePage">
+            
+                
+            
+        </a>
+    </div>
+    <div class="sidebar-content" style="height: calc(100% - 131px);">
+        <ul class="sidebar-menu">
+            
+                
+                
+                    
+                    
+                        <li class="sidebar-dropdown  current active">
+                            <button class="btn">
+                                <i class="material-icons me-2">code</i>
+                                Linux Basics for Hackers
+                            </button>
+                            <div class="sidebar-submenu d-block">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/">A Getting Started Guide To Linux</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/">Bash Scripting in Linux</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/">Networking in Linux</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/">Text Manipulation</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/">Understanding File Permissions in Linux</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+            
+        </ul>
+        
+    </div>
+    
+        <ul class="sidebar-footer list-unstyled mb-0">
+            
+        </ul>
+    
+</nav>
+
+                <main class="page-content bg-transparent">
+<div id="top-header" class="top-header d-print-none">
+    <div class="header-bar d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <a href='/tutorials/' class="logo-icon me-3" aria-label="HomePage" alt="HomePage">
+                <div class="small">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+                <div class="big">
+                    
+                            
+                    
+                </div>
+            </a>
+            <button id="close-sidebar" class="btn btn-icon btn-soft">
+                <span class="material-icons size-20 menu-icon align-middle">menu</span>
+            </button>
+            <a href="https://armur.ai" class="btn btn-primary ms-3" role="button">Back to Website</a>
+            
+            
+                
+                    
+                    <button id="flexsearch-button" class="ms-3 btn btn-soft" data-bs-toggle="collapse" data-bs-target="#FlexSearchCollapse" aria-expanded="false" aria-controls="FlexSearchCollapse">
+                        <span class="material-icons size-20 menu-icon align-middle">search</span>
+                        <span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block">Search</span>
+                        <div class="d-none d-sm-block">
+                            <span class="flexsearch-button-keys">
+                                <kbd class="flexsearch-button-cmd-key">
+                                    <svg width="44" height="15"><path d="M2.118,11.5A1.519,1.519,0,0,1,1,11.042,1.583,1.583,0,0,1,1,8.815a1.519,1.519,0,0,1,1.113-.458h.715V6.643H2.118A1.519,1.519,0,0,1,1,6.185,1.519,1.519,0,0,1,.547,5.071,1.519,1.519,0,0,1,1,3.958,1.519,1.519,0,0,1,2.118,3.5a1.519,1.519,0,0,1,1.114.458A1.519,1.519,0,0,1,3.69,5.071v.715H5.4V5.071A1.564,1.564,0,0,1,6.976,3.5,1.564,1.564,0,0,1,8.547,5.071,1.564,1.564,0,0,1,6.976,6.643H6.261V8.357h.715a1.575,1.575,0,0,1,1.113,2.685,1.583,1.583,0,0,1-2.227,0A1.519,1.519,0,0,1,5.4,9.929V9.214H3.69v.715a1.519,1.519,0,0,1-.458,1.113A1.519,1.519,0,0,1,2.118,11.5Zm0-.857a.714.714,0,0,0,.715-.714V9.214H2.118a.715.715,0,1,0,0,1.429Zm4.858,0a.715.715,0,1,0,0-1.429H6.261v.715a.714.714,0,0,0,.715.714ZM3.69,8.357H5.4V6.643H3.69ZM2.118,5.786h.715V5.071a.714.714,0,0,0-.715-.714.715.715,0,0,0-.5,1.22A.686.686,0,0,0,2.118,5.786Zm4.143,0h.715a.715.715,0,0,0,.5-1.22.715.715,0,0,0-1.22.5Z" fill="currentColor"></path><path d="M12.4,11.475H11.344l3.879-7.95h1.056Z" fill="currentColor"></path><path d="M25.073,5.384l-.864.576a2.121,2.121,0,0,0-1.786-.923,2.207,2.207,0,0,0-2.266,2.326,2.206,2.206,0,0,0,2.266,2.325,2.1,2.1,0,0,0,1.782-.918l.84.617a3.108,3.108,0,0,1-2.622,1.293,3.217,3.217,0,0,1-3.349-3.317,3.217,3.217,0,0,1,3.349-3.317A3.046,3.046,0,0,1,25.073,5.384Z" fill="currentColor"></path><path d="M30.993,5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172Z" fill="currentColor"></path><path d="M34.67,4.164c1.471,0,2.266.658,2.266,1.851,0,1.087-.832,1.809-2.134,1.855l2.107,2.691h-1.28L33.591,7.87H33.07v2.691H32.038v-6.4Zm-1.6.969v1.8h1.572c.832,0,1.22-.3,1.22-.918s-.411-.882-1.22-.882Z" fill="currentColor"></path><path d="M42.883,10.561H38.31v-6.4h1.033V9.583h3.54Z" fill="currentColor"></path></svg>
+                                </kbd>
+                                <kbd class="flexsearch-button-key">
+                                    <svg width="15" height="15"><path d="M5.926,12.279H4.41L9.073,2.721H10.59Z" fill="currentColor"/></svg>
+                                </kbd>
+                            </span>
+                        </div>
+                    </button>
+                
+            </div>
+
+        <div class="d-flex align-items-center">
+            <ul class="list-unstyled mb-0">
+                
+            </ul>
+            <button id="mode" class="btn btn-icon btn-default ms-2" type="button" aria-label="Toggle user interface mode">
+                <span class="toggle-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor">
+                        <title>Enable dark mode</title>
+                        <path d="M24 42q-7.5 0-12.75-5.25T6 24q0-7.5 5.25-12.75T24 6q.4 0 .85.025.45.025 1.15.075-1.8 1.6-2.8 3.95-1 2.35-1 4.95 0 4.5 3.15 7.65Q28.5 25.8 33 25.8q2.6 0 4.95-.925T41.9 22.3q.05.6.075.975Q42 23.65 42 24q0 7.5-5.25 12.75T24 42Zm0-3q5.45 0 9.5-3.375t5.05-7.925q-1.25.55-2.675.825Q34.45 28.8 33 28.8q-5.75 0-9.775-4.025T19.2 15q0-1.2.25-2.575.25-1.375.9-3.125-4.9 1.35-8.125 5.475Q9 18.9 9 24q0 6.25 4.375 10.625T24 39Zm-.2-14.85Z"/>
+                    </svg>
+                </span>
+                <span class="toggle-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor">
+                        <title>Enable light mode</title>
+                        <path d="M24 31q2.9 0 4.95-2.05Q31 26.9 31 24q0-2.9-2.05-4.95Q26.9 17 24 17q-2.9 0-4.95 2.05Q17 21.1 17 24q0 2.9 2.05 4.95Q21.1 31 24 31Zm0 3q-4.15 0-7.075-2.925T14 24q0-4.15 2.925-7.075T24 14q4.15 0 7.075 2.925T34 24q0 4.15-2.925 7.075T24 34ZM3.5 25.5q-.65 0-1.075-.425Q2 24.65 2 24q0-.65.425-1.075Q2.85 22.5 3.5 22.5h5q.65 0 1.075.425Q10 23.35 10 24q0 .65-.425 1.075-.425.425-1.075.425Zm36 0q-.65 0-1.075-.425Q38 24.65 38 24q0-.65.425-1.075.425-.425 1.075-.425h5q.65 0 1.075.425Q46 23.35 46 24q0 .65-.425 1.075-.425.425-1.075.425ZM24 10q-.65 0-1.075-.425Q22.5 9.15 22.5 8.5v-5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 10 24 10Zm0 36q-.65 0-1.075-.425-.425-.425-.425-1.075v-5q0-.65.425-1.075Q23.35 38 24 38q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 46 24 46ZM12 14.1l-2.85-2.8q-.45-.45-.425-1.075.025-.625.425-1.075.45-.45 1.075-.45t1.075.45L14.1 12q.4.45.4 1.05 0 .6-.4 1-.4.45-1.025.45-.625 0-1.075-.4Zm24.7 24.75L33.9 36q-.4-.45-.4-1.075t.45-1.025q.4-.45 1-.45t1.05.45l2.85 2.8q.45.45.425 1.075-.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45ZM33.9 14.1q-.45-.45-.45-1.05 0-.6.45-1.05l2.8-2.85q.45-.45 1.075-.425.625.025 1.075.425.45.45.45 1.075t-.45 1.075L36 14.1q-.4.4-1.025.4-.625 0-1.075-.4ZM9.15 38.85q-.45-.45-.45-1.075t.45-1.075L12 33.9q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-2.8 2.85q-.45.45-1.075.425-.625-.025-1.075-.425ZM24 24Z"/>
+                    </svg>
+                </span>
+            </button>
+            
+        </div>
+    </div>
+    
+    
+            <div class="collapse" id="FlexSearchCollapse">
+                <div class="flexsearch-container">
+                    <div class="flexsearch-keymap">
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to navigate</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to select</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to close</span>
+                        </li>
+                    </div>
+                    <form class="flexsearch position-relative flex-grow-1 ms-2 me-2">
+                        <div class="d-flex flex-row">
+                            <input id="flexsearch" class="form-control" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                            <button id="hideFlexsearch" type="button" class="ms-2 btn btn-soft">
+                                cancel
+                            </button>
+                        </div>
+                        <div id="suggestions" class="shadow rounded-1 d-none"></div>
+                    </form>
+                </div>
+            </div>
+        
+    
+    
+</div>
+<div class="container-fluid">
+                            <div class="layout-spacing">
+                                
+                                    <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
+    <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+            
+                <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/tutorials/docs/">
+                        <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                    </a>
+                    <meta itemprop="position" content='1' />
+                </li>
+            
+            
+                <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/tutorials/docs/linux-basics-for-hackers/">
+                        <span itemprop="name">Linux Basics for Hackers</span>
+                    </a>
+                    <meta itemprop="position" content='2' />
+                </li>
+            
+        
+            <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Networking in Linux</span>
+                <meta itemprop="position" content='3' />
+            </li>
+        
+    </ul>
+</nav></div>
+                                
+                                <div class="row flex-xl-nowrap">
+                                    
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
+    <div class="fw-bold text-uppercase mb-2">On this page</div>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-1-analyzing-networks-and-network-interfaces">Step 1: Analyzing Networks and Network Interfaces</a>
+          <ul>
+            <li><a href="#ifupifdown">ifup/ifdown</a></li>
+          </ul>
+        </li>
+        <li><a href="#step-2-changing-ip-addresses">Step 2: Changing IP Addresses</a></li>
+        <li><a href="#step-3-dhcp-dynamic-host-configuration-server">Step 3: DHCP (Dynamic Host Configuration Server)</a></li>
+        <li><a href="#step-4-dns-domain-name-service">Step 4: DNS (Domain Name Service)</a>
+          <ul>
+            <li><a href="#hosts">hosts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </toc></div>
+                                    
+                                    
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
+                                        <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
+                                            Table of Contents
+                                        </button>
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#step-1-analyzing-networks-and-network-interfaces">Step 1: Analyzing Networks and Network Interfaces</a>
+          <ul>
+            <li><a href="#ifupifdown">ifup/ifdown</a></li>
+          </ul>
+        </li>
+        <li><a href="#step-2-changing-ip-addresses">Step 2: Changing IP Addresses</a></li>
+        <li><a href="#step-3-dhcp-dynamic-host-configuration-server">Step 3: DHCP (Dynamic Host Configuration Server)</a></li>
+        <li><a href="#step-4-dns-domain-name-service">Step 4: DNS (Domain Name Service)</a>
+          <ul>
+            <li><a href="#hosts">hosts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
+                                        <div class="mb-0 d-flex">
+                                            
+                                            <i class="material-icons title-icon me-2">code</i>
+                                            
+                                            <h1 class="content-title mb-0">
+                                                Networking in Linux
+                                                
+                                            </h1>
+                                        </div>
+                                        
+                                            <p class="lead mb-3">Welcome to the basics of Linux for Hacking.</p>
+                                        
+                                        <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
+                                            
+    
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <p>As a hacker, networking is critical. We need to manage and manipulate our ability to connect with other computers to optimize our ability to compromise another machine. In some cases, you will need to connect but hide your IP address and other information. In this tutorial, I will attempt to show you the basics of networking in Linux.</p>
+<hr>
+<h2 id="step-1-analyzing-networks-and-network-interfaces">Step 1: Analyzing Networks and Network Interfaces <a href="#step-1-analyzing-networks-and-network-interfaces" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>The most basic Linux command for analyzing networks is <code>ifconfig</code>. It&rsquo;s very similar to the Windows command, <code>ipconfig</code>. Let&rsquo;s take a look at it.</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="eec2061" class="language-bash ">
+  <code>kali &gt; ifconfig</code>
+  </pre>
+  </div>
+<p>As you can see in this screenshot, <code>ifconfig</code> conveys a significant amount of information to the user. In the very first line, we see to the far left <code>eth0</code>. This is the first wired network connection, Ethernet 0 (Linux usually starts counting at 0 rather than 1. Get used to it if you are using Linux).</p>
+<p>Following this, we see the type of network being used (Ethernet) and the Hwaddr (this is the globally unique address stamped on every piece of network hardware, in this case, the network interface card or NIC). This is usually referred to as the MAC address.</p>
+<p>The second line then contains information on the IP address, in this case, <code>192.168.181.131</code>, the broadcast address (the address to send out information to all IPs on the subnet), and finally the network mask (this tells what part of the IP address is network and which part is hosts). There is a lot more technical info there, but it&rsquo;s beyond the scope of a Linux basics tutorial.</p>
+<p>If we look down below to what appears to be a second stanza or paragraph, we see the start of another paragraph with <code>lo</code> to the far left. This is the loopback address or localhost. This is the address of the machine you&rsquo;re working on. You would use it if you simply wanted to test something like your own web server. It generally is represented with the IP address <code>127.0.0.1</code>.</p>
+<p>Finally, in the third paragraph or stanza, we see an interface <code>wlan0</code>. This will only appear if you have a wireless interface or network adapter. In my case here, I obviously have a wireless adapter. Note that it also displays the MAC address of that device (Hwaddr).</p>
+<p>When we have a wireless adapter, we can gather information on it with the command <code>iwconfig</code>. This will be particularly important in wireless hacking.</p>
+<p>Let&rsquo;s take a look at our wireless devices with <code>iwconfig</code>.</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="d82ca13" class="language-bash ">
+  <code>kali &gt; iwconfig</code>
+  </pre>
+  </div>
+<p>As you can see above, this command gives considerable information on our wireless devices. The only network interface with wireless extensions, as we would expect, is <code>wlan0</code>. Within that paragraph, we learn what 802.11 standard our device is capable of (bg), that it is in Mode:Managed (this contrasts with a monitor or promiscuous mode we will need for most wireless hacks), that it is Not-Associated with an Access Point (AP), and its power is 20dBm. We will spend more time with this information in the wireless hacking section.</p>
+<h3 id="ifupifdown">ifup/ifdown <a href="#ifupifdown" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Network interfaces can be activated or deactivated by using the <code>ifup</code> (activate) and <code>ifdown</code> (deactivate) commands. These commands are simply followed by the name of the interface we want to activate/deactivate, such as:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="5c9c9e6" class="language-bash ">
+  <code>kali &gt; ifdown eth0</code>
+  </pre>
+  </div>
+<p>When we deactivate the <code>eth0</code> interface and then type the <code>ifconfig</code> command, we can see that the <code>eth0</code> is no longer active and does not appear.</p>
+<hr>
+<h2 id="step-2-changing-ip-addresses">Step 2: Changing IP Addresses <a href="#step-2-changing-ip-addresses" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Changing IP addresses can be fairly simple in Linux, I think much simpler than in the Windows GUI that requires multiple clicks. Remember that in most cases, you&rsquo;re going to have a dynamically assigned address from a DHCP server (see below in section 3). In some cases, you may need to reassign the address, especially if you&rsquo;re hacking. This can be useful in spoofing your IP address&ndash;making network forensics more challenging&ndash;but certainly not impossible.</p>
+<p>We can do this by using the <code>ifconfig</code> command again with the interface we want to assign the IP to and the new IP address we want to assign to the interface. Such as:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="9609a2b" class="language-bash ">
+  <code>kali &gt; ifconfig eth0 192.168.181.115</code>
+  </pre>
+  </div>
+<p>Now, when we type <code>ifconfig</code>, we can see that our IP address has changed to the new IP address.</p>
+<p>We can also change the netmask and broadcast address, if necessary, such as:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="078899d" class="language-bash ">
+  <code>kali &gt; ifconfig eth0 192.168.181.115 netmask 255.255.0.0 broadcast 192.168.1.255</code>
+  </pre>
+  </div>
+<hr>
+<h2 id="step-3-dhcp-dynamic-host-configuration-server">Step 3: DHCP (Dynamic Host Configuration Server) <a href="#step-3-dhcp-dynamic-host-configuration-server" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Linux has a DHCP server that runs a daemon (daemon is simply a process that runs in the background in Linux) called <code>dhcpd</code> or <code>dhcp daemon</code>. It&rsquo;s this DHCP server that assigns IP addresses to all the systems on the subnet. It also keeps log files of which machines had which IP addresses at which time. It&rsquo;s this log that is often used to trace hackers in a forensic analysis after an attack.</p>
+<p>When I want my machine to be assigned a new address from the DHCP server, I can simply call the server with the command <code>dhclient</code> followed by the interface (different Linux distros use different DHCP clients, but Kali is built on Ubuntu which uses <code>dhclient</code>), like this:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="bf2b940" class="language-bash ">
+  <code>kali &gt; dhclient eth0</code>
+  </pre>
+  </div>
+<p>The <code>dhclient</code> command sends out a DHCPDISCOVER request from the default NIC. It then gets an offer (DHCPOFFER) of <code>192.168.181.131</code> from the DHCP server, then confirms the IP assignment to the DHCP server. Now, if we type <code>ifconfig</code>, we can see that the DHCP server has assigned a new IP address.</p>
+<hr>
+<h2 id="step-4-dns-domain-name-service">Step 4: DNS (Domain Name Service) <a href="#step-4-dns-domain-name-service" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>DNS, or Domain Name Services, is the service that enables us to type in a domain name like hackers-arise.com, which it then translates to the appropriate IP address. Without it, we would all have to remember thousands of IP addresses of our favorite websites (no small task even for a savant).</p>
+<p>One of the most useful commands for the aspiring hacker is <code>dig</code>, which is the equivalent of <code>nslookup</code> in Windows but offers us much more information on the domain. For instance, if we <code>dig</code> hackers-arise.com and by adding the <code>ns</code> option, it will display the nameserver for hackers-arise.com.</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="37a5f88" class="language-bash ">
+  <code>kali &gt; dig hackers-arise.com ns</code>
+  </pre>
+  </div>
+<p>By using the <code>dig</code> command with the <code>mx</code> option, we can get info on the email servers for hackers-arise.com.</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="f35b5bf" class="language-bash ">
+  <code>kali &gt; dig hackers-arise.com mx</code>
+  </pre>
+  </div>
+<p>As a hacker, the <code>dig</code> command and using DNS to obtain information on our potential target can be a key piece of early reconnaissance before attacking.</p>
+<p>The most common Linux DNS server is the Berkeley Internet Name Domain, or BIND. In some cases, Linux users will often refer to DNS as BIND, so don&rsquo;t be confused. DNS or BIND simply maps individual domain names to IP addresses.</p>
+<p>On our Kali system, we can point our DNS services to a local DNS server or a public DNS server. This pointing takes place in a plain text file named <code>/etc/resolv.conf</code>. Let&rsquo;s open it with leafpad:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="e8e921c" class="language-bash ">
+  <code>kali &gt; leafpad /etc/resolv.conf</code>
+  </pre>
+  </div>
+<p>As you can see in Line 3, the nameserver is set to a local DNS server at <code>192.168.181.2</code>. That works fine, but if I wanted to add or replace that DNS server with, say, Google&rsquo;s public DNS server at <code>8.8.8.8</code>, we can either add a line in the <code>/etc/resolv.conf</code> to read:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="9880dcd" class="language-plaintext ">
+  <code>nameserver 8.8.8.8</code>
+  </pre>
+  </div>
+<p>Maybe more simply, we can use the command line to do the same by typing:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="aa0f506" class="language-bash ">
+  <code>kali &gt; echo &#34;nameserver 8.8.8.8&#34; &gt; /etc/resolv.conf</code>
+  </pre>
+  </div>
+<p>As you can see above, our <code>/etc/resolv.conf</code> file points our DNS requests to Google&rsquo;s DNS server now.</p>
+<p>With this change, your system will now go out to the Google public DNS server to resolve domain names to IP addresses, rather than our local DNS server. This might take a bit more time, so to remedy this, you might keep your local DNS server followed by a public DNS server and the system will only go to the public DNS server if the domain name cannot be found in the local DNS server.</p>
+<h3 id="hosts">hosts <a href="#hosts" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>In addition to the DNS servers, there is a <code>hosts</code> file in your Linux operating system. This <code>hosts</code> file enables us to put in our own IP address-domain name mapping, kind of like a static DNS service. In other words, we can determine where our browser/system goes when we type in Microsoft.com (or any other domain) rather than the DNS server. This can be useful as a hacker if we want to hijack a TCP connection on our local area network to direct traffic to our malicious web server with a tool</p>
+<p>such as <code>dnspoof</code>.</p>
+<p>By default, this file only has our localhost at <code>127.0.0.1</code> and Kali at <code>127.0.1.1</code>. We can add any IP/domain mapping we would like. For instance, in my <code>dnsspoof</code> tutorial, we mapped bankofamerica.com to our local website, say <code>192.168.181.131</code>. This would then direct our traffic intended for bankofamerica.com to our web server, and if we are using <code>dnspoof</code>, it would direct anyone on our LAN to our web server at <code>192.168.181.131</code>.</p>
+
+    </div>
+
+    
+
+    
+                                        </div>
+                                        <div><hr class="doc-hr">
+<div id="doc-nav" class="d-print-none">
+
+	<div class="row flex-xl-nowrap ">
+	<div class="col-sm-6 pt-2 doc-next">
+		<a href="/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/">
+			<div class="card h-100 my-1">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Bash Scripting in Linux</p>
+					<p class="card-text ms-2">Welcome to the basics of Linux …</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Text Manipulation <i class="material-icons align-middle">navigate_next</i></p>
+					<p class="card-text me-2">Welcome to the basics of Linux …</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	</div>
+</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<footer class="shadow py-3 d-print-none">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="text-sm-start text-center mx-md-2">
+                    <p class="mb-0">
+                        
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+        </div>
+    </div>
+
+    
+    
+    <button onclick="topFunction()" id="back-to-top" aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12,10.224l-6.3,6.3L4.32,15.152,12,7.472l7.68,7.68L18.3,16.528Z" style="fill:#fff"/></svg></button>
+    
+    
+
+    
+    
+        <script>(()=>{var e=document.getElementById("mode");e!==null&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{e.matches?(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")):(localStorage.setItem("theme","light"),document.documentElement.removeAttribute("data-dark-mode"))}),e.addEventListener("click",()=>{document.documentElement.toggleAttribute("data-dark-mode"),localStorage.setItem("theme",document.documentElement.hasAttribute("data-dark-mode")?"dark":"light")}),localStorage.getItem("theme")==="dark"?document.documentElement.setAttribute("data-dark-mode",""):document.documentElement.removeAttribute("data-dark-mode"))})()</script>
+    
+
+
+
+
+    
+        
+        
+    
+    
+
+
+
+
+
+
+    <script src="/tutorials/docs/js/bootstrap.js" defer></script>
+
+
+    <script type="text/javascript" src="http://localhost:1313/tutorials/docs/js/bundle.js" defer></script>
+    
+
+    
+    <script type="module">
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
+        });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
+    });
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/tutorials\/docs\/",
+                title: "FREE Tutorials - Security and Hacking",
+                description: "",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/introduction\/",
+                title: "A Getting Started Guide To Linux",
+                description: "Welcome to the basics of Linux for Hacking.",
+                content: "What is Linux? linkThe Linux kernel was created by Linus Torvalds in 1991. It becomes an operating system with the addition of components like a package manager, desktop environment, shell, and bootloader.\nAs an open-source OS, Linux offers numerous customizations. Each unique combination of these customizations is called a distribution or “distro.”\nThere are hundreds, if not thousands, of distros worldwide, each optimized for specific purposes or created just for fun by enthusiasts.\nNotable distros include:\nUbuntu (Most common) Elementary OS (Visually appealing) Debian (Neat and classy) Arch Linux (For advanced users) Red Hat Enterprise Linux Why Hackers Prefer Linux linkLinux is the preferred OS for many hackers due to its open-source nature, lower vulnerability to malware, lightweight structure, portability, and compatibility with various hacking tools.\nWindows, being a closed system, restricts many activities hackers need. Mac OS also has limitations due to its proprietary software. In contrast, Linux offers numerous distros that can be freely modified.\nCommonly used hacking distros include Kali Linux, Parrot, BlackArch, and Archstrike. The options, however, are limitless.\nOne of Linux’s standout features is its customizability, particularly in the desktop environment, which is essentially the visual interface of the OS.\nIn Windows, there’s a basic taskbar, start menu, and a background with icons. While you can make slight modifications, Linux offers extensive customization.\nPopular desktop environments include:\nGnome KDE Plasma (Similar to Windows) Xfce (For advanced users) Mate (Resource-efficient) If you’re into programming, you can build upon an existing desktop environment or develop your own to suit your needs.\nTip: If you’re new to Linux, you might want to avoid replacing your default OS immediately. Many users are accustomed to a GUI (Graphical User Interface), but Linux users often rely on the CLI (Command Line Interface). This is because Linux targets developers and scientists more than the average user.\nIt’s advisable to install a Linux distro on a hypervisor like VirtualBox to get accustomed to it (I don’t recommend VMware due to a known vulnerability at the time of writing). You can learn how to install Linux here.\nLinux Package Management linkLinux differs from other OSs, including in how applications are installed. Instead of using .exe and .msi installers like in Windows, Linux uses package managers.\nA package manager is software that manages the installation of applications. Popular package managers include:\nApt (Linux) Chocolatey (Windows) MacPorts (MacOS) Pip (Python) Npm (JavaScript) Gradle (Java) Composer (PHP) With some commands in the terminal, and help from a package manager, your Linux system can connect to servers, download applications, and install them. System updates are managed similarly.\nWhile some .exe and .msi installers can work on Linux with the help of Wine, a software that adds a Windows compatibility layer, not all applications are supported.\nGamers might consider installing Steam or SteamOS for a better experience 🎮.\nLinux File Structure linkLike Windows, Linux has a directory tree. At the root is the ‘/’ folder, equivalent to the C: drive in Windows. It contains all directories, files, and applications.\nImportant directories include:\n/bin: Binary or executable programs (good for persistent scripts) /etc: System configuration files (useful for credentials) /home: User home directories (default directory on terminal start) /opt: Optional or third-party software /tmp: Temporary files, cleared on reboot (useful for temporary scripts) /usr: User-related programs /var: Log files (crucial for forensic analysis) There’s much more to the Linux file structure, but this should suffice for now.\nLet’s get hands-on with the terminal and run some essential commands every hacker should know.\nIntro to the Linux Shell linkA shell is a text-based interface for controlling a Linux computer. Similar to Microsoft’s PowerShell or cmd, it acts as the interface between the user and the kernel, aside from the GUI (Graphical User Interface).\nThere are various types of shells, each built with improvements based on previous versions or optimized for a particular goal.\nHackers frequently use shells because they provide the fastest and most efficient way to deliver instructions to a computer. While the GUI is useful, it can be limited because some features are inaccessible graphically, or the tool you want to use lacks a graphical interface.\nCommon shells include:\nThe Bourne shell (sh) The GNU-Bourne Again shell (bash) The Z shell (zsh) The C shell (csh) The Korn shell (ksh) Quick lesson: The terms ‘terminal’ and ‘shell’ are often used interchangeably in the cybersecurity world and throughout this article. However, they are different. The terminal is the program that lets you access the shell via a graphical interface.\nBasic Linux Shell Commands linkIn this article, we’ll go through the following commands: whoami, pwd, ls, cd, touch, cat, nano, operators, mv and cp, mkdir, rm and rmdir, stat, echo, grep, the ‘help’ flag and man pages.\nYou will need any Linux distro of your choice, though I suggest Kali. If you don’t know how to install one, you can read this article.\nOpen up the application called ‘Terminal’ and let’s begin.\nHow to use the whoami command linkYou use this command to check which user you are. On a personal computer, you are most likely to have only two accounts: the one created when installing the OS and root. If you are in the terminal as a normal user (account), you can try it out.\nwhoami If you want to be root, run the command sudo su and put in your password. Try whoami and the terminal will tell you root:\nsudo su whoami Enterprise computers tend to have many users on one computer. Each has various permissions, some more than others. When you gain initial access post-exploitation, you usually start with a standard account. To check the name of the compromised account, use this command.\nHow to use the pwd command linkThe Present Working Directory (pwd) command informs you of where you currently are in the directory tree. By default, this usually is the home directory.\npwd If you are a beginner, it’s quite normal to be lost in the directory tree and suddenly lose track of where you are. This command helps you to keep track of things.\nDepending on your distro, you may see a ~ symbol when you open the terminal. That is the symbol for the default home directory for the user. It’s like the C:\\Users\\ folder in Windows, containing all user-specific files. In Linux, it will be in the format /home/.\nHow to use the ls command linkYou use the ls command to list the contents of a directory. It lets you know what files are inside a directory without a GUI.\nWhen used with flags, it’s a Swiss army knife, with various ways of showing what’s in the directory.\nCommon flags you might want to take note of are -l (long listing), -a (all aka show hidden files), and -c (show recently modified).\nls -l Flags are features of applications/tools that allow you to tell them what to do. For example, long listing can be activated by using the command ls -l.\nHow to use the cd command linkYou use the Change Directory (cd) command to traverse the directory tree.\ncd If you run the command ls -a, you will notice that there are two files that are always there no matter the folder: . and ... The . file represents the current directory, and the .. file represents the parent directory (the directory above the current one).\nHow to use the cat, more, and less commands linkThese commands display the content of files to the terminal. However, there are notable differences. cat is commonly used for files with small amounts of text, while less and more are used for files with large amounts of text, allowing controlled output with the arrow keys.\ncat more less cat prints the output directly to your terminal, while more and less allow you to use the arrow keys. Output commands are used to gather information and credentials from compromised systems.\nHow to use the touch command linkYou use the touch command to create files. You can write to these files in several ways, such as using a text editor or piping input into it.\ntouch You can then use the ls command to check if your file has been created.\nHow to use the nano command linkNano is a popular built-in text editor in Linux. It’s very common because it’s easy to use and supported in many CLI environments. Other common text editors are Vim and gedit.\nYou can edit a file with the following command:\nnano The nano interface includes some commands at the bottom for assistance. ‘^’ means the Ctrl button, and the ‘M’ button is Alt. ‘^S’ (or Ctrl + S) saves the file. The nano command is used by hackers to change information in files, edit logs, or if you are a red hat hacker, delete essential configuration file lines.\nCommand Chaining Operators link‘Chaining’ commands means writing multiple commands together and executing them in various ways using special characters. Examples include:\nAmpersand (\u0026): Runs a program in the background Logical AND (\u0026\u0026): The following command runs only if the previous one successfully ran Pipe (|): The output of the previous command acts as input for the next command Overwrite (\u003e): Overwrites the content of a file with the output of the previous one Append (\u003e\u003e): Appends the output from the previous command to a file How to use the mv and cp commands linkThese commands are quite similar but have notable differences. Use mv to move a file to another location and cp to copy a file to another location.\nmv cp There isn’t a command for renaming files in Linux, so most people use the mv command by following this syntax:\nmv Try it yourself to get a feel.\nHow to use the mkdir command linkThe mkdir command creates directories. You could use this to make a custom directory that only you can access on a compromised system to keep scripts or tools for persistence.\nmkdir How to use the rm and rmdir commands linkThe rm command removes files, and rmdir removes directories.\nrm rmdir Linux doesn’t easily delete folders if they are not empty. Use the ignore-fail-if-non-empty flag to delete both files and directories.\nBe extremely careful with these commands as they do not send the deleted files or directories to the Trash/Recycle bin. They’re just gone.\nHow to use the stat command linkYou use the stat command to obtain detailed information about a file.\nstat The stat command provides information about the file name and extension, permissions, creation time, modification time, last access time, and more.\nNow is a great time to learn about permissions. If you run the commands ls -la or stat, you may see something like this: drwxrwxrwx. Let’s break it down.\nThe read (r) permission allows you to see the contents of a file, the write (w) permission allows you to modify the file, and the execute (x) permission allows you to run it as a process if it is a script or executable.\nThere are 3 classes of users that can access a file: user, group, and others. The root account is another class but is not considered here.\nEach ‘rwx’ set is owned by a permission class. If the space reads a letter, the set has that permission. If it has a dash, they do not have that permission.\nThe ‘d’ at the front represents whether it is a directory or a file. The ‘d’ means it’s a directory, and a dash (-) means it’s a file. Technically, a directory is a special type of file, but that’s a story for another day.\nHow to use the echo command linkYou use the echo command to print out input. Let’s use an example to make things clearer.\necho \"\" You can also use echo with the \u003e operator to write text to files.\nHow to use the grep command linkYou use the grep command to extract specified text from a file using the pipe operator.\ngrep \"\" The command above instructs the computer to print the contents of a file and, using the pipe operator, directs the grep command to use it as input. This process is called piping one command through another and can be done multiple times. The found text is shown in red.\ngrep is commonly used to search for specific text in large files. For example, if you are looking for credentials for a specific user in a file with a lot of text, you could use grep to search for keywords like ‘password’, ‘login’, and other relevant terms.\nHow to use the ‘help’ flag and man pages linkThe ‘help’ flag isn’t necessarily a command but it is a great aid if you are confused about an app or tool. Simply use the following:\n--help This will provide quick, bite-sized information about it. man, on the other hand, gives you all documented information about the app.\nman You may notice that in some cases, -h is used as the short form of the help flag. If it starts with a single dash, that’s the short form. If it starts with two dashes, it’s the long form.\nHow to Update Your Linux linkThis entire section can actually be done with a single command, but let’s break it down to understand the whole process. The task: update your OS. To achieve this, you need to do two things:\nUpdate the local repository info: Think of this like checking for updates before actually downloading and installing them. Upgrade the system: This involves downloading the updates and then installing them. The first command to run is:\nsudo apt update sudo: Indicates we are running the command with higher permissions apt: The package manager update: Instructs the computer to update its local information about the repository After you enter this command and provide your password, your computer will download information from the repositories about what packages (applications) need updates.\nOnce the update is complete, run the next command to download and install the updates:\nsudo apt full-upgrade Note: You can interrupt the package download process, but never the installation process, as it might break your OS and render it unusable.\nAfter the upgrades have finished installing, you will want to reboot your computer to fully implement all updates.\nYou have successfully updated your system. Remember how I said all this could be done with one command? Here it is:\nsudo apt update \u0026\u0026 sudo apt upgrade -y \u0026\u0026 reboot This command is composed of three parts:\nsudo apt update sudo apt upgrade -y reboot The \u0026\u0026 symbols are logical AND operators that tell the computer to run the first command, and if it completes successfully, proceed to the next one. The -y flag tells the computer to carry out the upgrade without requiring user input.\nThis combined command updates, upgrades, and then reboots the system.\n"
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/bash_scripting\/",
+                title: "Bash Scripting in Linux",
+                description: "Welcome to the basics of Linux for Hacking.",
+                content: "Any self-respecting hacker must be able to script. For that matter, any self-respecting Linux administrator must be able to script. With the arrival of the Windows PowerShell, Windows administrators are increasingly required to script as well to perform automated tasks and be more efficient.\nAs a hacker, we often need to automate the use of multiple commands, sometimes from multiple tools. To become an elite hacker, you not only need to have advanced shell scripting skills, but also the ability to script in one of the widely-used scripting languages such as Ruby (Metasploit exploits are written in Ruby), Python (many hacking tools are Python scripts), or Perl (Perl is the best text manipulation scripting language).\nWe will start with basic shell scripting, move to advanced shell scripting, and then to each of these scripting languages developing hacking tools as we go. Our ultimate goal will be to develop enough scripting skills to be able to develop our own exploits.\nIn a previous post, I showed you how to put together a simple script using nmap to scan a range of IP addresses to check for a particular port availability. We will need that script here, as we will be adding new functionality to it after completing some preliminaries.\nTypes of Shells linkA shell is an interface between the user and the operating system. This enables us to run commands, utilities, programs, manipulate files, etc.\nThere are a number of different shells available for Linux. These include the:\nKorn shell the Z shell the C shell the bash As the BASH shell is available on nearly all Linux and UNIX distributions (including Mac OS X, and Kali), we will be using the BASH shell here, exclusively.\nBASH Basics linkCommands linkBesides being able to run any system commands, utilities or applications from a BASH shell script, the BASH shell includes some of its own commands. These include;\n:, ., break, cd, continue, eval, exec, exit, export, getopts, hash, pwd, readonly, return, set, shift, test, [, times, trap, umask and unset,alias, bind,builtin, command, declare, echo, enable, help, let, local, logout, printf, read, shopt, type, typeset, ulimit and unalias.\nI will address these commands in a later tutorial, but I want you to know that this shell has built in commands that have their functionality within the BASH shell.\nComments linkLike any coding, we may want to add comments. Comments are simply notes to ourselves or anyone else that reads the code as to what we were trying to do with the script or that section of the script. These notes or “comments” are not read or executed by the interpreter.\nThe BASH shell enables comments by preceding a line with the “#”, so if I wanted to note that this was my first script, I could write in my text editor;\nThis is my first script!\nThe interpreter would ignore everything after the # and then move to the next line.\nSimple Hello World linkFor our first script, we will start with a simple script that returns a message to the screen that says “Hello World!”.\nWe start by entering the shebang or “#!”. This tells the operating system that whatever follows the shebang is the interpreter we want to use for our script.\nWe then follow the shebang with /bin/bash indicating that we want the operating system to use the BASH shell interpreter. As we will see in later tutorials, we can use other interpreters such as PERL or Python, but here we want to use the BASH interpreter.\nNext, we enter echo, a command in Linux that tells the system to simply repeat or “echo” back to our monitor (stdout) what follows. In this case, we want the system to echo back to us “Hello World”. Note that the text or message we want to “echo back” is in double quotation marks.\n#! /bin/bash echo \"Hello World\"| Set Execution Permission linkWhen we create a file, it’s not necessarily executable, not even by us, the owner. Let’s look at the permissions on our new file, by typing ls -l in our directory.\nAs you can see, our new file has rw-r–r– (644) permissions. The owner of this file only has read (r) and write (w) permissions, but no execute (x) permissions. The group and all have only read permission. We need to modify it to give us execute permissions in order to run this script. We do this with the chmod command. To give the owner, the group, and all execute permissions, we type:\nkali \u003e chmod 755 HelloHackersArise\nNow when we do a long listing (ls -l) on the file, we can see that we have execute permissions.\nkali \u003e ls -l Run HelloWorld\nTo run our simple script, we simply type:\nkali \u003e ./HelloWorld The ./ before the file name tells the system that we want to execute this script in the current directory. This means don’t look in the directories in the PATH variable for this file, but rather look just in my current directory and run HelloWorld\nWhen we then hit enter, our very simple script returns to our monitor.\nHello World Success! We just completed our first simple script!\nUsing Variables linkSo, now we have a simple script. All it does is echo back a message. If we want to create more advanced scripts we will likely want to add some variables.\nVariables are simply an area of storage where we can hold something in memory. That “something” might be some letters or words (strings) or numbers. It can help to add functionality to a script that has values that might change.\nLet’s go back to the script we wrote earlier to use nmap to scan for vulnerable machines with a particular port open. Remember, the (in)famous hacker, Max Butler, used a similar script to find systems with the Aloha POS that he was able to hack for millions of credit card numbers.\nAs you can see, this script was written to scan a range of IP addresses looking for port 5505 open (the port Aloha left open for tech support), and then create a report with all the IP addresses with this port open. The IP address range is “hard coded” into the script and can only be changed by opening and editing the script file.\nWhat if we wanted to alter this script so that it would prompt us or any user for the range IP addresses to scan and the port to look for? Wouldn’t it be much easier to use if we were simply prompted for these values and they were then entered into the script?\nLet’s take a look at how we could do that.\nAdding Prompts \u0026 Variables to Our Script linkFirst, we could replace the specified sub-net with a IP range. We can do this with a variable called “FirstIP” and then a second variable named “LastIP” (the name of the variable is irrelevant, but best practice is to use a variable name that helps you remember what it holds).\nNext, we can replace the port number with a variable named “port”. These variables will simply be storage areas to hold the info that the user will input before running the scan.\nNext, we need to prompt the user for these values. We can do this by using the echo command we learned above in writing the HelloHackersArise script.\nSo, we can simply echo the words “Enter the starting IP address :” and this will appear on the screen asking the user for the first IP address in their nmap scan.\necho \"Enter the starting IP address :\" Now, the user seeing this prompt on the screen, will enter the first IP address. We need a way then to capture that input from the user. We can do this by following the echo line with the read command followed by the name of the variable. The read command takes a value entered at the keyboard (stdin) and puts it into a variable that follows it.\nread FirstIP The above command will put the IP address entered by the user into the variable, FirstIP. Then we can use that value in FirstIP throughout our script.\nOf course, we can do the same for each of the variables by first prompting the user to enter the information and then using a read command to capture it.\nNext, we just need to edit the nmap command in our script to use the variables we just created and filled. When we want the value stored in the variable, we can simply preface the variable name with the $, such as $port.\nSo, to use nmap to scan a range of IP addresses starting with the first user input IP through the second user input IP and look for a port input by the user, we can re-write the nmap command like this:\nnmap -sT $FirstIP-$LastIP -p $port -oG Aloha Now, as the script is written, it will scan an IP address range starting with FirstIP and ending with LastIP looking for the port the user input. Let’s now save our script file and name it Scannerscript.\nRun It with User Input Variables linkNow we can run our simple scanner script with the variables that tell the script what IP address range and port to scan without having to edit the script.\nkali \u003e ./Scannerscript As you can see, the script prompts us for the first IP address, then the last IP address and the port we want to scan for. After collecting this info, it then does the nmap scan and produces a report of all the IP addresses in the range that have the port open that we specified.\n"
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/tutorials\/docs\/linux-basics-for-hackers\/",
+                title: "Linux Basics for Hackers",
+                description: "Welcome to the basics of Linux for Hacking.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/networking_in_kali\/",
+                title: "Networking in Linux",
+                description: "Welcome to the basics of Linux for Hacking.",
+                content: "As a hacker, networking is critical. We need to manage and manipulate our ability to connect with other computers to optimize our ability to compromise another machine. In some cases, you will need to connect but hide your IP address and other information. In this tutorial, I will attempt to show you the basics of networking in Linux.\nStep 1: Analyzing Networks and Network Interfaces linkThe most basic Linux command for analyzing networks is ifconfig. It’s very similar to the Windows command, ipconfig. Let’s take a look at it.\nkali \u003e ifconfig As you can see in this screenshot, ifconfig conveys a significant amount of information to the user. In the very first line, we see to the far left eth0. This is the first wired network connection, Ethernet 0 (Linux usually starts counting at 0 rather than 1. Get used to it if you are using Linux).\nFollowing this, we see the type of network being used (Ethernet) and the Hwaddr (this is the globally unique address stamped on every piece of network hardware, in this case, the network interface card or NIC). This is usually referred to as the MAC address.\nThe second line then contains information on the IP address, in this case, 192.168.181.131, the broadcast address (the address to send out information to all IPs on the subnet), and finally the network mask (this tells what part of the IP address is network and which part is hosts). There is a lot more technical info there, but it’s beyond the scope of a Linux basics tutorial.\nIf we look down below to what appears to be a second stanza or paragraph, we see the start of another paragraph with lo to the far left. This is the loopback address or localhost. This is the address of the machine you’re working on. You would use it if you simply wanted to test something like your own web server. It generally is represented with the IP address 127.0.0.1.\nFinally, in the third paragraph or stanza, we see an interface wlan0. This will only appear if you have a wireless interface or network adapter. In my case here, I obviously have a wireless adapter. Note that it also displays the MAC address of that device (Hwaddr).\nWhen we have a wireless adapter, we can gather information on it with the command iwconfig. This will be particularly important in wireless hacking.\nLet’s take a look at our wireless devices with iwconfig.\nkali \u003e iwconfig As you can see above, this command gives considerable information on our wireless devices. The only network interface with wireless extensions, as we would expect, is wlan0. Within that paragraph, we learn what 802.11 standard our device is capable of (bg), that it is in Mode:Managed (this contrasts with a monitor or promiscuous mode we will need for most wireless hacks), that it is Not-Associated with an Access Point (AP), and its power is 20dBm. We will spend more time with this information in the wireless hacking section.\nifup/ifdown linkNetwork interfaces can be activated or deactivated by using the ifup (activate) and ifdown (deactivate) commands. These commands are simply followed by the name of the interface we want to activate/deactivate, such as:\nkali \u003e ifdown eth0 When we deactivate the eth0 interface and then type the ifconfig command, we can see that the eth0 is no longer active and does not appear.\nStep 2: Changing IP Addresses linkChanging IP addresses can be fairly simple in Linux, I think much simpler than in the Windows GUI that requires multiple clicks. Remember that in most cases, you’re going to have a dynamically assigned address from a DHCP server (see below in section 3). In some cases, you may need to reassign the address, especially if you’re hacking. This can be useful in spoofing your IP address–making network forensics more challenging–but certainly not impossible.\nWe can do this by using the ifconfig command again with the interface we want to assign the IP to and the new IP address we want to assign to the interface. Such as:\nkali \u003e ifconfig eth0 192.168.181.115 Now, when we type ifconfig, we can see that our IP address has changed to the new IP address.\nWe can also change the netmask and broadcast address, if necessary, such as:\nkali \u003e ifconfig eth0 192.168.181.115 netmask 255.255.0.0 broadcast 192.168.1.255 Step 3: DHCP (Dynamic Host Configuration Server) linkLinux has a DHCP server that runs a daemon (daemon is simply a process that runs in the background in Linux) called dhcpd or dhcp daemon. It’s this DHCP server that assigns IP addresses to all the systems on the subnet. It also keeps log files of which machines had which IP addresses at which time. It’s this log that is often used to trace hackers in a forensic analysis after an attack.\nWhen I want my machine to be assigned a new address from the DHCP server, I can simply call the server with the command dhclient followed by the interface (different Linux distros use different DHCP clients, but Kali is built on Ubuntu which uses dhclient), like this:\nkali \u003e dhclient eth0 The dhclient command sends out a DHCPDISCOVER request from the default NIC. It then gets an offer (DHCPOFFER) of 192.168.181.131 from the DHCP server, then confirms the IP assignment to the DHCP server. Now, if we type ifconfig, we can see that the DHCP server has assigned a new IP address.\nStep 4: DNS (Domain Name Service) linkDNS, or Domain Name Services, is the service that enables us to type in a domain name like hackers-arise.com, which it then translates to the appropriate IP address. Without it, we would all have to remember thousands of IP addresses of our favorite websites (no small task even for a savant).\nOne of the most useful commands for the aspiring hacker is dig, which is the equivalent of nslookup in Windows but offers us much more information on the domain. For instance, if we dig hackers-arise.com and by adding the ns option, it will display the nameserver for hackers-arise.com.\nkali \u003e dig hackers-arise.com ns By using the dig command with the mx option, we can get info on the email servers for hackers-arise.com.\nkali \u003e dig hackers-arise.com mx As a hacker, the dig command and using DNS to obtain information on our potential target can be a key piece of early reconnaissance before attacking.\nThe most common Linux DNS server is the Berkeley Internet Name Domain, or BIND. In some cases, Linux users will often refer to DNS as BIND, so don’t be confused. DNS or BIND simply maps individual domain names to IP addresses.\nOn our Kali system, we can point our DNS services to a local DNS server or a public DNS server. This pointing takes place in a plain text file named /etc/resolv.conf. Let’s open it with leafpad:\nkali \u003e leafpad /etc/resolv.conf As you can see in Line 3, the nameserver is set to a local DNS server at 192.168.181.2. That works fine, but if I wanted to add or replace that DNS server with, say, Google’s public DNS server at 8.8.8.8, we can either add a line in the /etc/resolv.conf to read:\nnameserver 8.8.8.8 Maybe more simply, we can use the command line to do the same by typing:\nkali \u003e echo \"nameserver 8.8.8.8\" \u003e /etc/resolv.conf As you can see above, our /etc/resolv.conf file points our DNS requests to Google’s DNS server now.\nWith this change, your system will now go out to the Google public DNS server to resolve domain names to IP addresses, rather than our local DNS server. This might take a bit more time, so to remedy this, you might keep your local DNS server followed by a public DNS server and the system will only go to the public DNS server if the domain name cannot be found in the local DNS server.\nhosts linkIn addition to the DNS servers, there is a hosts file in your Linux operating system. This hosts file enables us to put in our own IP address-domain name mapping, kind of like a static DNS service. In other words, we can determine where our browser/system goes when we type in Microsoft.com (or any other domain) rather than the DNS server. This can be useful as a hacker if we want to hijack a TCP connection on our local area network to direct traffic to our malicious web server with a tool\nsuch as dnspoof.\nBy default, this file only has our localhost at 127.0.0.1 and Kali at 127.0.1.1. We can add any IP/domain mapping we would like. For instance, in my dnsspoof tutorial, we mapped bankofamerica.com to our local website, say 192.168.181.131. This would then direct our traffic intended for bankofamerica.com to our web server, and if we are using dnspoof, it would direct anyone on our LAN to our web server at 192.168.181.131.\n"
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/text_manipulation\/",
+                title: "Text Manipulation",
+                description: "Welcome to the basics of Linux for Hacking.",
+                content: "In Linux, nearly everything you deal with directly is a file, and most often these will be text files. For instance, all configuration files in Linux are text files. To reconfigure an application, you simply open the configuration file, change the text, save the file, and then restart the application—your reconfiguration is complete. With so many text files, manipulating text becomes crucial in managing Linux and Linux applications. In this chapter, you’ll use several commands and techniques for manipulating text in Linux.\nFor illustrative purposes, I’ll use files from the world’s best network intrusion detection system (NIDS), Snort, which was first developed by Marty Roesch and is now owned by Cisco. NIDSs are commonly used to detect intrusions by hackers, so if you want to be a successful hacker, you must be familiar with the ways NIDSs can deter attacks and the ways you can abuse them to avoid detection.\nNote: If the version of Kali Linux you’re using doesn’t come preinstalled with Snort, you can download the files from the Kali repository by entering:\napt-get install snort Viewing Files linkAs demonstrated in Chapter 1, the most basic text display command is probably cat, but it has its limitations. Use cat to display the Snort config file (snort.conf) found in /etc/snort:\nkali \u003e cat /etc/snort/snort.conf Your screen should now display the entire snort.conf file, which will stream until it comes to the end of the file, and should look something like the following:\n#------------------------------------------------- # VRT Rule Packages Snort.conf # # For more information visit us at: # http://www.snort.org Snort Website --snip-- # event thresholding or suppressions commands... This isn’t the most convenient or practical way to view and work with this file. In the following two sections, I will show you the head and tail commands, which are two methods for displaying just part of a file’s content to more easily view the key content.\nFinding the Head linkIf you just want to view the beginning of a file, you can use the head command. By default, this command displays the first 10 lines of a file. For instance, to show the first 10 lines of snort.conf:\nkali \u003e head /etc/snort/snort.conf The output will be:\n#------------------------------------------------- # VRT Rule Packages Snort.conf # # For more information visit us at: --snip-- # Snort bugs: bugs@snort.org If you want to see more or fewer than the default 10 lines, enter the quantity you want with the dash (-) switch after the call to head and before the filename. For example, to see the first 20 lines of the file:\nkali \u003e head -20 /etc/snort/snort.conf The output will be:\n#------------------------------------------------- # VRT Rule Packages Snort.conf # # For more information visit us at: --snip-- # Options : --enable-gre --enable-mpls --enable-targetbased --enable-ppm --enable-perfprofiling enable-zlib --enable-act live-response --enable-normalizer --enable-reload --enable-react You should see only the first 20 lines of snort.conf displayed in your terminal window.\nFinding the Tail linkThe tail command is similar to the head command, but it’s used to view the last lines of a file. Let’s use it on snort.conf:\nkali \u003e tail /etc/snort/snort.conf The output will be:\n#include $SO_RULE_PATH/smtp.rules #include $SO_RULE_PATH/specific-threats.rules #include $SO_RULE_PATH/web-activex.rules #include $SO_RULE_PATH/web-client.rules #include $SO_RULE_PATH/web-iis.rules #include $SO_RULE_PATH/web-miscp.rules #Event thresholding and suppression commands. Using these commands, you can efficiently manage and view parts of large text files, making text manipulation much easier in Linux.\nHow to use the stat command linkYou use the stat command to obtain detailed information about a file.\nstat The stat command provides information about the file name and extension, permissions, creation time, modification time, last access time, and more.\nNow is a great time to learn about permissions. If you run the commands ls -la or stat, you may see something like this: drwxrwxrwx. Let’s break it down.\nThe read (r) permission allows you to see the contents of a file, the write (w) permission allows you to modify the file, and the execute (x) permission allows you to run it as a process if it is a script or executable.\nThere are 3 classes of users that can access a file: user, group, and others. The root account is another class but is not considered here.\nEach ‘rwx’ set is owned by a permission class. If the space reads a letter, the set has that permission. If it has a dash, they do not have that permission.\nThe ‘d’ at the front represents whether it is a directory or a file. The ‘d’ means it’s a directory, and a dash (-) means it’s a file. Technically, a directory is a special type of file, but that’s a story for another day.\nHow to use the echo command linkYou use the echo command to print out input. Let’s use an example to make things clearer.\necho \"\" You can also use echo with the \u003e operator to write text to files.\nHow to use the grep command linkYou use the grep command to extract specified text from a file using the pipe operator.\ngrep \"\" The command above instructs the computer to print the contents of a file and, using the pipe operator, directs the grep command to use it as input. This process is called piping one command through another and can be done multiple times. The found text is shown in red.\ngrep is commonly used to search for specific text in large files. For example, if you are looking for credentials for a specific user in a file with a lot of text, you could use grep to search for keywords like ‘password’, ‘login’, and other relevant terms.\nHow to use the ‘help’ flag and man pages linkThe ‘help’ flag isn’t necessarily a command but it is a great aid if you are confused about an app or tool. Simply use the following:\n--help This will provide quick, bite-sized information about it. man, on the other hand, gives you all documented information about the app.\nman You may notice that in some cases, -h is used as the short form of the help flag. If it starts with a single dash, that’s the short form. If it starts with two dashes, it’s the long form.\n"
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/file_permision_using_linux\/",
+                title: "Understanding File Permissions in Linux",
+                description: "Welcome to the basics of Linux for Hacking.",
+                content: "Linux employs a robust system to manage file access control. This system determines who can read, write, and execute any given file. It grants the file owner control over these permissions, allowing them to specify who can access their files. Group permissions can also be configured to manage access for specific user groups.\nViewing File Permissions\nThe ls command with the -l (long listing) option displays detailed information about files, including their permissions. Let’s navigate to the /usr/share/hashcat directory and use ls -l to examine file permissions there:\nkali \u003e cd /usr/share/hashcat kali \u003e ls -l Each line represents a file or directory entry, providing details like:\nFile type: A leading d indicates a directory, while - represents a regular file. Permissions: This section defines read (r), write (w), and execute (x) permissions for three categories: owner, group, and others. Number of links: The number of hard links pointing to the file. Owner: The username of the file owner. Group: The group name associated with the file. Size: The file size in bytes. Last modification time: The date and time the file was last modified. Filename: The name of the file. Understanding Permission Notation\nThe permissions section consists of three sets of characters: rwx. Each set applies to a specific user category:\nOwner: The first set represents the owner’s permissions. Group: The second set represents the group’s permissions. Others: The third set represents permissions for all other users. A - in a permission slot indicates the absence of that permission (e.g., no execute permission).\nExample: Analyzing Permissions\nLet’s examine the permissions for the hashcat rules directory:\n-rw-r--r-- Owner: Read (r) and write (w) permissions, but no execute (x) permission. Group: Read (r) permission only, no write or execute permissions. Others: Read (r) permission only, no write or execute permissions. Changing File Permissions\nThe chmod (change mode) command allows modifying file permissions, provided you have root privileges or are the file owner. Permissions are represented numerically in the operating system.\nPermissions as Binary Equivalents: Each permission (read, write, execute) translates to a binary value: Read (r): 4 Write (w): 2 Execute (x): 1 Adding these values determines the numerical permission representation. For example, all permissions enabled (rwx) translates to 4 + 2 + 1 = 7.\nChanging Permissions with Numbers: To give the group write permission to the hashcat combinator.rule file (assuming its current permissions are rw-r--r-- which translates to 644), you would use: kali \u003e chmod 664 combinator.rule This command grants the owner read and write (4 + 2 = 6), the group read and write (4 + 2 = 6), and everyone else read-only (4) permissions.\nAlternative: Using UGO Syntax\nAnother method for changing permissions involves the UGO syntax:\nUGO: Stands for User (owner), Group, and Others. Operators: +: Add a permission. -: Remove a permission. =: Set a permission. For instance, to remove write permission for the group on combinator.rule:\nkali \u003e chmod g-w combinator.rule Giving Yourself Execute Permission on New Tools\nDownloaded hacking tools often lack execute permission by default. To grant yourself (assuming you’re root) permission to execute a new tool named newhackertool:\nkali \u003e chmod 766 newhackertool This assigns you (the owner) all permissions (read, write, execute), and the group and others read-write permissions only (6).\nRemember: Always exercise caution when modifying file permissions, especially on critical system files.\n"
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
+
+        
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
+        
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script>
+    
+</body></html>

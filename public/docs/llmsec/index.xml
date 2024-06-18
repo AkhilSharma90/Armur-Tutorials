@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLM security on Tutorials</title>
-    <link>https://armur.ai/tutorials/docs/llmsec/</link>
+    <link>http://localhost:1313/tutorials/docs/llmsec/</link>
     <description>Recent content in LLM security on Tutorials</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://armur.ai/tutorials/docs/llmsec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tutorials/docs/llmsec/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
