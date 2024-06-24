@@ -8,18 +8,11 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</guid>
-      <description>Text Manipulation linkIn Linux, nearly everything you deal with directly is a file, and most often these will be text files. For instance, all configuration files in Linux are text files. To reconfigure an application, you simply open the configuration file, change the text, save the file, and then restart the application—your reconfiguration is complete. With so many text files, manipulating text becomes crucial in managing Linux and Linux applications. In this chapter, you’ll use several commands and techniques for manipulating text in Linux.</description>
-    </item>
-    <item>
       <title>A Getting Started Guide To Linux</title>
       <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</guid>
-      <description>Linux for Hackers – Basics for Cybersecurity Beginners linkDaniel Iwugo&#xA;Linux for Hackers – Basics for Cybersecurity Beginners linkTime to learn how to use the operating system favored by hackers 🐧.&#xA;In this article, we will explore:&#xA;The Linux operating system Package management The Linux file structure The Command Line Interface How to update your Linux distro Shall we begin? 🙃&#xA;What is Linux? linkThe Linux kernel was created by Linus Torvalds in 1991.</description>
+      <description>What is Linux? linkThe Linux kernel was created by Linus Torvalds in 1991. It becomes an operating system with the addition of components like a package manager, desktop environment, shell, and bootloader.&#xA;As an open-source OS, Linux offers numerous customizations. Each unique combination of these customizations is called a distribution or &amp;ldquo;distro.&amp;rdquo;&#xA;There are hundreds, if not thousands, of distros worldwide, each optimized for specific purposes or created just for fun by enthusiasts.</description>
     </item>
     <item>
       <title>Bash Scripting in Linux</title>
@@ -29,11 +22,25 @@
       <description>Any self-respecting hacker must be able to script. For that matter, any self-respecting Linux administrator must be able to script. With the arrival of the Windows PowerShell, Windows administrators are increasingly required to script as well to perform automated tasks and be more efficient.&#xA;As a hacker, we often need to automate the use of multiple commands, sometimes from multiple tools. To become an elite hacker, you not only need to have advanced shell scripting skills, but also the ability to script in one of the widely-used scripting languages such as Ruby (Metasploit exploits are written in Ruby), Python (many hacking tools are Python scripts), or Perl (Perl is the best text manipulation scripting language).</description>
     </item>
     <item>
+      <title>Introduction to Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</guid>
+      <description>Introduction to Metasploit linkThe Metasploit Framework is a robust and versatile tool used extensively in the field of cybersecurity. It serves a dual purpose, utilized by both ethical hackers and cybercriminals to identify and exploit vulnerabilities within networks and servers. As an open-source platform, Metasploit offers extensive customization and compatibility with various operating systems, making it a go-to resource for penetration testing and vulnerability assessment.&#xA;Understanding Metasploit linkMetasploit allows penetration testers to deploy pre-written or custom scripts to explore network weaknesses.</description>
+    </item>
+    <item>
       <title>Networking in Linux</title>
       <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</guid>
       <description>As a hacker, networking is critical. We need to manage and manipulate our ability to connect with other computers to optimize our ability to compromise another machine. In some cases, you will need to connect but hide your IP address and other information. In this tutorial, I will attempt to show you the basics of networking in Linux.&#xA;Step 1: Analyzing Networks and Network Interfaces linkThe most basic Linux command for analyzing networks is ifconfig.</description>
+    </item>
+    <item>
+      <title>Text Manipulation</title>
+      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</guid>
+      <description>In Linux, nearly everything you deal with directly is a file, and most often these will be text files. For instance, all configuration files in Linux are text files. To reconfigure an application, you simply open the configuration file, change the text, save the file, and then restart the application—your reconfiguration is complete. With so many text files, manipulating text becomes crucial in managing Linux and Linux applications. In this chapter, you’ll use several commands and techniques for manipulating text in Linux.</description>
     </item>
     <item>
       <title>Understanding File Permissions in Linux</title>

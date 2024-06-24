@@ -17,6 +17,8 @@ The most basic Linux command for analyzing networks is `ifconfig`. It's very sim
 kali > ifconfig
 ```
 
+![img](https://i.imgur.com/aftxOdy.png)
+
 As you can see in this screenshot, `ifconfig` conveys a significant amount of information to the user. In the very first line, we see to the far left `eth0`. This is the first wired network connection, Ethernet 0 (Linux usually starts counting at 0 rather than 1. Get used to it if you are using Linux).
 
 Following this, we see the type of network being used (Ethernet) and the Hwaddr (this is the globally unique address stamped on every piece of network hardware, in this case, the network interface card or NIC). This is usually referred to as the MAC address.
@@ -35,7 +37,11 @@ Let's take a look at our wireless devices with `iwconfig`.
 kali > iwconfig
 ```
 
-As you can see above, this command gives considerable information on our wireless devices. The only network interface with wireless extensions, as we would expect, is `wlan0`. Within that paragraph, we learn what 802.11 standard our device is capable of (bg), that it is in Mode:Managed (this contrasts with a monitor or promiscuous mode we will need for most wireless hacks), that it is Not-Associated with an Access Point (AP), and its power is 20dBm. We will spend more time with this information in the wireless hacking section.
+![alt text](https://i.imgur.com/zWNuT49.png)
+
+In my case, I have no wireless extensions, so there is not much information.
+
+This command gives considerable information on our wireless devices. The only network interface with wireless extensions, as we would expect, is `wlan0`. Within that paragraph, we learn what 802.11 standard our device is capable of (bg), that it is in Mode:Managed (this contrasts with a monitor or promiscuous mode we will need for most wireless hacks), that it is Not-Associated with an Access Point (AP), and its power is 20dBm. We will spend more time with this information in the wireless hacking section.
 
 ### ifup/ifdown
 
@@ -96,8 +102,10 @@ kali > dig hackers-arise.com ns
 By using the `dig` command with the `mx` option, we can get info on the email servers for hackers-arise.com.
 
 ```bash
-kali > dig hackers-arise.com mx
+kali > dig google.com mx
 ```
+
+![google](https://i.imgur.com/45avENv.png)
 
 As a hacker, the `dig` command and using DNS to obtain information on our potential target can be a key piece of early reconnaissance before attacking.
 
