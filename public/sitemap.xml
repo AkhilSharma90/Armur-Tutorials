@@ -8,20 +8,38 @@
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</loc>
+    <lastmod>2024-06-24T10:13:54+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/managing_sessions/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/</loc>
+    <lastmod>2024-06-24T10:13:54+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</loc>
-    <lastmod>2024-06-19T01:49:20+02:00</lastmod>
+    <lastmod>2024-06-24T10:13:54+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/nmap/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/tags/</loc>
   </url><url>
@@ -29,9 +47,11 @@
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-06-19T01:49:20+02:00</lastmod>
+    <lastmod>2024-06-24T10:13:54+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</loc>
   </url>
 </urlset>

@@ -14,10 +14,10 @@
 
 <html lang="en-us"><head><script src="/tutorials/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tutorials/livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
-    <title>Networking in Linux | Tutorials</title>
+    <title>Hashing and Password cracking in Metasploit | Tutorials</title>
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the basics of Linux for Hacking.">
+    <meta name="description" content="Learn more about the Metasploit framework.">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
     <meta name="email" content="support@aigis.uk" />
@@ -31,15 +31,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tutorials/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tutorials/favicons/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/tutorials/favicons/site.webmanifest">
-<meta property="og:title" content="Networking in Linux" />
-<meta property="og:description" content="Welcome to the basics of Linux for Hacking." />
+<meta property="og:title" content="Hashing and Password cracking in Metasploit" />
+<meta property="og:description" content="Learn more about the Metasploit framework." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_18349397291610363406.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_15669735868359912746.png"/><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-06-24T10:13:54+02:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_18349397291610363406.png"/>
-<meta name="twitter:title" content="Networking in Linux"/>
-<meta name="twitter:description" content="Welcome to the basics of Linux for Hacking."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_15669735868359912746.png"/>
+<meta name="twitter:title" content="Hashing and Password cracking in Metasploit"/>
+<meta name="twitter:description" content="Learn more about the Metasploit framework."/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -89,12 +89,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  current active">
+                        <li class="sidebar-dropdown  ">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 Linux Basics for Hackers
                             </button>
-                            <div class="sidebar-submenu d-block">
+                            <div class="sidebar-submenu ">
                                 <ul>
                                     
                                         
@@ -109,7 +109,7 @@
                                     
                                         
                                         
-                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/">Networking in Linux</a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/">Networking in Linux</a></li>
                                         
                                     
                                         
@@ -129,12 +129,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  ">
+                        <li class="sidebar-dropdown  current active">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 Metasploit
                             </button>
-                            <div class="sidebar-submenu ">
+                            <div class="sidebar-submenu d-block">
                                 <ul>
                                     
                                         
@@ -149,7 +149,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/">Hashing and Password cracking in Metasploit</a></li>
+                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/">Hashing and Password cracking in Metasploit</a></li>
                                         
                                     
                                         
@@ -325,15 +325,15 @@
             
             
                 <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="/tutorials/docs/linux-basics-for-hackers/">
-                        <span itemprop="name">Linux Basics for Hackers</span>
+                    <a itemprop="item" href="/tutorials/docs/metasploit/">
+                        <span itemprop="name">Metasploit</span>
                     </a>
                     <meta itemprop="position" content='2' />
                 </li>
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Networking in Linux</span>
+                <span itemprop="name">Hashing and Password cracking in Metasploit</span>
                 <meta itemprop="position" content='3' />
             </li>
         
@@ -348,18 +348,27 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#step-1-analyzing-networks-and-network-interfaces">Step 1: Analyzing Networks and Network Interfaces</a>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#understanding-hashes-in-metasploit">Understanding Hashes in Metasploit</a>
           <ul>
-            <li><a href="#ifupifdown">ifup/ifdown</a></li>
+            <li><a href="#identifying-hash-types">Identifying Hash Types</a></li>
           </ul>
         </li>
-        <li><a href="#step-2-changing-ip-addresses">Step 2: Changing IP Addresses</a></li>
-        <li><a href="#step-3-dhcp-dynamic-host-configuration-server">Step 3: DHCP (Dynamic Host Configuration Server)</a></li>
-        <li><a href="#step-4-dns-domain-name-service">Step 4: DNS (Domain Name Service)</a>
+        <li><a href="#cracking-passwords-with-jtr-and-hashcat">Cracking Passwords with JtR and Hashcat</a>
           <ul>
-            <li><a href="#hosts">hosts</a></li>
+            <li><a href="#differences-between-hashcat-and-jtr">Differences Between Hashcat and JtR</a></li>
+            <li><a href="#hash-settings">Hash Settings</a></li>
+            <li><a href="#cracker-modes">Cracker Modes</a></li>
           </ul>
         </li>
+        <li><a href="#exporting-passwords-and-hashes">Exporting Passwords and Hashes</a>
+          <ul>
+            <li><a href="#example-exporting-netntlmv2-secrets">Example: Exporting NetNTLMv2 Secrets</a></li>
+          </ul>
+        </li>
+        <li><a href="#example-hashes">Example Hashes</a></li>
+        <li><a href="#adding-a-new-hash">Adding a New Hash</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -375,18 +384,27 @@
   <ul class="dropdown-menu">
     <li>
       <ul>
-        <li><a href="#step-1-analyzing-networks-and-network-interfaces">Step 1: Analyzing Networks and Network Interfaces</a>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#understanding-hashes-in-metasploit">Understanding Hashes in Metasploit</a>
           <ul>
-            <li><a href="#ifupifdown">ifup/ifdown</a></li>
+            <li><a href="#identifying-hash-types">Identifying Hash Types</a></li>
           </ul>
         </li>
-        <li><a href="#step-2-changing-ip-addresses">Step 2: Changing IP Addresses</a></li>
-        <li><a href="#step-3-dhcp-dynamic-host-configuration-server">Step 3: DHCP (Dynamic Host Configuration Server)</a></li>
-        <li><a href="#step-4-dns-domain-name-service">Step 4: DNS (Domain Name Service)</a>
+        <li><a href="#cracking-passwords-with-jtr-and-hashcat">Cracking Passwords with JtR and Hashcat</a>
           <ul>
-            <li><a href="#hosts">hosts</a></li>
+            <li><a href="#differences-between-hashcat-and-jtr">Differences Between Hashcat and JtR</a></li>
+            <li><a href="#hash-settings">Hash Settings</a></li>
+            <li><a href="#cracker-modes">Cracker Modes</a></li>
           </ul>
         </li>
+        <li><a href="#exporting-passwords-and-hashes">Exporting Passwords and Hashes</a>
+          <ul>
+            <li><a href="#example-exporting-netntlmv2-secrets">Example: Exporting NetNTLMv2 Secrets</a></li>
+          </ul>
+        </li>
+        <li><a href="#example-hashes">Example Hashes</a></li>
+        <li><a href="#adding-a-new-hash">Adding a New Hash</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -397,20 +415,21 @@
                                             <i class="material-icons title-icon me-2">code</i>
                                             
                                             <h1 class="content-title mb-0">
-                                                Networking in Linux
+                                                Hashing and Password cracking in Metasploit
                                                 
                                             </h1>
                                         </div>
                                         
-                                            <p class="lead mb-3">Welcome to the basics of Linux for Hacking.</p>
+                                            <p class="lead mb-3">Learn more about the Metasploit framework.</p>
                                         
                                         <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        <p>As a hacker, networking is critical. We need to manage and manipulate our ability to connect with other computers to optimize our ability to compromise another machine. In some cases, you will need to connect but hide your IP address and other information. In this tutorial, I will attempt to show you the basics of networking in Linux.</p>
-<hr>
-<h2 id="step-1-analyzing-networks-and-network-interfaces">Step 1: Analyzing Networks and Network Interfaces <a href="#step-1-analyzing-networks-and-network-interfaces" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>The most basic Linux command for analyzing networks is <code>ifconfig</code>. It&rsquo;s very similar to the Windows command, <code>ipconfig</code>. Let&rsquo;s take a look at it.</p>
+        <h2 id="introduction">Introduction <a href="#introduction" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Metasploit Framework includes robust support for handling password hashes and cracking them. This article explores the various libraries, dependencies, and functionalities built into Metasploit for dealing with password hashes and cracking them using John the Ripper (JtR) and Hashcat. Note that storing credentials in the Metasploit database is covered separately.</p>
+<h2 id="understanding-hashes-in-metasploit">Understanding Hashes in Metasploit <a href="#understanding-hashes-in-metasploit" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Metasploit supports extracting hashes from various software systems, including operating systems (Windows, macOS, Linux) and applications (Postgres, Oracle). The framework includes a library to identify hash types, standardizing to John the Ripper&rsquo;s formats.</p>
+<h3 id="identifying-hash-types">Identifying Hash Types <a href="#identifying-hash-types" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Metasploit uses the <code>identify.rb</code> library to identify hash types. This library can be given a hash and will return the corresponding JtR type. This standardization ensures consistency across different modules and future updates.</p>
+<h4 id="example-of-hash-identification">Example of Hash Identification <a href="#example-of-hash-identification" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>Here&rsquo;s a simple example demonstrating how to load the library and call its function:</p>
 
 
 
@@ -426,33 +445,14 @@
   
 
   <div class="prism-codeblock ">
-  <pre id="eec2061" class="language-bash ">
-  <code>kali &gt; ifconfig</code>
+  <pre id="f41cc0e" class="language-ruby ">
+  <code>require &#39;metasploit/framework/hashes/identify&#39;
+puts identify_hash &#34;$1$28772684$iEwNOgGugqO9.bIz5sk8k/&#34;
+puts identify_hash &#34;This_is a Fake Hash&#34;
+puts identify_hash &#34;_9G..8147mpcfKT8g0U.&#34;</code>
   </pre>
   </div>
-<p>
-
-
-
-
-
-  
-
-
-
-  
-    
-      <img src="/tutorials/aftxOdy_12501551270765408354.png" alt="img" width="654" height="374" loading="lazy">
-    
-  
-</p>
-<p>As you can see in this screenshot, <code>ifconfig</code> conveys a significant amount of information to the user. In the very first line, we see to the far left <code>eth0</code>. This is the first wired network connection, Ethernet 0 (Linux usually starts counting at 0 rather than 1. Get used to it if you are using Linux).</p>
-<p>Following this, we see the type of network being used (Ethernet) and the Hwaddr (this is the globally unique address stamped on every piece of network hardware, in this case, the network interface card or NIC). This is usually referred to as the MAC address.</p>
-<p>The second line then contains information on the IP address, in this case, <code>192.168.181.131</code>, the broadcast address (the address to send out information to all IPs on the subnet), and finally the network mask (this tells what part of the IP address is network and which part is hosts). There is a lot more technical info there, but it&rsquo;s beyond the scope of a Linux basics tutorial.</p>
-<p>If we look down below to what appears to be a second stanza or paragraph, we see the start of another paragraph with <code>lo</code> to the far left. This is the loopback address or localhost. This is the address of the machine you&rsquo;re working on. You would use it if you simply wanted to test something like your own web server. It generally is represented with the IP address <code>127.0.0.1</code>.</p>
-<p>Finally, in the third paragraph or stanza, we see an interface <code>wlan0</code>. This will only appear if you have a wireless interface or network adapter. In my case here, I obviously have a wireless adapter. Note that it also displays the MAC address of that device (Hwaddr).</p>
-<p>When we have a wireless adapter, we can gather information on it with the command <code>iwconfig</code>. This will be particularly important in wireless hacking.</p>
-<p>Let&rsquo;s take a look at our wireless devices with <code>iwconfig</code>.</p>
+<p><strong>Output:</strong></p>
 
 
 
@@ -468,29 +468,293 @@
   
 
   <div class="prism-codeblock ">
-  <pre id="d82ca13" class="language-bash ">
-  <code>kali &gt; iwconfig</code>
+  <pre id="b4c946c" class="language-plaintext ">
+  <code>msf5 &gt; irb
+[*] Starting IRB shell...
+[*] You are in the &#34;framework&#34; object
+
+irb: warn: can&#39;t alias jobs from irb_jobs.
+&gt;&gt; require &#39;metasploit/framework/hashes/identify&#39;
+=&gt; false
+&gt;&gt; puts identify_hash &#34;$1$28772684$iEwNOgGugqO9.bIz5sk8k/&#34;
+md5
+=&gt; nil
+&gt;&gt; puts identify_hash &#34;This_is a Fake Hash&#34;
+
+=&gt; nil
+&gt;&gt; puts identify_hash &#34;_9G..8147mpcfKT8g0U.&#34;
+des,bsdi,crypt</code>
   </pre>
   </div>
-<p>
-
-
-
+<h2 id="cracking-passwords-with-jtr-and-hashcat">Cracking Passwords with JtR and Hashcat <a href="#cracking-passwords-with-jtr-and-hashcat" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Metasploit supports password cracking using both John the Ripper (JtR) and Hashcat. Each tool has its unique features and commands.</p>
+<h3 id="differences-between-hashcat-and-jtr">Differences Between Hashcat and JtR <a href="#differences-between-hashcat-and-jtr" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>JtR</th>
+<th>Hashcat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Session</td>
+<td>&ndash;session</td>
+<td>&ndash;session</td>
+</tr>
+<tr>
+<td>No Logging</td>
+<td>&ndash;no-log</td>
+<td>&ndash;logfile-disable</td>
+</tr>
+<tr>
+<td>Config File</td>
+<td>&ndash;config</td>
+<td>(n/a)</td>
+</tr>
+<tr>
+<td>Previous Cracks</td>
+<td>&ndash;pot</td>
+<td>&ndash;potfile-path</td>
+</tr>
+<tr>
+<td>Type of Hashes</td>
+<td>&ndash;format</td>
+<td>&ndash;hash-type</td>
+</tr>
+<tr>
+<td>Wordlist</td>
+<td>&ndash;wordlist</td>
+<td>(last parameter)</td>
+</tr>
+<tr>
+<td>Incremental</td>
+<td>&ndash;incremental</td>
+<td>&ndash;increment</td>
+</tr>
+<tr>
+<td>Rules</td>
+<td>&ndash;rules</td>
+<td>&ndash;rules-file</td>
+</tr>
+<tr>
+<td>Max Run Time</td>
+<td>&ndash;max-run-time</td>
+<td>&ndash;runtime</td>
+</tr>
+<tr>
+<td>Show Results</td>
+<td>&ndash;show</td>
+<td>&ndash;show</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hash-settings">Hash Settings <a href="#hash-settings" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><table>
+<thead>
+<tr>
+<th>Hash Type</th>
+<th>JtR Format</th>
+<th>Hashcat Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cram-md5</td>
+<td>hmac-md5</td>
+<td>10200</td>
+</tr>
+<tr>
+<td>des</td>
+<td>descrypt</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>md5 (crypt is $1$)</td>
+<td>md5crypt</td>
+<td>500</td>
+</tr>
+<tr>
+<td>sha1</td>
+<td></td>
+<td>100</td>
+</tr>
+<tr>
+<td>bsdi</td>
+<td>bsdi</td>
+<td>12400</td>
+</tr>
+<tr>
+<td>sha256</td>
+<td>sha256crypt</td>
+<td>7400</td>
+</tr>
+<tr>
+<td>sha512</td>
+<td>sha512crypt</td>
+<td>1800</td>
+</tr>
+<tr>
+<td>blowfish</td>
+<td>bcrypt</td>
+<td>3200</td>
+</tr>
+<tr>
+<td>lanman</td>
+<td>lm</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>NTLM</td>
+<td>nt</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>mssql (05)</td>
+<td>mssql</td>
+<td>131</td>
+</tr>
+<tr>
+<td>mssql12</td>
+<td>mssql12</td>
+<td>1731</td>
+</tr>
+<tr>
+<td>mssql (2012/2014)</td>
+<td>mssql05</td>
+<td>132</td>
+</tr>
+<tr>
+<td>oracle (10)</td>
+<td>oracle</td>
+<td>3100</td>
+</tr>
+<tr>
+<td>oracle 11</td>
+<td>oracle11</td>
+<td>112</td>
+</tr>
+<tr>
+<td>oracle 12</td>
+<td>oracle12c</td>
+<td>12300</td>
+</tr>
+<tr>
+<td>postgres</td>
+<td>dynamic_1034</td>
+<td>12</td>
+</tr>
+<tr>
+<td>mysql</td>
+<td>mysql</td>
+<td>200</td>
+</tr>
+<tr>
+<td>mysql-sha1</td>
+<td>mysql-sha1</td>
+<td>300</td>
+</tr>
+<tr>
+<td>sha512($p.$s) - vmware</td>
+<td>dynamic_82</td>
+<td>1710</td>
+</tr>
+<tr>
+<td>md5 (raw, unicode)</td>
+<td>Raw-MD5u</td>
+<td>30</td>
+</tr>
+<tr>
+<td>NetNTLMv1</td>
+<td>netntlm</td>
+<td>5500</td>
+</tr>
+<tr>
+<td>NetNTLMv2</td>
+<td>netntlmv2</td>
+<td>5600</td>
+</tr>
+<tr>
+<td>pbkdf2-sha256</td>
+<td>PBKDF2-HMAC-SHA256</td>
+<td>10900</td>
+</tr>
+<tr>
+<td>Android (Samsung) SHA1</td>
+<td></td>
+<td>5800</td>
+</tr>
+<tr>
+<td>Android (non-Samsung)</td>
+<td></td>
+<td>110</td>
+</tr>
+<tr>
+<td>Android MD5</td>
+<td></td>
+<td>10</td>
+</tr>
+<tr>
+<td>xsha</td>
+<td>xsha</td>
+<td>122</td>
+</tr>
+<tr>
+<td>xsha512</td>
+<td>xsha512</td>
+<td>1722</td>
+</tr>
+<tr>
+<td>PBKDF2-HMAC-SHA512</td>
+<td>PBKDF2-HMAC-SHA512</td>
+<td>7100</td>
+</tr>
+<tr>
+<td>PBKDF2-HMAC-SHA1</td>
+<td>PBKDF2-HMAC-SHA1</td>
+<td>12001</td>
+</tr>
+<tr>
+<td>PHPass</td>
+<td>phpass</td>
+<td>400</td>
+</tr>
+<tr>
+<td>mediawiki</td>
+<td>mediawiki</td>
+<td>3711</td>
+</tr>
+</tbody>
+</table>
+<p>Metasploit includes the <code>jtr_format_to_hashcat_format</code> function to translate JtR formats to Hashcat formats.</p>
+<h3 id="cracker-modes">Cracker Modes <a href="#cracker-modes" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Cracker modes are specific sets of rules optimized for different cracking scenarios:</p>
+<ul>
+<li><strong>Incremental</strong></li>
+<li><strong>Wordlist</strong></li>
+<li><strong>Pin (mobile devices - Hashcat specific)</strong></li>
+<li><strong>Normal (JtR specific)</strong></li>
+<li><strong>Single (JtR specific)</strong></li>
+</ul>
+<h4 id="hashcat-optimized-kernel">Hashcat Optimized Kernel <a href="#hashcat-optimized-kernel" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>Hashcat includes a <code>-O</code> flag for an optimized kernel, significantly increasing speed (&gt;200%) at the cost of password length.</p>
+<h2 id="exporting-passwords-and-hashes">Exporting Passwords and Hashes <a href="#exporting-passwords-and-hashes" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Hashes can be exported in three formats using the <code>creds</code> command with the <code>-o</code> option. Exported hashes in <code>.jtr</code> or <code>.hcat</code> use John the Ripper or Hashcat formats, respectively. Other file suffixes result in CSV format.</p>
+<h3 id="example-exporting-netntlmv2-secrets">Example: Exporting NetNTLMv2 Secrets <a href="#example-exporting-netntlmv2-secrets" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
 
 
   
-
-
+  
+  
 
   
-    
-      <img src="/tutorials/zWNuT49_4590064674254299852.png" alt="alt text" width="327" height="143" loading="lazy">
-    
   
-</p>
-<p>In my case, I have no wireless extensions, so there is not much information.</p>
-<p>This command gives considerable information on our wireless devices. The only network interface with wireless extensions, as we would expect, is <code>wlan0</code>. Within that paragraph, we learn what 802.11 standard our device is capable of (bg), that it is in Mode:Managed (this contrasts with a monitor or promiscuous mode we will need for most wireless hacks), that it is Not-Associated with an Access Point (AP), and its power is 20dBm. We will spend more time with this information in the wireless hacking section.</p>
-<h3 id="ifupifdown">ifup/ifdown <a href="#ifupifdown" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Network interfaces can be activated or deactivated by using the <code>ifup</code> (activate) and <code>ifdown</code> (deactivate) commands. These commands are simply followed by the name of the interface we want to activate/deactivate, such as:</p>
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="1ac3047" class="language-bash ">
+  <code>creds --realm WORKGROUP --type netntlmv2 -o /path/to/netntlmv2_hashes.jtr</code>
+  </pre>
+  </div>
+<h2 id="example-hashes">Example Hashes <a href="#example-hashes" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>For testing Hashcat/JtR integration, use the following commands to add example hashes:</p>
 
 
 
@@ -506,247 +770,107 @@
   
 
   <div class="prism-codeblock ">
-  <pre id="5c9c9e6" class="language-bash ">
-  <code>kali &gt; ifdown eth0</code>
+  <pre id="7ff7c2f" class="language-bash ">
+  <code># nix
+creds add user:des_password hash:rEK1ecacw.7.c jtr:des
+creds add user:md5_password hash:$1$O3JMY.Tw$AdLnLjQ/5jXF9.MTp3gHv/ jtr:md5
+creds add user:bsdi_password hash:_J9..K0AyUubDrfOgO4s jtr:bsdi
+creds add user:sha256_password hash:$5$MnfsQ4iN$ZMTppKN16y/tIsUYs/obHlhdP.Os80yXhTurpBMUbA5 jtr:sha256,crypt
+creds add user:sha512_password hash:$6$zWwwXKNj$gLAOoZCjcr8p/.VgV/FkGC3NX7BsXys3KHYePfuIGMNjY83dVxugPYlxVg/evpcVEJLT/rSwZcDMlVVf/bhf.1 jtr:sha512,crypt
+creds add user:blowfish_password hash:$2a$05$bvIG6Nmid91Mu9RcmmWZfO5HJIMCT8riNW0hEp8f6/FuA2/mHZFpe jtr:bf
+# windows
+creds add user:lm_password ntlm:E52CAC67419A9A224A3B108F3FA6CB6D:8846F7EAEE8FB117AD06BDD830B7586C jtr:lm
+creds add user:nt_password ntlm:AAD3B435B51404EEAAD3B435B51404EE:8846F7EAEE8FB117AD06BDD830B7586C jtr:nt
+creds add user:u4-netntlm hash:u4-netntlm::kNS:338d08f8e26de93300000000000000000000000000000000:9526fb8c23a90751cdd619b6cea564742e1e4bf33006ba41:cb8086049ec4736c jtr:netntlm
+creds add user:admin hash:admin::N46iSNekpT:08ca45b7d7ea58ee:88dcbe4446168966a153a0064958dac6:5c7830315c7830310000000000000b45c67103d07d7b95acd12ffa11230e0000000052920b85f78d013c31cdb3b92f5d765c783030 jtr
+
+:netntlmv2
+creds add user:mscash-test1 hash:M$test1#64cd29e36a8431a2b111378564a10631 jtr:mscash
+creds add user:mscash2-hashcat hash:$DCC2$10240#tom#e4e938d12fe5974dc42a90120bd9c90f jtr:mscash2
+# sql
+creds add user:mssql05_toto hash:0x01004086CEB6BF932BC4151A1AF1F13CD17301D70816A8886908 jtr:mssql05
+creds add user:mssql_foo hash:0x0100A607BA7C54A24D17B565C59F1743776A10250F581D482DA8B6D6261460D3F53B279CC6913CE747006A2E3254 jtr:mssql
+creds add user:mssql12_Password1! hash:0x0200F733058A07892C5CACE899768F89965F6BD1DED7955FE89E1C9A10E27849B0B213B5CE92CC9347ECCB34C3EFADAF2FD99BFFECD8D9150DD6AACB5D409A9D2652A4E0AF16 jtr:mssql12
+creds add user:mysql_probe hash:445ff82636a7ba59 jtr:mysql
+creds add user:mysql-sha1_tere hash:*5AD8F88516BD021DD43F171E2C785C69F8E54ADB jtr:mysql-sha1
+# oracle (10) uses usernames in the hashing, so we can&#39;t override that here
+creds add user:simon hash:4F8BC1809CB2AF77 jtr:des,oracle
+creds add user:SYSTEM hash:9EEDFA0AD26C6D52 jtr:des,oracle
+# oracle 11/12 H value, username is used
+creds add user:DEMO hash:&#39;S:8F2D65FB5547B71C8DA3760F10960428CD307B1C6271691FC55C1F56554A;H:DC9894A01797D91D92ECA1DA66242209;T:23D1F8CAC9001F69630ED2DD8DF67DD3BE5C470B5EA97B622F757FE102D8BF14BEDC94A3CC046D10858D885DB656DC0CBF899A79CD8C76B788744844CADE54EEEB4FDEC478FB7C7CBFBBAC57BA3EF22C&#39; jtr:raw-sha1,oracle
+creds add user:oracle11_epsilon hash:&#39;S:8F2D65FB5547B71C8DA3760F10960428CD307B1C6271691FC55C1F56554A;H:DC9894A01797D91D92ECA1DA66242209;T:23D1F8CAC9001F69630ED2DD8DF67DD3BE5C470B5EA97B622F757FE102D8BF14BEDC94A3CC046D10858D885DB656DC0CBF899A79CD8C76B788744844CADE54EEEB4FDEC478FB7C7CBFBBAC57BA3EF22C&#39; jtr:raw-sha1,oracle
+creds add user:oracle12c_epsilon hash:&#39;H:DC9894A01797D91D92ECA1DA66242209;T:E3243B98974159CC24FD2C9A8B30BA62E0E83B6CA2FC7C55177C3A7F82602E3BDD17CEB9B9091CF9DAD672B8BE961A9EAC4D344BDBA878EDC5DCB5899F689EBD8DD1BE3F67BFF9813A464382381AB36B&#39; jtr:pbkdf2,oracle12c
+# postgres uses username, so we can&#39;t override that here
+creds add user:example postgres:md5be86a79bf2043622d58d5453c47d4860
+# mobile
+creds add user:samsungsha1 hash:D1B19A90B87FC10C304E657F37162445DAE27D16:a006983800cc3dd1 jtr:android-samsung-sha1
+creds add user:androidsha1 hash:9860A48CA459D054F3FEF0F8518CF6872923DAE2:81fcb23bcadd6c5 jtr:android-sha1
+creds add user:androidmd5 hash:1C0A0FDB673FBA36BEAEB078322C7393:81fcb23bcadd6c5 jtr:android-md5
+# OSX
+creds add user:xsha_hashcat hash:1430823483d07626ef8be3fda2ff056d0dfd818dbfe47683 jtr:xsha
+creds add user:pbkdf2_hashcat hash:$ml$35460$93a94bd24b5de64d79a5e49fa372827e739f4d7b6975c752c9a0ff1e5cf72e05$752351df64dd2ce9dc9c64a72ad91de6581a15c19176266b44d98919dfa81f0f96cbcb20a1ffb400718c20382030f637892f776627d34e021bad4f81b7de8222 jtr:PBKDF2-HMAC-SHA512
+creds add user:xsha512_hashcat hash:648742485c9b0acd786a233b2330197223118111b481abfa0ab8b3e8ede5f014fc7c523991c007db6882680b09962d16fd9c45568260531bdb34804a5e31c22b4cfeb32d jtr:xsha512
+# webapps
+creds add user:mediawiki_hashcat hash:$B$56668501$0ce106caa70af57fd525aeaf80ef2898 jtr:mediawiki
+creds add user:phpass_p_hashcat hash:$P$984478476IagS59wHZvyQMArzfx58u. jtr:phpass
+creds add user:phpass_h_hashcat hash:$H$984478476IagS59wHZvyQMArzfx58u. jtr:phpass
+creds add user:atlassian_hashcat hash:{PKCS5S2}NzIyNzM0NzY3NTIwNjI3MdDDis7wPxSbSzfFqDGf7u/L00kSEnupbz36XCL0m7wa jtr:PBKDF2-HMAC-SHA1
+# other
+creds add user:hmac_password hash:&#39;&lt;3263520797@127.0.0.1&gt;#3f089332842764e71f8400ede97a84c9&#39; jtr:hmac-md5
+creds add user:vmware_ldap hash:&#39;$dynamic_82$a702505b8a67b45065a6a7ff81ec6685f08d06568e478e1a7695484a934b19a28b94f58595d4de68b27771362bc2b52444a0ed03e980e11ad5e5ffa6daa9e7e1$HEX$171ada255464a439569352c60258e7c6&#39; jtr:dynamic_82
+creds add user:admin hash:&#39;$pbkdf2-sha256$260000$Q1hzYjU5dFNMWm05QUJCTg$s.vmjGlIV0ZKV1Sp3dTdrcn/i9CTqxPZ0klve4HreeU&#39; jtr:pbkdf2-sha256</code>
   </pre>
   </div>
-<p>When we deactivate the <code>eth0</code> interface and then type the <code>ifconfig</code> command, we can see that the <code>eth0</code> is no longer active and does not appear.</p>
-<hr>
-<h2 id="step-2-changing-ip-addresses">Step 2: Changing IP Addresses <a href="#step-2-changing-ip-addresses" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Changing IP addresses can be fairly simple in Linux, I think much simpler than in the Windows GUI that requires multiple clicks. Remember that in most cases, you&rsquo;re going to have a dynamically assigned address from a DHCP server (see below in section 3). In some cases, you may need to reassign the address, especially if you&rsquo;re hacking. This can be useful in spoofing your IP address&ndash;making network forensics more challenging&ndash;but certainly not impossible.</p>
-<p>We can do this by using the <code>ifconfig</code> command again with the interface we want to assign the IP to and the new IP address we want to assign to the interface. Such as:</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="9609a2b" class="language-bash ">
-  <code>kali &gt; ifconfig eth0 192.168.181.115</code>
-  </pre>
-  </div>
-<p>Now, when we type <code>ifconfig</code>, we can see that our IP address has changed to the new IP address.</p>
-<p>We can also change the netmask and broadcast address, if necessary, such as:</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="078899d" class="language-bash ">
-  <code>kali &gt; ifconfig eth0 192.168.181.115 netmask 255.255.0.0 broadcast 192.168.1.255</code>
-  </pre>
-  </div>
-<hr>
-<h2 id="step-3-dhcp-dynamic-host-configuration-server">Step 3: DHCP (Dynamic Host Configuration Server) <a href="#step-3-dhcp-dynamic-host-configuration-server" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Linux has a DHCP server that runs a daemon (daemon is simply a process that runs in the background in Linux) called <code>dhcpd</code> or <code>dhcp daemon</code>. It&rsquo;s this DHCP server that assigns IP addresses to all the systems on the subnet. It also keeps log files of which machines had which IP addresses at which time. It&rsquo;s this log that is often used to trace hackers in a forensic analysis after an attack.</p>
-<p>When I want my machine to be assigned a new address from the DHCP server, I can simply call the server with the command <code>dhclient</code> followed by the interface (different Linux distros use different DHCP clients, but Kali is built on Ubuntu which uses <code>dhclient</code>), like this:</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="bf2b940" class="language-bash ">
-  <code>kali &gt; dhclient eth0</code>
-  </pre>
-  </div>
-<p>The <code>dhclient</code> command sends out a DHCPDISCOVER request from the default NIC. It then gets an offer (DHCPOFFER) of <code>192.168.181.131</code> from the DHCP server, then confirms the IP assignment to the DHCP server. Now, if we type <code>ifconfig</code>, we can see that the DHCP server has assigned a new IP address.</p>
-<hr>
-<h2 id="step-4-dns-domain-name-service">Step 4: DNS (Domain Name Service) <a href="#step-4-dns-domain-name-service" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>DNS, or Domain Name Services, is the service that enables us to type in a domain name like hackers-arise.com, which it then translates to the appropriate IP address. Without it, we would all have to remember thousands of IP addresses of our favorite websites (no small task even for a savant).</p>
-<p>One of the most useful commands for the aspiring hacker is <code>dig</code>, which is the equivalent of <code>nslookup</code> in Windows but offers us much more information on the domain. For instance, if we <code>dig</code> hackers-arise.com and by adding the <code>ns</code> option, it will display the nameserver for hackers-arise.com.</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="37a5f88" class="language-bash ">
-  <code>kali &gt; dig hackers-arise.com ns</code>
-  </pre>
-  </div>
-<p>By using the <code>dig</code> command with the <code>mx</code> option, we can get info on the email servers for hackers-arise.com.</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="5f027f8" class="language-bash ">
-  <code>kali &gt; dig google.com mx</code>
-  </pre>
-  </div>
-<p>
-
-
-
-
-
-  
-
-
-
-  
-    
-      <img src="/tutorials/45avENv_10051253933415659898.png" alt="google" width="665" height="434" loading="lazy">
-    
-  
-</p>
-<p>As a hacker, the <code>dig</code> command and using DNS to obtain information on our potential target can be a key piece of early reconnaissance before attacking.</p>
-<p>The most common Linux DNS server is the Berkeley Internet Name Domain, or BIND. In some cases, Linux users will often refer to DNS as BIND, so don&rsquo;t be confused. DNS or BIND simply maps individual domain names to IP addresses.</p>
-<p>On our Kali system, we can point our DNS services to a local DNS server or a public DNS server. This pointing takes place in a plain text file named <code>/etc/resolv.conf</code>. Let&rsquo;s open it with leafpad:</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="e8e921c" class="language-bash ">
-  <code>kali &gt; leafpad /etc/resolv.conf</code>
-  </pre>
-  </div>
-<p>As you can see in Line 3, the nameserver is set to a local DNS server at <code>192.168.181.2</code>. That works fine, but if I wanted to add or replace that DNS server with, say, Google&rsquo;s public DNS server at <code>8.8.8.8</code>, we can either add a line in the <code>/etc/resolv.conf</code> to read:</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="9880dcd" class="language-plaintext ">
-  <code>nameserver 8.8.8.8</code>
-  </pre>
-  </div>
-<p>Maybe more simply, we can use the command line to do the same by typing:</p>
-
-
-
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-
-  <div class="prism-codeblock ">
-  <pre id="aa0f506" class="language-bash ">
-  <code>kali &gt; echo &#34;nameserver 8.8.8.8&#34; &gt; /etc/resolv.conf</code>
-  </pre>
-  </div>
-<p>As you can see above, our <code>/etc/resolv.conf</code> file points our DNS requests to Google&rsquo;s DNS server now.</p>
-<p>With this change, your system will now go out to the Google public DNS server to resolve domain names to IP addresses, rather than our local DNS server. This might take a bit more time, so to remedy this, you might keep your local DNS server followed by a public DNS server and the system will only go to the public DNS server if the domain name cannot be found in the local DNS server.</p>
-<h3 id="hosts">hosts <a href="#hosts" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>In addition to the DNS servers, there is a <code>hosts</code> file in your Linux operating system. This <code>hosts</code> file enables us to put in our own IP address-domain name mapping, kind of like a static DNS service. In other words, we can determine where our browser/system goes when we type in Microsoft.com (or any other domain) rather than the DNS server. This can be useful as a hacker if we want to hijack a TCP connection on our local area network to direct traffic to our malicious web server with a tool</p>
-<p>such as <code>dnspoof</code>.</p>
-<p>By default, this file only has our localhost at <code>127.0.0.1</code> and Kali at <code>127.0.1.1</code>. We can add any IP/domain mapping we would like. For instance, in my <code>dnsspoof</code> tutorial, we mapped bankofamerica.com to our local website, say <code>192.168.181.131</code>. This would then direct our traffic intended for bankofamerica.com to our web server, and if we are using <code>dnspoof</code>, it would direct anyone on our LAN to our web server at <code>192.168.181.131</code>.</p>
+<h2 id="adding-a-new-hash">Adding a New Hash <a href="#adding-a-new-hash" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>To add a new hash type to Metasploit, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Identify the Algorithm</strong>:</p>
+<ul>
+<li>Add a new identify algorithm to <code>framework/hashes.rb</code>. Use external programs like <code>hashid</code> or <code>hash-identifier</code> for suggestions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Add to Spec</strong>:</p>
+<ul>
+<li>Add the hash to the spec file <code>framework/hashes/identify_spec.rb</code> to ensure it works correctly.</li>
+</ul>
+</li>
+<li>
+<p><strong>Save in JTR Format</strong>:</p>
+<ul>
+<li>Ensure the hashes are saved in the database in the JTR format. Refer to <code>pentestmonkey</code> for hash examples.</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Cracker Module</strong>:</p>
+<ul>
+<li>Update the appropriate cracker module or create a new one for the new hash type.</li>
+</ul>
+</li>
+<li>
+<p><strong>Find Hashcat Mode</strong>:</p>
+<ul>
+<li>Find the Hashcat hash mode and add a JTR name to Hashcat mode lookup.</li>
+</ul>
+</li>
+<li>
+<p><strong>Format Conversion</strong>:</p>
+<ul>
+<li>If Hashcat uses a different format for the hash string, add a</li>
+</ul>
+</li>
+</ol>
+<p>JTR to Hashcat hash format conversion to the formatter.</p>
+<ol start="7">
+<li><strong>Update Documentation</strong>:
+<ul>
+<li>Update the relevant documentation and wiki with the new hash information and examples.</li>
+</ul>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion <a href="#conclusion" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Metasploit provides extensive support for handling and cracking password hashes. By leveraging libraries like John the Ripper and Hashcat, you can effectively identify, export, and crack various hash types. Understanding and utilizing these tools within Metasploit enhances your penetration testing capabilities, allowing for more comprehensive security assessments.</p>
 
     </div>
-
-    
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-<div class="gitinfo d-flex flex-wrap justify-content-between align-items-center opacity-85 pt-3">
-    <div id="edit-this-page" class="mt-1">
-        <a href="https://github.com/AkhilSharma90/Armur-Tutorials/blob/release/content/docs/Linux%20Basics%20For%20Hackers/Linux%20Basics%20For%20Hackers/networking_in_kali.md" alt="Networking in Linux" rel="noopener noreferrer" target="_blank">
-            
-            <span class="me-1 align-text-bottom">
-                
-                    <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-  <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"/>
-</svg>
-
-                
-            </span>
-            Edit this page
-            
-        </a>
-    </div>
-    
-    <div id="last-modified" class="mt-1">
-        <p class="mb-0 fw-semibold">Last updated <span
-            id="relativetime"
-            data-authdate="2024-06-24T10:13:54&#43;0200"
-            title="24 Jun 2024, 10:13 SAST">
-            24 Jun 2024, 10:13 SAST
-        </span>. <span class="material-icons size-20 align-text-bottom opacity-75">history</span>
-        </p>
-    </div>
-    
-</div>
 
     
 
@@ -757,10 +881,10 @@
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/tutorials/docs/metasploit/metasploit/managing_sessions/">
+		<a href="/tutorials/docs/metasploit/metasploit/database_support/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Managing Sessions in Metasploit</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Database Support in Metasploit</p>
 					<p class="card-text ms-2">Learn more about the …</p>
 					
 				</div>
@@ -768,11 +892,11 @@
 		</a>
         </div>
 	<div class="col-sm-6 pt-2 doc-prev">
-		<a class="ms-auto" href="/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/">
+		<a class="ms-auto" href="/tutorials/docs/metasploit/metasploit/shell_metasploit/">
 			<div class="card h-100 my-1 text-end">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Text Manipulation <i class="material-icons align-middle">navigate_next</i></p>
-					<p class="card-text me-2">Welcome to the basics of Linux …</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">How to Use a Reverse Shell in Metasploit <i class="material-icons align-middle">navigate_next</i></p>
+					<p class="card-text me-2">Learn more about the …</p>
 					
 				</div>
 			</div>

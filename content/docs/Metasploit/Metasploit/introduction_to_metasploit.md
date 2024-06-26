@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Metasploit"
+title: "An Introduction to Metasploit"
 description: "Learn more about the Metasploit framework."
 icon: "code"
 draft: false
@@ -50,3 +50,33 @@ Metasploit can be downloaded from the Rapid7 website. It requires disabling anti
 Familiarity with Ruby or other scripting languages like Python can facilitate learning Metasploit. Given the risks involved, it's advisable to use a dedicated work device for testing. Numerous resources are available to support learning, including Metasploit's knowledge base and the Varonis Cyber Workshop, which offers tutorials and sessions with industry experts.
 
 By leveraging Metasploit and collaborating with data-driven cybersecurity firms, professionals can enhance their ability to protect networks from exploits and cyberattacks.
+
+# How to install Metasploit
+
+You can open your terminal and run the following commands.
+
+![alt text](https://i.imgur.com/v9eKP0Y.png)
+
+**Continuing with MSFDB**
+
+To help interactive with various parts of the Metasploit configuration there is `msfdb`:
+
+You can run the command `sudo msfdb`:
+
+![img](https://i.imgur.com/rkYYW9K.png)
+
+**Starting the Kali Postgres servive**
+
+Metasploit uses PostgreSQL as its database so it needs to be launched first:
+
+![img](https://i.imgur.com/pPfaQCc.png)
+
+You can verify that PostgreSQL is running by checking the output of ss -ant and making sure that port 5432 is listening, or using sudo msfdb status:
+
+![img](https://i.imgur.com/rphOH9E.png)
+
+## Launch msfconsole in Kali :
+
+Now that the PostgreSQL service is up and running and the database is initialized, you can launch msfconsole and verify database connectivity with the db_status command as shown below:
+
+![msf](https://i.imgur.com/4wyw9R5.png)

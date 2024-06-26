@@ -15,6 +15,20 @@
       <description>What is Linux? linkThe Linux kernel was created by Linus Torvalds in 1991. It becomes an operating system with the addition of components like a package manager, desktop environment, shell, and bootloader.&#xA;As an open-source OS, Linux offers numerous customizations. Each unique combination of these customizations is called a distribution or &amp;ldquo;distro.&amp;rdquo;&#xA;There are hundreds, if not thousands, of distros worldwide, each optimized for specific purposes or created just for fun by enthusiasts.</description>
     </item>
     <item>
+      <title>An Introduction to Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</guid>
+      <description>Introduction to Metasploit linkThe Metasploit Framework is a robust and versatile tool used extensively in the field of cybersecurity. It serves a dual purpose, utilized by both ethical hackers and cybercriminals to identify and exploit vulnerabilities within networks and servers. As an open-source platform, Metasploit offers extensive customization and compatibility with various operating systems, making it a go-to resource for penetration testing and vulnerability assessment.&#xA;Understanding Metasploit linkMetasploit allows penetration testers to deploy pre-written or custom scripts to explore network weaknesses.</description>
+    </item>
+    <item>
+      <title>An Introduction To Nmap</title>
+      <link>http://localhost:1313/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</guid>
+      <description>Introduction linkNmap, short for Network Mapper, is an open-source tool used for network discovery and security auditing. Developed by Gordon Lyon (also known as Fyodor), it has become the go-to tool for network administrators and penetration testers. This article will guide you through the core features of Nmap and provide useful commands to help you get started.&#xA;Why Use Nmap? linkNmap is favored by security professionals for several reasons:&#xA;Ease of Use: Quickly map out a network with simple commands.</description>
+    </item>
+    <item>
       <title>Bash Scripting in Linux</title>
       <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22,11 +36,46 @@
       <description>Any self-respecting hacker must be able to script. For that matter, any self-respecting Linux administrator must be able to script. With the arrival of the Windows PowerShell, Windows administrators are increasingly required to script as well to perform automated tasks and be more efficient.&#xA;As a hacker, we often need to automate the use of multiple commands, sometimes from multiple tools. To become an elite hacker, you not only need to have advanced shell scripting skills, but also the ability to script in one of the widely-used scripting languages such as Ruby (Metasploit exploits are written in Ruby), Python (many hacking tools are Python scripts), or Perl (Perl is the best text manipulation scripting language).</description>
     </item>
     <item>
-      <title>Introduction to Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</link>
+      <title>Conducting a Discovery Scan in Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</guid>
-      <description>Introduction to Metasploit linkThe Metasploit Framework is a robust and versatile tool used extensively in the field of cybersecurity. It serves a dual purpose, utilized by both ethical hackers and cybercriminals to identify and exploit vulnerabilities within networks and servers. As an open-source platform, Metasploit offers extensive customization and compatibility with various operating systems, making it a go-to resource for penetration testing and vulnerability assessment.&#xA;Understanding Metasploit linkMetasploit allows penetration testers to deploy pre-written or custom scripts to explore network weaknesses.</description>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</guid>
+      <description>Introduction linkReconnaissance is the first step in penetration testing, where the goal is to gather information about the target network. This step involves identifying active hosts, their operating systems, open ports, and running services. A Discovery Scan in Metasploit is a comprehensive method to collect this information efficiently.&#xA;How a Discovery Scan Works linkA Discovery Scan in Metasploit uses Nmap to perform various scans and gather information. It includes the following phases:</description>
+    </item>
+    <item>
+      <title>Database Support in Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</guid>
+      <description>What is msfdb? linkmsfdb is a script included with all installations of Metasploit that simplifies the setup and management of both a database and a Web Service. This Web Service connects the database with Metasploit, enhancing its functionality and usability.&#xA;While msfdb is the easiest way to set up a database for Metasploit, it is also possible to set one up manually if preferred. Instructions for manual setup can be found in the Metasploit documentation.</description>
+    </item>
+    <item>
+      <title>Hashing and Password cracking in Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</guid>
+      <description>Introduction linkMetasploit Framework includes robust support for handling password hashes and cracking them. This article explores the various libraries, dependencies, and functionalities built into Metasploit for dealing with password hashes and cracking them using John the Ripper (JtR) and Hashcat. Note that storing credentials in the Metasploit database is covered separately.&#xA;Understanding Hashes in Metasploit linkMetasploit supports extracting hashes from various software systems, including operating systems (Windows, macOS, Linux) and applications (Postgres, Oracle).</description>
+    </item>
+    <item>
+      <title>How to Use a Reverse Shell in Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</guid>
+      <description>Reverse shells are a crucial technique in penetration testing and ethical hacking, enabling attackers to gain access to a remote machine by reversing the connection back to the attacker&amp;rsquo;s machine. This blog post provides a comprehensive guide on using reverse shells in Metasploit, detailing the process step-by-step and explaining when and why to use reverse shells.&#xA;List of Metasploit Reverse Shells linkTo list all available reverse shells in Metasploit, use the following command:</description>
+    </item>
+    <item>
+      <title>Introduction to Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</guid>
+      <description>Assuming you now have Metasploit installed, run the msfconsole command to open Metasploit:&#xA;Finding Modules linkMetasploit is based around the concept of modules. The most commonly used module types are:&#xA;Auxiliary - Auxiliary modules do not exploit a target, but can perform data gathering or administrative tasks Exploit - Exploit modules leverage vulnerabilities in a manner that allows the framework to execute arbitrary code on the target host Payloads - Arbitrary code that can be executed on a remote target to perform a task, such as creating users, opening shells, etc Post - Post modules are used after a machine has been compromised.</description>
+    </item>
+    <item>
+      <title>Managing Sessions in Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/managing_sessions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/managing_sessions/</guid>
+      <description>Managing Sessions in Metasploit linkManaging multiple sessions in Metasploit can be a complex task, especially when dealing with numerous active connections. Effective session management is crucial for streamlined operations during penetration testing. This guide covers the basics of managing sessions, navigating open sessions using search, and killing stale sessions.&#xA;Basics of Session Management linkIn Metasploit, sessions represent ongoing interactions between the attacker and the compromised host. Managing these sessions efficiently ensures smooth operation and better control over the testing environment.</description>
     </item>
     <item>
       <title>Networking in Linux</title>
@@ -48,6 +97,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</guid>
       <description>Linux employs a robust system to manage file access control. This system determines who can read, write, and execute any given file. It grants the file owner control over these permissions, allowing them to specify who can access their files. Group permissions can also be configured to manage access for specific user groups.&#xA;Viewing File Permissions&#xA;The ls command with the -l (long listing) option displays detailed information about files, including their permissions.</description>
+    </item>
+    <item>
+      <title>Understanding How Payloads Work in Metasploit</title>
+      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</guid>
+      <description>Understanding How Payloads Work in Metasploit linkThe Metasploit Framework is a powerful tool used for developing, testing, and executing exploits against remote targets. One of the critical components in this process is the payload. This blog post aims to break down the functionality of payloads in Metasploit, explaining their types and how they are used.&#xA;What are Payloads? linkIn Metasploit, payloads are modules that are used to execute code on a target system.</description>
     </item>
   </channel>
 </rss>
