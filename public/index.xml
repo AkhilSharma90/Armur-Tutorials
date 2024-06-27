@@ -85,6 +85,13 @@
       <description>As a hacker, networking is critical. We need to manage and manipulate our ability to connect with other computers to optimize our ability to compromise another machine. In some cases, you will need to connect but hide your IP address and other information. In this tutorial, I will attempt to show you the basics of networking in Linux.&#xA;Step 1: Analyzing Networks and Network Interfaces linkThe most basic Linux command for analyzing networks is ifconfig.</description>
     </item>
     <item>
+      <title>Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts</title>
+      <link>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</guid>
+      <description>Nmap (Network Mapper) is a free and open-source tool for network discovery and security auditing. It is widely used by network administrators and penetration testers for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets to determine the available hosts, services, operating systems, and other characteristics of a network.&#xA;TCP/IP Protocols linkNmap operates on various layers of the TCP/IP protocol suite:</description>
+    </item>
+    <item>
       <title>Text Manipulation</title>
       <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -104,6 +111,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</guid>
       <description>Understanding How Payloads Work in Metasploit linkThe Metasploit Framework is a powerful tool used for developing, testing, and executing exploits against remote targets. One of the critical components in this process is the payload. This blog post aims to break down the functionality of payloads in Metasploit, explaining their types and how they are used.&#xA;What are Payloads? linkIn Metasploit, payloads are modules that are used to execute code on a target system.</description>
+    </item>
+    <item>
+      <title>Using John The Ripper</title>
+      <link>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</guid>
+      <description>One of the most famous and powerful tool for password cracking is John the Ripper.&#xA;John the Ripper is the tool that is used by most of the ethical hackers to perform dictionary attacks for password cracking. In this section, you will learn what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works and practical tutorial on John the Ripper usage.&#xA;What is John the Ripper?</description>
     </item>
   </channel>
 </rss>

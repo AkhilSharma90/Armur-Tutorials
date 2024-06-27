@@ -14,10 +14,10 @@
 
 <html lang="en-us"><head><script src="/tutorials/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tutorials/livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
-    <title>Bash Scripting in Linux | Tutorials</title>
+    <title>Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts | Tutorials</title>
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the basics of Linux for Hacking.">
+    <meta name="description" content="Learn more about the Nmap">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
     <meta name="email" content="support@aigis.uk" />
@@ -31,15 +31,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tutorials/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tutorials/favicons/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/tutorials/favicons/site.webmanifest">
-<meta property="og:title" content="Bash Scripting in Linux" />
-<meta property="og:description" content="Welcome to the basics of Linux for Hacking." />
+<meta property="og:title" content="Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts" />
+<meta property="og:description" content="Learn more about the Nmap" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_15318951473224960157.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_4921170931731308100.png"/><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-06-19T01:49:20+02:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_15318951473224960157.png"/>
-<meta name="twitter:title" content="Bash Scripting in Linux"/>
-<meta name="twitter:description" content="Welcome to the basics of Linux for Hacking."/>
+<meta property="article:modified_time" content="2024-06-26T05:25:20+02:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_4921170931731308100.png"/>
+<meta name="twitter:title" content="Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts"/>
+<meta name="twitter:description" content="Learn more about the Nmap"/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -109,12 +109,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  current active">
+                        <li class="sidebar-dropdown  ">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 Linux Basics for Hackers
                             </button>
-                            <div class="sidebar-submenu d-block">
+                            <div class="sidebar-submenu ">
                                 <ul>
                                     
                                         
@@ -124,7 +124,7 @@
                                     
                                         
                                         
-                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/">Bash Scripting in Linux</a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/">Bash Scripting in Linux</a></li>
                                         
                                     
                                         
@@ -204,12 +204,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  ">
+                        <li class="sidebar-dropdown  current active">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 Nmap
                             </button>
-                            <div class="sidebar-submenu ">
+                            <div class="sidebar-submenu d-block">
                                 <ul>
                                     
                                         
@@ -219,7 +219,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/">Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts</a></li>
+                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/">Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts</a></li>
                                         
                                     
                                 </ul>
@@ -350,15 +350,15 @@
             
             
                 <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="/tutorials/docs/linux-basics-for-hackers/">
-                        <span itemprop="name">Linux Basics for Hackers</span>
+                    <a itemprop="item" href="/tutorials/docs/nmap/">
+                        <span itemprop="name">Nmap</span>
                     </a>
                     <meta itemprop="position" content='2' />
                 </li>
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Bash Scripting in Linux</span>
+                <span itemprop="name">Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts</span>
                 <meta itemprop="position" content='3' />
             </li>
         
@@ -373,15 +373,44 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#types-of-shells">Types of Shells</a></li>
-        <li><a href="#bash-basics">BASH Basics</a></li>
-        <li><a href="#commands">Commands</a></li>
-        <li><a href="#comments">Comments</a></li>
-        <li><a href="#simple-hello-world">Simple Hello World</a></li>
-        <li><a href="#set-execution-permission">Set Execution Permission</a></li>
-        <li><a href="#using-variables">Using Variables</a></li>
-        <li><a href="#adding-prompts--variables-to-our-script">Adding Prompts &amp; Variables to Our Script</a></li>
-        <li><a href="#run-it-with-user-input-variables">Run It with User Input Variables</a></li>
+        <li><a href="#tcpip-protocols">TCP/IP Protocols</a></li>
+        <li><a href="#udp-and-tcp">UDP and TCP</a></li>
+        <li><a href="#nmap-scan-types">Nmap Scan Types</a>
+          <ul>
+            <li><a href="#syn-scan">SYN Scan</a></li>
+            <li><a href="#tcp-connect-scan">TCP Connect Scan</a></li>
+            <li><a href="#ping-sweep">Ping Sweep</a></li>
+            <li><a href="#udp-scan">UDP Scan</a></li>
+            <li><a href="#fin-scan">FIN Scan</a></li>
+            <li><a href="#null-scan">NULL Scan</a></li>
+            <li><a href="#xmas-scan">XMAS Scan</a></li>
+            <li><a href="#bounce-scan">Bounce Scan</a></li>
+            <li><a href="#rpc-scan">RPC Scan</a></li>
+            <li><a href="#windows-scan">Windows Scan</a></li>
+            <li><a href="#idle-scan">Idle Scan</a></li>
+          </ul>
+        </li>
+        <li><a href="#nmap-commands">Nmap Commands</a>
+          <ul>
+            <li><a href="#basic-scans">Basic Scans</a></li>
+            <li><a href="#stealth-scan">Stealth Scan</a></li>
+            <li><a href="#version-scanning">Version Scanning</a></li>
+            <li><a href="#os-scanning">OS Scanning</a></li>
+            <li><a href="#aggressive-scanning">Aggressive Scanning</a></li>
+            <li><a href="#scanning-multiple-hosts">Scanning Multiple Hosts</a></li>
+            <li><a href="#port-scanning">Port Scanning</a></li>
+            <li><a href="#scanning-from-a-file">Scanning from a File</a></li>
+            <li><a href="#verbosity-and-exporting-scan-results">Verbosity and Exporting Scan Results</a></li>
+            <li><a href="#nmap-help">Nmap Help</a></li>
+          </ul>
+        </li>
+        <li><a href="#nmap-scripting-engine-nse">Nmap Scripting Engine (NSE)</a>
+          <ul>
+            <li><a href="#using-nse-scripts">Using NSE Scripts</a></li>
+          </ul>
+        </li>
+        <li><a href="#zenmap">Zenmap</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -397,15 +426,44 @@
   <ul class="dropdown-menu">
     <li>
       <ul>
-        <li><a href="#types-of-shells">Types of Shells</a></li>
-        <li><a href="#bash-basics">BASH Basics</a></li>
-        <li><a href="#commands">Commands</a></li>
-        <li><a href="#comments">Comments</a></li>
-        <li><a href="#simple-hello-world">Simple Hello World</a></li>
-        <li><a href="#set-execution-permission">Set Execution Permission</a></li>
-        <li><a href="#using-variables">Using Variables</a></li>
-        <li><a href="#adding-prompts--variables-to-our-script">Adding Prompts &amp; Variables to Our Script</a></li>
-        <li><a href="#run-it-with-user-input-variables">Run It with User Input Variables</a></li>
+        <li><a href="#tcpip-protocols">TCP/IP Protocols</a></li>
+        <li><a href="#udp-and-tcp">UDP and TCP</a></li>
+        <li><a href="#nmap-scan-types">Nmap Scan Types</a>
+          <ul>
+            <li><a href="#syn-scan">SYN Scan</a></li>
+            <li><a href="#tcp-connect-scan">TCP Connect Scan</a></li>
+            <li><a href="#ping-sweep">Ping Sweep</a></li>
+            <li><a href="#udp-scan">UDP Scan</a></li>
+            <li><a href="#fin-scan">FIN Scan</a></li>
+            <li><a href="#null-scan">NULL Scan</a></li>
+            <li><a href="#xmas-scan">XMAS Scan</a></li>
+            <li><a href="#bounce-scan">Bounce Scan</a></li>
+            <li><a href="#rpc-scan">RPC Scan</a></li>
+            <li><a href="#windows-scan">Windows Scan</a></li>
+            <li><a href="#idle-scan">Idle Scan</a></li>
+          </ul>
+        </li>
+        <li><a href="#nmap-commands">Nmap Commands</a>
+          <ul>
+            <li><a href="#basic-scans">Basic Scans</a></li>
+            <li><a href="#stealth-scan">Stealth Scan</a></li>
+            <li><a href="#version-scanning">Version Scanning</a></li>
+            <li><a href="#os-scanning">OS Scanning</a></li>
+            <li><a href="#aggressive-scanning">Aggressive Scanning</a></li>
+            <li><a href="#scanning-multiple-hosts">Scanning Multiple Hosts</a></li>
+            <li><a href="#port-scanning">Port Scanning</a></li>
+            <li><a href="#scanning-from-a-file">Scanning from a File</a></li>
+            <li><a href="#verbosity-and-exporting-scan-results">Verbosity and Exporting Scan Results</a></li>
+            <li><a href="#nmap-help">Nmap Help</a></li>
+          </ul>
+        </li>
+        <li><a href="#nmap-scripting-engine-nse">Nmap Scripting Engine (NSE)</a>
+          <ul>
+            <li><a href="#using-nse-scripts">Using NSE Scripts</a></li>
+          </ul>
+        </li>
+        <li><a href="#zenmap">Zenmap</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -416,41 +474,30 @@
                                             <i class="material-icons title-icon me-2">code</i>
                                             
                                             <h1 class="content-title mb-0">
-                                                Bash Scripting in Linux
+                                                Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts
                                                 
                                             </h1>
                                         </div>
                                         
-                                            <p class="lead mb-3">Welcome to the basics of Linux for Hacking.</p>
+                                            <p class="lead mb-3">Learn more about the Nmap</p>
                                         
                                         <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        <p>Any self-respecting hacker must be able to script. For that matter, any self-respecting Linux administrator must be able to script. With the arrival of the Windows PowerShell, Windows administrators are increasingly required to script as well to perform automated tasks and be more efficient.</p>
-<p>As a hacker, we often need to automate the use of multiple commands,  sometimes from multiple tools. To become an elite hacker, you not only need to have advanced shell scripting skills, but also the ability to script in one of the widely-used scripting languages such as Ruby (Metasploit exploits are written in Ruby), Python (many hacking tools are Python scripts), or Perl (Perl is the best text manipulation scripting language).</p>
-<p>We will start with basic shell scripting, move to advanced shell scripting, and then to each of these scripting languages developing hacking tools as we go. Our ultimate goal will be to develop enough scripting skills to be able to develop our own exploits.</p>
-<p>In a previous post, I showed you how to put together a simple script using nmap to scan a range of IP addresses to check for a particular port availability. We will need that script here, as we will be adding new functionality to it after completing some preliminaries.</p>
-<h2 id="types-of-shells">Types of Shells <a href="#types-of-shells" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>A shell is an interface between the user and the operating system. This enables us to run commands, utilities, programs, manipulate files, etc.</p>
-<p>There are a number of different shells available for Linux. These include the:</p>
+        <p>Nmap (Network Mapper) is a free and open-source tool for network discovery and security auditing. It is widely used by network administrators and penetration testers for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets to determine the available hosts, services, operating systems, and other characteristics of a network.</p>
+<h2 id="tcpip-protocols">TCP/IP Protocols <a href="#tcpip-protocols" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Nmap operates on various layers of the TCP/IP protocol suite:</p>
 <ul>
-<li>Korn shell</li>
-<li>the Z shell</li>
-<li>the C shell</li>
-<li>the bash</li>
+<li><strong>Application layer</strong>: FTP, HTTP, SNMP, BOOTP, DHCP</li>
+<li><strong>Transport layer</strong>: TCP, UDP, ICMP, IGMP</li>
+<li><strong>Network layer</strong>: ARP, IP, RARP</li>
+<li><strong>Data link layer</strong>: SLIP, PPP</li>
 </ul>
-<p>As the BASH shell is available on nearly all Linux and UNIX distributions (including Mac OS X,  and Kali), we will be using the BASH shell here, exclusively.</p>
-<h2 id="bash-basics">BASH Basics <a href="#bash-basics" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><h2 id="commands">Commands <a href="#commands" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Besides being able to run any system commands, utilities or applications from a BASH shell script, the  BASH shell includes some of its own commands. These include;</p>
-<p>:, ., break, cd, continue, eval, exec, exit, export, getopts, hash, pwd, readonly, return, set, shift, test, [, times, trap, umask and unset,alias, bind,builtin, command, declare, echo, enable, help, let, local, logout, printf, read, shopt, type, typeset, ulimit and unalias.</p>
-<p>I will address these commands  in a later tutorial, but I want you to know that this shell has built in commands that have their functionality within the BASH shell.</p>
-<h2 id="comments">Comments <a href="#comments" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Like any coding, we may want to add comments. Comments are simply notes to ourselves or anyone else that reads the code as to what we were trying to do with the script or that section of the script.  These notes or &ldquo;comments&rdquo; are not read or executed by the interpreter.</p>
-<p>The BASH shell enables comments by preceding a line with the &ldquo;#&rdquo;, so if I wanted to note that this was my first script, I could write in my text editor;</p>
-<p>This is my first script!</p>
-<p>The interpreter would ignore everything after the # and then move to the next line.</p>
-<h2 id="simple-hello-world">Simple Hello World <a href="#simple-hello-world" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>For our first script, we will start with a simple script that returns a message to the screen that says &ldquo;Hello World!&rdquo;.</p>
-<p>We start by entering the shebang or &ldquo;#!&rdquo;. This tells the operating system that whatever follows the shebang is the interpreter we want to use for our script.</p>
-<p>We then follow the shebang with /bin/bash indicating that we want the operating system to use the BASH shell interpreter. As we will see in later tutorials, we can use other interpreters such as PERL or Python, but here we want to use the BASH interpreter.</p>
-<p>Next, we enter echo, a command in Linux that tells the system to simply repeat or &ldquo;echo&rdquo; back to our monitor (stdout) what follows. In this case, we want the system to echo back to us &ldquo;Hello World&rdquo;. Note that the text or message we want to &ldquo;echo back&rdquo; is in double quotation marks.</p>
+<h2 id="udp-and-tcp">UDP and TCP <a href="#udp-and-tcp" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><ul>
+<li><strong>UDP</strong>: A connection-less protocol that does not guarantee packet delivery. Suitable for real-time applications like live audio/video.</li>
+<li><strong>TCP</strong>: A connection-oriented protocol that guarantees packet delivery using a three-way handshake.</li>
+</ul>
+<h2 id="nmap-scan-types">Nmap Scan Types <a href="#nmap-scan-types" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><h3 id="syn-scan">SYN Scan <a href="#syn-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>The default scan type, which is stealthier than a TCP Connect scan. It sends a SYN packet to the target port and waits for a SYN/ACK response.</p>
 
 
 
@@ -466,16 +513,11 @@
   
 
   <div class="prism-codeblock ">
-  <pre id="5e634c4" class="language-bash ">
-  <code>#! /bin/bash
-
-echo &#34;Hello World&#34;|</code>
+  <pre id="7f94e4f" class="language-sh ">
+  <code>nmap -sS target</code>
   </pre>
   </div>
-<h2 id="set-execution-permission">Set Execution Permission <a href="#set-execution-permission" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>When we create a file, it&rsquo;s not necessarily executable, not even by us, the owner. Let&rsquo;s look at the permissions on our new file, by typing ls -l in our directory.</p>
-<p>As you can see, our new file has rw-r&ndash;r&ndash;  (644) permissions. The owner of this file only has read (r) and write (w) permissions, but no execute (x) permissions. The group and all have only read permission. We need to modify it to give us execute permissions in order to run this script. We do this with the chmod command. To give the owner, the group, and all execute permissions, we type:</p>
-<p><code>kali &gt; chmod 755 HelloHackersArise</code></p>
-<p>Now when we do a long listing (ls -l) on the file, we can see that we have execute permissions.</p>
+<h3 id="tcp-connect-scan">TCP Connect Scan <a href="#tcp-connect-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Completes the TCP handshake, making it noisier but more accurate. Useful when the user does not have administrative privileges.</p>
 
 
 
@@ -491,12 +533,11 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="fc41935" class="language-bash ">
-  <code>kali &gt; ls -l</code>
+  <pre id="37abb6b" class="language-sh ">
+  <code>nmap -sT target</code>
   </pre>
   </div>
-<p>Run HelloWorld</p>
-<p>To run our simple script, we simply type:</p>
+<h3 id="ping-sweep">Ping Sweep <a href="#ping-sweep" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Checks which IP addresses are up by sending ICMP Echo Requests.</p>
 
 
 
@@ -512,12 +553,11 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="8fa34c4" class="language-bash ">
-  <code>kali &gt; ./HelloWorld</code>
+  <pre id="f34c5ec" class="language-sh ">
+  <code>nmap -sn 192.168.1.1/24</code>
   </pre>
   </div>
-<p>The ./ before the file name tells the system that we want to execute this script in the current directory. This means don&rsquo;t look in the directories in the PATH variable for this file, but rather look just in my current directory and run HelloWorld</p>
-<p>When we then hit enter, our very simple script returns to our monitor.</p>
+<h3 id="udp-scan">UDP Scan <a href="#udp-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Checks for open UDP ports by sending UDP packets and analyzing the responses.</p>
 
 
 
@@ -533,21 +573,11 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="c2d0c6b" class="language-bash ">
-  <code>Hello World</code>
+  <pre id="4404989" class="language-sh ">
+  <code>nmap -sU target</code>
   </pre>
   </div>
-<p>Success! We just completed our first simple script!</p>
-<h2 id="using-variables">Using Variables <a href="#using-variables" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>So, now we have a simple script. All it does is echo back a message. If we want to create more advanced scripts we will likely want to add some variables.</p>
-<p>Variables are simply an area of storage where we can hold something in memory. That &ldquo;something&rdquo; might be some letters or words (strings) or numbers. It can help to add functionality to a script that has values that might change.</p>
-<p>Let&rsquo;s go back to the script we wrote earlier to use nmap to scan for vulnerable machines with a particular port open. Remember, the (in)famous hacker, Max Butler, used a similar script to find systems with the Aloha POS that he was able to hack for millions of credit card numbers.</p>
-<p>As you can see, this script was written to scan a range of IP addresses looking for port 5505 open (the port Aloha left open for tech support), and then create a report with all the IP addresses with this port open. The IP address range is &ldquo;hard coded&rdquo; into the script and can only be changed by opening and editing the script file.</p>
-<p>What if we wanted to alter this script so that it would prompt us or any user for the range IP addresses to scan and the port to look for? Wouldn&rsquo;t it be much easier to use if we were simply prompted for these values and they were then entered into the script?</p>
-<p>Let&rsquo;s take a look at how we could do that.</p>
-<h2 id="adding-prompts--variables-to-our-script">Adding Prompts &amp; Variables to Our Script <a href="#adding-prompts--variables-to-our-script" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>First, we could replace the specified sub-net with a IP range. We can do this with a variable called &ldquo;FirstIP&rdquo; and then a second variable named &ldquo;LastIP&rdquo; (the name of the variable is irrelevant, but best practice is to use a variable name that helps you remember what it holds).</p>
-<p>Next, we can replace the port number with a variable named &ldquo;port&rdquo;. These variables will simply be storage areas to hold the info that the user will input before running the scan.</p>
-<p>Next, we need to prompt the user for these values. We can do this by using the echo command we learned above in writing the HelloHackersArise script.</p>
-<p>So, we can simply echo the words &ldquo;Enter the starting IP address :&rdquo; and this will appear on the screen asking the user for the first IP address in their nmap scan.</p>
+<h3 id="fin-scan">FIN Scan <a href="#fin-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Sends a FIN packet to the target port. If a RST packet is received, the port is closed.</p>
 
 
 
@@ -563,11 +593,11 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="cef68a6" class="language-bash ">
-  <code>echo &#34;Enter the starting IP address :&#34;</code>
+  <pre id="c09cf32" class="language-sh ">
+  <code>nmap -sF target</code>
   </pre>
   </div>
-<p>Now, the user seeing this prompt on the screen, will enter the first IP address. We need a way then to capture that input from the user. We can do this by following the echo line with the read command followed by the name of the variable. The read command takes a value entered at the keyboard (stdin) and puts it into a variable that follows it.</p>
+<h3 id="null-scan">NULL Scan <a href="#null-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Sets all TCP flags to off, which can bypass certain firewalls and packet filters.</p>
 
 
 
@@ -583,14 +613,11 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="c75f66a" class="language-bash ">
-  <code>read FirstIP</code>
+  <pre id="9f81578" class="language-sh ">
+  <code>nmap -sN target</code>
   </pre>
   </div>
-<p>The above command will put the IP address entered by the user into the variable, FirstIP. Then we can use that value in FirstIP throughout our script.</p>
-<p>Of course, we can do the same for each of the variables by first prompting the user to enter the information and then using a read command to capture it.</p>
-<p>Next, we just need to edit the nmap command in our script to use the variables we just created and filled. When we want the value stored in the variable, we can simply preface the variable name with the $, such as $port.</p>
-<p>So, to use nmap to scan a range of IP addresses starting with the first user input IP through the second user input IP and look for a port input by the user, we can re-write the nmap command like this:</p>
+<h3 id="xmas-scan">XMAS Scan <a href="#xmas-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Sets the FIN, PSH, and URG flags, making it more stealthy but less reliable on certain systems.</p>
 
 
 
@@ -606,12 +633,11 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="315b73e" class="language-bash ">
-  <code>nmap -sT $FirstIP-$LastIP -p $port -oG Aloha</code>
+  <pre id="3a90fb6" class="language-sh ">
+  <code>nmap -sX target</code>
   </pre>
   </div>
-<p>Now, as the script is written, it will scan an IP address range starting with FirstIP and ending with LastIP looking for the port the user input. Let&rsquo;s now save our script file and name it Scannerscript.</p>
-<h2 id="run-it-with-user-input-variables">Run It with User Input Variables <a href="#run-it-with-user-input-variables" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Now we can run our simple scanner script with the variables that tell the script what IP address range and port to scan without having to edit the script.</p>
+<h3 id="bounce-scan">Bounce Scan <a href="#bounce-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Uses an FTP server to &ldquo;bounce&rdquo; scan packets to a target, potentially bypassing firewalls.</p>
 
 
 
@@ -627,11 +653,11 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="550e206" class="language-bash ">
-  <code>kali &gt; ./Scannerscript</code>
+  <pre id="decc29f" class="language-sh ">
+  <code>nmap -b ftp.server target</code>
   </pre>
   </div>
-<p>As you can see, the script prompts us for the first IP address, then the last IP address and the port we want to scan for. After collecting this info, it then does the nmap scan and produces a report of all the IP addresses in the range that have the port open that we specified.</p>
+<h3 id="rpc-scan">RPC Scan <a href="#rpc-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Probes open ports to identify RPC services and their versions.</p>
 
 
 
@@ -647,10 +673,275 @@ echo &#34;Hello World&#34;|</code>
   
 
   <div class="prism-codeblock ">
-  <pre id="5d31f01" class="language- ">
-  <code></code>
+  <pre id="d5e8e03" class="language-sh ">
+  <code>nmap -sR target</code>
   </pre>
   </div>
+<h3 id="windows-scan">Windows Scan <a href="#windows-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Exploits anomalies in Windows systems&rsquo; TCP/IP stack to identify open ports.</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="d9f4fee" class="language-sh ">
+  <code>nmap -sW target</code>
+  </pre>
+  </div>
+<h3 id="idle-scan">Idle Scan <a href="#idle-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Uses a &ldquo;zombie&rdquo; host to perform stealthy scans, hiding the true origin of the scan.</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="cad2e62" class="language-sh ">
+  <code>nmap -sI zombie target</code>
+  </pre>
+  </div>
+<h2 id="nmap-commands">Nmap Commands <a href="#nmap-commands" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><h3 id="basic-scans">Basic Scans <a href="#basic-scans" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="6c65ed6" class="language-sh ">
+  <code>nmap -sn 192.168.1.1/24  # Ping scan
+nmap scanme.nmap.org     # Scan a single host</code>
+  </pre>
+  </div>
+<h3 id="stealth-scan">Stealth Scan <a href="#stealth-scan" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="f38b8c4" class="language-sh ">
+  <code>nmap -sS scanme.nmap.org</code>
+  </pre>
+  </div>
+<h3 id="version-scanning">Version Scanning <a href="#version-scanning" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="c61fc8f" class="language-sh ">
+  <code>nmap -sV scanme.nmap.org</code>
+  </pre>
+  </div>
+<h3 id="os-scanning">OS Scanning <a href="#os-scanning" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="32d01fb" class="language-sh ">
+  <code>nmap -O scanme.nmap.org</code>
+  </pre>
+  </div>
+<h3 id="aggressive-scanning">Aggressive Scanning <a href="#aggressive-scanning" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="54f5ffc" class="language-sh ">
+  <code>nmap -A scanme.nmap.org</code>
+  </pre>
+  </div>
+<h3 id="scanning-multiple-hosts">Scanning Multiple Hosts <a href="#scanning-multiple-hosts" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="19f4075" class="language-sh ">
+  <code>nmap 192.164.1.1 192.164.0.2 192.164.0.3  # Multiple IPs
+nmap 192.164.1.*                          # Wildcard
+nmap 192.164.0.1,2,3,4                    # Comma-separated
+nmap 192.164.0.0-255                      # Range</code>
+  </pre>
+  </div>
+<h3 id="port-scanning">Port Scanning <a href="#port-scanning" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="35479e1" class="language-sh ">
+  <code>nmap -p 973 192.164.0.1                   # Single port
+nmap -p T:7777,973 192.164.0.1            # TCP port type
+nmap -p 76-973 192.164.0.1                # Port range
+nmap --top-ports 10 scanme.nmap.org       # Top 10 ports</code>
+  </pre>
+  </div>
+<h3 id="scanning-from-a-file">Scanning from a File <a href="#scanning-from-a-file" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="e726c18" class="language-sh ">
+  <code>nmap -iL /input_ips.txt</code>
+  </pre>
+  </div>
+<h3 id="verbosity-and-exporting-scan-results">Verbosity and Exporting Scan Results <a href="#verbosity-and-exporting-scan-results" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="94ac428" class="language-sh ">
+  <code>nmap -v scanme.nmap.org                   # Verbose output
+nmap -oN output.txt scanme.nmap.org       # Normal output
+nmap -oX output.xml scanme.nmap.org       # XML output
+nmap -oA output scanme.nmap.org           # All formats</code>
+  </pre>
+  </div>
+<h3 id="nmap-help">Nmap Help <a href="#nmap-help" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="a150e07" class="language-sh ">
+  <code>nmap -h</code>
+  </pre>
+  </div>
+<h2 id="nmap-scripting-engine-nse">Nmap Scripting Engine (NSE) <a href="#nmap-scripting-engine-nse" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>NSE is a powerful tool for writing scripts to automate network tasks. Scripts are written in Lua and can perform various functions like vulnerability detection, exploitation, and reporting.</p>
+<h3 id="using-nse-scripts">Using NSE Scripts <a href="#using-nse-scripts" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="407ab3e" class="language-sh ">
+  <code>nmap -sC 192.168.1.1                        # Default scripts
+nmap --script-help=ssl-heartbleed           # Help for a script
+nmap --script=ssl-heartbleed.nse 192.168.1.1 # Specific script
+nmap --script=smb* 192.168.1.1              # Set of scripts</code>
+  </pre>
+  </div>
+<h2 id="zenmap">Zenmap <a href="#zenmap" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Zenmap is the graphical user interface for Nmap. It is free and open-source, providing visual network mappings and the ability to save and search scans.</p>
+<h2 id="conclusion">Conclusion <a href="#conclusion" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Nmap is an essential tool for network discovery and security auditing, with a wide range of features and capabilities. This cheat-sheet provides a quick reference to various scanning types, commands, and NSE scripts, helping you to effectively use Nmap in your network administration and penetration testing tasks.</p>
 
     </div>
 
@@ -670,7 +961,7 @@ echo &#34;Hello World&#34;|</code>
 
 <div class="gitinfo d-flex flex-wrap justify-content-between align-items-center opacity-85 pt-3">
     <div id="edit-this-page" class="mt-1">
-        <a href="https://github.com/AkhilSharma90/Armur-Tutorials/blob/release/content/docs/Linux%20Basics%20For%20Hackers/Linux%20Basics%20For%20Hackers/bash_scripting.md" alt="Bash Scripting in Linux" rel="noopener noreferrer" target="_blank">
+        <a href="https://github.com/AkhilSharma90/Armur-Tutorials/blob/release/content/docs/Nmap/Nmap/cheat_sheet.md" alt="Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts" rel="noopener noreferrer" target="_blank">
             
             <span class="me-1 align-text-bottom">
                 
@@ -688,9 +979,9 @@ echo &#34;Hello World&#34;|</code>
     <div id="last-modified" class="mt-1">
         <p class="mb-0 fw-semibold">Last updated <span
             id="relativetime"
-            data-authdate="2024-06-19T01:49:20&#43;0200"
-            title="19 Jun 2024, 01:49 SAST">
-            19 Jun 2024, 01:49 SAST
+            data-authdate="2024-06-26T05:25:20&#43;0200"
+            title="26 Jun 2024, 05:25 SAST">
+            26 Jun 2024, 05:25 SAST
         </span>. <span class="material-icons size-20 align-text-bottom opacity-75">history</span>
         </p>
     </div>
@@ -706,22 +997,22 @@ echo &#34;Hello World&#34;|</code>
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/tutorials/docs/nmap/nmap/an_introduction_to_nmap/">
+		<a href="/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> An Introduction To Nmap</p>
-					<p class="card-text ms-2">Learn more about the Nmap</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Networking in Linux</p>
+					<p class="card-text ms-2">Welcome to the basics of Linux …</p>
 					
 				</div>
 			</div>
 		</a>
         </div>
 	<div class="col-sm-6 pt-2 doc-prev">
-		<a class="ms-auto" href="/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/">
+		<a class="ms-auto" href="/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/">
 			<div class="card h-100 my-1 text-end">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Conducting a Discovery Scan in Metasploit <i class="material-icons align-middle">navigate_next</i></p>
-					<p class="card-text me-2">Learn more about the …</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Text Manipulation <i class="material-icons align-middle">navigate_next</i></p>
+					<p class="card-text me-2">Welcome to the basics of Linux …</p>
 					
 				</div>
 			</div>
