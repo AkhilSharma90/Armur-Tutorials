@@ -111,7 +111,7 @@ This should complete and return the password which you can then use to open the 
 ### Cracking MD5 Password
 In this example I am generating a hash by using md5 hash generator to show you how to crack MD5 formatted files password. In the below image you can see I have generated the hash of the 12345 string. You can copy the MD5 hash to perform the same practical
 
-https://i.imgur.com/Sp4Vm3j.png
+![cracking](https://i.imgur.com/Sp4Vm3j.png)
 
 We used the string `123456789`. The `MD5` hash is `25f9e794323b453885f5181f1b624d0b` and the `SHA1` `f7c3bc1d808e04732adf679965ccc34ca7ae3441`.
 
@@ -124,7 +124,7 @@ We can now crack the password by running the following command
 john hash.txt --format=RAW-MD5
 ```
 
-https://i.imgur.com/ekzjIHz.png
+![img](https://i.imgur.com/ekzjIHz.png)
 
 You can see, we get the string back as `123456789`.
 

