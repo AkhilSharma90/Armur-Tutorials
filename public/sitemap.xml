@@ -17,6 +17,8 @@
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/beef/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</loc>
@@ -25,11 +27,17 @@
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
@@ -55,13 +63,17 @@
     <loc>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</loc>
     <lastmod>2024-06-26T05:25:20+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/sqlmap/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-06-27T07:05:09+02:00</lastmod>
+    <lastmod>2024-06-27T07:16:08+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
@@ -70,6 +82,6 @@
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</loc>
-    <lastmod>2024-06-27T07:05:09+02:00</lastmod>
+    <lastmod>2024-06-27T07:16:08+02:00</lastmod>
   </url>
 </urlset>

