@@ -8,6 +8,10 @@
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/aircrack-ng/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
@@ -18,6 +22,7 @@
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/</loc>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/categories/</loc>
   </url><url>
@@ -28,16 +33,19 @@
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</loc>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</loc>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</loc>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
@@ -58,14 +66,16 @@
     <lastmod>2024-06-24T10:13:54+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/nmap/</loc>
-    <lastmod>2024-06-26T05:12:48+02:00</lastmod>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</loc>
     <lastmod>2024-06-26T05:25:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/</loc>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap/</loc>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/tags/</loc>
   </url><url>
@@ -73,7 +83,7 @@
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-06-27T07:16:08+02:00</lastmod>
+    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>

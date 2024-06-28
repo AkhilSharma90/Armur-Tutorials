@@ -15,6 +15,13 @@
       <description>What is Linux? linkThe Linux kernel was created by Linus Torvalds in 1991. It becomes an operating system with the addition of components like a package manager, desktop environment, shell, and bootloader.&#xA;As an open-source OS, Linux offers numerous customizations. Each unique combination of these customizations is called a distribution or &amp;ldquo;distro.&amp;rdquo;&#xA;There are hundreds, if not thousands, of distros worldwide, each optimized for specific purposes or created just for fun by enthusiasts.</description>
     </item>
     <item>
+      <title>Aircrack-ng Introduction</title>
+      <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
+      <description>Aircrack-ng linkThis guide will introduce you to the basics of using the Aircrack-ng suite. While it is impossible to cover every scenario, this tutorial aims to provide a solid foundation. For additional information, be prepared to conduct your own research. The Forum and Wiki offer extensive supplementary tutorials and information.&#xA;For detailed steps on using Aircrack-ng, refer to the Simple WEP Crack tutorial, which covers the actual Aircrack-ng steps in greater detail.</description>
+    </item>
+    <item>
       <title>An Introduction to Metasploit</title>
       <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
