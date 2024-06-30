@@ -36,6 +36,13 @@
       <description>Introduction linkNmap, short for Network Mapper, is an open-source tool used for network discovery and security auditing. Developed by Gordon Lyon (also known as Fyodor), it has become the go-to tool for network administrators and penetration testers. This article will guide you through the core features of Nmap and provide useful commands to help you get started.&#xA;Why Use Nmap? linkNmap is favored by security professionals for several reasons:&#xA;Ease of Use: Quickly map out a network with simple commands.</description>
     </item>
     <item>
+      <title>An Introduction to Using sqlmap for SQL Injection Testing</title>
+      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/</guid>
+      <description>Introduction linkUsing sqlmap can be challenging if you&amp;rsquo;re unfamiliar with it. This tutorial aims to present the essential functionalities of this popular SQL injection tool in a quick and straightforward manner. Before using sqlmap, ensure you have the latest release and a Python interpreter installed. Most Linux distributions come with Python by default. If you&amp;rsquo;re not using Linux or don&amp;rsquo;t have Python installed, download and install it.&#xA;You&amp;rsquo;ll also need a vulnerable website to test.</description>
+    </item>
+    <item>
       <title>Autopsy</title>
       <link>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,6 +57,13 @@
       <description>Any self-respecting hacker must be able to script. For that matter, any self-respecting Linux administrator must be able to script. With the arrival of the Windows PowerShell, Windows administrators are increasingly required to script as well to perform automated tasks and be more efficient.&#xA;As a hacker, we often need to automate the use of multiple commands, sometimes from multiple tools. To become an elite hacker, you not only need to have advanced shell scripting skills, but also the ability to script in one of the widely-used scripting languages such as Ruby (Metasploit exploits are written in Ruby), Python (many hacking tools are Python scripts), or Perl (Perl is the best text manipulation scripting language).</description>
     </item>
     <item>
+      <title>Comprehensive Guide to SQL Injection</title>
+      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/</guid>
+      <description>What is SQL Injection (SQLi)? linkSQL Injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries an application makes to its database. This can enable an attacker to view or manipulate data that they normally cannot access. In severe cases, SQL injection can be used to compromise the underlying server or back-end infrastructure, leading to significant data breaches, reputational damage, and regulatory fines.&#xA;Impact of SQL Injection linkA successful SQL injection attack can lead to unauthorized access to sensitive data, such as:</description>
+    </item>
+    <item>
       <title>Conducting a Discovery Scan in Metasploit</title>
       <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -57,11 +71,25 @@
       <description>Introduction linkReconnaissance is the first step in penetration testing, where the goal is to gather information about the target network. This step involves identifying active hosts, their operating systems, open ports, and running services. A Discovery Scan in Metasploit is a comprehensive method to collect this information efficiently.&#xA;How a Discovery Scan Works linkA Discovery Scan in Metasploit uses Nmap to perform various scans and gather information. It includes the following phases:</description>
     </item>
     <item>
+      <title>Database Fingerprinting for SQL Injection: Identifying the Underlying DBMS</title>
+      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</guid>
+      <description>Database fingerprinting is a crucial step in SQL injection attacks. Identifying the underlying database management system (DBMS) allows attackers to fine-tune their injected segments and fully exploit vulnerabilities. This guide explores techniques for fingerprinting a database using SQL injection.&#xA;Error Messages linkOne of the simplest ways to fingerprint a database is through error messages. When a database error is generated, the error message often includes information about the DBMS.&#xA;Example:</description>
+    </item>
+    <item>
       <title>Database Support in Metasploit</title>
       <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</guid>
       <description>What is msfdb? linkmsfdb is a script included with all installations of Metasploit that simplifies the setup and management of both a database and a Web Service. This Web Service connects the database with Metasploit, enhancing its functionality and usability.&#xA;While msfdb is the easiest way to set up a database for Metasploit, it is also possible to set one up manually if preferred. Instructions for manual setup can be found in the Metasploit documentation.</description>
+    </item>
+    <item>
+      <title>Estimating MySQL Table Size using SQL Injection</title>
+      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/</guid>
+      <description>Estimating the size of a MySQL table using SQL injection can provide valuable information to an attacker. Knowing the approximate number of records in a table helps estimate the time required to extract all the data, which is crucial when dealing with slow or limited extraction techniques.&#xA;How It Works linkWhen a SELECT query is executed, the database engine evaluates all records returned by the statement to ensure they satisfy the WHERE clause.</description>
     </item>
     <item>
       <title>Exploiting Browser Sessions With BeEF</title>
@@ -97,6 +125,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</guid>
       <description>Reverse shells are a crucial technique in penetration testing and ethical hacking, enabling attackers to gain access to a remote machine by reversing the connection back to the attacker&amp;rsquo;s machine. This blog post provides a comprehensive guide on using reverse shells in Metasploit, detailing the process step-by-step and explaining when and why to use reverse shells.&#xA;List of Metasploit Reverse Shells linkTo list all available reverse shells in Metasploit, use the following command:</description>
+    </item>
+    <item>
+      <title>How to Use Hydra to Hack Passwords – Penetration Testing Tutorial</title>
+      <link>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</guid>
+      <description>Introduction linkHydra is a powerful brute-forcing tool used by penetration testers and ethical hackers to crack passwords of network services. It can perform rapid dictionary attacks against more than 50 protocols, including Telnet, FTP, HTTP, HTTPS, SMB, databases, and several other services. Developed by the hacker group &amp;ldquo;The Hacker’s Choice,&amp;rdquo; Hydra was first released in 2000 as a proof-of-concept tool for attacking network logon services.&#xA;Unlike sequential brute-forcing tools, Hydra is a parallelized login cracker, allowing multiple connections simultaneously, significantly reducing the time required to crack a password.</description>
     </item>
     <item>
       <title>Introduction to BeEF: The Browser Exploitation Framework</title>
@@ -153,6 +188,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</guid>
       <description>In Linux, nearly everything you deal with directly is a file, and most often these will be text files. For instance, all configuration files in Linux are text files. To reconfigure an application, you simply open the configuration file, change the text, save the file, and then restart the application—your reconfiguration is complete. With so many text files, manipulating text becomes crucial in managing Linux and Linux applications. In this chapter, you’ll use several commands and techniques for manipulating text in Linux.</description>
+    </item>
+    <item>
+      <title>Time-Based Blind SQL Injection Attacks</title>
+      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/</guid>
+      <description>Time-based blind SQL injection attacks are a form of SQL injection where the attacker injects a query that causes a time delay in the database response. By observing the time it takes for the server to respond, the attacker can infer information about the database, even if there is no direct feedback from the database server.&#xA;Purpose of Time-Based SQL Injection linkTime-based techniques are particularly useful for blind and deep blind SQL injection attacks where there is no other way to retrieve information from the database server.</description>
+    </item>
+    <item>
+      <title>Time-Based Blind SQL Injection Using Heavy Queries</title>
+      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/</guid>
+      <description>Overview linkIn some cases, it might be impossible to use time delay functions or procedures for classic time delay injections. In such situations, the best alternative is to simulate a delay using heavy queries, which take a noticeable amount of time to execute. This technique leverages the execution time of complex queries to infer information about the database.&#xA;Principle linkThe injected query should rely on system tables, as the attacker usually has no information about user tables.</description>
     </item>
     <item>
       <title>Understanding File Permissions in Linux</title>
