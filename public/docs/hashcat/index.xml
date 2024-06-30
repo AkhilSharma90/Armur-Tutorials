@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hashcat on Tutorials</title>
+    <link>http://localhost:1313/tutorials/docs/hashcat/</link>
+    <description>Recent content in Hashcat on Tutorials</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tutorials/docs/hashcat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Hashcat</title>
+      <link>http://localhost:1313/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</guid>
+      <description>Cracking Passwords with Hashcat: A Comprehensive Guide linkIntroduction linkHashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.&#xA;In this section, we will delve into Hashcat, a powerful command-line utility designed for cracking hashes. We will explore how hashing works, the features of Hashcat, and provide step-by-step instructions for its installation and use.</description>
+    </item>
+  </channel>
+</rss>

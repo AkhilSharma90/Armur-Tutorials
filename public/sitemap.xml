@@ -9,8 +9,10 @@
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/aircrack-ng/</loc>
+    <lastmod>2024-06-28T16:29:28+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</loc>
+    <lastmod>2024-06-28T16:29:28+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
@@ -35,6 +37,8 @@
     <loc>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</loc>
     <lastmod>2024-06-28T16:15:43+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/hashcat/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
@@ -45,7 +49,9 @@
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</loc>
-    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
+    <lastmod>2024-06-29T08:35:19+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
@@ -83,7 +89,7 @@
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-06-28T16:15:43+02:00</lastmod>
+    <lastmod>2024-06-29T08:35:19+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>

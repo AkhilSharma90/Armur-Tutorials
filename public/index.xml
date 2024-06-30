@@ -36,6 +36,13 @@
       <description>Introduction linkNmap, short for Network Mapper, is an open-source tool used for network discovery and security auditing. Developed by Gordon Lyon (also known as Fyodor), it has become the go-to tool for network administrators and penetration testers. This article will guide you through the core features of Nmap and provide useful commands to help you get started.&#xA;Why Use Nmap? linkNmap is favored by security professionals for several reasons:&#xA;Ease of Use: Quickly map out a network with simple commands.</description>
     </item>
     <item>
+      <title>Autopsy</title>
+      <link>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Bash Scripting in Linux</title>
       <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +69,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</guid>
       <description>BeEF comes preloaded with over three hundred modules that you can run depending on the browser hooked. These are broken down into twelve categories, including: “Exploits, Network, and Social Engineering.”&#xA;Google Phishing linkThe Google Phishing command is a module within BeEF that aims to trick the user of a hooked browser into revealing their Google credentials.&#xA;Let’s execute the command, and on the victim’s browser, they should be presented with the fake login page.</description>
+    </item>
+    <item>
+      <title>Getting started with Social Engineering Toolkit</title>
+      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</guid>
+      <description>What is Social Engineering? linkTechnology is making it easier for cybercriminals to exploit human behavior, cognitive biases, and social dynamics. The most common attack method used by hackers is social engineering. In other words, it’s influencing someone to do something or say something. Many types of social engineering attacks are out there, including phishing, pretexting, baiting, and tailgating.&#xA;What is the Social Engineering Toolkit(SET)? linkSocial Engineering Toolkit (SET) is a versatile tool that enables you to simulate a wide range of social engineering attacks.</description>
     </item>
     <item>
       <title>Hashing and Password cracking in Metasploit</title>
@@ -92,6 +106,13 @@
       <description>BeEF, the Browser Exploitation Framework, is an indispensable tool for ethical hackers aiming to identify and exploit vulnerabilities within web browsers. While many security tools concentrate on system or server-side vulnerabilities, BeEF zeroes in on the client side—specifically, the user&amp;rsquo;s web browser. This focus is crucial because, regardless of the security measures implemented on a network or operating system, vulnerabilities in a web browser can still provide a gateway for attackers to infiltrate the system.</description>
     </item>
     <item>
+      <title>Introduction to Hashcat</title>
+      <link>http://localhost:1313/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</guid>
+      <description>Cracking Passwords with Hashcat: A Comprehensive Guide linkIntroduction linkHashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.&#xA;In this section, we will delve into Hashcat, a powerful command-line utility designed for cracking hashes. We will explore how hashing works, the features of Hashcat, and provide step-by-step instructions for its installation and use.</description>
+    </item>
+    <item>
       <title>Introduction to Metasploit</title>
       <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,11 +141,11 @@
       <description>Nmap (Network Mapper) is a free and open-source tool for network discovery and security auditing. It is widely used by network administrators and penetration testers for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets to determine the available hosts, services, operating systems, and other characteristics of a network.&#xA;TCP/IP Protocols linkNmap operates on various layers of the TCP/IP protocol suite:</description>
     </item>
     <item>
-      <title>SQLMap</title>
-      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap/</link>
+      <title>OWASP ZAP</title>
+      <link>http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap/</guid>
-      <description></description>
+      <guid>http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</guid>
+      <description>What is OWASP ZAP? linkOWASP ZAP is a powerful penetration testing tool designed to help developers and security professionals detect and find vulnerabilities in web applications. It offers multiple security functions, including:&#xA;Passively scanning web requests Using dictionary lists to search for files and folders on web servers Using crawlers to identify a site’s structure and retrieve all links and URLs Intercepting, displaying, modifying, and forwarding web requests between browsers and web applications OWASP ZAP can identify vulnerabilities in web applications such as compromised authentication, exposure of sensitive data, security misconfigurations, SQL injection, cross-site scripting (XSS), insecure deserialization, and components with known vulnerabilities.</description>
     </item>
     <item>
       <title>Text Manipulation</title>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OWASP ZAP on Tutorials</title>
+    <link>http://localhost:1313/tutorials/docs/owasp-zap/</link>
+    <description>Recent content in OWASP ZAP on Tutorials</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tutorials/docs/owasp-zap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OWASP ZAP</title>
+      <link>http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</guid>
+      <description>What is OWASP ZAP? linkOWASP ZAP is a powerful penetration testing tool designed to help developers and security professionals detect and find vulnerabilities in web applications. It offers multiple security functions, including:&#xA;Passively scanning web requests Using dictionary lists to search for files and folders on web servers Using crawlers to identify a site’s structure and retrieve all links and URLs Intercepting, displaying, modifying, and forwarding web requests between browsers and web applications OWASP ZAP can identify vulnerabilities in web applications such as compromised authentication, exposure of sensitive data, security misconfigurations, SQL injection, cross-site scripting (XSS), insecure deserialization, and components with known vulnerabilities.</description>
+    </item>
+  </channel>
+</rss>
