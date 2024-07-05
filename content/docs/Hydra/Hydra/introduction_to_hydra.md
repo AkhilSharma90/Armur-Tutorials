@@ -57,7 +57,7 @@ This command provides a list of flags and options available in Hydra.
 
 To perform a simple attack with known username and password:
 
-```sh
+```bash
 $ hydra -l <username> -p <password> <server> <service>
 ```
 

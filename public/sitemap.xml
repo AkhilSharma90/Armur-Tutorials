@@ -21,6 +21,7 @@
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/autopsy/</loc>
     <lastmod>2024-06-30T15:32:14+02:00</lastmod>
@@ -37,16 +38,19 @@
     <loc>http://localhost:1313/tutorials/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</loc>
     <lastmod>2024-06-28T16:15:43+02:00</lastmod>
@@ -67,8 +71,10 @@
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/hydra/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</loc>
     <lastmod>2024-06-29T08:35:19+02:00</lastmod>
@@ -110,7 +116,7 @@
     <lastmod>2024-06-30T15:32:14+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/</loc>
-    <lastmod>2024-06-30T15:32:14+02:00</lastmod>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/tags/</loc>
   </url><url>
@@ -118,11 +124,13 @@
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/</loc>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-06-30T15:32:14+02:00</lastmod>
+    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
