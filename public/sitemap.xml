@@ -71,10 +71,12 @@
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</loc>
-    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
+    <lastmod>2024-07-05T13:17:15+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/hydra/</loc>
     <lastmod>2024-06-30T23:48:36+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</loc>
     <lastmod>2024-06-29T08:35:19+02:00</lastmod>
@@ -93,6 +95,8 @@
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/managing_sessions/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/</loc>
     <lastmod>2024-06-24T10:13:54+02:00</lastmod>
@@ -130,7 +134,7 @@
     <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-06-30T23:48:36+02:00</lastmod>
+    <lastmod>2024-07-05T13:17:15+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
@@ -140,5 +144,7 @@
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</loc>
     <lastmod>2024-06-27T07:16:08+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</loc>
   </url>
 </urlset>

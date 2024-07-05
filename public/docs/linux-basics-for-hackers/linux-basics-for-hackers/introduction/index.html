@@ -372,6 +372,21 @@
                                             <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/">Getting started with Social Engineering Toolkit</a></li>
                                         
                                     
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/">Infectious Media Generator</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/">Mass Mailer</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/">Website Cloning and Credential Harvesting</a></li>
+                                        
+                                    
                                 </ul>
                             </div>
                         </li>
@@ -1699,6 +1714,27 @@ rmdir &lt;directory&gt;</code>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -1924,6 +1960,15 @@ rmdir &lt;directory&gt;</code>
     index.add(
             {
                 id:  24 ,
+                href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/infectious_media_generator\/",
+                title: "Infectious Media Generator",
+                description: "Right now, you should have SET setup on your system. We can spin it up by running\nsudo setoolkit Infectious Media Generator linkThe Infectious Media Generator in SET allows you to create malicious files, such as PDFs and EXEs, that can trigger a reverse Meterpreter shell when opened. This section will guide you through the process of creating a malicious EXE.\nSET has many options for malicious payloads, but they may be limited depending on the software and operating system versions the target is using",
+                content: "Right now, you should have SET setup on your system. We can spin it up by running\nsudo setoolkit Infectious Media Generator linkThe Infectious Media Generator in SET allows you to create malicious files, such as PDFs and EXEs, that can trigger a reverse Meterpreter shell when opened. This section will guide you through the process of creating a malicious EXE.\nSET has many options for malicious payloads, but they may be limited depending on the software and operating system versions the target is using\nGetting Started linkFrom the SET main menu, select one “Social-Engineering Attacks.” Choose three “Infectious Media Generator.”\nThere are two options inside the Infectious Media Generator, File-Format Exploits and Standard Metasploit Executable.\nFile-Format Exploits linkThis attack vector exploits vulnerabilities in popular formats like PDFs, Microsoft Office documents, and image files. Attackers craft malicious files containing embedded payloads that, when opened by unsuspecting users, exploit these vulnerabilities to gain unauthorized access to their systems.\nThe primary advantage of this approach is its stealthiness, as the malicious files often appear legitimate and are less likely to raise suspicion. Moreover, users perceive these file formats as harmless, making them more likely to be opened.\nThese are dependent on the OS version of the target system.\nStandard Metasploit Executable linkUsing the Metasploit Framework, this attack vector involves creating a standalone executable containing a malicious payload.\nWhen a user runs the executable, the payload is executed, and the attacker gains control over the target system. This approach is more straightforward than File-Format Exploits, as it doesn’t rely on exploiting specific vulnerabilities in file formats.\nHowever, it may also be more conspicuous, as users are generally more cautious when running unfamiliar executables. A successful attack using this vector often relies on strong social engineering techniques to convince the target to run the executable, such as disguising it as a software update, a useful utility, or a desirable file.\nChoosing the Standard Metasploit Executable linkYou will be asked to select the reverse shell you want to use. For this option, choose two, which is the Windows Meterpreter Reverse TCP shell. Enter the IP address and port for your listener.\nThe Social Engineering Toolkit will now create the malicious exe file, call it payload.exe, and save it to the /root/.set directory.\nYou can now rename the file to something else if you want. An attacker might change the name to something that will entice a victim to click on it, such as an update for an application.\nmv payload.exe "
+            }
+        );
+    index.add(
+            {
+                id:  25 ,
                 href: "\/tutorials\/docs\/beef\/beef\/introduction_to_beef\/",
                 title: "Introduction to BeEF: The Browser Exploitation Framework",
                 description: "Learn more about beEF",
@@ -1932,7 +1977,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  25 ,
+                id:  26 ,
                 href: "\/tutorials\/docs\/hashcat\/hashcat\/introduction_to_hashcat\/",
                 title: "Introduction to Hashcat",
                 description: "Cracking Passwords with Hashcat: A Comprehensive Guide linkIntroduction linkHashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.\nIn this section, we will delve into Hashcat, a powerful command-line utility designed for cracking hashes. We will explore how hashing works, the features of Hashcat, and provide step-by-step instructions for its installation and use.",
@@ -1941,7 +1986,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  26 ,
+                id:  27 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/running_modules_using_metasploit\/",
                 title: "Introduction to Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1950,7 +1995,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  27 ,
+                id:  28 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/",
                 title: "John The Ripper",
                 description: "Learn more about John The Ripper",
@@ -1959,7 +2004,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  28 ,
+                id:  29 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/",
                 title: "Linux Basics for Hackers",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1968,7 +2013,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  29 ,
+                id:  30 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/managing_sessions\/",
                 title: "Managing Sessions in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1977,7 +2022,16 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  30 ,
+                id:  31 ,
+                href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/mass_mailer\/",
+                title: "Mass Mailer",
+                description: "The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.\nIn this section, we’ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.\nTo use a Gmail account for this purpose, you’ll need to set up an App password.",
+                content: "The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.\nIn this section, we’ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.\nTo use a Gmail account for this purpose, you’ll need to set up an App password. This allows access to your Google Account from applications that don’t support two-factor authentication. If using your own domain, you’ll require an SMTP open relay. SMTP2GO is a recommended service that offers up to 1,000 free emails.\nLet’s set up a phishing campaign using a Gmail address to send an email containing a malicious link. We’ll impersonate GitHub support and encourage the target to click on a link leading to a cloned website hosted on our server.\nFrom the main menu, choose option one, “Social Engineering Attacks,” then choose option five, “Mass Mailer Attack,” and finally select “E-mail Attack Single Email Address.”\nYou will be asked to input the target and sender email. Let’s walk through each prompt.\nSend email to: This is the email of the target. Next, you can use a Gmail account or one from your server. Your Gmail account: The account you want to send the email from. The FROM NAME the user will see: The from name you want to be displayed. Flag this message(s) as high priority: Whether you want it to be flagged as high priority. Do you want to attach a file: Yes or No Do you want to attach an inline file: Yes or No E-mail Subject: The subject line for the email. Send the message as HTML or plain text: Choose how you want to send the email. Enter the body of the message: Enter the actual email text here. Once you have finished writing the email, type END and hit enter. SET will tell you when it has finished sending the emails. Once the email has been sent, your target should receive it in their inbox.\n"
+            }
+        );
+    index.add(
+            {
+                id:  32 ,
                 href: "\/tutorials\/docs\/metasploit\/",
                 title: "Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1986,7 +2040,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  31 ,
+                id:  33 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/networking_in_kali\/",
                 title: "Networking in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1995,7 +2049,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  32 ,
+                id:  34 ,
                 href: "\/tutorials\/docs\/nmap\/",
                 title: "Nmap",
                 description: "Learn more about Nmap",
@@ -2004,7 +2058,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  33 ,
+                id:  35 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/cheat_sheet\/",
                 title: "Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts",
                 description: "Learn more about the Nmap",
@@ -2013,7 +2067,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  34 ,
+                id:  36 ,
                 href: "\/tutorials\/docs\/owasp-zap\/",
                 title: "OWASP ZAP",
                 description: "Learn more about SQLMap",
@@ -2022,7 +2076,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  35 ,
+                id:  37 ,
                 href: "\/tutorials\/docs\/owasp-zap\/owasp-zap\/introduction_to_zap\/",
                 title: "OWASP ZAP",
                 description: "Learn more about OWASP ZAP",
@@ -2031,7 +2085,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  36 ,
+                id:  38 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/",
                 title: "Social Engineering Toolkit",
                 description: "Learn more about the Social Engineering Toolkit",
@@ -2040,7 +2094,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  37 ,
+                id:  39 ,
                 href: "\/tutorials\/docs\/sqlmap\/",
                 title: "SQLMap",
                 description: "Learn more about SQLMap",
@@ -2049,7 +2103,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  38 ,
+                id:  40 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/text_manipulation\/",
                 title: "Text Manipulation",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -2058,7 +2112,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  39 ,
+                id:  41 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blind_attacks\/",
                 title: "Time-Based Blind SQL Injection Attacks",
                 description: "Learn more about SQLMap",
@@ -2067,7 +2121,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  40 ,
+                id:  42 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blinds_using_heavy_queries\/",
                 title: "Time-Based Blind SQL Injection Using Heavy Queries",
                 description: "Learn more about SQLMap",
@@ -2076,7 +2130,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  41 ,
+                id:  43 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/file_permision_using_linux\/",
                 title: "Understanding File Permissions in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -2085,7 +2139,7 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  42 ,
+                id:  44 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/payloads_in_metasploit\/",
                 title: "Understanding How Payloads Work in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -2094,11 +2148,20 @@ rmdir &lt;directory&gt;</code>
         );
     index.add(
             {
-                id:  43 ,
+                id:  45 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/john-the-ripper\/introduction_to_john_the_ripper\/",
                 title: "Using John The Ripper",
                 description: "Learn how to use John The Ripper to crack passwords.",
                 content: "One of the most famous and powerful tool for password cracking is John the Ripper.\nJohn the Ripper is the tool that is used by most of the ethical hackers to perform dictionary attacks for password cracking. In this section, you will learn what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works and practical tutorial on John the Ripper usage.\nWhat is John the Ripper? linkJohn the Ripper is the name of the password cracker tool that is developed by Openwall. As the name, It is used to crack password hashes by using its most popular inbuilt program, rules and codes that are also an individual password cracker itself in a single package.\nIt automatically detects types of password hashes, you can also customize this tool according to your wish. It can be used to crack password-protected compressed files like Zip, Rar, Doc, pdf etc.\nThe penetration testers, ethical hackers, security experts and other Cyber Security professionals use this tool to find weak algorithms and then make them strong so that they can’t be hacked.\nSecurity professionals build their confidential files with a strong hash algorithm to prevent external unauthorized access. Hackers used it to crack multiple accounts and simply crack their credentials. Security experts use it to strengthen their encryption. It can also be used for hacking shells and passwords SHA-crypt hashes It provides a mangling feature which is a preprocessor in JTR that optimizes the word list to make the password cracking process faster. Understanding Hash Functions linkHashing is the process of converting an input of any length into a fixed-size string of text using the mathematical function (Hash Function) i.e, any text no matter how long it is can be converted into any random combination of numbers and alphabets through an algorithm\nHash function example Let’s understand hashing process with a real-life example. The best example is how our system password stores in the database.\nWithout Hashing Algorithm linkWhenever you set a password it will directly store in the database as a text file that may be read easily if the system compromised. It will save your password in a plain file as the same string you entered. Check the below image with syntax and example\nWith Hashing Algorithm linkWhenever you set your password it will take your password as an input string and with the help of hashing function, it converts that password into a hash (random combination of number and alphabet) and stores it in the database. It enhances security by encrypting input strings. It will save your password in a different format so no one can read it even if your system compromise.\nTypes of Hashing Algorithms linkJohn the Ripper tool are able to perform various attacks and crack a lot of hash formats such as:\nMD2 CRC32 SHA-1 SHA-256 MD5 RipeMD128 Adler32 Tiger You can check the formats that supports with the following command on your terminal:\njohn --list=formats How JRP Works? linkThe main objective of John the Ripper is to crack the password. There are many ways that can be supported but it is mainly known for Dictionary attacks. However, you can also run other types of attacks like Bruteforce attack, Rainbow Table etc.\nDictionary attack: This is the popular and most usable attack in the JTR (John the Ripper) password cracker tool where we used pre-defined words or a list of words that can be used to crack the password. This attack uses the words from the wordlist (A text file having pre-defined words) and matches every single word from the list with a password to crack in sequence.\nBrute-force attack: If you are using this attack then you have to do the configuration of few things before its use such as the defining minimum and maximum lengths of the password, defining possible characters that you want to test during the cracking process like (special characters, alphabets and numbers).\nFor Example, The matching string that you are using for cracking passwords should include uppercase alphabets, special characters and numbers like ABC32@$\nThe user gets a password on the successful match, but this effective process is slow. for example, a 10-character password including upper and lower letters along with numbers and special characters will take over 10 years to be guessed by a computer\nGetting John The Ripper linkIt was developed for Unix Operating systems and was only work on Linux based systems but now available for all platforms such as Windows, BSD, Mac.\nIn Kali Linux John the Ripper is already available under password cracking metapackages, so you don’t need to download it.\nYou can download John the Ripper password cracker from the official website Openwall.\nIf you are using different Linux distributions like Ubuntu, Fedora, Arch etc. then you can install it by running the below single command the difference in command only will be the package manager i.e, for Ubuntu you use apt, Arch uses Pacman and Redhat uses yum.\nsudo apt-get install john How to Use John the Ripper linkUsing this password cracker tool is very easy and straightforward, you just need to type john followed by the hash file that you want to crack and then just define the format of the hash and hit enter.\njohn hash.txt --format=RAW-MD5 In the above picture, you can see lots of supported formats, You can do various things with this tool such as using wordlists, rules, modes, options, decrypting formats etc, We will see below how to use these various things in this tool\nCracking Zip File linkAssume you have a zip file that is password protected called protected.zip. We can use John The Ripper to crack the password. We first need to generate a hash of the zip file. You can use the below command and will generate the hash value into a hash.txt file.\nsudo zip2john protected.zip \u003e hash.txt So now we have a hash of our zip file that we will use to crack the password. In the below command we use the format option to specify the zip file and then the hash.txt file where we store our hash value.\nsudo john --format=zip hash.txt This should complete and return the password which you can then use to open the zip file.\nCracking MD5 Password linkIn this example I am generating a hash by using md5 hash generator to show you how to crack MD5 formatted files password. In the below image you can see I have generated the hash of the 12345 string. You can copy the MD5 hash to perform the same practical\nWe used the string 123456789. The MD5 hash is 25f9e794323b453885f5181f1b624d0b and the SHA1 f7c3bc1d808e04732adf679965ccc34ca7ae3441.\nNow you can create a .txt file and put the MD5 hash using the following commands.\nWe can now crack the password by running the following command\njohn hash.txt --format=RAW-MD5 You can see, we get the string back as 123456789.\nCracking Linux Password linkWhen we create a password of the Linux system it stores in /etc/shadow location in encrypted form i.e, like a hash. So cracking a Linux password is easy with just a single command that is given below.\nsudo john /etc/shadow Now we know what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works, How passwords can be cracked and also a tutorial on its real-life important uses, but this not get over yet there are lots of other things that can be done by JTR.\nRemenber if the password is long it will also take long time to crack.\n"
+            }
+        );
+    index.add(
+            {
+                id:  46 ,
+                href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/website_cloning_and_harvesting_credentials\/",
+                title: "Website Cloning and Credential Harvesting",
+                description: "In this section, you will learn about the Social Engineering Toolkit's Website Cloning and Credential Harvesting.",
+                content: "Website cloning and credential harvesting are two essential techniques in the arsenal of social engineers. These techniques involve creating a replica of a legitimate website and tricking users into entering their sensitive information on the fake website, such as usernames and passwords.\nThis information can then be used for various malicious activities, including unauthorized access to user accounts, identity theft, or even corporate espionage.\nClone Site linkBefore setting up a cloned site in SET, you need to enable the Apache web server in the SET configuration file located at /etc/setoolkit/set.config. Change the line APACHE_SERVER=OFF to APACHE_SERVER=ON, save the file, and restart SET to apply the changes.\nTo use the Site Cloner in SET, follow these steps:\nLaunch SET by running setoolkit in the terminal. Select option one, which is Social-Engineering Attacks. Choose option two, Website Attack Vectors. Select option three, Credential Harvester Attack Method. Choose option two, Site Cloner. After that:\nEnter the IP address of the machine running SET, which will be used as the redirect IP for captured credentials. Input the URL of the target website you want to clone (e.g., https://www.github.com/login). SET will now clone the website and host it on your machine, with a phishing page to capture user credentials.\nFor this to work effectively, you need to clone a site that has the username and password fields on the same page.\nCredential Harvesting linkWhen users visit the cloned website and enter their login information, the credentials will be captured and sent to the attacker’s machine. This information can then be used to gain unauthorized access to the user’s account on a legitimate website.\nThe user will then be redirected to the actual login page of the service.\nIf we head back to our terminal in Kali, we should see the credentials come through.\nTo make the cloned website more convincing, attackers often employ tactics like typosquatting (registering domains with similar names to the target site), such as amzon.com (instead of amazon.com), or using the target site’s name as a subdomain of another legitimate site they control (amazon.myfakesite.com).\nThese techniques help create a sense of credibility for the fake website, increasing the chances of successfully tricking users into revealing their credentials.\nIt’s important to note that tools like SET can quickly deploy cloned websites on cloud platforms like AWS, complete with public URLs, making it even easier for attackers to create convincing phishing campaigns.\n"
             }
         );
     search.addEventListener('input', show_results, true);

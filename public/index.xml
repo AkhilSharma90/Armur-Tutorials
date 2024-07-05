@@ -134,6 +134,13 @@
       <description>Introduction linkHydra is a powerful brute-forcing tool used by penetration testers and ethical hackers to crack passwords of network services. It can perform rapid dictionary attacks against more than 50 protocols, including Telnet, FTP, HTTP, HTTPS, SMB, databases, and several other services. Developed by the hacker group &amp;ldquo;The Hacker’s Choice,&amp;rdquo; Hydra was first released in 2000 as a proof-of-concept tool for attacking network logon services.&#xA;Unlike sequential brute-forcing tools, Hydra is a parallelized login cracker, allowing multiple connections simultaneously, significantly reducing the time required to crack a password.</description>
     </item>
     <item>
+      <title>Infectious Media Generator</title>
+      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</guid>
+      <description>Right now, you should have SET setup on your system. We can spin it up by running&#xA;sudo setoolkit Infectious Media Generator linkThe Infectious Media Generator in SET allows you to create malicious files, such as PDFs and EXEs, that can trigger a reverse Meterpreter shell when opened. This section will guide you through the process of creating a malicious EXE.&#xA;SET has many options for malicious payloads, but they may be limited depending on the software and operating system versions the target is using</description>
+    </item>
+    <item>
       <title>Introduction to BeEF: The Browser Exploitation Framework</title>
       <link>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -160,6 +167,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/managing_sessions/</guid>
       <description>Managing Sessions in Metasploit linkManaging multiple sessions in Metasploit can be a complex task, especially when dealing with numerous active connections. Effective session management is crucial for streamlined operations during penetration testing. This guide covers the basics of managing sessions, navigating open sessions using search, and killing stale sessions.&#xA;Basics of Session Management linkIn Metasploit, sessions represent ongoing interactions between the attacker and the compromised host. Managing these sessions efficiently ensures smooth operation and better control over the testing environment.</description>
+    </item>
+    <item>
+      <title>Mass Mailer</title>
+      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</guid>
+      <description>The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.&#xA;In this section, we&amp;rsquo;ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.&#xA;To use a Gmail account for this purpose, you&amp;rsquo;ll need to set up an App password.</description>
     </item>
     <item>
       <title>Networking in Linux</title>
@@ -223,6 +237,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</guid>
       <description>One of the most famous and powerful tool for password cracking is John the Ripper.&#xA;John the Ripper is the tool that is used by most of the ethical hackers to perform dictionary attacks for password cracking. In this section, you will learn what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works and practical tutorial on John the Ripper usage.&#xA;What is John the Ripper?</description>
+    </item>
+    <item>
+      <title>Website Cloning and Credential Harvesting</title>
+      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</guid>
+      <description>Website cloning and credential harvesting are two essential techniques in the arsenal of social engineers. These techniques involve creating a replica of a legitimate website and tricking users into entering their sensitive information on the fake website, such as usernames and passwords.&#xA;This information can then be used for various malicious activities, including unauthorized access to user accounts, identity theft, or even corporate espionage.&#xA;Clone Site linkBefore setting up a cloned site in SET, you need to enable the Apache web server in the SET configuration file located at /etc/setoolkit/set.</description>
     </item>
   </channel>
 </rss>
