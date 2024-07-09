@@ -7,7 +7,7 @@ draft: false
 
 ## What is Social Engineering?
 
-Technology is making it easier for cybercriminals to exploit human behavior, cognitive biases, and social dynamics. The most common attack method used by hackers is social engineering. In other words, it’s influencing someone to do something or say something. Many types of social engineering attacks are out there, including phishing, pretexting, baiting, and tailgating.
+Technology is making it easier for cyber criminals to exploit human behavior, cognitive biases, and social dynamics. The most common attack method used by hackers is social engineering. In other words, it’s influencing someone to do something or say something. Many types of social engineering attacks are out there, including phishing, pretexting, baiting, and tailgating.
 
 ## What is the Social Engineering Toolkit(SET)?
 
