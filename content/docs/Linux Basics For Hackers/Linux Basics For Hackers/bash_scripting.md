@@ -89,10 +89,7 @@ When we then hit enter, our very simple script returns to our monitor.
 ```bash
 Hello World
 ```
- 
-
 Success! We just completed our first simple script!
-
 
 ## Using Variables
 
@@ -151,4 +148,3 @@ kali > ./Scannerscript
 ```
 
 As you can see, the script prompts us for the first IP address, then the last IP address and the port we want to scan for. After collecting this info, it then does the nmap scan and produces a report of all the IP addresses in the range that have the port open that we specified.
-```

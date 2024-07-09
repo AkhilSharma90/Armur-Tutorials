@@ -29,11 +29,15 @@ Once the installation is complete, you can launch the Social Engineering Toolkit
 sudo setoolkit
 ```
 
-![set](https://i.imgur.com/JW89Qsl.png)
+<!-- ![set](https://i.imgur.com/JW89Qsl.png)
+ -->
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="JW89Qsl" data-context="false" ><a href="//imgur.com/JW89Qsl"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 If you select 1 (type in 1), you will open the toolkit and you will see the following list:
 
-![set](https://i.imgur.com/m7Pq9vF.png)
+<!-- ![set](https://i.imgur.com/m7Pq9vF.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="m7Pq9vF" data-context="false" ><a href="//imgur.com/m7Pq9vF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## THE SET options
 

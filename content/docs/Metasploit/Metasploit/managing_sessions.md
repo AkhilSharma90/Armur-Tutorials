@@ -18,14 +18,14 @@ In Metasploit, sessions represent ongoing interactions between the attacker and 
 The `sessions` command in Metasploit provides various options to list, interact with, and manage open sessions. Here are some common usages:
 
 - **List all sessions**:
-  ```bash
-  msf6 > sessions
-  ```
+```bash
+msf6 > sessions
+```
 
 - **Interact with a specific session**:
-  ```bash
-  msf6 > sessions -i <session_id>
-  ```
+```bash
+msf6 > sessions -i <session_id>
+```
 
 ## Session Search
 
@@ -100,7 +100,7 @@ msf6 > sessions -K -S "session_type:meterpreter"
 ```
 
 **Output**:
-```plaintext
+```bash
 [*] Killing matching sessions...
 
 Active sessions

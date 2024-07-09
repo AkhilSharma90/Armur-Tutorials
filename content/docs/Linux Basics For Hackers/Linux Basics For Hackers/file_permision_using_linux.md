@@ -5,7 +5,6 @@ icon: "code"
 draft: false
 ---
 
-
 Linux employs a robust system to manage file access control. This system determines who can read, write, and execute any given file. It grants the file owner control over these permissions, allowing them to specify who can access their files. Group permissions can also be configured to manage access for specific user groups.
 
 **Viewing File Permissions**

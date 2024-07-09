@@ -16,8 +16,8 @@ The most basic Linux command for analyzing networks is `ifconfig`. It's very sim
 ```bash
 kali > ifconfig
 ```
-
-![img](https://i.imgur.com/aftxOdy.png)
+<!-- ![img](https://i.imgur.com/aftxOdy.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="aftxOdy" data-context="false" ><a href="//imgur.com/aftxOdy"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 As you can see in this screenshot, `ifconfig` conveys a significant amount of information to the user. In the very first line, we see to the far left `eth0`. This is the first wired network connection, Ethernet 0 (Linux usually starts counting at 0 rather than 1. Get used to it if you are using Linux).
 
@@ -36,8 +36,8 @@ Let's take a look at our wireless devices with `iwconfig`.
 ```bash
 kali > iwconfig
 ```
-
-![alt text](https://i.imgur.com/zWNuT49.png)
+<!-- ![alt text](https://i.imgur.com/zWNuT49.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="aftxOdy" data-context="false" ><a href="//imgur.com/aftxOdy"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 In my case, I have no wireless extensions, so there is not much information.
 
@@ -53,7 +53,6 @@ kali > ifdown eth0
 
 When we deactivate the `eth0` interface and then type the `ifconfig` command, we can see that the `eth0` is no longer active and does not appear.
 
----
 
 ## Step 2: Changing IP Addresses
 
@@ -73,8 +72,6 @@ We can also change the netmask and broadcast address, if necessary, such as:
 kali > ifconfig eth0 192.168.181.115 netmask 255.255.0.0 broadcast 192.168.1.255
 ```
 
----
-
 ## Step 3: DHCP (Dynamic Host Configuration Server)
 
 Linux has a DHCP server that runs a daemon (daemon is simply a process that runs in the background in Linux) called `dhcpd` or `dhcp daemon`. It's this DHCP server that assigns IP addresses to all the systems on the subnet. It also keeps log files of which machines had which IP addresses at which time. It's this log that is often used to trace hackers in a forensic analysis after an attack.
@@ -86,8 +83,6 @@ kali > dhclient eth0
 ```
 
 The `dhclient` command sends out a DHCPDISCOVER request from the default NIC. It then gets an offer (DHCPOFFER) of `192.168.181.131` from the DHCP server, then confirms the IP assignment to the DHCP server. Now, if we type `ifconfig`, we can see that the DHCP server has assigned a new IP address.
-
----
 
 ## Step 4: DNS (Domain Name Service)
 
@@ -105,7 +100,8 @@ By using the `dig` command with the `mx` option, we can get info on the email se
 kali > dig google.com mx
 ```
 
-![google](https://i.imgur.com/45avENv.png)
+<!-- ![google](https://i.imgur.com/45avENv.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="45avENv" data-context="false" ><a href="//imgur.com/45avENv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 As a hacker, the `dig` command and using DNS to obtain information on our potential target can be a key piece of early reconnaissance before attacking.
 

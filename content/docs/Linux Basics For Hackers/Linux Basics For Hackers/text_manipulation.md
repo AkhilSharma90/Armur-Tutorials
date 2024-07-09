@@ -27,7 +27,7 @@ kali > cat /etc/snort/snort.conf
 
 Your screen should now display the entire `snort.conf` file, which will stream until it comes to the end of the file, and should look something like the following:
 
-```
+```bash
 #-------------------------------------------------
 # VRT Rule Packages Snort.conf
 #
@@ -49,7 +49,7 @@ kali > head /etc/snort/snort.conf
 
 The output will be:
 
-```
+```bash
 #-------------------------------------------------
 # VRT Rule Packages Snort.conf
 #
@@ -66,7 +66,7 @@ kali > head -20 /etc/snort/snort.conf
 
 The output will be:
 
-```
+```bash
 #-------------------------------------------------
 # VRT Rule Packages Snort.conf
 #
@@ -89,7 +89,7 @@ kali > tail /etc/snort/snort.conf
 
 The output will be:
 
-```
+```bash
 #include $SO_RULE_PATH/smtp.rules
 #include $SO_RULE_PATH/specific-threats.rules
 #include $SO_RULE_PATH/web-activex.rules

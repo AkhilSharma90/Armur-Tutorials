@@ -51,7 +51,7 @@ $ hydra -h
 
 This command provides a list of flags and options available in Hydra.
 
-![hydra-help](https://i.imgur.com/fPGDlMF.png)
+<blockquote class="imgur-embed-pub" lang="en" data-id="fPGDlMF" data-context="false" ><a href="//imgur.com/fPGDlMF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ### Single Username/Password Attack
 
@@ -95,9 +95,10 @@ To perform a dictionary attack using a list of passwords:
 
 1. Use the RockYou wordlist, typically found at `/usr/share/wordlists/rockyou.txt` on Kali Linux or on ([github](https://github.com/teamstealthsec/wordlists)).
 2. Run the dictionary attack:
-   ```sh
-   $ hydra -L users.txt -P /usr/share/wordlists/rockyou.txt 10.10.137.50 ssh
-   ```
+
+```sh
+$ hydra -L users.txt -P /usr/share/wordlists/rockyou.txt 10.10.137.50 ssh
+```
 
 ### Verbosity and Debugging
 
@@ -168,15 +169,15 @@ $ hydra -l <username> -p <password> -M <host_file.txt> <service>
 Use specific username/password combinations:
 
 1. Create a file `combinations.txt` with the format:
-   ```txt
-   username1:password1
-   username2:password2
-   username3:password3
-   ```
+```txt
+username1:password1
+username2:password2
+username3:password3
+```
 2. Run the command:
-   ```sh
-   $ hydra -C combinations.txt <ip> <service>
-   ```
+```sh
+$ hydra -C combinations.txt <ip> <service>
+```
 
 ## How to Defend Against Hydra
 

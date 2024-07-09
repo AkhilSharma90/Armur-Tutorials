@@ -74,7 +74,8 @@ python3 sqlmap.py
 ```
 You should see something like this:
 
-![slq](https://i.imgur.com/b5sH4DN.png)
+<!-- ![slq](https://i.imgur.com/b5sH4DN.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="b5sH4DN" data-context="false" ><a href="//imgur.com/b5sH4DN"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 To see the help options, run the following command:
 

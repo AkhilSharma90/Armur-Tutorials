@@ -7,7 +7,8 @@ draft: false
 
 Assuming you now have Metasploit installed, run the `msfconsole` command to open Metasploit:
 
-![msf](https://i.imgur.com/I2r5rxg.png)
+<!-- ![msf](https://i.imgur.com/I2r5rxg.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="I2r5rxg" data-context="false" ><a href="//imgur.com/I2r5rxg"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Finding Modules
 
@@ -23,7 +24,8 @@ You can use the search command to search for modules:
 ```sh
 search type:auxiliary http html title tag
 ```
-![aux](https://i.imgur.com/zfS0jeL.png)
+<!-- ![aux](https://i.imgur.com/zfS0jeL.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="zfS0jeL" data-context="false" ><a href="//imgur.com/zfS0jeL"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 You can use a Metasploit module by specifying the full module name. The prompt will be updated to indicate the currently active module:
 
@@ -37,7 +39,8 @@ Each module offers configurable options which can be viewed with the show option
 ```sh
 show options
 ```
-https://i.imgur.com/pyHXlf7.png
+<!-- https://i.imgur.com/pyHXlf7.png -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="pyHXlf7" data-context="false" ><a href="//imgur.com/pyHXlf7"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 To set a module option, use the set command. We will set the RHOST option - which represents the target host(s) that the module will run against:
 
@@ -47,15 +50,16 @@ set RHOSTS google.com
 
 The run command will run the module against the target, showing the target’s HTTP title:
 
-https://i.imgur.com/xG4VbZ4.png
+<!-- https://i.imgur.com/xG4VbZ4.png -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="xG4VbZ4" data-context="false" ><a href="//imgur.com/xG4VbZ4"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 We can also run modules with options set as part of the run command. For instance, setting both RHOSTS and enabling HttpTrace functionality:
 
 ```sh
 run rhosts=google.com httptrace=true
 ```
-
-https://i.imgur.com/jAchW4Z.png
+<!-- https://i.imgur.com/jAchW4Z.png -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="jAchW4Z" data-context="false" ><a href="//imgur.com/jAchW4Z"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 There is quite a lot of information on the output and you can scroll more to see it.
 
@@ -77,7 +81,8 @@ Exploit modules will generally at a minimum require the following options to be 
 
 Each module offers configurable options which can be viewed with the show options, or aliased options, command:
 
-https://i.imgur.com/5YTf1lE.png
+<!-- https://i.imgur.com/5YTf1lE.png -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="5YTf1lE" data-context="false" ><a href="//imgur.com/5YTf1lE"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 For this scenario you can manually set each of the required option values (RHOST, LHOST, and optionally PAYLOAD):
 

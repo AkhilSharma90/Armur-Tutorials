@@ -31,12 +31,15 @@ sudo beef-xss
 ```
 When running the program for the first time, you will be prompted to change the default password for the ‘beef’ user. 
 
-![beef](https://i.imgur.com/r6zBl6O.png)
+<!-- ![beef](https://i.imgur.com/r6zBl6O.png) -->
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="r6zBl6O" data-context="false" ><a href="//imgur.com/r6zBl6O"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 
 Once you change the password, BeEF will start loading, and you will be presented with both the WebUI address and the hook script for `hook.js`.
 
-![load-page](https://i.imgur.com/HpAAUfm.png)
+<!-- ![load-page](https://i.imgur.com/HpAAUfm.png) -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="HpAAUfm" data-context="false" ><a href="//imgur.com/HpAAUfm"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 BeEF should open the browser for you, and you will need to log in as the user ‘beef’ with the new password you set up before entering the program.
 
