@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hydra on Tutorials</title>
-    <link>http://localhost:1313/tutorials/docs/hydra/</link>
+    <link>http://localhost:35637/tutorials/docs/hydra/</link>
     <description>Recent content in Hydra on Tutorials</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tutorials/docs/hydra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35637/tutorials/docs/hydra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Use Hydra to Hack Passwords – Penetration Testing Tutorial</title>
-      <link>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</link>
+      <link>http://localhost:35637/tutorials/docs/hydra/hydra/introduction_to_hydra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</guid>
+      <guid>http://localhost:35637/tutorials/docs/hydra/hydra/introduction_to_hydra/</guid>
       <description>Introduction linkHydra is a powerful brute-forcing tool used by penetration testers and ethical hackers to crack passwords of network services. It can perform rapid dictionary attacks against more than 50 protocols, including Telnet, FTP, HTTP, HTTPS, SMB, databases, and several other services. Developed by the hacker group &amp;ldquo;The Hacker’s Choice,&amp;rdquo; Hydra was first released in 2000 as a proof-of-concept tool for attacking network logon services.&#xA;Unlike sequential brute-forcing tools, Hydra is a parallelized login cracker, allowing multiple connections simultaneously, significantly reducing the time required to crack a password.</description>
     </item>
   </channel>

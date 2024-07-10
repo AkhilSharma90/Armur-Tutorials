@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social Engineering Toolkit on Tutorials</title>
-    <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/</link>
+    <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/</link>
     <description>Recent content in Social Engineering Toolkit on Tutorials</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tutorials/docs/social-engineering-toolkit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35637/tutorials/docs/social-engineering-toolkit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started with Social Engineering Toolkit</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</guid>
       <description>What is Social Engineering? linkTechnology is making it easier for cyber criminals to exploit human behavior, cognitive biases, and social dynamics. The most common attack method used by hackers is social engineering. In other words, it’s influencing someone to do something or say something. Many types of social engineering attacks are out there, including phishing, pretexting, baiting, and tailgating.&#xA;What is the Social Engineering Toolkit(SET)? linkSocial Engineering Toolkit (SET) is a versatile tool that enables you to simulate a wide range of social engineering attacks.</description>
     </item>
     <item>
       <title>Infectious Media Generator</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</guid>
       <description>Right now, you should have SET setup on your system. We can spin it up by running&#xA;sudo setoolkit Infectious Media Generator linkThe Infectious Media Generator in SET allows you to create malicious files, such as PDFs and EXEs, that can trigger a reverse Meterpreter shell when opened. This section will guide you through the process of creating a malicious EXE.&#xA;SET has many options for malicious payloads, but they may be limited depending on the software and operating system versions the target is using</description>
     </item>
     <item>
       <title>Mass Mailer</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</guid>
       <description>The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.&#xA;In this section, we&amp;rsquo;ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.&#xA;To use a Gmail account for this purpose, you&amp;rsquo;ll need to set up an App password.</description>
     </item>
     <item>
       <title>Website Cloning and Credential Harvesting</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</guid>
       <description>Website cloning and credential harvesting are two essential techniques in the arsenal of social engineers. These techniques involve creating a replica of a legitimate website and tricking users into entering their sensitive information on the fake website, such as usernames and passwords.&#xA;This information can then be used for various malicious activities, including unauthorized access to user accounts, identity theft, or even corporate espionage.&#xA;Clone Site linkBefore setting up a cloned site in SET, you need to enable the Apache web server in the SET configuration file located at /etc/setoolkit/set.</description>
     </item>
   </channel>

@@ -2,247 +2,261 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials</title>
-    <link>http://localhost:1313/tutorials/</link>
+    <link>http://localhost:35637/tutorials/</link>
     <description>Recent content on Tutorials</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35637/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Getting Started Guide To Linux</title>
-      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</link>
+      <link>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</guid>
+      <guid>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/introduction/</guid>
       <description>What is Linux? linkThe Linux kernel was created by Linus Torvalds in 1991. It becomes an operating system with the addition of components like a package manager, desktop environment, shell, and bootloader.&#xA;As an open-source OS, Linux offers numerous customizations. Each unique combination of these customizations is called a distribution or &amp;ldquo;distro.&amp;rdquo;&#xA;There are hundreds, if not thousands, of distros worldwide, each optimized for specific purposes or created just for fun by enthusiasts.</description>
     </item>
     <item>
       <title>Aircrack-ng Introduction</title>
-      <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
+      <link>http://localhost:35637/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
+      <guid>http://localhost:35637/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
       <description>Aircrack-ng linkThis guide will introduce you to the basics of using the Aircrack-ng suite. While it is impossible to cover every scenario, this tutorial aims to provide a solid foundation. For additional information, be prepared to conduct your own research. The Forum and Wiki offer extensive supplementary tutorials and information.&#xA;For detailed steps on using Aircrack-ng, refer to the Simple WEP Crack tutorial, which covers the actual Aircrack-ng steps in greater detail.</description>
     </item>
     <item>
       <title>An Introduction to Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</guid>
       <description>Introduction to Metasploit linkThe Metasploit Framework is a robust and versatile tool used extensively in the field of cybersecurity. It serves a dual purpose, utilized by both ethical hackers and cybercriminals to identify and exploit vulnerabilities within networks and servers. As an open-source platform, Metasploit offers extensive customization and compatibility with various operating systems, making it a go-to resource for penetration testing and vulnerability assessment.&#xA;Understanding Metasploit linkMetasploit allows penetration testers to deploy pre-written or custom scripts to explore network weaknesses.</description>
     </item>
     <item>
       <title>An Introduction To Nmap</title>
-      <link>http://localhost:1313/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</link>
+      <link>http://localhost:35637/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</guid>
+      <guid>http://localhost:35637/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</guid>
       <description>Introduction linkNmap, short for Network Mapper, is an open-source tool used for network discovery and security auditing. Developed by Gordon Lyon (also known as Fyodor), it has become the go-to tool for network administrators and penetration testers. This article will guide you through the core features of Nmap and provide useful commands to help you get started.&#xA;Why Use Nmap? linkNmap is favored by security professionals for several reasons:&#xA;Ease of Use: Quickly map out a network with simple commands.</description>
     </item>
     <item>
       <title>An Introduction to Using sqlmap for SQL Injection Testing</title>
-      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/</link>
+      <link>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/</guid>
+      <guid>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/introduction_to_sqlmap.md/</guid>
       <description>Introduction linkUsing sqlmap can be challenging if you&amp;rsquo;re unfamiliar with it. This tutorial aims to present the essential functionalities of this popular SQL injection tool in a quick and straightforward manner. Before using sqlmap, ensure you have the latest release and a Python interpreter installed. Most Linux distributions come with Python by default. If you&amp;rsquo;re not using Linux or don&amp;rsquo;t have Python installed, download and install it.&#xA;You&amp;rsquo;ll also need a vulnerable website to test.</description>
     </item>
     <item>
-      <title>Autopsy</title>
-      <link>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</link>
+      <title>An Introduction To Wireshark</title>
+      <link>http://localhost:35637/tutorials/docs/wireshark/wireshark/installing_wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</guid>
+      <guid>http://localhost:35637/tutorials/docs/wireshark/wireshark/installing_wireshark/</guid>
+      <description>This guid will show you how to install Wireshark on Ubuntu 22.04 and use this tool to your advantage.&#xA;After reading this guide, you will be knowledgeable in installation, updating packages, Wireshark installation methods, and post-installation steps.&#xA;What is Wireshark? linkWireshark is a network packet analyzer. A network packet analyzer presents captured packet data in as much detail as possible.&#xA;You could think of a network packet analyzer as a measuring device for examining what’s happening inside a network cable, just like an electrician uses a voltmeter for examining what’s happening inside an electric cable (but at a higher level, of course).</description>
+    </item>
+    <item>
+      <title>Autopsy</title>
+      <link>http://localhost:35637/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:35637/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</guid>
       <description></description>
     </item>
     <item>
       <title>Bash Scripting in Linux</title>
-      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</link>
+      <link>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</guid>
+      <guid>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</guid>
       <description>Any self-respecting hacker must be able to script. For that matter, any self-respecting Linux administrator must be able to script. With the arrival of the Windows PowerShell, Windows administrators are increasingly required to script as well to perform automated tasks and be more efficient.&#xA;As a hacker, we often need to automate the use of multiple commands, sometimes from multiple tools. To become an elite hacker, you not only need to have advanced shell scripting skills, but also the ability to script in one of the widely-used scripting languages such as Ruby (Metasploit exploits are written in Ruby), Python (many hacking tools are Python scripts), or Perl (Perl is the best text manipulation scripting language).</description>
     </item>
     <item>
-      <title>Comprehensive Guide to SQL Injection</title>
-      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/</link>
+      <title>Capturing data packets on Wireshark</title>
+      <link>http://localhost:35637/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/</guid>
+      <guid>http://localhost:35637/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</guid>
+      <description>Capturing data packets on Wireshark linkWhen you open Wireshark, you see a screen showing you a list of all the network connections you can monitor. You also have a capture filter field to only capture the network traffic you want to see.&#xA;View post on imgur.com You can select one or more of the network interfaces using shift+left-click. Once select the network interface, you can start the capture, and there are several ways to do that</description>
+    </item>
+    <item>
+      <title>Comprehensive Guide to SQL Injection</title>
+      <link>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/what_is_sql_injection/</guid>
       <description>What is SQL Injection (SQLi)? linkSQL Injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries an application makes to its database. This can enable an attacker to view or manipulate data that they normally cannot access. In severe cases, SQL injection can be used to compromise the underlying server or back-end infrastructure, leading to significant data breaches, reputational damage, and regulatory fines.&#xA;Impact of SQL Injection linkA successful SQL injection attack can lead to unauthorized access to sensitive data, such as:</description>
     </item>
     <item>
       <title>Conducting a Discovery Scan in Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/conducting_a_discovery_scan/</guid>
       <description>Introduction linkReconnaissance is the first step in penetration testing, where the goal is to gather information about the target network. This step involves identifying active hosts, their operating systems, open ports, and running services. A Discovery Scan in Metasploit is a comprehensive method to collect this information efficiently.&#xA;How a Discovery Scan Works linkA Discovery Scan in Metasploit uses Nmap to perform various scans and gather information. It includes the following phases:</description>
     </item>
     <item>
       <title>Database Fingerprinting for SQL Injection: Identifying the Underlying DBMS</title>
-      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</link>
+      <link>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</guid>
+      <guid>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</guid>
       <description>Database fingerprinting is a crucial step in SQL injection attacks. Identifying the underlying database management system (DBMS) allows attackers to fine-tune their injected segments and fully exploit vulnerabilities. This guide explores techniques for fingerprinting a database using SQL injection.&#xA;Error Messages linkOne of the simplest ways to fingerprint a database is through error messages. When a database error is generated, the error message often includes information about the DBMS.&#xA;Example:</description>
     </item>
     <item>
       <title>Database Support in Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/database_support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/database_support/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/database_support/</guid>
       <description>What is msfdb? linkmsfdb is a script included with all installations of Metasploit that simplifies the setup and management of both a database and a Web Service. This Web Service connects the database with Metasploit, enhancing its functionality and usability.&#xA;While msfdb is the easiest way to set up a database for Metasploit, it is also possible to set one up manually if preferred. Instructions for manual setup can be found in the Metasploit documentation.</description>
     </item>
     <item>
       <title>Estimating MySQL Table Size using SQL Injection</title>
-      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/</link>
+      <link>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/</guid>
+      <guid>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/estimating_mysql_database_size/</guid>
       <description>Estimating the size of a MySQL table using SQL injection can provide valuable information to an attacker. Knowing the approximate number of records in a table helps estimate the time required to extract all the data, which is crucial when dealing with slow or limited extraction techniques.&#xA;How It Works linkWhen a SELECT query is executed, the database engine evaluates all records returned by the statement to ensure they satisfy the WHERE clause.</description>
     </item>
     <item>
       <title>Exploiting Browser Sessions With BeEF</title>
-      <link>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</link>
+      <link>http://localhost:35637/tutorials/docs/beef/beef/exploiting_browser_sessions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</guid>
+      <guid>http://localhost:35637/tutorials/docs/beef/beef/exploiting_browser_sessions/</guid>
       <description>BeEF comes preloaded with over three hundred modules that you can run depending on the browser hooked. These are broken down into twelve categories, including: “Exploits, Network, and Social Engineering.”&#xA;Google Phishing linkThe Google Phishing command is a module within BeEF that aims to trick the user of a hooked browser into revealing their Google credentials.&#xA;Let’s execute the command, and on the victim’s browser, they should be presented with the fake login page.</description>
     </item>
     <item>
       <title>Getting started with Social Engineering Toolkit</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</guid>
       <description>What is Social Engineering? linkTechnology is making it easier for cyber criminals to exploit human behavior, cognitive biases, and social dynamics. The most common attack method used by hackers is social engineering. In other words, it’s influencing someone to do something or say something. Many types of social engineering attacks are out there, including phishing, pretexting, baiting, and tailgating.&#xA;What is the Social Engineering Toolkit(SET)? linkSocial Engineering Toolkit (SET) is a versatile tool that enables you to simulate a wide range of social engineering attacks.</description>
     </item>
     <item>
       <title>Hashing and Password cracking in Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/hashing_and_password_cracking/</guid>
       <description>Introduction linkMetasploit Framework includes robust support for handling password hashes and cracking them. This article explores the various libraries, dependencies, and functionalities built into Metasploit for dealing with password hashes and cracking them using John the Ripper (JtR) and Hashcat. Note that storing credentials in the Metasploit database is covered separately.&#xA;Understanding Hashes in Metasploit linkMetasploit supports extracting hashes from various software systems, including operating systems (Windows, macOS, Linux) and applications (Postgres, Oracle).</description>
     </item>
     <item>
       <title>Hooking Web Browsers with BeEF</title>
-      <link>http://localhost:1313/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</link>
+      <link>http://localhost:35637/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</guid>
+      <guid>http://localhost:35637/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</guid>
       <description>What Is Browser Exploitation? linkBrowser exploitation involves leveraging security vulnerabilities in a web browser to perform unauthorized actions. This can include a range of techniques aimed at gaining control over the browser or the system on which it&amp;rsquo;s running, or to steal sensitive information. The basic principle behind browser exploitation is that a web browser, like any software, can have flaws or vulnerabilities in its code, which may cause the browser to behave in unintended ways.</description>
     </item>
     <item>
       <title>How to Use a Reverse Shell in Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/shell_metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/shell_metasploit/</guid>
       <description>Reverse shells are a crucial technique in penetration testing and ethical hacking, enabling attackers to gain access to a remote machine by reversing the connection back to the attacker&amp;rsquo;s machine. This blog post provides a comprehensive guide on using reverse shells in Metasploit, detailing the process step-by-step and explaining when and why to use reverse shells.&#xA;List of Metasploit Reverse Shells linkTo list all available reverse shells in Metasploit, use the following command:</description>
     </item>
     <item>
       <title>How to Use Hydra to Hack Passwords – Penetration Testing Tutorial</title>
-      <link>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</link>
+      <link>http://localhost:35637/tutorials/docs/hydra/hydra/introduction_to_hydra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</guid>
+      <guid>http://localhost:35637/tutorials/docs/hydra/hydra/introduction_to_hydra/</guid>
       <description>Introduction linkHydra is a powerful brute-forcing tool used by penetration testers and ethical hackers to crack passwords of network services. It can perform rapid dictionary attacks against more than 50 protocols, including Telnet, FTP, HTTP, HTTPS, SMB, databases, and several other services. Developed by the hacker group &amp;ldquo;The Hacker’s Choice,&amp;rdquo; Hydra was first released in 2000 as a proof-of-concept tool for attacking network logon services.&#xA;Unlike sequential brute-forcing tools, Hydra is a parallelized login cracker, allowing multiple connections simultaneously, significantly reducing the time required to crack a password.</description>
     </item>
     <item>
       <title>Infectious Media Generator</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/infectious_media_generator/</guid>
       <description>Right now, you should have SET setup on your system. We can spin it up by running&#xA;sudo setoolkit Infectious Media Generator linkThe Infectious Media Generator in SET allows you to create malicious files, such as PDFs and EXEs, that can trigger a reverse Meterpreter shell when opened. This section will guide you through the process of creating a malicious EXE.&#xA;SET has many options for malicious payloads, but they may be limited depending on the software and operating system versions the target is using</description>
     </item>
     <item>
       <title>Introduction to BeEF: The Browser Exploitation Framework</title>
-      <link>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</link>
+      <link>http://localhost:35637/tutorials/docs/beef/beef/introduction_to_beef/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</guid>
+      <guid>http://localhost:35637/tutorials/docs/beef/beef/introduction_to_beef/</guid>
       <description>BeEF, the Browser Exploitation Framework, is an indispensable tool for ethical hackers aiming to identify and exploit vulnerabilities within web browsers. While many security tools concentrate on system or server-side vulnerabilities, BeEF zeroes in on the client side—specifically, the user&amp;rsquo;s web browser. This focus is crucial because, regardless of the security measures implemented on a network or operating system, vulnerabilities in a web browser can still provide a gateway for attackers to infiltrate the system.</description>
     </item>
     <item>
       <title>Introduction to Hashcat</title>
-      <link>http://localhost:1313/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</link>
+      <link>http://localhost:35637/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</guid>
+      <guid>http://localhost:35637/tutorials/docs/hashcat/hashcat/introduction_to_hashcat/</guid>
       <description>Cracking Passwords with Hashcat: A Comprehensive Guide linkIntroduction linkHashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.&#xA;In this section, we will delve into Hashcat, a powerful command-line utility designed for cracking hashes. We will explore how hashing works, the features of Hashcat, and provide step-by-step instructions for its installation and use.</description>
     </item>
     <item>
       <title>Introduction to Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</guid>
       <description>Assuming you now have Metasploit installed, run the msfconsole command to open Metasploit:&#xA;Finding Modules linkMetasploit is based around the concept of modules. The most commonly used module types are:&#xA;Auxiliary - Auxiliary modules do not exploit a target, but can perform data gathering or administrative tasks Exploit - Exploit modules leverage vulnerabilities in a manner that allows the framework to execute arbitrary code on the target host Payloads - Arbitrary code that can be executed on a remote target to perform a task, such as creating users, opening shells, etc Post - Post modules are used after a machine has been compromised.</description>
     </item>
     <item>
       <title>Managing Sessions in Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/managing_sessions/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/managing_sessions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/managing_sessions/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/managing_sessions/</guid>
       <description>Managing Sessions in Metasploit linkManaging multiple sessions in Metasploit can be a complex task, especially when dealing with numerous active connections. Effective session management is crucial for streamlined operations during penetration testing. This guide covers the basics of managing sessions, navigating open sessions using search, and killing stale sessions.&#xA;Basics of Session Management linkIn Metasploit, sessions represent ongoing interactions between the attacker and the compromised host. Managing these sessions efficiently ensures smooth operation and better control over the testing environment.</description>
     </item>
     <item>
       <title>Mass Mailer</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</guid>
       <description>The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.&#xA;In this section, we&amp;rsquo;ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.&#xA;To use a Gmail account for this purpose, you&amp;rsquo;ll need to set up an App password.</description>
     </item>
     <item>
       <title>Networking in Linux</title>
-      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</link>
+      <link>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</guid>
+      <guid>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</guid>
       <description>As a hacker, networking is critical. We need to manage and manipulate our ability to connect with other computers to optimize our ability to compromise another machine. In some cases, you will need to connect but hide your IP address and other information. In this tutorial, I will attempt to show you the basics of networking in Linux.&#xA;Step 1: Analyzing Networks and Network Interfaces linkThe most basic Linux command for analyzing networks is ifconfig.</description>
     </item>
     <item>
       <title>Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts</title>
-      <link>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</link>
+      <link>http://localhost:35637/tutorials/docs/nmap/nmap/cheat_sheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</guid>
+      <guid>http://localhost:35637/tutorials/docs/nmap/nmap/cheat_sheet/</guid>
       <description>Nmap (Network Mapper) is a free and open-source tool for network discovery and security auditing. It is widely used by network administrators and penetration testers for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets to determine the available hosts, services, operating systems, and other characteristics of a network.&#xA;TCP/IP Protocols linkNmap operates on various layers of the TCP/IP protocol suite:</description>
     </item>
     <item>
       <title>OWASP ZAP</title>
-      <link>http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</link>
+      <link>http://localhost:35637/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</guid>
+      <guid>http://localhost:35637/tutorials/docs/owasp-zap/owasp-zap/introduction_to_zap/</guid>
       <description>What is OWASP ZAP? linkOWASP ZAP is a powerful penetration testing tool designed to help developers and security professionals detect and find vulnerabilities in web applications. It offers multiple security functions, including:&#xA;Passively scanning web requests Using dictionary lists to search for files and folders on web servers Using crawlers to identify a site’s structure and retrieve all links and URLs Intercepting, displaying, modifying, and forwarding web requests between browsers and web applications OWASP ZAP can identify vulnerabilities in web applications such as compromised authentication, exposure of sensitive data, security misconfigurations, SQL injection, cross-site scripting (XSS), insecure deserialization, and components with known vulnerabilities.</description>
     </item>
     <item>
       <title>Text Manipulation</title>
-      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</link>
+      <link>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</guid>
+      <guid>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/text_manipulation/</guid>
       <description>In Linux, nearly everything you deal with directly is a file, and most often these will be text files. For instance, all configuration files in Linux are text files. To reconfigure an application, you simply open the configuration file, change the text, save the file, and then restart the application—your reconfiguration is complete. With so many text files, manipulating text becomes crucial in managing Linux and Linux applications. In this chapter, you’ll use several commands and techniques for manipulating text in Linux.</description>
     </item>
     <item>
       <title>Time-Based Blind SQL Injection Attacks</title>
-      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/</link>
+      <link>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/</guid>
+      <guid>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/time_based_blind_attacks/</guid>
       <description>Time-based blind SQL injection attacks are a form of SQL injection where the attacker injects a query that causes a time delay in the database response. By observing the time it takes for the server to respond, the attacker can infer information about the database, even if there is no direct feedback from the database server.&#xA;Purpose of Time-Based SQL Injection linkTime-based techniques are particularly useful for blind and deep blind SQL injection attacks where there is no other way to retrieve information from the database server.</description>
     </item>
     <item>
       <title>Time-Based Blind SQL Injection Using Heavy Queries</title>
-      <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/</link>
+      <link>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/</guid>
+      <guid>http://localhost:35637/tutorials/docs/sqlmap/sqlmap/time_based_blinds_using_heavy_queries/</guid>
       <description>Overview linkIn some cases, it might be impossible to use time delay functions or procedures for classic time delay injections. In such situations, the best alternative is to simulate a delay using heavy queries, which take a noticeable amount of time to execute. This technique leverages the execution time of complex queries to infer information about the database.&#xA;Principle linkThe injected query should rely on system tables, as the attacker usually has no information about user tables.</description>
     </item>
     <item>
       <title>Understanding File Permissions in Linux</title>
-      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</link>
+      <link>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</guid>
+      <guid>http://localhost:35637/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</guid>
       <description>Linux employs a robust system to manage file access control. This system determines who can read, write, and execute any given file. It grants the file owner control over these permissions, allowing them to specify who can access their files. Group permissions can also be configured to manage access for specific user groups.&#xA;Viewing File Permissions&#xA;The ls command with the -l (long listing) option displays detailed information about files, including their permissions.</description>
     </item>
     <item>
       <title>Understanding How Payloads Work in Metasploit</title>
-      <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</link>
+      <link>http://localhost:35637/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</guid>
+      <guid>http://localhost:35637/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</guid>
       <description>Understanding How Payloads Work in Metasploit linkThe Metasploit Framework is a powerful tool used for developing, testing, and executing exploits against remote targets. One of the critical components in this process is the payload. This blog post aims to break down the functionality of payloads in Metasploit, explaining their types and how they are used.&#xA;What are Payloads? linkIn Metasploit, payloads are modules that are used to execute code on a target system.</description>
     </item>
     <item>
       <title>Using John The Ripper</title>
-      <link>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</link>
+      <link>http://localhost:35637/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</guid>
+      <guid>http://localhost:35637/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</guid>
       <description>One of the most famous and powerful tool for password cracking is John the Ripper.&#xA;John the Ripper is the tool that is used by most of the ethical hackers to perform dictionary attacks for password cracking. In this section, you will learn what is John the Ripper, How to use John the Ripper, How John the Ripper password cracker works and practical tutorial on John the Ripper usage.&#xA;What is John the Ripper?</description>
     </item>
     <item>
       <title>Website Cloning and Credential Harvesting</title>
-      <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</link>
+      <link>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</guid>
+      <guid>http://localhost:35637/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</guid>
       <description>Website cloning and credential harvesting are two essential techniques in the arsenal of social engineers. These techniques involve creating a replica of a legitimate website and tricking users into entering their sensitive information on the fake website, such as usernames and passwords.&#xA;This information can then be used for various malicious activities, including unauthorized access to user accounts, identity theft, or even corporate espionage.&#xA;Clone Site linkBefore setting up a cloned site in SET, you need to enable the Apache web server in the SET configuration file located at /etc/setoolkit/set.</description>
     </item>
   </channel>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aircrack-ng on Tutorials</title>
-    <link>http://localhost:1313/tutorials/docs/aircrack-ng/</link>
+    <link>http://localhost:35637/tutorials/docs/aircrack-ng/</link>
     <description>Recent content in Aircrack-ng on Tutorials</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tutorials/docs/aircrack-ng/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35637/tutorials/docs/aircrack-ng/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aircrack-ng Introduction</title>
-      <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
+      <link>http://localhost:35637/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
+      <guid>http://localhost:35637/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
       <description>Aircrack-ng linkThis guide will introduce you to the basics of using the Aircrack-ng suite. While it is impossible to cover every scenario, this tutorial aims to provide a solid foundation. For additional information, be prepared to conduct your own research. The Forum and Wiki offer extensive supplementary tutorials and information.&#xA;For detailed steps on using Aircrack-ng, refer to the Simple WEP Crack tutorial, which covers the actual Aircrack-ng steps in greater detail.</description>
     </item>
   </channel>
