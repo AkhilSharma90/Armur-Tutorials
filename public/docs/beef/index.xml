@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>beEF on Tutorials</title>
-    <link>http://localhost:35637/tutorials/docs/beef/</link>
+    <link>http://localhost:1313/tutorials/docs/beef/</link>
     <description>Recent content in beEF on Tutorials</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:35637/tutorials/docs/beef/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tutorials/docs/beef/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploiting Browser Sessions With BeEF</title>
-      <link>http://localhost:35637/tutorials/docs/beef/beef/exploiting_browser_sessions/</link>
+      <link>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35637/tutorials/docs/beef/beef/exploiting_browser_sessions/</guid>
+      <guid>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</guid>
       <description>BeEF comes preloaded with over three hundred modules that you can run depending on the browser hooked. These are broken down into twelve categories, including: “Exploits, Network, and Social Engineering.”&#xA;Google Phishing linkThe Google Phishing command is a module within BeEF that aims to trick the user of a hooked browser into revealing their Google credentials.&#xA;Let’s execute the command, and on the victim’s browser, they should be presented with the fake login page.</description>
     </item>
     <item>
       <title>Hooking Web Browsers with BeEF</title>
-      <link>http://localhost:35637/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</link>
+      <link>http://localhost:1313/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35637/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</guid>
+      <guid>http://localhost:1313/tutorials/docs/beef/beef/hooking_we_browsers_wit_beef/</guid>
       <description>What Is Browser Exploitation? linkBrowser exploitation involves leveraging security vulnerabilities in a web browser to perform unauthorized actions. This can include a range of techniques aimed at gaining control over the browser or the system on which it&amp;rsquo;s running, or to steal sensitive information. The basic principle behind browser exploitation is that a web browser, like any software, can have flaws or vulnerabilities in its code, which may cause the browser to behave in unintended ways.</description>
     </item>
     <item>
       <title>Introduction to BeEF: The Browser Exploitation Framework</title>
-      <link>http://localhost:35637/tutorials/docs/beef/beef/introduction_to_beef/</link>
+      <link>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35637/tutorials/docs/beef/beef/introduction_to_beef/</guid>
+      <guid>http://localhost:1313/tutorials/docs/beef/beef/introduction_to_beef/</guid>
       <description>BeEF, the Browser Exploitation Framework, is an indispensable tool for ethical hackers aiming to identify and exploit vulnerabilities within web browsers. While many security tools concentrate on system or server-side vulnerabilities, BeEF zeroes in on the client side—specifically, the user&amp;rsquo;s web browser. This focus is crucial because, regardless of the security measures implemented on a network or operating system, vulnerabilities in a web browser can still provide a gateway for attackers to infiltrate the system.</description>
     </item>
   </channel>

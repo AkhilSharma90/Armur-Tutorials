@@ -1,5 +1,5 @@
 ---
-title: "Capturing data packets on Wireshark"
+title: "Capturing Data Packets Using Wireshark"
 description: "Learn more about Wireshark"
 icon: "code"
 draft: false

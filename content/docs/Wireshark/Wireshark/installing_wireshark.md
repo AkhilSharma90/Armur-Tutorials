@@ -1,5 +1,5 @@
 ---
-title: "An Introduction To Wireshark"
+title: "An Introduction To Wireshark and How To Install It"
 description: "Learn more about Wireshark"
 icon: "code"
 draft: false

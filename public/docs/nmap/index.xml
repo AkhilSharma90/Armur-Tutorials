@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nmap on Tutorials</title>
-    <link>http://localhost:35637/tutorials/docs/nmap/</link>
+    <link>http://localhost:1313/tutorials/docs/nmap/</link>
     <description>Recent content in Nmap on Tutorials</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:35637/tutorials/docs/nmap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tutorials/docs/nmap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>An Introduction To Nmap</title>
-      <link>http://localhost:35637/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</link>
+      <link>http://localhost:1313/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35637/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</guid>
+      <guid>http://localhost:1313/tutorials/docs/nmap/nmap/an_introduction_to_nmap/</guid>
       <description>Introduction linkNmap, short for Network Mapper, is an open-source tool used for network discovery and security auditing. Developed by Gordon Lyon (also known as Fyodor), it has become the go-to tool for network administrators and penetration testers. This article will guide you through the core features of Nmap and provide useful commands to help you get started.&#xA;Why Use Nmap? linkNmap is favored by security professionals for several reasons:&#xA;Ease of Use: Quickly map out a network with simple commands.</description>
     </item>
     <item>
       <title>Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts</title>
-      <link>http://localhost:35637/tutorials/docs/nmap/nmap/cheat_sheet/</link>
+      <link>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35637/tutorials/docs/nmap/nmap/cheat_sheet/</guid>
+      <guid>http://localhost:1313/tutorials/docs/nmap/nmap/cheat_sheet/</guid>
       <description>Nmap (Network Mapper) is a free and open-source tool for network discovery and security auditing. It is widely used by network administrators and penetration testers for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets to determine the available hosts, services, operating systems, and other characteristics of a network.&#xA;TCP/IP Protocols linkNmap operates on various layers of the TCP/IP protocol suite:</description>
     </item>
   </channel>

@@ -1,12 +1,9 @@
 ---
-title: "Introduction to Hashcat"
+title: "Cracking Passwords with Hashcat"
 description: ""
 icon: "code"
 draft: false
 ---
-
-
-## Cracking Passwords with Hashcat: A Comprehensive Guide
 
 ### Introduction
 Hashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.

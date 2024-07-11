@@ -1,12 +1,9 @@
 ---
-title: "OWASP ZAP"
+title: " What is OWASP ZAP?"
 description: "Learn more about OWASP ZAP"
 icon: "code"
 draft: false
 ---
-
-# What is OWASP ZAP?
-
 
 OWASP ZAP is a powerful penetration testing tool designed to help developers and security professionals detect and find vulnerabilities in web applications. It offers multiple security functions, including:
 

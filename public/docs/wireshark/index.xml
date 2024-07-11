@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wireshark on Tutorials</title>
-    <link>http://localhost:35637/tutorials/docs/wireshark/</link>
+    <link>http://localhost:1313/tutorials/docs/wireshark/</link>
     <description>Recent content in Wireshark on Tutorials</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:35637/tutorials/docs/wireshark/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tutorials/docs/wireshark/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Wireshark</title>
-      <link>http://localhost:35637/tutorials/docs/wireshark/wireshark/installing_wireshark/</link>
+      <title>An Introduction To Wireshark</title>
+      <link>http://localhost:1313/tutorials/docs/wireshark/wireshark/installing_wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35637/tutorials/docs/wireshark/wireshark/installing_wireshark/</guid>
-      <description>This guid will show you how to install Wireshark on Ubuntu 22.04 and use this tool to your advantage.&#xA;After reading this guide, you will be knowledgeable in installation, updating packages, Wireshark installation methods, and post-installation steps.&#xA;What is Wireshark? linkWireshark is a free and open-source tool designed for real-time network traffic analysis created by Gerald Combs in 1998. Starting with basics like capturing, filtering, and following streams, it lets you monitor and diagnose common issues.</description>
+      <guid>http://localhost:1313/tutorials/docs/wireshark/wireshark/installing_wireshark/</guid>
+      <description>This guid will show you how to install Wireshark on Ubuntu 22.04 and use this tool to your advantage.&#xA;After reading this guide, you will be knowledgeable in installation, updating packages, Wireshark installation methods, and post-installation steps.&#xA;What is Wireshark? linkWireshark is a network packet analyzer. A network packet analyzer presents captured packet data in as much detail as possible.&#xA;You could think of a network packet analyzer as a measuring device for examining what’s happening inside a network cable, just like an electrician uses a voltmeter for examining what’s happening inside an electric cable (but at a higher level, of course).</description>
+    </item>
+    <item>
+      <title>Capturing data packets on Wireshark</title>
+      <link>http://localhost:1313/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</guid>
+      <description>Capturing data packets on Wireshark linkWhen you open Wireshark, you see a screen showing you a list of all the network connections you can monitor. You also have a capture filter field to only capture the network traffic you want to see.&#xA;View post on imgur.com You can select one or more of the network interfaces using shift+left-click. Once select the network interface, you can start the capture, and there are several ways to do that</description>
     </item>
   </channel>
 </rss>

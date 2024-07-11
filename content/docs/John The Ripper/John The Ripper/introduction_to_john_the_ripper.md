@@ -1,5 +1,5 @@
 ---
-title: "Using John The Ripper"
+title: "What is John The Ripper and How To Use It"
 description: "Learn how to use John The Ripper to crack passwords."
 icon: "code"
 draft: false

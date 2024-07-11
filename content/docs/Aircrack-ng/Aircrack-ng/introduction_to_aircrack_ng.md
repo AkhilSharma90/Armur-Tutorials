@@ -1,11 +1,9 @@
 ---
-title: "Aircrack-ng Introduction"
+title: "What is Aircrack-ng And How To Use It"
 description: "Learn more about Aircrack-ng"
 icon: "code"
 draft: false
 ---
-
-## Aircrack-ng
 
 This guide will introduce you to the basics of using the Aircrack-ng suite. While it is impossible to cover every scenario, this tutorial aims to provide a solid foundation. For additional information, be prepared to conduct your own research. The Forum and Wiki offer extensive supplementary tutorials and information.
 
