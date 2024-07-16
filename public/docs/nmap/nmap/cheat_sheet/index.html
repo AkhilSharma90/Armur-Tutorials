@@ -99,27 +99,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/">What is Aircrack-ng And How To Use It</a></li>
-                                        
-                                    
-                                </ul>
-                            </div>
-                        </li>
-                    
-                
-                    
-                    
-                        <li class="sidebar-dropdown  ">
-                            <button class="btn">
-                                <i class="material-icons me-2">code</i>
-                                Autopsy
-                            </button>
-                            <div class="sidebar-submenu ">
-                                <ul>
-                                    
-                                        
-                                        
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/">Autopsy</a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/">Aircrack-ng: Understanding and Using the Tool</a></li>
                                         
                                     
                                 </ul>
@@ -324,7 +304,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/">Nikto</a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/">Web Server Scanning With Nikto</a></li>
                                         
                                     
                                 </ul>
@@ -1252,11 +1232,11 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/tutorials/docs/nikto/nikto/what_is_nikto/">
+		<a href="/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Nikto</p>
-					<p class="card-text ms-2">Learn more about Nmap</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Networking in Linux</p>
+					<p class="card-text ms-2">Welcome to the basics of Linux …</p>
 					
 				</div>
 			</div>
@@ -1782,20 +1762,6 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 
     
@@ -1841,6 +1807,15 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
     index.add(
             {
                 id:  4 ,
+                href: "\/tutorials\/docs\/aircrack-ng\/aircrack-ng\/introduction_to_aircrack_ng\/",
+                title: "Aircrack-ng: Understanding and Using the Tool",
+                description: "Learn how to effectively use Aircrack-ng for wireless network security testing.",
+                content: "This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.\nInstalling Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:\ngit clone https://github.com/aircrack-ng/aircrack-ng cd aircrack-ng autoreconf -i ./configure --with-experimental make make install ldconfig View post on imgur.com Make sure you also run the command:\nsudo apt update sudo apt install pciutils IEEE 802.11 Basics linkBefore diving into practical use, understanding how wireless networks operate is crucial. This knowledge helps in troubleshooting and accurately describing issues for further assistance.\nNetwork Discovery linkWireless networks with Access Points (APs) periodically broadcast beacon frames containing information like:\nNetwork name (ESSID) Encryption status and type Supported data rates Channel number Tools like iwlist scan and airodump-ng capture this information, essential for network reconnaissance.\nConnecting to Networks linkConnecting to a wireless network typically involves Open System Authentication, where:\nAuthentication request is sent to the AP. AP responds with authentication approval. Association request is sent to establish connection. AP responds with connection approval. Challenges arise with WPA/WPA2, MAC filtering, and Shared Key Authentication, requiring correct settings and credentials.\nSimple Sniffing and Cracking linkNetwork Identification linkIdentify target networks using tools like airodump-ng or Kismet. Start by enabling monitor mode:\nairmon-ng start wlan0 Use airodump-ng wlan0mon to scan networks and gather information.\nCapturing IVs linkCapture Initialization Vectors (IVs) to crack WEP keys. Use:\nairodump-ng -c 11 --bssid 00:01:02:03:04:05 -w dump wlan0mon Successful WEP cracking requires capturing 40,000 to 85,000 IVs.\nCracking WEP linkOnce sufficient IVs are captured, use Aircrack-ng:\naircrack-ng -b 00:01:02:03:04:05 dump-01.cap Adjust parameters based on IV count and scenario specifics.\nActive Attacks linkPacket Injection linkEnsure your wireless card and driver support packet injection for effective attacks. Test with:\naireplay-ng --fakeauth 0 -e \"your network ESSID\" -a 00:01:02:03:04:05 wlan0mon Successful injection enables subsequent attacks.\nARP Replay linkUse ARP replay to expedite WEP cracking:\naireplay-ng --arpreplay -b 00:01:02:03:04:05 -h 00:04:05:06:07:08 wlan0mon Capture ARP packets to enhance cracking efficiency.\nConclusion linkThis guide provides a foundational understanding of Aircrack-ng for wireless network security testing. For advanced techniques and detailed scenarios, consult online resources. Remember, ethical and legal considerations are essential in all security testing endeavors.\nThis version organizes information into clear sections, improves readability, and maintains a structured flow for understanding and using Aircrack-ng effectively. "
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/introduction_to_metasploit\/",
                 title: "An Introduction to Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1849,7 +1824,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  5 ,
+                id:  6 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/an_introduction_to_nmap\/",
                 title: "An Introduction To Nmap",
                 description: "Learn more about the Nmap",
@@ -1858,7 +1833,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  6 ,
+                id:  7 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/introduction_to_sqlmap.md\/",
                 title: "An Introduction to Using sqlmap for SQL Injection Testing",
                 description: "Learn more about SQLMap",
@@ -1867,7 +1842,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  7 ,
+                id:  8 ,
                 href: "\/tutorials\/docs\/wireshark\/wireshark\/installing_wireshark\/",
                 title: "An Introduction To Wireshark and How To Install It",
                 description: "Learn more about Wireshark",
@@ -1876,25 +1851,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  8 ,
-                href: "\/tutorials\/docs\/autopsy\/",
-                title: "Autopsy",
-                description: "Learn more about Autopsy",
-                content: ""
-            }
-        );
-    index.add(
-            {
                 id:  9 ,
-                href: "\/tutorials\/docs\/autopsy\/autopsy\/introduction_to_autopsy\/",
-                title: "Autopsy",
-                description: "Learn more about Autopsy",
-                content: ""
-            }
-        );
-    index.add(
-            {
-                id:  10 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/bash_scripting\/",
                 title: "Bash Scripting in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1903,7 +1860,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  11 ,
+                id:  10 ,
                 href: "\/tutorials\/docs\/beef\/",
                 title: "beEF",
                 description: "Learn more about beEF",
@@ -1912,7 +1869,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  12 ,
+                id:  11 ,
                 href: "\/tutorials\/docs\/wireshark\/wireshark\/capturing_packets_on_wireshark\/",
                 title: "Capturing Data Packets Using Wireshark",
                 description: "Learn more about Wireshark",
@@ -1921,7 +1878,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  13 ,
+                id:  12 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/what_is_sql_injection\/",
                 title: "Comprehensive Guide to SQL Injection",
                 description: "Learn more about SQLMap",
@@ -1930,7 +1887,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  14 ,
+                id:  13 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/conducting_a_discovery_scan\/",
                 title: "Conducting a Discovery Scan in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1939,7 +1896,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  15 ,
+                id:  14 ,
                 href: "\/tutorials\/docs\/hashcat\/hashcat\/introduction_to_hashcat\/",
                 title: "Cracking Passwords with Hashcat",
                 description: "Introduction linkHashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.\nIn this section, we will delve into Hashcat, a powerful command-line utility designed for cracking hashes. We will explore how hashing works, the features of Hashcat, and provide step-by-step instructions for its installation and use.",
@@ -1948,7 +1905,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  16 ,
+                id:  15 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/database_fingerprinting_for_sql_injection\/",
                 title: "Database Fingerprinting for SQL Injection: Identifying the Underlying DBMS",
                 description: "Learn more about SQLMap",
@@ -1957,7 +1914,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  17 ,
+                id:  16 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/database_support\/",
                 title: "Database Support in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1966,7 +1923,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  18 ,
+                id:  17 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/estimating_mysql_database_size\/",
                 title: "Estimating MySQL Table Size using SQL Injection",
                 description: "Learn more about SQLMap",
@@ -1975,7 +1932,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  19 ,
+                id:  18 ,
                 href: "\/tutorials\/docs\/beef\/beef\/exploiting_browser_sessions\/",
                 title: "Exploiting Browser Sessions With BeEF",
                 description: "Learn more about beEF",
@@ -1984,7 +1941,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  20 ,
+                id:  19 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/getting_started\/",
                 title: "Getting started with Social Engineering Toolkit",
                 description: "In this section, you will learn about the Social Engineering Toolkit and provide a beginner’s guide to using it.",
@@ -1993,7 +1950,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  21 ,
+                id:  20 ,
                 href: "\/tutorials\/docs\/hashcat\/",
                 title: "Hashcat",
                 description: "Learn more about Hashcat",
@@ -2002,7 +1959,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  22 ,
+                id:  21 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/hashing_and_password_cracking\/",
                 title: "Hashing and Password cracking in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -2011,7 +1968,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  23 ,
+                id:  22 ,
                 href: "\/tutorials\/docs\/beef\/beef\/hooking_we_browsers_wit_beef\/",
                 title: "Hooking Web Browsers with BeEF",
                 description: "Now that you know how to install and start BeEF, let’s explore how to exploit a browser by hooking into it.",
@@ -2020,7 +1977,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  24 ,
+                id:  23 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/shell_metasploit\/",
                 title: "How to Use a Reverse Shell in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -2029,7 +1986,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  25 ,
+                id:  24 ,
                 href: "\/tutorials\/docs\/hydra\/hydra\/introduction_to_hydra\/",
                 title: "How to Use Hydra to Hack Passwords – Penetration Testing Tutorial",
                 description: "Learn more about Hydra",
@@ -2038,7 +1995,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  26 ,
+                id:  25 ,
                 href: "\/tutorials\/docs\/hydra\/",
                 title: "Hydra",
                 description: "Learn more about Hydra",
@@ -2047,7 +2004,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  27 ,
+                id:  26 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/infectious_media_generator\/",
                 title: "Infectious Media Generator",
                 description: "Right now, you should have SET setup on your system. We can spin it up by running\nsudo setoolkit Infectious Media Generator linkThe Infectious Media Generator in SET allows you to create malicious files, such as PDFs and EXEs, that can trigger a reverse Meterpreter shell when opened. This section will guide you through the process of creating a malicious EXE.\nSET has many options for malicious payloads, but they may be limited depending on the software and operating system versions the target is using",
@@ -2056,7 +2013,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  28 ,
+                id:  27 ,
                 href: "\/tutorials\/docs\/beef\/beef\/introduction_to_beef\/",
                 title: "Introduction to BeEF: The Browser Exploitation Framework",
                 description: "Learn more about beEF",
@@ -2065,7 +2022,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  29 ,
+                id:  28 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/running_modules_using_metasploit\/",
                 title: "Introduction to Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -2074,7 +2031,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  30 ,
+                id:  29 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/",
                 title: "John The Ripper",
                 description: "Learn more about John The Ripper",
@@ -2083,7 +2040,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  31 ,
+                id:  30 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/",
                 title: "Linux Basics for Hackers",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -2092,7 +2049,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  32 ,
+                id:  31 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/managing_sessions\/",
                 title: "Managing Sessions in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -2101,7 +2058,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  33 ,
+                id:  32 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/mass_mailer\/",
                 title: "Mass Mailer",
                 description: "The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.\nIn this section, we’ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.\nTo use a Gmail account for this purpose, you’ll need to set up an App password.",
@@ -2110,7 +2067,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  34 ,
+                id:  33 ,
                 href: "\/tutorials\/docs\/metasploit\/",
                 title: "Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -2119,7 +2076,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  35 ,
+                id:  34 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/networking_in_kali\/",
                 title: "Networking in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -2128,7 +2085,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  36 ,
+                id:  35 ,
                 href: "\/tutorials\/docs\/nikto\/",
                 title: "Nikto",
                 description: "Learn more about Nikto",
@@ -2137,16 +2094,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  37 ,
-                href: "\/tutorials\/docs\/nikto\/nikto\/what_is_nikto\/",
-                title: "Nikto",
-                description: "Learn more about Nmap",
-                content: "Introducing Nikto\nNikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.\nKey Features of Nikto:\nDetects SQL injection, XSS, and other common vulnerabilities. Identifies installed software via headers, favicons, and files. Guesses subdomains and supports SSL (HTTPS) websites. Generates reports in plain text, XML, HTML, or CSV formats. Explores web server content and reports unusual headers. Checks server configurations like multiple index files and HTTP server options. Supports HTTP proxy and can guess credentials for authorization. Customizable reports with a template engine and integrates with Metasploit. How to Install Nikto linkSince Nikto is Perl-based, it runs on most operating systems with Perl installed.\nKali Linux: Nikto comes preinstalled under “Vulnerability Analysis.”\nOther Linux distributions: Use apt install nikto or obtain Nikto from GitHub.\nWindows: Install Perl from ActiveState, then download Nikto.\nMacOS: Install using Homebrew.\nHow to Scan with Nikto linkNow that you know what Nikto is and how to install it, let’s go ahead and run some scans. Since Nikto is a command-line tool, you can use the help command to get a list of options:\nnikto -Help View post on imgur.com How to Scan a Domain linkTo perform a simple domain scan, use the -h (host) flag:\nnikto -h google.com View post on imgur.com How to Scan a Domain with SSL Enabled linkFor domains with HTTPS enabled, you have to specify the -ssl flag to scan port 443:\nnikto -h https://google.com -ssl View post on imgur.com How to Scan an IP Address linkSometimes you just want to scan an IP address where a web server is hosted.\nTo do that, use the same -h flag you used for domain scanning:\nnikto -h How to Scan Multiple IP Addresses From a Text File linkTo scan multiple IP addresses or domains, just put them in a text file separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.\nLet’s assume we have a file named domains.txt with two domain names:\ngoogle.com facebook.com\nTo scan both of them with Nikto, run the following command:\nnikto -h domains.txt How to Export Scan Results linkNikto scans take a while to complete. When you are a professional pen-tester, you don’t want to repeat scans very often unless there are major changes to the web application.\nTo export a scan result, use the -o flag followed by the file name:\nnikto -h google.com -o scan.txt You can also use the -Format flag to specify an output format. You can choose from CSV, HTML, nbe (Nessus format), SQL, txt, and XML:\nnikto -h google.com -o scan.csv -Format csv You also use Nikto with Metasploit linkNikto offers a way to export scans to Metasploit so that it gets easier when you try to exploit systems based on the scan results from Nikto.\nTo do that, append the -Format msf+ flag to the end of a scan:\nnikto -h -Format msf+ Conclusion linkCertainly! Here’s a conclusion on Nikto:\nConclusion:\nNikto stands as a robust tool in the arsenal of web security professionals, offering comprehensive scanning capabilities to identify vulnerabilities in web servers and applications. With its extensive database of potential threats and its ability to generate detailed reports in multiple formats, Nikto empowers users to proactively safeguard their systems against a wide range of security risks. Continuously maintained and updated, Nikto remains a trusted choice for security assessments, providing essential insights that contribute to the resilience of web infrastructures worldwide.\n"
-            }
-        );
-    index.add(
-            {
-                id:  38 ,
+                id:  36 ,
                 href: "\/tutorials\/docs\/nmap\/",
                 title: "Nmap",
                 description: "Learn more about Nmap",
@@ -2155,7 +2103,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  39 ,
+                id:  37 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/cheat_sheet\/",
                 title: "Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts",
                 description: "Learn more about the Nmap",
@@ -2164,7 +2112,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  40 ,
+                id:  38 ,
                 href: "\/tutorials\/docs\/owasp-zap\/",
                 title: "OWASP ZAP",
                 description: "Learn more about SQLMap",
@@ -2173,7 +2121,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  41 ,
+                id:  39 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/",
                 title: "Social Engineering Toolkit",
                 description: "Learn more about the Social Engineering Toolkit",
@@ -2182,7 +2130,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  42 ,
+                id:  40 ,
                 href: "\/tutorials\/docs\/sqlmap\/",
                 title: "SQLMap",
                 description: "Learn more about SQLMap",
@@ -2191,7 +2139,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  43 ,
+                id:  41 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/text_manipulation\/",
                 title: "Text Manipulation",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -2200,7 +2148,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  44 ,
+                id:  42 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blind_attacks\/",
                 title: "Time-Based Blind SQL Injection Attacks",
                 description: "Learn more about SQLMap",
@@ -2209,7 +2157,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  45 ,
+                id:  43 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blinds_using_heavy_queries\/",
                 title: "Time-Based Blind SQL Injection Using Heavy Queries",
                 description: "Learn more about SQLMap",
@@ -2218,7 +2166,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  46 ,
+                id:  44 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/file_permision_using_linux\/",
                 title: "Understanding File Permissions in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -2227,7 +2175,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  47 ,
+                id:  45 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/payloads_in_metasploit\/",
                 title: "Understanding How Payloads Work in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -2236,7 +2184,16 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  48 ,
+                id:  46 ,
+                href: "\/tutorials\/docs\/nikto\/nikto\/what_is_nikto\/",
+                title: "Web Server Scanning With Nikto",
+                description: "Nikto is an open-source web server and web application scanner.",
+                content: "Nikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.\nKey Features of Nikto:\nDetects SQL injection, XSS, and other common vulnerabilities. Identifies installed software via headers, favicons, and files. Guesses subdomains and supports SSL (HTTPS) websites. Generates reports in plain text, XML, HTML, or CSV formats. Explores web server content and reports unusual headers. Checks server configurations like multiple index files and HTTP server options. Supports HTTP proxy and can guess credentials for authorization. Customizable reports with a template engine and integrates with Metasploit. How to Install Nikto linkSince Nikto is Perl-based, it runs on most operating systems with Perl installed.\nKali Linux: Nikto comes preinstalled under “Vulnerability Analysis.”\nOther Linux distributions: Use apt install nikto or obtain Nikto from GitHub.\nWindows: Install Perl from ActiveState, then download Nikto.\nMacOS: Install using Homebrew.\nHow to Scan with Nikto linkNow that you know what Nikto is and how to install it, let’s go ahead and run some scans. Since Nikto is a command-line tool, you can use the help command to get a list of options:\nnikto -Help View post on imgur.com How to Scan a Domain linkTo perform a simple domain scan, use the -h (host) flag:\nnikto -h google.com View post on imgur.com How to Scan a Domain with SSL Enabled linkFor domains with HTTPS enabled, you have to specify the -ssl flag to scan port 443:\nnikto -h https://google.com -ssl View post on imgur.com How to Scan an IP Address linkSometimes you just want to scan an IP address where a web server is hosted.\nTo do that, use the same -h flag you used for domain scanning:\nnikto -h How to Scan Multiple IP Addresses From a Text File linkTo scan multiple IP addresses or domains, just put them in a text file separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.\nLet’s assume we have a file named domains.txt with two domain names:\ngoogle.com facebook.com\nTo scan both of them with Nikto, run the following command:\nnikto -h domains.txt How to Export Scan Results linkNikto scans take a while to complete. When you are a professional pen-tester, you don’t want to repeat scans very often unless there are major changes to the web application.\nTo export a scan result, use the -o flag followed by the file name:\nnikto -h google.com -o scan.txt You can also use the -Format flag to specify an output format. You can choose from CSV, HTML, nbe (Nessus format), SQL, txt, and XML:\nnikto -h google.com -o scan.csv -Format csv You also use Nikto with Metasploit linkNikto offers a way to export scans to Metasploit so that it gets easier when you try to exploit systems based on the scan results from Nikto.\nTo do that, append the -Format msf+ flag to the end of a scan:\nnikto -h -Format msf+ Conclusion linkNikto stands as a robust tool in the arsenal of web security professionals, offering comprehensive scanning capabilities to identify vulnerabilities in web servers and applications. With its extensive database of potential threats and its ability to generate detailed reports in multiple formats, Nikto empowers users to proactively safeguard their systems against a wide range of security risks. Continuously maintained and updated, Nikto remains a trusted choice for security assessments, providing essential insights that contribute to the resilience of web infrastructures worldwide.\n"
+            }
+        );
+    index.add(
+            {
+                id:  47 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/website_cloning_and_harvesting_credentials\/",
                 title: "Website Cloning and Credential Harvesting",
                 description: "In this section, you will learn about the Social Engineering Toolkit's Website Cloning and Credential Harvesting.",
@@ -2245,16 +2202,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  49 ,
-                href: "\/tutorials\/docs\/aircrack-ng\/aircrack-ng\/introduction_to_aircrack_ng\/",
-                title: "What is Aircrack-ng And How To Use It",
-                description: "Learn more about Aircrack-ng",
-                content: "This guide will introduce you to the basics of using the Aircrack-ng suite. While it is impossible to cover every scenario, this tutorial aims to provide a solid foundation. For additional information, be prepared to conduct your own research. The Forum and Wiki offer extensive supplementary tutorials and information.\nFor detailed steps on using Aircrack-ng, refer to the Simple WEP Crack tutorial, which covers the actual Aircrack-ng steps in greater detail.\nSetting Up Hardware and Installing Aircrack-ng linkTo use Aircrack-ng effectively on your Linux system, you must first patch and install the correct driver for your wireless card. Some cards support multiple drivers, but only certain ones provide the necessary features for Aircrack-ng.\nEnsure you have a wireless card compatible with the Aircrack-ng suite, one that can fully support packet injection. A compatible card can crack a wireless access point in under an hour. Refer to the hardware compatibility page to determine the category of your card. For further guidance, read the tutorial, “Is My Wireless Card Compatible?”\nFirst, identify the chipset in your wireless card and the appropriate driver. Use the drivers section to find the necessary drivers.\nInstalling Aircrack-ng linkDownload the latest version of Aircrack-ng from the homepage, use provided packages, or use a penetration testing distribution like Kali Linux or Pentoo where Aircrack-ng is pre-installed and up-to-date. Follow the documentation on the installation page for detailed installation steps.\nIEEE 802.11 Basics linkBefore diving into action, it’s essential to understand how wireless networks operate. This knowledge will help troubleshoot issues and describe problems accurately for further assistance. Though scientific, this section is crucial for successfully cracking wireless networks.\nHow a Wireless Network Is Found linkManaged networks with Access Points (AP) periodically send out beacon frames containing information like:\nNetwork name (ESSID) Encryption status and type Supported data rates Channel number This information is visible in tools that connect to the network or when scanning for networks with iwlist scan and airodump-ng. Each AP has a unique MAC address used for communication, much like a unique name.\nConnecting to a Network linkTo connect to a wireless network, Open System Authentication is commonly used. The process involves:\nRequesting authentication from the AP. AP responds with authentication approval. Requesting association with the AP. AP responds with connection approval. Problems may arise if:\nWPA/WPA2 is used, requiring EAPOL authentication. The AP has MAC filtering enabled. Shared Key Authentication is used, requiring the correct WEP key. Simple Sniffing and Cracking linkDiscovering Networks linkFirst, identify potential targets using airodump-ng or tools like Kismet. Put your wireless card into monitor mode with:\nairmon-ng start wlan0 This creates a new interface, wlan0mon. Verify the mode with iwconfig. Then, start airodump-ng to scan for networks:\nairodump-ng wlan0mon If airodump-ng could connect to the WLAN device, you’ll see a screen like this:\n—image\nairodump-ng hops from channel to channel and shows all access points it can receive beacons from. Channels 1 to 14 are used for 802.11b and g (in US, they only are allowed to use 1 to 11; 1 to 13 in Europe with some special cases; 1-14 in Japan). 802.11a is in the 5GHz and availability in different countries is more fragmented than on 2.4GHz. In general, known channels starts at 36 (32 in some countries) to 64 (68 in some countries) and 96 to 165. Wikipedia has more details on channel availability. The Linux Central Regulatory Domain Agent takes care of allowing/forbidding transmissions on the different channels for your country; however, it needs to be set appropriately.\nThe current channel is shown in the top left corner.\nAfter a short time some APs and (hopefully) some associated clients will show up.\nSniffing IVs linkTo capture all packets from your target network, tune to a specific channel and save data with:\nairodump-ng -c 11 --bssid 00:01:02:03:04:05 -w dump wlan0mon Capture between 40,000 and 85,000 Initialization Vectors (IVs) for successful WEP cracking. This can be expedited with packet replay attacks.\nCracking WEP linkOnce enough IVs are captured, crack the WEP key with:\naircrack-ng -b 00:01:02:03:04:05 dump-01.cap Adjust parameters as needed based on the number of IVs and the specific scenario.\nActive Attacks linkInjection Support linkMost devices require patched drivers for packet injection. Some only support certain attacks. Take a look at the compatibility page, column aireplay. Sometimes this table is not up-to-date, so if you see a “NO” for your driver there don’t give up yet, but look at the driver homepage, the driver mailing list or our Forum. If you were able to successfully replay using a driver which is not listed as supported, don’t hesitate to update the compatibility page table and add a link to a short howto. (To do this, request a wiki account on IRC.)\nThe first step is to make sure packet injection really works with your card and driver. The easiest way to test it is the injection test attack. Make sure to perform this test prior to proceeding. Your card must be able to successfully inject in order to perform the following steps.\nYou’ll need the BSSID (AP MAC) and ESSID (network name) of an AP that does not do MAC filtering (e.g. your own) and must be in range of the AP.\nTry connecting to your AP using airplay-ng:\naireplay-ng --fakeauth 0 -e \"your network ESSID\" -a 00:01:02:03:04:05 wlan0mon The value after -a is the BSSID of your AP.\nIf injection works you should see something like this:\n12:14:06 Sending Authentication Request 12:14:06 Authentication successful 12:14:06 Sending Association Request 12:14:07 Association successful :-) If not\ndouble-check ESSID and BSSID make sure your AP has MAC filtering disabled test it against another AP make sure your driver is properly patched and supported Instead of “0”, try “6000 -o 1 -q 10”\nARP Replay linkThe lazy way linkFirst open a window with an airodump-ng sniffing for traffic (see above). aireplay-ng and airodump-ng can run together. Wait for a client to show up on the target network. Then start the attack:\naireplay-ng --arpreplay -b 00:01:02:03:04:05 -h 00:04:05:06:07:08 wlan0mon -b specifies the target BSSID, -h the MAC of the connected client.\nNow you have to wait for an ARP packet to arrive. Usually you’ll have to wait for a few minutes (or look at the next chapter).\nIf you were successful, you’ll see something like this:\nSaving ARP requests in replay_arp-0627-121526.cap You must also start airodump to capture replies. Read 2493 packets (got 1 ARP requests), sent 1305 packets... If you have to stop replaying, you don’t have to wait for the next ARP packet to show up, but you can re-use the previously captured packet(s) with the -r option.\nWhen using the ARP injection technique, you can use the PTW method to crack the WEP key. This dramatically reduces the number of data packets you need and also the time needed. You must capture the full packet in airodump-ng, meaning do not use the “–ivs” option when starting it. For aircrack-ng, use “aircrack -z ”. (PTW is the default attack)\nIf the number of data packets received by airodump-ng sometimes stops increasing you maybe have to reduce the replay-rate. You do this with the -x option. I usually start out with 50 and reduce until packets are received continuously again. Better positioning of your antenna usually also helps.\nThe aggressive way linkMost operating systems clear the ARP cache on disconnection. If they want to send the next packet after reconnection (or just use DHCP), they have to send out ARP requests. So the idea is to disconnect a client and force it to reconnect to capture an ARP-request. A side-effect is that you can sniff the ESSID and possibly a keystream during reconnection too. This comes in handy if the ESSID of your target is hidden, or if it uses shared-key authentication.\nKeep your airodump-ng and aireplay-ng running. Open another window and run a deauthentication attack:\naireplay-ng --deauth 5 -a 00:01:02:03:04:05 -c 00:04:05:06:07:08 wlan0mon -a is the BSSID of the AP, -c the MAC of the targeted client.\nWait a few seconds and your ARP replay should start running.\nMost clients try to reconnect automatically. But the risk that someone recognizes this attack or at least attention is drawn to the stuff happening on the WLAN is higher than with other attacks.\nDeauthentication Attack linkForce a client to reconnect and capture ARP requests by running a deauthentication attack:\naireplay-ng --deauth 5 -a 00:01:02:03:04:05 -c 00:04:05:06:07:08 wlan0mon Conclusion linkThis guide provides a foundational understanding of using the Aircrack-ng suite for wireless network security testing. For more advanced techniques and detailed scenarios, consult the Forum, Wiki, and additional tutorials available online. Remember, successful cracking involves both knowledge and practice, so continue to explore and experiment within legal and ethical boundaries.\n"
-            }
-        );
-    index.add(
-            {
-                id:  50 ,
+                id:  48 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/john-the-ripper\/introduction_to_john_the_ripper\/",
                 title: "What is John The Ripper and How To Use It",
                 description: "Learn how to use John The Ripper to crack passwords.",
@@ -2263,7 +2211,7 @@ nmap --script=smb* 192.168.1.1              # Set of scripts</code>
         );
     index.add(
             {
-                id:  51 ,
+                id:  49 ,
                 href: "\/tutorials\/docs\/wireshark\/",
                 title: "Wireshark",
                 description: "Learn more about Wireshark",

@@ -14,6 +14,9 @@
     <loc>http://localhost:1313/tutorials/docs/aircrack-ng/</loc>
     <lastmod>2024-06-28T16:29:28+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</loc>
+    <lastmod>2024-07-11T11:09:53+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
   </url><url>
@@ -25,12 +28,6 @@
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/wireshark/wireshark/installing_wireshark/</loc>
     <lastmod>2024-07-11T11:09:53+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/docs/autopsy/</loc>
-    <lastmod>2024-06-30T15:32:14+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</loc>
-    <lastmod>2024-06-30T15:32:14+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/bash_scripting/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
@@ -113,8 +110,7 @@
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/nikto/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/</loc>
+    <lastmod>2024-07-16T11:25:33+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/nmap/</loc>
     <lastmod>2024-06-28T16:15:43+02:00</lastmod>
@@ -143,7 +139,7 @@
     <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-07-11T11:09:53+02:00</lastmod>
+    <lastmod>2024-07-16T11:25:33+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
@@ -151,11 +147,11 @@
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</loc>
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/</loc>
+    <lastmod>2024-07-16T11:25:33+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</loc>
     <lastmod>2024-07-05T15:35:02+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</loc>
-    <lastmod>2024-07-11T11:09:53+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</loc>
     <lastmod>2024-07-11T11:09:53+02:00</lastmod>

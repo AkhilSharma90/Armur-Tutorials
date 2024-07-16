@@ -22,6 +22,13 @@
       <description>What is Linux? linkThe Linux kernel was created by Linus Torvalds in 1991. It becomes an operating system with the addition of components like a package manager, desktop environment, shell, and bootloader.&#xA;As an open-source OS, Linux offers numerous customizations. Each unique combination of these customizations is called a distribution or &amp;ldquo;distro.&amp;rdquo;&#xA;There are hundreds, if not thousands, of distros worldwide, each optimized for specific purposes or created just for fun by enthusiasts.</description>
     </item>
     <item>
+      <title>Aircrack-ng: Understanding and Using the Tool</title>
+      <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
+      <description>This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.&#xA;Installing Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:&#xA;git clone https://github.com/aircrack-ng/aircrack-ng cd aircrack-ng autoreconf -i ./configure --with-experimental make make install ldconfig View post on imgur.com Make sure you also run the command:</description>
+    </item>
+    <item>
       <title>An Introduction to Metasploit</title>
       <link>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -48,13 +55,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/wireshark/wireshark/installing_wireshark/</guid>
       <description>This guid will show you how to install Wireshark on Ubuntu 22.04 and use this tool to your advantage.&#xA;After reading this guide, you will be knowledgeable in installation, updating packages, Wireshark installation methods, and post-installation steps.&#xA;What is Wireshark? linkWireshark is a network packet analyzer. A network packet analyzer presents captured packet data in as much detail as possible.&#xA;You could think of a network packet analyzer as a measuring device for examining what’s happening inside a network cable, just like an electrician uses a voltmeter for examining what’s happening inside an electric cable (but at a higher level, of course).</description>
-    </item>
-    <item>
-      <title>Autopsy</title>
-      <link>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/autopsy/autopsy/introduction_to_autopsy/</guid>
-      <description></description>
     </item>
     <item>
       <title>Bash Scripting in Linux</title>
@@ -251,13 +251,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</guid>
       <description>Website cloning and credential harvesting are two essential techniques in the arsenal of social engineers. These techniques involve creating a replica of a legitimate website and tricking users into entering their sensitive information on the fake website, such as usernames and passwords.&#xA;This information can then be used for various malicious activities, including unauthorized access to user accounts, identity theft, or even corporate espionage.&#xA;Clone Site linkBefore setting up a cloned site in SET, you need to enable the Apache web server in the SET configuration file located at /etc/setoolkit/set.</description>
-    </item>
-    <item>
-      <title>What is Aircrack-ng And How To Use It</title>
-      <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
-      <description>This guide will introduce you to the basics of using the Aircrack-ng suite. While it is impossible to cover every scenario, this tutorial aims to provide a solid foundation. For additional information, be prepared to conduct your own research. The Forum and Wiki offer extensive supplementary tutorials and information.&#xA;For detailed steps on using Aircrack-ng, refer to the Simple WEP Crack tutorial, which covers the actual Aircrack-ng steps in greater detail.</description>
     </item>
     <item>
       <title>What is John The Ripper and How To Use It</title>

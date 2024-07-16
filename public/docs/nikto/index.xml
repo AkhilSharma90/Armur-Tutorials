@@ -8,11 +8,11 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tutorials/docs/nikto/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Nikto</title>
+      <title>Web Server Scanning With Nikto</title>
       <link>http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/</guid>
-      <description>Introducing Nikto&#xA;Nikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.&#xA;Key Features of Nikto:&#xA;Detects SQL injection, XSS, and other common vulnerabilities.</description>
+      <description>Nikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.&#xA;Key Features of Nikto:&#xA;Detects SQL injection, XSS, and other common vulnerabilities. Identifies installed software via headers, favicons, and files.</description>
     </item>
   </channel>
 </rss>
