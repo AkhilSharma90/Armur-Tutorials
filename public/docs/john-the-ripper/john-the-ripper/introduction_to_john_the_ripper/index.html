@@ -36,7 +36,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_1452776235721947668.png"/><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-07-09T16:15:12+02:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta property="article:modified_time" content="2024-07-11T11:09:53+02:00" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_1452776235721947668.png"/>
 <meta name="twitter:title" content="What is John The Ripper and How To Use It"/>
 <meta name="twitter:description" content="Learn how to use John The Ripper to crack passwords."/>
@@ -305,6 +305,26 @@
                                         
                                         
                                             <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/">Understanding How Payloads Work in Metasploit</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">code</i>
+                                Nikto
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/">Nikto</a></li>
                                         
                                     
                                 </ul>
@@ -919,9 +939,9 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
     <div id="last-modified" class="mt-1">
         <p class="mb-0 fw-semibold">Last updated <span
             id="relativetime"
-            data-authdate="2024-07-09T16:15:12&#43;0200"
-            title="09 Jul 2024, 16:15 SAST">
-            09 Jul 2024, 16:15 SAST
+            data-authdate="2024-07-11T11:09:53&#43;0200"
+            title="11 Jul 2024, 11:09 SAST">
+            11 Jul 2024, 11:09 SAST
         </span>. <span class="material-icons size-20 align-text-bottom opacity-75">history</span>
         </p>
     </div>
@@ -1104,6 +1124,20 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1789,6 +1823,24 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
     index.add(
             {
                 id:  36 ,
+                href: "\/tutorials\/docs\/nikto\/",
+                title: "Nikto",
+                description: "Learn more about Nikto",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  37 ,
+                href: "\/tutorials\/docs\/nikto\/nikto\/what_is_nikto\/",
+                title: "Nikto",
+                description: "Learn more about Nmap",
+                content: "Introducing Nikto\nNikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.\nKey Features of Nikto:\nDetects SQL injection, XSS, and other common vulnerabilities. Identifies installed software via headers, favicons, and files. Guesses subdomains and supports SSL (HTTPS) websites. Generates reports in plain text, XML, HTML, or CSV formats. Explores web server content and reports unusual headers. Checks server configurations like multiple index files and HTTP server options. Supports HTTP proxy and can guess credentials for authorization. Customizable reports with a template engine and integrates with Metasploit. How to Install Nikto linkSince Nikto is Perl-based, it runs on most operating systems with Perl installed.\nKali Linux: Nikto comes preinstalled under “Vulnerability Analysis.”\nOther Linux distributions: Use apt install nikto or obtain Nikto from GitHub.\nWindows: Install Perl from ActiveState, then download Nikto.\nMacOS: Install using Homebrew.\nHow to Scan with Nikto linkNow that you know what Nikto is and how to install it, let’s go ahead and run some scans. Since Nikto is a command-line tool, you can use the help command to get a list of options:\nnikto -Help View post on imgur.com How to Scan a Domain linkTo perform a simple domain scan, use the -h (host) flag:\nnikto -h google.com View post on imgur.com How to Scan a Domain with SSL Enabled linkFor domains with HTTPS enabled, you have to specify the -ssl flag to scan port 443:\nnikto -h https://google.com -ssl View post on imgur.com How to Scan an IP Address linkSometimes you just want to scan an IP address where a web server is hosted.\nTo do that, use the same -h flag you used for domain scanning:\nnikto -h How to Scan Multiple IP Addresses From a Text File linkTo scan multiple IP addresses or domains, just put them in a text file separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.\nLet’s assume we have a file named domains.txt with two domain names:\ngoogle.com facebook.com\nTo scan both of them with Nikto, run the following command:\nnikto -h domains.txt How to Export Scan Results linkNikto scans take a while to complete. When you are a professional pen-tester, you don’t want to repeat scans very often unless there are major changes to the web application.\nTo export a scan result, use the -o flag followed by the file name:\nnikto -h google.com -o scan.txt You can also use the -Format flag to specify an output format. You can choose from CSV, HTML, nbe (Nessus format), SQL, txt, and XML:\nnikto -h google.com -o scan.csv -Format csv You also use Nikto with Metasploit linkNikto offers a way to export scans to Metasploit so that it gets easier when you try to exploit systems based on the scan results from Nikto.\nTo do that, append the -Format msf+ flag to the end of a scan:\nnikto -h -Format msf+ Conclusion linkCertainly! Here’s a conclusion on Nikto:\nConclusion:\nNikto stands as a robust tool in the arsenal of web security professionals, offering comprehensive scanning capabilities to identify vulnerabilities in web servers and applications. With its extensive database of potential threats and its ability to generate detailed reports in multiple formats, Nikto empowers users to proactively safeguard their systems against a wide range of security risks. Continuously maintained and updated, Nikto remains a trusted choice for security assessments, providing essential insights that contribute to the resilience of web infrastructures worldwide.\n"
+            }
+        );
+    index.add(
+            {
+                id:  38 ,
                 href: "\/tutorials\/docs\/nmap\/",
                 title: "Nmap",
                 description: "Learn more about Nmap",
@@ -1797,7 +1849,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  37 ,
+                id:  39 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/cheat_sheet\/",
                 title: "Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts",
                 description: "Learn more about the Nmap",
@@ -1806,7 +1858,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  38 ,
+                id:  40 ,
                 href: "\/tutorials\/docs\/owasp-zap\/",
                 title: "OWASP ZAP",
                 description: "Learn more about SQLMap",
@@ -1815,7 +1867,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  39 ,
+                id:  41 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/",
                 title: "Social Engineering Toolkit",
                 description: "Learn more about the Social Engineering Toolkit",
@@ -1824,7 +1876,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  40 ,
+                id:  42 ,
                 href: "\/tutorials\/docs\/sqlmap\/",
                 title: "SQLMap",
                 description: "Learn more about SQLMap",
@@ -1833,7 +1885,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  41 ,
+                id:  43 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/text_manipulation\/",
                 title: "Text Manipulation",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1842,7 +1894,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  42 ,
+                id:  44 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blind_attacks\/",
                 title: "Time-Based Blind SQL Injection Attacks",
                 description: "Learn more about SQLMap",
@@ -1851,7 +1903,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  43 ,
+                id:  45 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blinds_using_heavy_queries\/",
                 title: "Time-Based Blind SQL Injection Using Heavy Queries",
                 description: "Learn more about SQLMap",
@@ -1860,7 +1912,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  44 ,
+                id:  46 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/file_permision_using_linux\/",
                 title: "Understanding File Permissions in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1869,7 +1921,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  45 ,
+                id:  47 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/payloads_in_metasploit\/",
                 title: "Understanding How Payloads Work in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1878,7 +1930,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  46 ,
+                id:  48 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/website_cloning_and_harvesting_credentials\/",
                 title: "Website Cloning and Credential Harvesting",
                 description: "In this section, you will learn about the Social Engineering Toolkit's Website Cloning and Credential Harvesting.",
@@ -1887,7 +1939,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  47 ,
+                id:  49 ,
                 href: "\/tutorials\/docs\/aircrack-ng\/aircrack-ng\/introduction_to_aircrack_ng\/",
                 title: "What is Aircrack-ng And How To Use It",
                 description: "Learn more about Aircrack-ng",
@@ -1896,7 +1948,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  48 ,
+                id:  50 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/john-the-ripper\/introduction_to_john_the_ripper\/",
                 title: "What is John The Ripper and How To Use It",
                 description: "Learn how to use John The Ripper to crack passwords.",
@@ -1905,7 +1957,7 @@ Let&rsquo;s understand hashing process with a real-life example. The best exampl
         );
     index.add(
             {
-                id:  49 ,
+                id:  51 ,
                 href: "\/tutorials\/docs\/wireshark\/",
                 title: "Wireshark",
                 description: "Learn more about Wireshark",

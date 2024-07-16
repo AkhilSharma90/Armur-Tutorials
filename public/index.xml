@@ -239,6 +239,13 @@
       <description>Understanding How Payloads Work in Metasploit linkThe Metasploit Framework is a powerful tool used for developing, testing, and executing exploits against remote targets. One of the critical components in this process is the payload. This blog post aims to break down the functionality of payloads in Metasploit, explaining their types and how they are used.&#xA;What are Payloads? linkIn Metasploit, payloads are modules that are used to execute code on a target system.</description>
     </item>
     <item>
+      <title>Web Server Scanning With Nikto</title>
+      <link>http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/nikto/nikto/what_is_nikto/</guid>
+      <description>Nikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.&#xA;Key Features of Nikto:&#xA;Detects SQL injection, XSS, and other common vulnerabilities. Identifies installed software via headers, favicons, and files.</description>
+    </item>
+    <item>
       <title>Website Cloning and Credential Harvesting</title>
       <link>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/website_cloning_and_harvesting_credentials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

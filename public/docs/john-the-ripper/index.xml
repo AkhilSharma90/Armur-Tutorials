@@ -8,7 +8,7 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tutorials/docs/john-the-ripper/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Using John The Ripper</title>
+      <title>What is John The Ripper and How To Use It</title>
       <link>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/john-the-ripper/john-the-ripper/introduction_to_john_the_ripper/</guid>
