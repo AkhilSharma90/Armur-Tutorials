@@ -15,7 +15,7 @@
     <lastmod>2024-06-28T16:29:28+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</loc>
-    <lastmod>2024-07-11T11:09:53+02:00</lastmod>
+    <lastmod>2024-07-16T11:43:55+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/metasploit/metasploit/introduction_to_metasploit/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
@@ -59,7 +59,7 @@
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/beef/beef/exploiting_browser_sessions/</loc>
-    <lastmod>2024-07-09T15:29:20+02:00</lastmod>
+    <lastmod>2024-07-16T11:43:55+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/getting_started/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
@@ -93,6 +93,10 @@
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/john-the-ripper/</loc>
     <lastmod>2024-06-27T07:05:09+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/katana/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/docs/katana/katana/introduction_to_katana/</loc>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/</loc>
     <lastmod>2024-06-19T01:49:20+02:00</lastmod>
@@ -139,7 +143,7 @@
     <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-07-16T11:25:33+02:00</lastmod>
+    <lastmod>2024-07-16T11:43:55+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>

@@ -4,7 +4,7 @@
     <title>Tutorials</title>
     <link>http://localhost:1313/tutorials/</link>
     <description>Recent content on Tutorials</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -174,6 +174,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/running_modules_using_metasploit/</guid>
       <description>Assuming you now have Metasploit installed, run the msfconsole command to open Metasploit:&#xA;Finding Modules linkMetasploit is based around the concept of modules. The most commonly used module types are:&#xA;Auxiliary - Auxiliary modules do not exploit a target, but can perform data gathering or administrative tasks Exploit - Exploit modules leverage vulnerabilities in a manner that allows the framework to execute arbitrary code on the target host Payloads - Arbitrary code that can be executed on a remote target to perform a task, such as creating users, opening shells, etc Post - Post modules are used after a machine has been compromised.</description>
+    </item>
+    <item>
+      <title>Katana: The CLI web crawler</title>
+      <link>http://localhost:1313/tutorials/docs/katana/katana/introduction_to_katana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/katana/katana/introduction_to_katana/</guid>
+      <description>Introduction linkKatana is a command-line interface (CLI) web crawling tool developed in Golang, designed to gather information and endpoints from websites. One of Katana&amp;rsquo;s standout features is its capability to utilize headless browsing for crawling applications.&#xA;This enables it to effectively crawl single-page applications (SPAs) built with technologies like JavaScript, Angular, or React, which are increasingly common but challenging to crawl with traditional tools. By employing headless browsing, Katana can more efficiently access and gather information from these applications.</description>
     </item>
     <item>
       <title>Managing Sessions in Metasploit</title>
