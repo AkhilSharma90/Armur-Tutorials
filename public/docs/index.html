@@ -166,6 +166,16 @@
                                     
                                         
                                         
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/hydra/hydra/custom_wordlist_using_hydra/">Creating Custom Wordlists and Rules for Hydra</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/">How to Use Hydra to Brute-Force SSH Connections</a></li>
+                                        
+                                    
+                                        
+                                        
                                             <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/">How to Use Hydra to Hack Passwords – Penetration Testing Tutorial</a></li>
                                         
                                     
@@ -207,6 +217,11 @@
                                         
                                         
                                             <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/katana/katana/introduction_to_katana/">Katana: The CLI web crawler</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/katana/katana/using-_katana_as_a_module/">Using Katana as a Library</a></li>
                                         
                                     
                                 </ul>
@@ -1396,6 +1411,27 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -1540,6 +1576,15 @@
     index.add(
             {
                 id:  15 ,
+                href: "\/tutorials\/docs\/hydra\/hydra\/custom_wordlist_using_hydra\/",
+                title: "Creating Custom Wordlists and Rules for Hydra",
+                description: "Learn more about Hydra",
+                content: "To effectively use Hydra for brute-forcing SSH connections, creating custom wordlists and rules is crucial. Custom wordlists tailored to specific targets can significantly enhance the success rate of brute-force attacks. This guide will cover methods to create custom wordlists and define rules for their efficient use with Hydra.\nWhy Create Custom Wordlists? linkUsing generic wordlists like rockyou.txt can be effective, but they may not always suit specific targets. Custom wordlists can:\nTailor attacks to specific targets based on gathered information. Include unique or uncommon passwords. Increase the chances of successful brute-force attempts. Creating Custom Wordlists link1. Using Crunch to Generate Wordlists linkCrunch generates wordlists based on specified criteria. It’s useful for creating lists of various lengths and patterns.\nInstall Crunch:\nsudo apt install crunch When creating the wordlist, we will typically use this command\ncrunch min: is the minimun password length max: is the maximum password length charset: Character se to be used Generate a wordlist with all combinations of letters:\ncrunch 3 6 0123456789 8: Minimum length of words. 10: Maximum length of words. abcdefghijklmnopqrstuvwxyz: Character set. -o wordlist.txt: Output file. View post on imgur.com Creating Wordlist in a text file. linkIf you want your wordlist file in text format run this command on your terminal\ncrunch 3 6 0123456789 -o list.txt Creating Custom Wordlist With Letters, Symbols, and Numbers. linkThis Step is for Mixed with letters, Symbols, Numbers and creating a custom wordlist Run this command on Your terminal\ncrunch 4 8 123abcdefgh#$% -o list2.txt –o : Output in a textfile. along with name of the text file. 2. Using CeWL to Generate Wordlists linkCeWL (Custom Word List generator) is a ruby app that spiders a given URL to a specified depth and generates a custom wordlist from the text found on the website.\nInstall CeWL:\nsudo apt-get install cewl Generate a wordlist:\ncewl http://example.com -m 5 -w wordlist.txt http://example.com: Target URL. -m 5: Minimum word length (5 characters). -w wordlist.txt: Output file. Combining Multiple Wordlists linkYou can merge several wordlists into one to cover a broader range of possibilities.\ncat wordlist1.txt wordlist2.txt \u003e combined_wordlist.txt sort combined_wordlist.txt | uniq \u003e final_wordlist.txt cat: Concatenates files. sort: Sorts the combined list. uniq: Removes duplicate entries. Creating Rules for Hydra linkHydra supports various flags and options to customize brute-force attacks. Understanding and applying these rules can optimize the attack process.\nSpecifying Usernames and Passwords linkUsing a custom username list:\nhydra -L custom_userlist.txt -P pass.txt 192.168.29.135 ssh -t 4 Using a custom password list:\nhydra -l username -P custom_passlist.txt 192.168.29.135 ssh -t 4 Customizing Thread Count linkAdjust the number of parallel threads to balance speed and server load:\nhydra -L user.txt -P pass.txt 192.168.29.135 ssh -t 8 Targeting Multiple IPs linkTo target multiple IP addresses simultaneously:\nhydra -L user.txt -P pass.txt -M ip_list.txt ssh -t 4 Advanced Password Guessing with -e Flag linkThe -e flag in Hydra adds extra password guessing techniques:\nhydra -l username -P pass.txt 192.168.29.135 -e nsr ssh -e n: Try empty passwords. -e s: Try the username as the password. -e r: Try the reverse of the username. Verbose Mode and Detailed Output linkEnable verbose mode for detailed output:\nhydra -L user.txt -P pass.txt 192.168.29.135 ssh -V Changing Default SSH Port linkSpecify a custom SSH port if the target uses a non-standard port:\nhydra -s 2222 -L user.txt -P pass.txt 192.168.29.135 ssh -t 4 Using Custom Login Attempts linkLimit login attempts to avoid detection and blocking:\nhydra -L user.txt -P pass.txt 192.168.29.135 ssh -t 4 -f -f: Exit after the first successful login. Conclusion linkCreating custom wordlists and using Hydra for brute-force attacks should always be done ethically and legally. Unauthorized access to systems is illegal and punishable by law. Use these techniques only for authorized penetration testing and security assessments.\nBy creating custom wordlists and applying advanced rules, security professionals can more effectively test the strength of SSH credentials and enhance their overall security measures.\n"
+            }
+        );
+    index.add(
+            {
+                id:  16 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/database_fingerprinting_for_sql_injection\/",
                 title: "Database Fingerprinting for SQL Injection: Identifying the Underlying DBMS",
                 description: "Learn more about SQLMap",
@@ -1548,7 +1593,7 @@
         );
     index.add(
             {
-                id:  16 ,
+                id:  17 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/database_support\/",
                 title: "Database Support in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1557,7 +1602,7 @@
         );
     index.add(
             {
-                id:  17 ,
+                id:  18 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/estimating_mysql_database_size\/",
                 title: "Estimating MySQL Table Size using SQL Injection",
                 description: "Learn more about SQLMap",
@@ -1566,7 +1611,7 @@
         );
     index.add(
             {
-                id:  18 ,
+                id:  19 ,
                 href: "\/tutorials\/docs\/beef\/beef\/exploiting_browser_sessions\/",
                 title: "Exploiting Browser Sessions With BeEF",
                 description: "Learn more about beEF",
@@ -1575,7 +1620,7 @@
         );
     index.add(
             {
-                id:  19 ,
+                id:  20 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/getting_started\/",
                 title: "Getting started with Social Engineering Toolkit",
                 description: "In this section, you will learn about the Social Engineering Toolkit and provide a beginner’s guide to using it.",
@@ -1584,7 +1629,7 @@
         );
     index.add(
             {
-                id:  20 ,
+                id:  21 ,
                 href: "\/tutorials\/docs\/hashcat\/",
                 title: "Hashcat",
                 description: "Learn more about Hashcat",
@@ -1593,7 +1638,7 @@
         );
     index.add(
             {
-                id:  21 ,
+                id:  22 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/hashing_and_password_cracking\/",
                 title: "Hashing and Password cracking in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1602,7 +1647,7 @@
         );
     index.add(
             {
-                id:  22 ,
+                id:  23 ,
                 href: "\/tutorials\/docs\/beef\/beef\/hooking_we_browsers_wit_beef\/",
                 title: "Hooking Web Browsers with BeEF",
                 description: "Now that you know how to install and start BeEF, let’s explore how to exploit a browser by hooking into it.",
@@ -1611,7 +1656,7 @@
         );
     index.add(
             {
-                id:  23 ,
+                id:  24 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/shell_metasploit\/",
                 title: "How to Use a Reverse Shell in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1620,7 +1665,16 @@
         );
     index.add(
             {
-                id:  24 ,
+                id:  25 ,
+                href: "\/tutorials\/docs\/hydra\/hydra\/brute_force_ssh_connections\/",
+                title: "How to Use Hydra to Brute-Force SSH Connections",
+                description: "Learn more about Hydra",
+                content: "Brute-forcing SSH connections using Hydra is a common technique in penetration testing and ethical hacking. This guide explores the practical usage of Hydra for brute-forcing SSH, focusing on various scenarios and configurations to maximize the efficiency of your attacks. Remember, this should only be used for ethical purposes, such as testing the security of your systems.\nUnderstanding SSH (Secure Shell) linkSSH (Secure Shell) is a cryptographic network protocol used for secure data communication, remote command-line login, and other secure network services between two networked computers. It ensures that the data transferred over the network is encrypted and secure, preventing eavesdropping and interception by malicious entities.\nWhat is Hydra? linkHydra is an open-source, parallelized login cracker that supports numerous protocols, including SSH. It is a versatile tool included in many penetration testing distributions like Kali Linux, allowing users to perform dictionary and brute-force attacks on various services. Hydra’s ability to test multiple combinations of usernames and passwords makes it a valuable tool for security professionals.\nPractical Usage of Hydra linkHydra can be utilized in various scenarios to test the robustness of SSH credentials. Below, we outline several common use cases and configurations.\nNote, you can use your own IP address to perform these actions\nExample 1: Brute-Forcing Both Usernames and Passwords linkTo brute-force both usernames and passwords, you can use the following command:\nhydra -L user.txt -P pass.txt 192.168.29.135 ssh -t 4 -L: Specifies a username wordlist. -P: Specifies a password wordlist. -t: Sets the number of parallel tasks (threads) to 4. In this example, Hydra will attempt to match usernames from user.txt with passwords from pass.txt on the SSH server at 192.168.29.135.\nExample 2: Brute-Forcing Passwords linkTo brute-force passwords for a specific username, use:\nhydra -l msfadmin -P pass.txt 192.168.29.135 ssh -t 4 -l: Specifies a single username. -P: Specifies a password wordlist. This command tests the passwords from pass.txt for the username msfadmin on the target SSH server.\nExample 3: Brute-Forcing Usernames linkTo brute-force usernames for a known password:\nhydra -L user.txt -p msfadmin 192.168.29.135 ssh -t 4 -L: Specifies a username wordlist. -p: Specifies a single password. This command tests usernames from user.txt against the password msfadmin.\nUtilizing Special Flags in Hydra linkHydra provides various flags to fine-tune the brute-forcing process. Here are some examples:\nChanging the Number of Threads link hydra -L user.txt -P pass.txt 192.168.29.229 ssh -t 5 -t: Sets the number of threads to 5. Changing the Port Number link hydra -s 22 -L user.txt -P pass.txt 192.168.29.229 ssh -t 5 -s: Specifies the port number (22 in this case). Brute-Forcing a List of IPs link hydra -L user.txt -P pass.txt -M ip.txt ssh -t 4 -M: Specifies a list of IP addresses. Enabling Verbose Mode and Using -e nsr Flag linkVerbose mode provides detailed output:\nhydra -l msfadmin -P pass.txt 192.168.29.229 -V -e nsr ssh -V: Enables verbose mode. -e nsr: Tries null, same, and reversed username as passwords. Displaying Help Menu linkTo learn more about Hydra’s usage:\nhydra -h -h: Displays the help menu. Conclusion linkHydra is a powerful tool for security testing, but it must be used responsibly. Unauthorized use of brute-forcing techniques is illegal and unethical. Always ensure you have explicit permission to test the security of any system.\nBy understanding and applying these techniques, security professionals can better assess the strength of their systems and improve their overall security posture.\n"
+            }
+        );
+    index.add(
+            {
+                id:  26 ,
                 href: "\/tutorials\/docs\/hydra\/hydra\/introduction_to_hydra\/",
                 title: "How to Use Hydra to Hack Passwords – Penetration Testing Tutorial",
                 description: "Learn more about Hydra",
@@ -1629,7 +1683,7 @@
         );
     index.add(
             {
-                id:  25 ,
+                id:  27 ,
                 href: "\/tutorials\/docs\/hydra\/",
                 title: "Hydra",
                 description: "Learn more about Hydra",
@@ -1638,7 +1692,7 @@
         );
     index.add(
             {
-                id:  26 ,
+                id:  28 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/infectious_media_generator\/",
                 title: "Infectious Media Generator",
                 description: "Right now, you should have SET setup on your system. We can spin it up by running\nsudo setoolkit Infectious Media Generator linkThe Infectious Media Generator in SET allows you to create malicious files, such as PDFs and EXEs, that can trigger a reverse Meterpreter shell when opened. This section will guide you through the process of creating a malicious EXE.\nSET has many options for malicious payloads, but they may be limited depending on the software and operating system versions the target is using",
@@ -1647,7 +1701,7 @@
         );
     index.add(
             {
-                id:  27 ,
+                id:  29 ,
                 href: "\/tutorials\/docs\/beef\/beef\/introduction_to_beef\/",
                 title: "Introduction to BeEF: The Browser Exploitation Framework",
                 description: "Learn more about beEF",
@@ -1656,7 +1710,7 @@
         );
     index.add(
             {
-                id:  28 ,
+                id:  30 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/running_modules_using_metasploit\/",
                 title: "Introduction to Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1665,7 +1719,7 @@
         );
     index.add(
             {
-                id:  29 ,
+                id:  31 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/",
                 title: "John The Ripper",
                 description: "Learn more about John The Ripper",
@@ -1674,7 +1728,7 @@
         );
     index.add(
             {
-                id:  30 ,
+                id:  32 ,
                 href: "\/tutorials\/docs\/katana\/",
                 title: "Katana",
                 description: "Learn more about katana",
@@ -1683,7 +1737,7 @@
         );
     index.add(
             {
-                id:  31 ,
+                id:  33 ,
                 href: "\/tutorials\/docs\/katana\/katana\/introduction_to_katana\/",
                 title: "Katana: The CLI web crawler",
                 description: "Learn what Katana is and how to use it",
@@ -1692,7 +1746,7 @@
         );
     index.add(
             {
-                id:  32 ,
+                id:  34 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/",
                 title: "Linux Basics for Hackers",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1701,7 +1755,7 @@
         );
     index.add(
             {
-                id:  33 ,
+                id:  35 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/managing_sessions\/",
                 title: "Managing Sessions in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1710,7 +1764,7 @@
         );
     index.add(
             {
-                id:  34 ,
+                id:  36 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/mass_mailer\/",
                 title: "Mass Mailer",
                 description: "The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.\nIn this section, we’ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.\nTo use a Gmail account for this purpose, you’ll need to set up an App password.",
@@ -1719,7 +1773,7 @@
         );
     index.add(
             {
-                id:  35 ,
+                id:  37 ,
                 href: "\/tutorials\/docs\/metasploit\/",
                 title: "Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1728,7 +1782,7 @@
         );
     index.add(
             {
-                id:  36 ,
+                id:  38 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/networking_in_kali\/",
                 title: "Networking in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1737,7 +1791,7 @@
         );
     index.add(
             {
-                id:  37 ,
+                id:  39 ,
                 href: "\/tutorials\/docs\/nikto\/",
                 title: "Nikto",
                 description: "Learn more about Nikto",
@@ -1746,7 +1800,7 @@
         );
     index.add(
             {
-                id:  38 ,
+                id:  40 ,
                 href: "\/tutorials\/docs\/nmap\/",
                 title: "Nmap",
                 description: "Learn more about Nmap",
@@ -1755,7 +1809,7 @@
         );
     index.add(
             {
-                id:  39 ,
+                id:  41 ,
                 href: "\/tutorials\/docs\/nmap\/nmap\/cheat_sheet\/",
                 title: "Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts",
                 description: "Learn more about the Nmap",
@@ -1764,7 +1818,7 @@
         );
     index.add(
             {
-                id:  40 ,
+                id:  42 ,
                 href: "\/tutorials\/docs\/owasp-zap\/",
                 title: "OWASP ZAP",
                 description: "Learn more about SQLMap",
@@ -1773,7 +1827,7 @@
         );
     index.add(
             {
-                id:  41 ,
+                id:  43 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/",
                 title: "Social Engineering Toolkit",
                 description: "Learn more about the Social Engineering Toolkit",
@@ -1782,7 +1836,7 @@
         );
     index.add(
             {
-                id:  42 ,
+                id:  44 ,
                 href: "\/tutorials\/docs\/sqlmap\/",
                 title: "SQLMap",
                 description: "Learn more about SQLMap",
@@ -1791,7 +1845,7 @@
         );
     index.add(
             {
-                id:  43 ,
+                id:  45 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/text_manipulation\/",
                 title: "Text Manipulation",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1800,7 +1854,7 @@
         );
     index.add(
             {
-                id:  44 ,
+                id:  46 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blind_attacks\/",
                 title: "Time-Based Blind SQL Injection Attacks",
                 description: "Learn more about SQLMap",
@@ -1809,7 +1863,7 @@
         );
     index.add(
             {
-                id:  45 ,
+                id:  47 ,
                 href: "\/tutorials\/docs\/sqlmap\/sqlmap\/time_based_blinds_using_heavy_queries\/",
                 title: "Time-Based Blind SQL Injection Using Heavy Queries",
                 description: "Learn more about SQLMap",
@@ -1818,7 +1872,7 @@
         );
     index.add(
             {
-                id:  46 ,
+                id:  48 ,
                 href: "\/tutorials\/docs\/linux-basics-for-hackers\/linux-basics-for-hackers\/file_permision_using_linux\/",
                 title: "Understanding File Permissions in Linux",
                 description: "Welcome to the basics of Linux for Hacking.",
@@ -1827,7 +1881,7 @@
         );
     index.add(
             {
-                id:  47 ,
+                id:  49 ,
                 href: "\/tutorials\/docs\/metasploit\/metasploit\/payloads_in_metasploit\/",
                 title: "Understanding How Payloads Work in Metasploit",
                 description: "Learn more about the Metasploit framework.",
@@ -1836,16 +1890,25 @@
         );
     index.add(
             {
-                id:  48 ,
-                href: "\/tutorials\/docs\/nikto\/nikto\/what_is_nikto\/",
-                title: "Web Server Scanning With Nikto",
-                description: "Nikto is an open-source web server and web application scanner.",
-                content: "Nikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.\nKey Features of Nikto:\nDetects SQL injection, XSS, and other common vulnerabilities. Identifies installed software via headers, favicons, and files. Guesses subdomains and supports SSL (HTTPS) websites. Generates reports in plain text, XML, HTML, or CSV formats. Explores web server content and reports unusual headers. Checks server configurations like multiple index files and HTTP server options. Supports HTTP proxy and can guess credentials for authorization. Customizable reports with a template engine and integrates with Metasploit. How to Install Nikto linkSince Nikto is Perl-based, it runs on most operating systems with Perl installed.\nKali Linux: Nikto comes preinstalled under “Vulnerability Analysis.”\nOther Linux distributions: Use apt install nikto or obtain Nikto from GitHub.\nWindows: Install Perl from ActiveState, then download Nikto.\nMacOS: Install using Homebrew.\nHow to Scan with Nikto linkNow that you know what Nikto is and how to install it, let’s go ahead and run some scans. Since Nikto is a command-line tool, you can use the help command to get a list of options:\nnikto -Help View post on imgur.com How to Scan a Domain linkTo perform a simple domain scan, use the -h (host) flag:\nnikto -h google.com View post on imgur.com How to Scan a Domain with SSL Enabled linkFor domains with HTTPS enabled, you have to specify the -ssl flag to scan port 443:\nnikto -h https://google.com -ssl View post on imgur.com How to Scan an IP Address linkSometimes you just want to scan an IP address where a web server is hosted.\nTo do that, use the same -h flag you used for domain scanning:\nnikto -h How to Scan Multiple IP Addresses From a Text File linkTo scan multiple IP addresses or domains, just put them in a text file separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.\nLet’s assume we have a file named domains.txt with two domain names:\ngoogle.com facebook.com\nTo scan both of them with Nikto, run the following command:\nnikto -h domains.txt How to Export Scan Results linkNikto scans take a while to complete. When you are a professional pen-tester, you don’t want to repeat scans very often unless there are major changes to the web application.\nTo export a scan result, use the -o flag followed by the file name:\nnikto -h google.com -o scan.txt You can also use the -Format flag to specify an output format. You can choose from CSV, HTML, nbe (Nessus format), SQL, txt, and XML:\nnikto -h google.com -o scan.csv -Format csv You also use Nikto with Metasploit linkNikto offers a way to export scans to Metasploit so that it gets easier when you try to exploit systems based on the scan results from Nikto.\nTo do that, append the -Format msf+ flag to the end of a scan:\nnikto -h -Format msf+ Conclusion linkNikto stands as a robust tool in the arsenal of web security professionals, offering comprehensive scanning capabilities to identify vulnerabilities in web servers and applications. With its extensive database of potential threats and its ability to generate detailed reports in multiple formats, Nikto empowers users to proactively safeguard their systems against a wide range of security risks. Continuously maintained and updated, Nikto remains a trusted choice for security assessments, providing essential insights that contribute to the resilience of web infrastructures worldwide.\n"
+                id:  50 ,
+                href: "\/tutorials\/docs\/katana\/katana\/using-_katana_as_a_module\/",
+                title: "Using Katana as a Library",
+                description: "Learn what Katana is and how to use it",
+                content: "In this tutorial, you’ll learn how to use Katana as a library in your Go application to crawl web pages programmatically. We’ll set up a simple Go program that configures Katana, creates a crawler, and performs a web crawl.\nPrerequisites link Go Installed: Ensure that you have Go installed on your system. Katana Library: Make sure you have the Katana library available. You can get it via Go modules. Step-by-Step Guide link Set Up Your Project\nCreate a new directory for your project and navigate into it:\nmkdir katana-library-example cd katana-library-example Initialize a new Go module:\ngo mod init katana-library-example Create Your Go Program Create a file named main.go and open it in your text editor. Add the following code to main.go:\npackage main import ( \"github.com/projectdiscovery/gologger\" \"github.com/projectdiscovery/katana/pkg/engine/standard\" \"github.com/projectdiscovery/katana/pkg/output\" \"github.com/projectdiscovery/katana/pkg/types\" ) func main() { // Configure Katana options options := \u0026types.Options{ MaxDepth: 1, // Maximum depth to crawl FieldScope: \"rdn\", // Crawling Scope Field BodyReadSize: 2 * 1024 * 1024, // Maximum response size to read RateLimit: 150, // Maximum requests to send per second Strategy: \"depth-first\", // Visit strategy (depth-first, breadth-first) OnResult: func(result output.Result) { // Callback function to execute for result gologger.Info().Msg(result.Request.URL) }, } // Create crawler options crawlerOptions, err := types.NewCrawlerOptions(options) if err != nil { gologger.Fatal().Msg(err.Error()) } defer crawlerOptions.Close() // Initialize the crawler crawler, err := standard.New(crawlerOptions) if err != nil { gologger.Fatal().Msg(err.Error()) } defer crawler.Close() // Define the URL to crawl var input = \"https://google.com\" // Start crawling err = crawler.Crawl(input) if err != nil { gologger.Warning().Msgf(\"Could not crawl %s: %s\", input, err.Error()) } } Install Dependencies Run the following command to install the necessary dependencies:\ngo mod tidy Run Your Program Execute your Go program with:\ngo run main.go You should see an out put like this:\nView post on imgur.com This will start the crawling process on the specified URL (https://google.com). The OnResult callback will print the URLs found during the crawl.\nExplanation link Options Configuration: We set various crawling options like MaxDepth, FieldScope, BodyReadSize, RateLimit, and Strategy. These control how the crawler operates. Callback Function: The OnResult callback is used to handle the results of the crawl. In this example, it simply logs the URL of each result. Creating and Using the Crawler: We create the crawler using standard.New() with the configured options and start crawling the input URL. This basic setup allows you to use Katana as a library in your Go applications to perform web crawling. You can customize the options and callback function based on your specific needs.\nConclusion linkIn this tutorial, we demonstrated how to use Katana as a library in a Go application for web crawling. By configuring crawling options and setting up a basic callback function, we created a simple yet functional crawler that explores web pages programmatically. This approach allows for greater flexibility and integration with other Go-based tools and workflows. With Katana’s powerful features and this foundational setup, you can now tailor web crawling tasks to meet your specific needs and incorporate them into larger projects.\n"
             }
         );
     index.add(
             {
-                id:  49 ,
+                id:  51 ,
+                href: "\/tutorials\/docs\/nikto\/nikto\/what_is_nikto\/",
+                title: "Web Server Scanning With Nikto",
+                description: "Nikto is an open-source web server and web application scanner.",
+                content: "Nikto is an open-source web server and web application scanner designed to detect various security vulnerabilities. Developed by Sullo at CIRT, Inc., Nikto scans web servers for over 6700 potentially risky files/programs, checks for outdated server software, and identifies version-specific issues. Originally released in late 2001, it is currently maintained by David Lodge with contributions from other developers.\nKey Features of Nikto:\nDetects SQL injection, XSS, and other common vulnerabilities. Identifies installed software via headers, favicons, and files. Guesses subdomains and supports SSL (HTTPS) websites. Generates reports in plain text, XML, HTML, or CSV formats. Explores web server content and reports unusual headers. Checks server configurations like multiple index files and HTTP server options. Supports HTTP proxy and can guess credentials for authorization. Customizable reports with a template engine and integrates with Metasploit. How to Install Nikto linkNikto comes pre-installed on linux machines.\nTo test it out, simple run\nnikto -Help Kali Linux: Nikto comes preinstalled under “Vulnerability Analysis.”\nOther Linux distributions: Use apt install nikto or obtain Nikto from GitHub.\nWindows: Install Perl from ActiveState, then download Nikto.\nMacOS: Install using Homebrew.\nHow to Scan with Nikto linkNow that you know what Nikto is and how to install it, let’s go ahead and run some scans. Since Nikto is a command-line tool, you can use the help command to get a list of options:\nnikto -Help View post on imgur.com How to Scan a Domain linkTo perform a simple domain scan, use the -h (host) flag:\nnikto -h google.com View post on imgur.com How to Scan a Domain with SSL Enabled linkFor domains with HTTPS enabled, you have to specify the -ssl flag to scan port 443:\nnikto -h https://google.com -ssl View post on imgur.com How to Scan an IP Address linkSometimes you just want to scan an IP address where a web server is hosted.\nTo do that, use the same -h flag you used for domain scanning:\nnikto -h How to Scan Multiple IP Addresses From a Text File linkTo scan multiple IP addresses or domains, just put them in a text file separated by newlines. Nikto will know that the scan has to be performed on each domain / IP address.\nLet’s assume we have a file named domains.txt with two domain names:\ngoogle.com facebook.com\nTo scan both of them with Nikto, run the following command:\nnikto -h domains.txt How to Export Scan Results linkNikto scans take a while to complete. When you are a professional pen-tester, you don’t want to repeat scans very often unless there are major changes to the web application.\nTo export a scan result, use the -o flag followed by the file name:\nnikto -h google.com -o scan.txt You can also use the -Format flag to specify an output format. You can choose from CSV, HTML, nbe (Nessus format), SQL, txt, and XML:\nnikto -h google.com -o scan.csv -Format csv You also use Nikto with Metasploit linkNikto offers a way to export scans to Metasploit so that it gets easier when you try to exploit systems based on the scan results from Nikto.\nTo do that, append the -Format msf+ flag to the end of a scan:\nnikto -h -Format msf+ Conclusion linkNikto stands as a robust tool in the arsenal of web security professionals, offering comprehensive scanning capabilities to identify vulnerabilities in web servers and applications. With its extensive database of potential threats and its ability to generate detailed reports in multiple formats, Nikto empowers users to proactively safeguard their systems against a wide range of security risks. Continuously maintained and updated, Nikto remains a trusted choice for security assessments, providing essential insights that contribute to the resilience of web infrastructures worldwide.\n"
+            }
+        );
+    index.add(
+            {
+                id:  52 ,
                 href: "\/tutorials\/docs\/social-engineering-toolkit\/social-engineering-toolkit\/website_cloning_and_harvesting_credentials\/",
                 title: "Website Cloning and Credential Harvesting",
                 description: "In this section, you will learn about the Social Engineering Toolkit's Website Cloning and Credential Harvesting.",
@@ -1854,7 +1917,7 @@
         );
     index.add(
             {
-                id:  50 ,
+                id:  53 ,
                 href: "\/tutorials\/docs\/john-the-ripper\/john-the-ripper\/introduction_to_john_the_ripper\/",
                 title: "What is John The Ripper and How To Use It",
                 description: "Learn how to use John The Ripper to crack passwords.",
@@ -1863,7 +1926,7 @@
         );
     index.add(
             {
-                id:  51 ,
+                id:  54 ,
                 href: "\/tutorials\/docs\/wireshark\/",
                 title: "Wireshark",
                 description: "Learn more about Wireshark",

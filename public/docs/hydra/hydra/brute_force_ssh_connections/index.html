@@ -14,10 +14,10 @@
 
 <html lang="en-us"><head><script src="/tutorials/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tutorials/livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
-    <title>Wireshark | Tutorials</title>
+    <title>How to Use Hydra to Brute-Force SSH Connections | Tutorials</title>
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Wireshark">
+    <meta name="description" content="Learn more about Hydra">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
     <meta name="email" content="support@aigis.uk" />
@@ -31,13 +31,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tutorials/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tutorials/favicons/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/tutorials/favicons/site.webmanifest">
-<meta property="og:title" content="Wireshark" />
-<meta property="og:description" content="Learn more about Wireshark" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/tutorials/docs/wireshark/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_13101134503102675902.png"/><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_13101134503102675902.png"/>
-<meta name="twitter:title" content="Wireshark"/>
-<meta name="twitter:description" content="Learn more about Wireshark"/>
+<meta property="og:title" content="How to Use Hydra to Brute-Force SSH Connections" />
+<meta property="og:description" content="Learn more about Hydra" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/" /><meta property="og:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_10385194724993281580.png"/><meta property="article:section" content="docs" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/tutorials/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_10385194724993281580.png"/>
+<meta name="twitter:title" content="How to Use Hydra to Brute-Force SSH Connections"/>
+<meta name="twitter:description" content="Learn more about Hydra"/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -157,12 +159,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  ">
+                        <li class="sidebar-dropdown  current active">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 Hydra
                             </button>
-                            <div class="sidebar-submenu ">
+                            <div class="sidebar-submenu d-block">
                                 <ul>
                                     
                                         
@@ -172,7 +174,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/">How to Use Hydra to Brute-Force SSH Connections</a></li>
+                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/">How to Use Hydra to Brute-Force SSH Connections</a></li>
                                         
                                     
                                         
@@ -472,12 +474,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  current active">
+                        <li class="sidebar-dropdown  ">
                             <button class="btn">
                                 <i class="material-icons me-2">code</i>
                                 Wireshark
                             </button>
-                            <div class="sidebar-submenu d-block">
+                            <div class="sidebar-submenu ">
                                 <ul>
                                     
                                         
@@ -616,10 +618,18 @@
                     <meta itemprop="position" content='1' />
                 </li>
             
+            
+                <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/tutorials/docs/hydra/">
+                        <span itemprop="name">Hydra</span>
+                    </a>
+                    <meta itemprop="position" content='2' />
+                </li>
+            
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Wireshark</span>
-                <meta itemprop="position" content='2' />
+                <span itemprop="name">How to Use Hydra to Brute-Force SSH Connections</span>
+                <meta itemprop="position" content='3' />
             </li>
         
     </ul>
@@ -627,73 +637,317 @@
                                 
                                 <div class="row flex-xl-nowrap">
                                     
-                                    <div class="docs-toc col-xl-3 visually-hidden visually-hidden  d-xl-block"><toc>
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="toc"></nav>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#understanding-ssh-secure-shell">Understanding SSH (Secure Shell)</a></li>
+        <li><a href="#what-is-hydra">What is Hydra?</a></li>
+        <li><a href="#practical-usage-of-hydra">Practical Usage of Hydra</a>
+          <ul>
+            <li><a href="#example-1-brute-forcing-both-usernames-and-passwords">Example 1: Brute-Forcing Both Usernames and Passwords</a></li>
+            <li><a href="#example-2-brute-forcing-passwords">Example 2: Brute-Forcing Passwords</a></li>
+            <li><a href="#example-3-brute-forcing-usernames">Example 3: Brute-Forcing Usernames</a></li>
+          </ul>
+        </li>
+        <li><a href="#utilizing-special-flags-in-hydra">Utilizing Special Flags in Hydra</a>
+          <ul>
+            <li><a href="#changing-the-number-of-threads">Changing the Number of Threads</a></li>
+            <li><a href="#changing-the-port-number">Changing the Port Number</a></li>
+            <li><a href="#brute-forcing-a-list-of-ips">Brute-Forcing a List of IPs</a></li>
+            <li><a href="#enabling-verbose-mode-and-using--e-nsr-flag">Enabling Verbose Mode and Using <code>-e nsr</code> Flag</a></li>
+            <li><a href="#displaying-help-menu">Displaying Help Menu</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </toc></div>
                                     
                                     
-                                    <div class="docs-toc-mobile visually-hidden visually-hidden  d-print-none d-xl-none">
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
                                         <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                             Table of Contents
                                         </button>
-<nav id="toc-mobile"></nav></div>
-                                    <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#understanding-ssh-secure-shell">Understanding SSH (Secure Shell)</a></li>
+        <li><a href="#what-is-hydra">What is Hydra?</a></li>
+        <li><a href="#practical-usage-of-hydra">Practical Usage of Hydra</a>
+          <ul>
+            <li><a href="#example-1-brute-forcing-both-usernames-and-passwords">Example 1: Brute-Forcing Both Usernames and Passwords</a></li>
+            <li><a href="#example-2-brute-forcing-passwords">Example 2: Brute-Forcing Passwords</a></li>
+            <li><a href="#example-3-brute-forcing-usernames">Example 3: Brute-Forcing Usernames</a></li>
+          </ul>
+        </li>
+        <li><a href="#utilizing-special-flags-in-hydra">Utilizing Special Flags in Hydra</a>
+          <ul>
+            <li><a href="#changing-the-number-of-threads">Changing the Number of Threads</a></li>
+            <li><a href="#changing-the-port-number">Changing the Port Number</a></li>
+            <li><a href="#brute-forcing-a-list-of-ips">Brute-Forcing a List of IPs</a></li>
+            <li><a href="#enabling-verbose-mode-and-using--e-nsr-flag">Enabling Verbose Mode and Using <code>-e nsr</code> Flag</a></li>
+            <li><a href="#displaying-help-menu">Displaying Help Menu</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
                                         <div class="mb-0 d-flex">
                                             
                                             <i class="material-icons title-icon me-2">code</i>
                                             
                                             <h1 class="content-title mb-0">
-                                                Wireshark
+                                                How to Use Hydra to Brute-Force SSH Connections
                                                 
                                             </h1>
                                         </div>
                                         
-                                            <p class="lead mb-3">Learn more about Wireshark</p>
+                                            <p class="lead mb-3">Learn more about Hydra</p>
                                         
                                         <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
                                             
-    <div class="row flex-xl-wrap">
-        
-        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
-            <a class="text-decoration-none text-reset" href="http://localhost:1313/tutorials/docs/wireshark/wireshark/installing_wireshark/">
-                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
-                    <span class="icon-color d-flex my-3">
-                        <i class="material-icons align-middle">code</i>
-                        
-                        
-                    </span>
-                    <div class="card-body p-0 content">
-                        <p class="fs-5 fw-semibold card-title mb-1">An Introduction To Wireshark and How To Install It</p>
-                        <p class="para card-text mb-0">Learn more about Wireshark</p>
-                    </div>
-                    
-                </div>
-            </a>
-        </div>
-        
-        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
-            <a class="text-decoration-none text-reset" href="http://localhost:1313/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/">
-                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
-                    <span class="icon-color d-flex my-3">
-                        <i class="material-icons align-middle">code</i>
-                        
-                        
-                    </span>
-                    <div class="card-body p-0 content">
-                        <p class="fs-5 fw-semibold card-title mb-1">Capturing Data Packets Using Wireshark</p>
-                        <p class="para card-text mb-0">Learn more about Wireshark</p>
-                    </div>
-                    
-                </div>
-            </a>
-        </div>
-        
+    
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <p>Brute-forcing SSH connections using Hydra is a common technique in penetration testing and ethical hacking. This guide explores the practical usage of Hydra for brute-forcing SSH, focusing on various scenarios and configurations to maximize the efficiency of your attacks. Remember, this should only be used for ethical purposes, such as testing the security of your systems.</p>
+<h2 id="understanding-ssh-secure-shell">Understanding SSH (Secure Shell) <a href="#understanding-ssh-secure-shell" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p><strong>SSH (Secure Shell)</strong> is a cryptographic network protocol used for secure data communication, remote command-line login, and other secure network services between two networked computers. It ensures that the data transferred over the network is encrypted and secure, preventing eavesdropping and interception by malicious entities.</p>
+<h2 id="what-is-hydra">What is Hydra? <a href="#what-is-hydra" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p><strong>Hydra</strong> is an open-source, parallelized login cracker that supports numerous protocols, including SSH. It is a versatile tool included in many penetration testing distributions like Kali Linux, allowing users to perform dictionary and brute-force attacks on various services. Hydra&rsquo;s ability to test multiple combinations of usernames and passwords makes it a valuable tool for security professionals.</p>
+<h2 id="practical-usage-of-hydra">Practical Usage of Hydra <a href="#practical-usage-of-hydra" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Hydra can be utilized in various scenarios to test the robustness of SSH credentials. Below, we outline several common use cases and configurations.</p>
+<p><strong>Note, you can use your own IP address to perform these actions</strong></p>
+<h3 id="example-1-brute-forcing-both-usernames-and-passwords">Example 1: Brute-Forcing Both Usernames and Passwords <a href="#example-1-brute-forcing-both-usernames-and-passwords" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>To brute-force both usernames and passwords, you can use the following command:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="c704502" class="language-bash ">
+  <code>hydra -L user.txt -P pass.txt 192.168.29.135 ssh -t 4</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-L</strong>: Specifies a username wordlist.</li>
+<li><strong>-P</strong>: Specifies a password wordlist.</li>
+<li><strong>-t</strong>: Sets the number of parallel tasks (threads) to 4.</li>
+</ul>
+<p>In this example, Hydra will attempt to match usernames from <code>user.txt</code> with passwords from <code>pass.txt</code> on the SSH server at <code>192.168.29.135</code>.</p>
+<h3 id="example-2-brute-forcing-passwords">Example 2: Brute-Forcing Passwords <a href="#example-2-brute-forcing-passwords" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>To brute-force passwords for a specific username, use:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="3ec8fd7" class="language-bash ">
+  <code>hydra -l msfadmin -P pass.txt 192.168.29.135 ssh -t 4</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-l</strong>: Specifies a single username.</li>
+<li><strong>-P</strong>: Specifies a password wordlist.</li>
+</ul>
+<p>This command tests the passwords from <code>pass.txt</code> for the username <code>msfadmin</code> on the target SSH server.</p>
+<h3 id="example-3-brute-forcing-usernames">Example 3: Brute-Forcing Usernames <a href="#example-3-brute-forcing-usernames" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>To brute-force usernames for a known password:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="7230b26" class="language-bash ">
+  <code>hydra -L user.txt -p msfadmin 192.168.29.135 ssh -t 4</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-L</strong>: Specifies a username wordlist.</li>
+<li><strong>-p</strong>: Specifies a single password.</li>
+</ul>
+<p>This command tests usernames from <code>user.txt</code> against the password <code>msfadmin</code>.</p>
+<h2 id="utilizing-special-flags-in-hydra">Utilizing Special Flags in Hydra <a href="#utilizing-special-flags-in-hydra" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Hydra provides various flags to fine-tune the brute-forcing process. Here are some examples:</p>
+<h3 id="changing-the-number-of-threads">Changing the Number of Threads <a href="#changing-the-number-of-threads" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="28f2972" class="language-bash ">
+  <code>hydra -L user.txt -P pass.txt 192.168.29.229 ssh -t 5</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-t</strong>: Sets the number of threads to 5.</li>
+</ul>
+<h3 id="changing-the-port-number">Changing the Port Number <a href="#changing-the-port-number" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="ac18271" class="language-bash ">
+  <code>hydra -s 22 -L user.txt -P pass.txt 192.168.29.229 ssh -t 5</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-s</strong>: Specifies the port number (22 in this case).</li>
+</ul>
+<h3 id="brute-forcing-a-list-of-ips">Brute-Forcing a List of IPs <a href="#brute-forcing-a-list-of-ips" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="e971975" class="language-bash ">
+  <code>hydra -L user.txt -P pass.txt -M ip.txt ssh -t 4</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-M</strong>: Specifies a list of IP addresses.</li>
+</ul>
+<h3 id="enabling-verbose-mode-and-using--e-nsr-flag">Enabling Verbose Mode and Using <code>-e nsr</code> Flag <a href="#enabling-verbose-mode-and-using--e-nsr-flag" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Verbose mode provides detailed output:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="49176fc" class="language-bash ">
+  <code>hydra -l msfadmin -P pass.txt 192.168.29.229 -V -e nsr ssh</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-V</strong>: Enables verbose mode.</li>
+<li><strong>-e nsr</strong>: Tries null, same, and reversed username as passwords.</li>
+</ul>
+<h3 id="displaying-help-menu">Displaying Help Menu <a href="#displaying-help-menu" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>To learn more about Hydra&rsquo;s usage:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="e0211b6" class="language-bash ">
+  <code>hydra -h</code>
+  </pre>
+  </div>
+<ul>
+<li><strong>-h</strong>: Displays the help menu.</li>
+</ul>
+<h2 id="conclusion">Conclusion <a href="#conclusion" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>Hydra is a powerful tool for security testing, but it must be used responsibly. Unauthorized use of brute-forcing techniques is illegal and unethical. Always ensure you have explicit permission to test the security of any system.</p>
+<p>By understanding and applying these techniques, security professionals can better assess the strength of their systems and improve their overall security posture.</p>
+
     </div>
 
+    
+
+    
                                         </div>
                                         <div><hr class="doc-hr">
 <div id="doc-nav" class="d-print-none">
+
+	<div class="row flex-xl-nowrap ">
+	<div class="col-sm-6 pt-2 doc-next">
+		<a href="/tutorials/docs/metasploit/metasploit/shell_metasploit/">
+			<div class="card h-100 my-1">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> How to Use a Reverse Shell in Metasploit</p>
+					<p class="card-text ms-2">Learn more about the …</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/tutorials/docs/hydra/hydra/introduction_to_hydra/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">How to Use Hydra to Hack Passwords – Penetration Testing Tutorial <i class="material-icons align-middle">navigate_next</i></p>
+					<p class="card-text me-2">Learn more about Hydra</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	</div>
 </div></div>
                                     </div>
                                 </div>

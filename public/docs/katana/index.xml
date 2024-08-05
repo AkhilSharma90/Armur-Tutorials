@@ -12,7 +12,14 @@
       <link>http://localhost:1313/tutorials/docs/katana/katana/introduction_to_katana/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/katana/katana/introduction_to_katana/</guid>
-      <description>Katana is a command-line interface (CLI) web crawling tool developed in Golang, designed to gather information and endpoints from websites. One of Katana&amp;rsquo;s standout features is its capability to utilize headless browsing for crawling applications. This enables it to effectively crawl single-page applications (SPAs) built with technologies like JavaScript, Angular, or React, which are increasingly common but challenging to crawl with traditional tools. By employing headless browsing, Katana can more efficiently access and gather information from these applications.</description>
+      <description>Introduction linkKatana is a command-line interface (CLI) web crawling tool developed in Golang, designed to gather information and endpoints from websites. One of Katana&amp;rsquo;s standout features is its capability to utilize headless browsing for crawling applications.&#xA;This enables it to effectively crawl single-page applications (SPAs) built with technologies like JavaScript, Angular, or React, which are increasingly common but challenging to crawl with traditional tools. By employing headless browsing, Katana can more efficiently access and gather information from these applications.</description>
+    </item>
+    <item>
+      <title>Using Katana as a Library</title>
+      <link>http://localhost:1313/tutorials/docs/katana/katana/using-_katana_as_a_module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/katana/katana/using-_katana_as_a_module/</guid>
+      <description>In this tutorial, you&amp;rsquo;ll learn how to use Katana as a library in your Go application to crawl web pages programmatically. We&amp;rsquo;ll set up a simple Go program that configures Katana, creates a crawler, and performs a web crawl.&#xA;Prerequisites link Go Installed: Ensure that you have Go installed on your system. Katana Library: Make sure you have the Katana library available. You can get it via Go modules. Step-by-Step Guide link Set Up Your Project</description>
     </item>
   </channel>
 </rss>

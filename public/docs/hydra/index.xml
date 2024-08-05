@@ -8,6 +8,20 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tutorials/docs/hydra/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Creating Custom Wordlists and Rules for Hydra</title>
+      <link>http://localhost:1313/tutorials/docs/hydra/hydra/custom_wordlist_using_hydra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/hydra/hydra/custom_wordlist_using_hydra/</guid>
+      <description>To effectively use Hydra for brute-forcing SSH connections, creating custom wordlists and rules is crucial. Custom wordlists tailored to specific targets can significantly enhance the success rate of brute-force attacks. This guide will cover methods to create custom wordlists and define rules for their efficient use with Hydra.&#xA;Why Create Custom Wordlists? linkUsing generic wordlists like rockyou.txt can be effective, but they may not always suit specific targets. Custom wordlists can:</description>
+    </item>
+    <item>
+      <title>How to Use Hydra to Brute-Force SSH Connections</title>
+      <link>http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/</guid>
+      <description>Brute-forcing SSH connections using Hydra is a common technique in penetration testing and ethical hacking. This guide explores the practical usage of Hydra for brute-forcing SSH, focusing on various scenarios and configurations to maximize the efficiency of your attacks. Remember, this should only be used for ethical purposes, such as testing the security of your systems.&#xA;Understanding SSH (Secure Shell) linkSSH (Secure Shell) is a cryptographic network protocol used for secure data communication, remote command-line login, and other secure network services between two networked computers.</description>
+    </item>
+    <item>
       <title>How to Use Hydra to Hack Passwords – Penetration Testing Tutorial</title>
       <link>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -92,6 +92,13 @@
       <description>Introduction linkHashing is one of the pillars of cybersecurity, crucial for securing passwords and sensitive data. However, it’s often confused with encryption. Unlike encryption, hashed data is not reversible. This distinction is vital for applications like password storage, where security is paramount.&#xA;In this section, we will delve into Hashcat, a powerful command-line utility designed for cracking hashes. We will explore how hashing works, the features of Hashcat, and provide step-by-step instructions for its installation and use.</description>
     </item>
     <item>
+      <title>Creating Custom Wordlists and Rules for Hydra</title>
+      <link>http://localhost:1313/tutorials/docs/hydra/hydra/custom_wordlist_using_hydra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/hydra/hydra/custom_wordlist_using_hydra/</guid>
+      <description>To effectively use Hydra for brute-forcing SSH connections, creating custom wordlists and rules is crucial. Custom wordlists tailored to specific targets can significantly enhance the success rate of brute-force attacks. This guide will cover methods to create custom wordlists and define rules for their efficient use with Hydra.&#xA;Why Create Custom Wordlists? linkUsing generic wordlists like rockyou.txt can be effective, but they may not always suit specific targets. Custom wordlists can:</description>
+    </item>
+    <item>
       <title>Database Fingerprinting for SQL Injection: Identifying the Underlying DBMS</title>
       <link>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -146,6 +153,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/shell_metasploit/</guid>
       <description>Reverse shells are a crucial technique in penetration testing and ethical hacking, enabling attackers to gain access to a remote machine by reversing the connection back to the attacker&amp;rsquo;s machine. This blog post provides a comprehensive guide on using reverse shells in Metasploit, detailing the process step-by-step and explaining when and why to use reverse shells.&#xA;List of Metasploit Reverse Shells linkTo list all available reverse shells in Metasploit, use the following command:</description>
+    </item>
+    <item>
+      <title>How to Use Hydra to Brute-Force SSH Connections</title>
+      <link>http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/</guid>
+      <description>Brute-forcing SSH connections using Hydra is a common technique in penetration testing and ethical hacking. This guide explores the practical usage of Hydra for brute-forcing SSH, focusing on various scenarios and configurations to maximize the efficiency of your attacks. Remember, this should only be used for ethical purposes, such as testing the security of your systems.&#xA;Understanding SSH (Secure Shell) linkSSH (Secure Shell) is a cryptographic network protocol used for secure data communication, remote command-line login, and other secure network services between two networked computers.</description>
     </item>
     <item>
       <title>How to Use Hydra to Hack Passwords – Penetration Testing Tutorial</title>
@@ -244,6 +258,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/metasploit/metasploit/payloads_in_metasploit/</guid>
       <description>Understanding How Payloads Work in Metasploit linkThe Metasploit Framework is a powerful tool used for developing, testing, and executing exploits against remote targets. One of the critical components in this process is the payload. This blog post aims to break down the functionality of payloads in Metasploit, explaining their types and how they are used.&#xA;What are Payloads? linkIn Metasploit, payloads are modules that are used to execute code on a target system.</description>
+    </item>
+    <item>
+      <title>Using Katana as a Library</title>
+      <link>http://localhost:1313/tutorials/docs/katana/katana/using-_katana_as_a_module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/docs/katana/katana/using-_katana_as_a_module/</guid>
+      <description>In this tutorial, you&amp;rsquo;ll learn how to use Katana as a library in your Go application to crawl web pages programmatically. We&amp;rsquo;ll set up a simple Go program that configures Katana, creates a crawler, and performs a web crawl.&#xA;Prerequisites link Go Installed: Ensure that you have Go installed on your system. Katana Library: Make sure you have the Katana library available. You can get it via Go modules. Step-by-Step Guide link Set Up Your Project</description>
     </item>
     <item>
       <title>Web Server Scanning With Nikto</title>
