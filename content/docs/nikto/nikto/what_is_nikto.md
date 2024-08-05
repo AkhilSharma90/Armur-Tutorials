@@ -19,7 +19,12 @@ Nikto is an open-source web server and web application scanner designed to detec
 
 ### How to Install Nikto
 
-Since Nikto is Perl-based, it runs on most operating systems with Perl installed.
+Nikto comes pre-installed on linux machines.
+
+To test it out, simple run 
+```sh
+nikto -Help
+```
 
 - **Kali Linux:** Nikto comes preinstalled under "Vulnerability Analysis."
   
