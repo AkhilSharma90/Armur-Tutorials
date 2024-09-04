@@ -50,6 +50,7 @@
     <lastmod>2024-07-11T11:09:53+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/hydra/hydra/custom_wordlist_using_hydra/</loc>
+    <lastmod>2024-08-05T10:00:27+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/sqlmap/sqlmap/database_fingerprinting_for_sql_injection/</loc>
     <lastmod>2024-06-30T23:48:36+02:00</lastmod>
@@ -79,6 +80,7 @@
     <lastmod>2024-06-26T05:12:48+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/hydra/hydra/brute_force_ssh_connections/</loc>
+    <lastmod>2024-08-05T10:00:27+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/hydra/hydra/introduction_to_hydra/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>
@@ -149,7 +151,7 @@
     <lastmod>2024-06-30T23:48:36+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2024-08-05T09:27:50+02:00</lastmod>
+    <lastmod>2024-08-05T10:00:27+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/file_permision_using_linux/</loc>
     <lastmod>2024-07-09T16:15:12+02:00</lastmod>

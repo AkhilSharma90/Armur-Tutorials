@@ -12,7 +12,7 @@
       <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
-      <description>This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.&#xA;Installing Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:&#xA;git clone https://github.com/aircrack-ng/aircrack-ng cd aircrack-ng autoreconf -i ./configure --with-experimental make make install ldconfig View post on imgur.com Make sure you also run the command:</description>
+      <description>This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.&#xA;Installing Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:&#xA;git clone https://github.com/aircrack-ng/aircrack-ng&#xD;cd aircrack-ng&#xD;autoreconf -i&#xD;./configure --with-experimental&#xD;make&#xD;make install&#xD;ldconfig View post on imgur.com&#xD;Make sure you also run the command:</description>
     </item>
   </channel>
 </rss>

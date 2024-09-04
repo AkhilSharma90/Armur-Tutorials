@@ -26,7 +26,7 @@
       <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
-      <description>This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.&#xA;Installing Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:&#xA;git clone https://github.com/aircrack-ng/aircrack-ng cd aircrack-ng autoreconf -i ./configure --with-experimental make make install ldconfig View post on imgur.com Make sure you also run the command:</description>
+      <description>This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.&#xA;Installing Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:&#xA;git clone https://github.com/aircrack-ng/aircrack-ng&#xD;cd aircrack-ng&#xD;autoreconf -i&#xD;./configure --with-experimental&#xD;make&#xD;make install&#xD;ldconfig Make sure you also run the command:&#xA;sudo apt update&#xD;sudo apt install pciutils IEEE 802.</description>
     </item>
     <item>
       <title>An Introduction to Metasploit</title>
@@ -68,7 +68,7 @@
       <link>http://localhost:1313/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</guid>
-      <description>Capturing data packets on Wireshark linkWhen you open Wireshark, you see a screen showing you a list of all the network connections you can monitor. You also have a capture filter field to only capture the network traffic you want to see.&#xA;View post on imgur.com You can select one or more of the network interfaces using shift+left-click. Once select the network interface, you can start the capture, and there are several ways to do that</description>
+      <description>Capturing data packets on Wireshark linkWhen you open Wireshark, you see a screen showing you a list of all the network connections you can monitor. You also have a capture filter field to only capture the network traffic you want to see.&#xA;View post on imgur.com&#xD;You can select one or more of the network interfaces using shift+left-click. Once select the network interface, you can start the capture, and there are several ways to do that</description>
     </item>
     <item>
       <title>Comprehensive Guide to SQL Injection</title>

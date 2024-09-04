@@ -21,7 +21,7 @@ make install
 ldconfig
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="AyOdF5k"><a href="https://imgur.com/AyOdF5k">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![aircrack-ng](https://raw.githubusercontent.com/AkhilSharma90/Armur-Tutorials/main/static/images/aircrack.png)
 
 Make sure you also run the command:
 ```sh
