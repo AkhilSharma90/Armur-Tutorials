@@ -1,6 +1,6 @@
 ---
 title: "Metasploit"
-description: "Learn more about the Metasploit framework."
+description: "Learn how to use Metasploit for penetration testing and security assessments."
 icon: "code"
 draft: false
 ---

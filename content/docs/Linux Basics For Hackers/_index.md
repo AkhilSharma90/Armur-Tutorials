@@ -1,6 +1,6 @@
 ---
 title: "Linux Basics for Hackers"
-description: "Welcome to the basics of Linux for Hacking."
+description: "Learn the basics of Linux for hacking and security testing."
 icon: "code"
 draft: false
 ---

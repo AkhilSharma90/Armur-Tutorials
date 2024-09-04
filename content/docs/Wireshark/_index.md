@@ -1,6 +1,6 @@
 ---
 title: "Wireshark"
-description: "Learn more about Wireshark"
+description: "Learn how to use Wireshark for network protocol analysis and troubleshooting."
 icon: "code"
 draft: false
 ---

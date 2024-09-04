@@ -1,6 +1,6 @@
 ---
 title: "Katana"
-description: "Learn more about katana"
+description: "Learn how to use Katana for effective penetration testing and security assessments."
 icon: "code"
 draft: false
 ---
