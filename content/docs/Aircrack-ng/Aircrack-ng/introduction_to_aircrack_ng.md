@@ -21,7 +21,7 @@ make install
 ldconfig
 ```
 
-![aircrack-ng](https://raw.githubusercontent.com/AkhilSharma90/Armur-Tutorials/main/static/images/aircrack.png)
+![aircrack-ng](https://akhilsharma90.github.io/Armur-Tutorials/images/aircrack.png)
 
 Make sure you also run the command:
 ```sh
