@@ -21,7 +21,7 @@ make install
 ldconfig
 ```
 
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/rwfSz9v2/aircrack.png' border='0' alt='aircrack'/></a>
+<a target='_blank'><img src='https://i.postimg.cc/rwfSz9v2/aircrack.png' border='0' alt='aircrack'/></a>
 
 Make sure you also run the command:
 ```sh
