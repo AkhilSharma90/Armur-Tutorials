@@ -46,7 +46,7 @@ crunch 3 6 0123456789
 - **abcdefghijklmnopqrstuvwxyz**: Character set.
 - **-o wordlist.txt**: Output file.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="Q2o0Eb4"><a href="https://imgur.com/Q2o0Eb4">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/FK2rgDzL/image.png' border='0' alt='image'/></a>
 
 #### Creating Wordlist in a text file.
 

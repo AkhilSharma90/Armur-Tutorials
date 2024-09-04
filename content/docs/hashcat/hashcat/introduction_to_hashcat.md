@@ -14,7 +14,7 @@ In this section, we will delve into Hashcat, a powerful command-line utility des
 Hashing converts an alphanumeric string into a fixed-size string using a hash function, a mathematical function that generates another alphanumeric string from the input.
 
 <!-- ![hashing](https://i.imgur.com/PjTbhvV.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="PjTbhvV" data-context="false" ><a href="//imgur.com/PjTbhvV"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/Wbj4HWnm/image.png' border='0' alt='image'/></a>
 
 #### How Hashing Works
 - **Hash Algorithms**: Common algorithms include MD5, SHA1, and SHA256. Despite the length of the input, the hash produced is always of a fixed length.

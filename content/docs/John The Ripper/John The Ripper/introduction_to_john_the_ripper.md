@@ -39,7 +39,7 @@ Whenever you set a password it will directly store in the database as a text fil
 #### With Hashing Algorithm
 Whenever you set your password it will take your password as an input string and with the help of hashing function, it converts that password into a hash (random combination of number and alphabet) and stores it in the database. It enhances security by encrypting input strings. It will save your password in a different format so no one can read it even if your system compromise.
 
-![example](https://i.imgur.com/NArjGgR.png)
+<a target='_blank'><img src='https://i.postimg.cc/SxRkBwz9/image.png' border='0' alt='image'/></a>
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="NArjGgR" data-context="false" ><a href="//imgur.com/NArjGgR"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
@@ -59,9 +59,7 @@ You can check the formats that supports with the following command on your termi
 ```sh
 john --list=formats
 ```
-<!-- ![list](https://i.imgur.com/3z7KB5s.png) -->
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="3z7KB5s" data-context="false" ><a href="//imgur.com/3z7KB5s"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/JnHzXSQJ/image.png' border='0' alt='image'/></a>
 
 ### How JRP Works?
 The main objective of John the Ripper is to crack the password. There are many ways that can be supported but it is mainly known for Dictionary attacks. However, you can also run other types of attacks like Bruteforce attack, Rainbow Table etc.
@@ -115,23 +113,20 @@ This should complete and return the password which you can then use to open the 
 ### Cracking MD5 Password
 In this example I am generating a hash by using md5 hash generator to show you how to crack MD5 formatted files password. In the below image you can see I have generated the hash of the 12345 string. You can copy the MD5 hash to perform the same practical
 
-<!-- ![cracking](https://i.imgur.com/Sp4Vm3j.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="Sp4Vm3j" data-context="false" ><a href="//imgur.com/Sp4Vm3j"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/ZKxK686f/image.png' border='0' alt='image'/></a>
 
 We used the string `123456789`. The `MD5` hash is `25f9e794323b453885f5181f1b624d0b` and the `SHA1` `f7c3bc1d808e04732adf679965ccc34ca7ae3441`.
 
 Now you can create a `.txt` file and put the MD5 hash using the following commands.
 
-<!-- ![hash](https://i.imgur.com/ofa8jsv.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="ofa8jsv" data-context="false" ><a href="//imgur.com/ofa8jsv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/SKJS0H35/image.png' border='0' alt='image'/></a>
 
 We can now crack the password by running the following command
 ```sh
 john hash.txt --format=RAW-MD5
 ```
 
-<!-- ![img](https://i.imgur.com/ekzjIHz.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="ekzjIHz" data-context="false" ><a href="//imgur.com/ekzjIHz"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/brH8HPSG/image.png' border='0' alt='image'/></a>
 
 You can see, we get the string back as `123456789`.
 

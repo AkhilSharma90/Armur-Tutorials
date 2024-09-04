@@ -55,8 +55,7 @@ By leveraging Metasploit and collaborating with data-driven cybersecurity firms,
 
 You can open your terminal and run the following commands.
 
-<!-- ![alt text](https://i.imgur.com/v9eKP0Y.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="v9eKP0Y" data-context="false" ><a href="//imgur.com/v9eKP0Y"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/t4W24gPG/image.png' border='0' alt='image'/></a>
 
 **Continuing with MSFDB**
 
@@ -64,25 +63,20 @@ To help interactive with various parts of the Metasploit configuration there is 
 
 You can run the command `sudo msfdb`:
 
-<!-- ![img](https://i.imgur.com/rkYYW9K.png) -->
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="rkYYW9K" data-context="false" ><a href="//imgur.com/rkYYW9K"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/cJchf5XD/image.png' border='0' alt='image'/></a>
 
 **Starting the Kali Postgres servive**
 
 Metasploit uses PostgreSQL as its database so it needs to be launched first:
 
-<!-- ![img](https://i.imgur.com/pPfaQCc.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="pPfaQCc" data-context="false" ><a href="//imgur.com/pPfaQCc"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/2jtwdW7f/image.png' border='0' alt='image'/></a>
 
 You can verify that PostgreSQL is running by checking the output of ss -ant and making sure that port 5432 is listening, or using sudo msfdb status:
 
-<!-- ![img](https://i.imgur.com/rphOH9E.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="rphOH9E" data-context="false" ><a href="//imgur.com/rphOH9E"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/gk6Kg0gL/image.png' border='0' alt='image'/></a>
 
 ## Launch msfconsole in Kali :
 
 Now that the PostgreSQL service is up and running and the database is initialized, you can launch msfconsole and verify database connectivity with the db_status command as shown below:
 
-<!-- ![msf](https://i.imgur.com/4wyw9R5.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="4wyw9R5" data-context="false" ><a href="//imgur.com/4wyw9R5"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/YC6zwsKp/image.png' border='0' alt='image'/></a>

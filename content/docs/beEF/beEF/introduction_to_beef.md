@@ -33,13 +33,13 @@ When running the program for the first time, you will be prompted to change the 
 
 <!-- ![beef](https://i.imgur.com/r6zBl6O.png) -->
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="r6zBl6O" data-context="false" ><a href="//imgur.com/r6zBl6O"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/DfRr4T7v/image.png' border='0' alt='image'/></a>
 
 
 Once you change the password, BeEF will start loading, and you will be presented with both the WebUI address and the hook script for `hook.js`.
 
 <!-- ![load-page](https://i.imgur.com/HpAAUfm.png) -->
-<blockquote class="imgur-embed-pub" lang="en" data-id="HpAAUfm" data-context="false" ><a href="//imgur.com/HpAAUfm"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/0ykbbWK5/image.png' border='0' alt='image'/></a>
 
 BeEF should open the browser for you, and you will need to log in as the user ‘beef’ with the new password you set up before entering the program.
 

@@ -99,7 +99,7 @@ go run main.go
 
 You should see an out put like this:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="Px5LR8d"><a href="https://imgur.com/Px5LR8d">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/3xz5PWhM/image.png' border='0' alt='image'/></a>
 
 This will start the crawling process on the specified URL (`https://google.com`). The `OnResult` callback will print the URLs found during the crawl.
 

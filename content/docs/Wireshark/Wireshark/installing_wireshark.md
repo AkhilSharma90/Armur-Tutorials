@@ -58,6 +58,6 @@ Once wireshark is installed, you can run the GUI from the interface or run the f
 sudo wireshark
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="27jXpTP"><a href="https://imgur.com/27jXpTP">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/MZ0BHj3D/image.png' border='0' alt='image'/></a>
 
 This section gave you a tutorial on how to install Wireshark on a linux machine. You are now ready to start using wireshark.

@@ -9,7 +9,7 @@ draft: false
 
 When you open Wireshark, you see a screen showing you a list of all the network connections you can monitor. You also have a capture filter field to only capture the network traffic you want to see.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="27jXpTP"><a href="https://imgur.com/27jXpTP">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/MZ0BHj3D/image.png' border='0' alt='image'/></a>
 
 You can select one or more of the network interfaces using shift+left-click. Once select the network interface, you can start the capture, and there are several ways to do that
 
@@ -19,7 +19,7 @@ You can start on capturing packets by clicking on the blue wireshark icon or cli
 
 You shouls a screen similar to the following:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="0ljqvB1"><a href="https://imgur.com/0ljqvB1">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a href='https://postimg.cc/dhdjk4NY' target='_blank'><img src='https://i.postimg.cc/wj4frrh7/image.png' border='0' alt='image'/></a>
 
 Once you have captured all the packets needed, use the same buttons or menu options to stop the capture as you did to begin.
 
@@ -82,7 +82,8 @@ port not 53 and not arp
 ```
 
 You can check the capture filters by clicking on `Capture`, then `Capture Filters`. You should see something like this:
-<blockquote class="imgur-embed-pub" lang="en" data-id="Htg2RdS"><a href="https://imgur.com/Htg2RdS">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/jdZZW13Z/image.png' border='0' alt='image'/></a>
 
 ### Wireshark Display Filters
 

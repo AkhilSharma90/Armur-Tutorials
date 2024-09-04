@@ -41,8 +41,6 @@ You can verify your installation by running:
 katana
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="cROzYEI"><a href="https://imgur.com/cROzYEI">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
 ### Running Katana
 
 katana requires url or endpoint to crawl and accepts single or multiple inputs.
@@ -198,7 +196,7 @@ After running this command, you should get the results, and you can check conten
 cat results.json
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="WiAgecu"><a href="https://imgur.com/WiAgecu">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/VkJPGn3B/image.png' border='0' alt='image'/></a>
 
 **Stealthy Crawl with Rate Limiting and Regex Filtering:**
 

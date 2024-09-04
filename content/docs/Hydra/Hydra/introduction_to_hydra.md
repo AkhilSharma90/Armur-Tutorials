@@ -51,7 +51,7 @@ $ hydra -h
 
 This command provides a list of flags and options available in Hydra.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="fPGDlMF" data-context="false" ><a href="//imgur.com/fPGDlMF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/1599HgmJ/image.png' border='0' alt='image'/></a>
 
 ### Single Username/Password Attack
 

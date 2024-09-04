@@ -41,7 +41,7 @@ Now that you know what Nikto is and how to install it, let's go ahead and run so
 nikto -Help
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="NETte0T"><a href="https://imgur.com/NETte0T">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/850hH8Wb/image.png' border='0' alt='image'/></a>
 
 ### How to Scan a Domain
 
@@ -51,7 +51,7 @@ To perform a simple domain scan, use the -h (host) flag:
 nikto -h google.com
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="upKVLLP"><a href="https://imgur.com/upKVLLP">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/44j0fqMt/image.png' border='0' alt='image'/></a>
 
 ### How to Scan a Domain with SSL Enabled
 
@@ -60,7 +60,7 @@ For domains with HTTPS enabled, you have to specify the -ssl flag to scan port 4
 nikto -h https://google.com -ssl
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="fdPpHy2"><a href="https://imgur.com/fdPpHy2">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a target='_blank'><img src='https://i.postimg.cc/8PW0jwQY/image.png' border='0' alt='image'/></a>
 
 ### How to Scan an IP Address
 Sometimes you just want to scan an IP address where a web server is hosted.
