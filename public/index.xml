@@ -26,7 +26,7 @@
       <link>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/aircrack-ng/aircrack-ng/introduction_to_aircrack_ng/</guid>
-      <description>This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.&#xA;Installing Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:&#xA;git clone https://github.com/aircrack-ng/aircrack-ng&#xD;cd aircrack-ng&#xD;autoreconf -i&#xD;./configure --with-experimental&#xD;make&#xD;make install&#xD;ldconfig Make sure you also run the command:&#xA;sudo apt update&#xD;sudo apt install pciutils IEEE 802.</description>
+      <description>This guide introduces the basics of using the Aircrack-ng suite, offering a solid foundation for beginners while providing pointers for further exploration. For additional insights, the Forum and Wiki offer extensive supplementary tutorials and information.&#xA;Installing Aircrack-ng linkTo install Aircrack-ng on your Kali Linux system, follow these steps:&#xA;git clone https://github.com/aircrack-ng/aircrack-ng cd aircrack-ng autoreconf -i ./configure --with-experimental make make install ldconfig Make sure you also run the command:&#xA;sudo apt update sudo apt install pciutils IEEE 802.</description>
     </item>
     <item>
       <title>An Introduction to Metasploit</title>
@@ -68,7 +68,7 @@
       <link>http://localhost:1313/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/wireshark/wireshark/capturing_packets_on_wireshark/</guid>
-      <description>Capturing data packets on Wireshark linkWhen you open Wireshark, you see a screen showing you a list of all the network connections you can monitor. You also have a capture filter field to only capture the network traffic you want to see.&#xA;View post on imgur.com&#xD;You can select one or more of the network interfaces using shift+left-click. Once select the network interface, you can start the capture, and there are several ways to do that</description>
+      <description>Capturing data packets on Wireshark linkWhen you open Wireshark, you see a screen showing you a list of all the network connections you can monitor. You also have a capture filter field to only capture the network traffic you want to see.&#xA;You can select one or more of the network interfaces using shift+left-click. Once select the network interface, you can start the capture, and there are several ways to do that</description>
     </item>
     <item>
       <title>Comprehensive Guide to SQL Injection</title>
@@ -209,13 +209,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tutorials/docs/social-engineering-toolkit/social-engineering-toolkit/mass_mailer/</guid>
       <description>The Social-Engineer Toolkit (SET) offers a mass mailing feature for conducting phishing attacks. This tool enables both targeted individual phishing and large-scale campaigns targeting multiple recipients at once.&#xA;In this section, we&amp;rsquo;ll demonstrate an individual attack, incorporating a malicious link to a cloned website. The process for mass mailing is similar, with the main difference being the use of multiple email addresses instead of just one.&#xA;To use a Gmail account for this purpose, you&amp;rsquo;ll need to set up an App password.</description>
-    </item>
-    <item>
-      <title>Networking in Linux</title>
-      <link>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/docs/linux-basics-for-hackers/linux-basics-for-hackers/networking_in_kali/</guid>
-      <description>As a hacker, networking is critical. We need to manage and manipulate our ability to connect with other computers to optimize our ability to compromise another machine. In some cases, you will need to connect but hide your IP address and other information. In this tutorial, I will attempt to show you the basics of networking in Linux.&#xA;Step 1: Analyzing Networks and Network Interfaces linkThe most basic Linux command for analyzing networks is ifconfig.</description>
     </item>
     <item>
       <title>Nmap Cheat-Sheet: Scanning Types, Commands, and NSE Scripts</title>
